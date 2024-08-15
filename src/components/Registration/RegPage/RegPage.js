@@ -1,13 +1,14 @@
 import React, { useEffect } from "react";
 import "./RegPage.css";
 import { useState } from "react";
-import logbg1 from "../../../assests/Landing-page-2-1.webp";
+import logbg1 from "../../../assets/regbg.webp";
 import logo from "../../../assets/logowhite.svg"
 import { message } from "antd";
 import OtpInput from "react-otp-input";
 import background from "../../../assets/regbg.webp";
 import { Link,useNavigate } from "react-router-dom";
 import axios from "axios";
+import backdropmob from "../../../assets/regbgmob.webp";
 
 export default function VerifyEmail() {
   // const [otp, setotp] = useState(Array(4).fill(""));
@@ -74,6 +75,7 @@ export default function VerifyEmail() {
       </div>
       <div>
         <img className="otpBack" src={background} alt="back" />
+        <img className="otpBackmob" src={backdropmob} alt="back" />
         <p className="mob_view">Registration</p>
       </div>
       <div id="log_bg2" className="otpBox">
@@ -94,13 +96,14 @@ export default function VerifyEmail() {
               renderSeparator={<span style={{ width: "8px" }}></span>}
               inputType={true}
               renderInput={(props) => <input {...props} />}
+              className="otpboxin"
               inputStyle={{
                 border: "1px solid black",
                 borderRadius: "8px",
                 width: "54px",
                 height: "54px",
                 fontSize: "20px",
-                color: "#000",
+                color: "white",
                 fontWeight: "400",
                 caretColor: "blue",
               }}

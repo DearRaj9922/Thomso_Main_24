@@ -9,12 +9,13 @@
   margin: auto;
   width: fit-content;
   /* height: 60vh; */
-  background-color: #ffffff;
-  border: 2px solid #000000;
+  background:transparent;
+  border: 2px solid grey;
   border-radius: 8px;
-  filter: drop-shadow(12px 12px 0px rgba(0, 0, 0, 0.4));
+  /* filter: drop-shadow(12px 12px 0px rgba(0, 0, 0, 0.4)); */
   padding: 6vh 5vw;
   margin-top: 5vh;
+  backdrop-filter: blur(5px);
   /* justify-self: center;
   align-self: center; */
   /* overflow: auto; */
@@ -255,7 +256,7 @@ select option [value="Gender 1"] {
   padding-bottom: 0;
 }
 .th-logo{
-  position: fixed;
+  position: relative;
   width: 100px;
   margin: 16px 34px;
 }

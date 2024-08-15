@@ -11,6 +11,9 @@
     width: 100vw;
     top: 0;
 }
+.regcompletebackmob{
+  display: none;
+}
 #wel_log_back2{
     position: relative;
     top: -59px;
@@ -69,6 +72,12 @@
     .regcompleteback{
       display: none;
     }
+    .regcompletebackmob{
+      display: block;
+      height: 100vh;
+      width: 100vw;
+      position:absolute;
+    }
     .regComp{
         background-color: #000000;
         height: 100vh;
@@ -118,14 +127,15 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #ffffff;
+    background:transparent;
+    backdrop-filter: blur(5px);
     /* margin: auto; */
     width: 51vw;
     height: 51vh;
-    border: 2px solid #000000;
+    border: 2px solid grey;
     border-radius: 5px;
     margin-top: 0rem;
-    box-shadow: 12px 12px 0px 0px rgba(0, 0, 0, 0.32);
+    /* box-shadow: 12px 12px 0px 0px rgba(0, 0, 0, 0.32); */
   }
   
   #navemailbar {
@@ -182,6 +192,7 @@
   .Box h3 {
     font-family: Comic Sans MS;
     margin-top: 1rem;
+    color:white;
   }
   
   .Box p {

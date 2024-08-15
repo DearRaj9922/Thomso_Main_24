@@ -2,6 +2,7 @@ import React from "react";
 import "./EmailVerify.css";
 import logbg1 from "../../../assets/regbg.webp";
 import logbg2 from "../../../assets/logowhite.svg"
+import logbgmob from "../../../assets/regbgmob.webp";
 import { Link } from "react-router-dom";
 
 const EmailVerify = () => {
@@ -13,6 +14,7 @@ const EmailVerify = () => {
         </Link>
       <div id="log_bg12">
         <img src={logbg1} className="emailVerifyBack" alt="" />
+        <img src={logbgmob} className="emailVerifyBackmob" alt="" />
         <p className="mob_view">Registration</p>
         <div className="Box" id="box2_reg">
             

@@ -9,7 +9,7 @@ import Loader from "../../Loader/Loader";
 // import setAuthToken from "../../User/setAuthToken";
 import Regback from "../../../assets/regbg.webp";
 import logo from "../../../assets/logowhite.svg"
-import "./Login.scss";
+import "./Login.css";
 import { EyeInvisibleOutlined, EyeTwoTone } from "@ant-design/icons";
 
 const Login = (props) => {

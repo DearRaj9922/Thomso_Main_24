@@ -19,16 +19,17 @@
   position: absolute;
   width: 100vw;
   height: 100vh;
-  // overflow-x: hidden;
+  /* // overflow-x: hidden; */
   z-index: -100;
 }
 
 #box {
   margin-top: 12vh;
-  background-color: #ffffff;
+  background:transparent;
+  backdrop-filter: blur(5px);
   border-radius: 8px;
-  border: 2px solid black;
-  filter: drop-shadow(12px 12px 0px rgba(0, 0, 0, 0.4));
+  border: 2px solid grey;
+  /* filter: drop-shadow(12px 12px 0px rgba(0, 0, 0, 0.4)); */
   height: fit-content;
   width: fit-content;
 }
@@ -141,7 +142,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // padding-bottom: 9.6vh;
+  /* // padding-bottom: 9.6vh; */
 }
 
 #log {
@@ -272,7 +273,5 @@
 }
 
 @media (max-width: 1080px) {
-  // #log_bg1{
-  //     // padding-bottom: 15vh;
-  // }
+  
 }
