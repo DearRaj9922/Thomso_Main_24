@@ -2,7 +2,12 @@ import logo from './logo.svg';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Registeration from "./components/Registration/step1/collegeDetails.js"
 import Home from  "./components/Home/Home.js"
-;import React,{useEffect, useState} from "react";
+import RegPage from "./components/Registration/RegPage/RegPage"
+import EmailVerify from "./components/Registration/EmailVerify/EmailVerify";
+import RegisComp from "./components/Registration/RegComp/RegCompleted";
+import Login from "./components/Registration/login/Login";
+
+import React,{useEffect, useState} from "react";
 import axios from "axios"
 
 function App(props) {
@@ -40,6 +45,10 @@ useEffect(() => {
       <Routes>
       {/* <Route exact={true} path="/" element={<Home />} /> */}
         <Route exact={true} path="/register" element={<Registeration/>}/>
+        <Route exact={true} path="/otpverify" element={<RegPage />} />
+        <Route exact={true} path="/emailverified" element={<EmailVerify />} />
+        <Route exact={true} path="/regcompleted" element={<RegisComp />} />
+        <Route exact={true} path="/login" element={<Login />} />
       </Routes>
     </Router>
 

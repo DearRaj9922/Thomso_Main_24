@@ -3,6 +3,7 @@ import "./RegComp.css";
 // import Nav from "../../web/NewNavbar/Nav"
 import logbg1 from "../../../assets/regbg.webp";
 import logbg2 from "../../../assets/logowhite.svg"
+import logbgmob from "../../../assets/regbgmob.webp";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
@@ -15,6 +16,12 @@ const RegisComp = () => {
           <img
             src={logbg1}
             className="regcompleteback"
+            id="welcomebckbg"
+            alt=""
+          />
+          <img
+            src={logbgmob}
+            className="regcompletebackmob"
             id="welcomebckbg"
             alt=""
           />
@@ -31,7 +38,7 @@ const RegisComp = () => {
                 <br />
                 <br />
                 <p>
-                  Voila! Your Registration for Thomso '23 IIT Roorkee is
+                  Voila! Your Registration for Thomso '24 IIT Roorkee is
                   successfully completed.
                 </p>
                 <h3>To add your events, login now</h3>

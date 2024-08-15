@@ -80,9 +80,10 @@
   .otpContainer {
     
     width: 40vw;
-    background-color: #fff;
+    background:transparent;
+    backdrop-filter: blur(5px);
     display: flex;
-    border:2px solid black;
+    border:2px solid grey;
     border-radius:6px !important;
     flex-direction: column;
     align-items: center;
@@ -103,7 +104,7 @@
   }
   .otpSent {
     width: 40%;
-    color: #555;
+    color: white;
     text-align: center;
     font-family: Comic Neue;
     font-size: 20px;
@@ -123,9 +124,9 @@
     /* padding: 12px 20px; */
     border-radius: 5.96px;
     border: 1.49px solid #505050;
-    background: #fff;
+    background: transparent;
     font-size: 1.5rem;
-    box-shadow: 1.5px 3px 0px 0px #505050;
+    /* box-shadow: 1.5px 3px 0px 0px #505050; */
     display: flex;
   }
   .verify_btn{
@@ -147,6 +148,9 @@
     color: #fff;
     line-height: 20px;
     cursor: pointer;
+  }
+  .otpBackmob{
+    display: none;
   }
   .inputBoxes input[type="number"]::-webkit-inner-spin-button,
   .inputBoxes input[type="number"]::-webkit-outer-spin-button {
@@ -202,19 +206,29 @@
     .otpBack img{
     display: none;
     }
+    .otpBackmob{
+      display: block;
+      height:100vh;
+    width: 100vw;
+    position:absolute;
+    }
     .otpVerify{
         background-color: black;
     }
     .thomso_logo{
         width:60px;
     }
-    .otpBack{
+    .otpboxin{
+      width:30px;
+      height:30px;
+    }
+    /* .otpBack{
         opacity: 0;
         height: 100vh;
         width: 100vw;
         position: relative;
         z-index: -1;
-    }
+    } */
     .inputBoxes input{
         width: 14px;
         height: 14px;
@@ -224,7 +238,7 @@
         display: block;
         color: white;
         position: absolute;
-        top: 17vh;
+        top: 13vh;
         left: 25vw;
         font-size: 5vw;
       }
@@ -234,8 +248,9 @@
       width:70vw !important;
     }
     .mob_view{
-        top: 19vh;
-        left: 20vw;
+      font-size: 6vw;
+        top: 15vh;
+        left: 15vw;
     }
   }
   
@@ -272,7 +287,7 @@
     }
     .mob_view {
         font-size: 7vw;
-        left: 20vw;
-        top: 19vh;
+        left: 15vw;
+        top: 15vh;
     }
   }
