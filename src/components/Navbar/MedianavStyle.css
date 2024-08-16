@@ -1,0 +1,79 @@
+.hamburg{
+    display: none;
+    background-color: rgb(4, 4, 4);
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw;
+    padding-inline: 5vw;
+}
+.hamburg-logo img{
+    width: 100px;
+}
+
+.spanlist span{
+    width: 40px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 3px 0;
+}
+.spanlist{
+    display: flex;
+    flex-direction: column;
+}
+.leftPos{
+    position: relative;
+    left:0;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    transition: left 0.6s ease;
+    
+      }
+    
+.notLeftPos{
+    position:relative;
+    left:100vw;
+    transition: left 0.6s ease;
+    display: none;
+}
+
+.generalDetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:5vh;
+}
+
+.generalDetails a{
+    color:white;
+}
+
+.navMainImg{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  #cross{
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
+  }
+@media (max-width:800px){
+    .leftPos{
+        display: block;
+    }
+    .navbar-container-0{
+        display: none;
+    }
+   
+    .hamburg{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
