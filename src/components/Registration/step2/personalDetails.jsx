@@ -304,7 +304,7 @@ const PersonalDetails = ({college,state,district,degree,year}) => {
                       <EyeInvisibleOutlined style={{ color: "black" }} />
                     )
                   }
-                  placeholder="Confirm Passpwrd *"
+                  placeholder="Confirm Password *"
                   name="confirmpassword"
                   value={user.confirmpassword}
                   required
