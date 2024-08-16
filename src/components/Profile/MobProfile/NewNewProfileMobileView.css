@@ -1,0 +1,346 @@
+.mpb-mobileview {
+    display: contents !important;
+    background-color: black !important;
+    display: flex;
+    flex-direction: column;
+    height: 11vh;
+    width: 100vw;
+}
+
+.lsp-img1{
+    cursor: pointer;
+  }
+  .lsp-text0{
+    cursor: pointer;
+  }
+
+
+.nav-active {
+    font-family: 'Oxanium';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 30px;
+    /* identical to box height, or 125% */
+
+    display: flex;
+    gap:15px;
+    align-items: center;
+    letter-spacing: -0.02em;
+
+    color: black;
+    background: white;
+    padding: 2px 5px 2px 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+
+}
+.new-mob-profile::-webkit-scrollbar{
+    display: none !important;
+}
+.nav-passive {
+    font-family: 'Oxanium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    /* identical to box height, or 125% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+
+    color: rgba(255, 255, 255, 0.5);
+    border: 2px solid white;
+    gap: 10px;
+    padding: 2px 5px 2px 5px;
+
+}
+.fileupload-mob-profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mv-top {
+    padding-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap:10vw;
+}
+
+.img--1 {
+    color: white;
+    height: 17px;
+    mix-blend-mode: difference;
+}
+
+.mv-top-1 {
+    gap: 3vw;
+    font-family: 'Oxanium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: white;
+}
+
+.mv-top-2 {
+    font-family: 'Oxanium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.5);
+    gap: 3vw;
+}
+
+.mpb-line1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    margin-left: 1.5vw;
+    margin-right: 1.5vw; 
+    margin-top: 7px;
+    width: 84vw;
+}
+
+
+
+/* ---------------- */
+@media only screen and (max-width: 768px) {
+    .main-prof-box {
+        border: none;
+        width: 100vw;
+        margin-top: 0vh;
+        height: auto;
+        /* overflow-y: scroll; */
+    }
+
+    .main-box-center-event-payment{
+        display:none;
+      }    
+      
+    .mainscroll{
+        display: flex !important;
+    
+    overflow-y: scroll;
+    height: 68vh !important;
+    flex-wrap: wrap !important;
+    overflow-x: hidden;
+    } 
+    .mainscroll::-webkit-scrollbar:vertical{
+        /* scrollbar-width: 10px;
+        scrollbar-color: #fff; */
+        width: 5px;
+  height: 80vh;
+  background-color: #aaa
+    }
+    .mainscroll::-webkit-scrollbar-button{
+        display: none;
+        
+    }
+
+    .ca-ref-box{
+        margin-top:2vh;
+    }  
+
+    .main-prof-box-detail-row {
+        display: flex;
+        gap: 15vw;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .main-prof-box-head-text1 {
+        width: 65vw;
+        font-family: "Oxanium";
+        font-style: normal;
+        font-weight: 400;
+        border-bottom: 2px solid white;
+        height: 5vh;
+        font-size: 24px;
+        line-height: 30px;
+        color: rgba(255, 255, 255, 0.63);
+    }
+    .main-prof-box-head-text{
+        width:22vw;
+    }
+    .lsp-img1{
+        min-width: 82px;
+        min-height: 82px;
+    }
+
+    .flex-2-title {
+        font-family: "Oxanium";
+        font-style: normal;
+        font-weight: 400;
+        border-bottom: 2px solid white;
+        width: 65vw;
+        height: 5vh;
+        font-size: 24px;
+        line-height: 30px;
+        color: rgba(255, 255, 255, 0.63);
+    }
+
+    .main-prof-box-flex-2 {
+        margin: 0;
+        width: 80vw;
+    }
+
+    .main-prof-box-flex-1 {
+        margin-left: 35px;
+    }
+
+    .mpb-text {
+        margin-top: 16px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: rgba(255, 255, 255, 0.6);
+
+    }
+
+    .drag-but {
+        margin-top: 8px;
+    }
+
+    .lsp-pic-1 {
+        flex-direction: row;
+        display: flex;
+        justify-content: flex-start;
+        gap:2rem;
+        align-items: center;
+        margin-top: 35px;
+        gap: 35px;
+    }
+
+    .mob-lt1 {
+        flex-direction: column;
+        gap: 10px;
+        display: flex;
+    }
+
+    .nnp-container {
+        background: black !important;
+        overflow-y: auto;
+    }
+
+    .nnp-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .lsp-img11 {
+        /* margin-left: 35px; */
+        width: 82px;
+        height: 82px;
+        border-radius:100px;
+        border-style: solid;
+        border-color: #fff;
+        border-width: 1px;
+    }
+
+    #profile_mob_cover{
+
+    }
+
+    #mob_upload_pic{
+        color: white;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        margin-left:9vw;
+        font-size:12px;
+    }
+
+
+}
+
+.paymentmobpage{
+    display: none;
+  }
+  @media only screen and (max-width: 440px){
+    .mv-top{
+        gap:7vw;
+    }
+  }
+  @media only screen and (max-width: 400px){
+    .mv-top{
+        gap:5vw;
+    }
+  }
+
+  @media only screen and (max-width: 360px) {
+
+    .nav-active {
+        font-family: 'Oxanium';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3.5vw;
+        line-height: 20px;
+        border-style: solid;
+        border-color: white;
+        border-width: 2px;
+
+        /* identical to box height, or 125% */
+    
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.02em;
+    
+        color: #000000;
+        padding: 2px;
+    
+    }
+    
+    .nav-passive {
+        font-family: 'Oxanium';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3.5vw;
+        line-height: 20px;
+        /* identical to box height, or 125% */
+    
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.02em;
+    
+        color: rgba(255, 255, 255, 0.5);
+    
+    }
+    
+    /* .nav-passive {
+        font-family: 'Oxanium';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 4vw;
+        line-height: 20px;
+        /* identical to box height, or 125% */
+    
+        /* display: flex;
+        align-items: center;
+        letter-spacing: -0.02em;
+    
+        color: rgba(255, 255, 255, 0.5); */
+    
+     /* } */  
+
+    .mv-top{
+        gap: 10px;
+    }
+    .lsp-pic-1 {
+        gap:15px
+    }
+
+  }
