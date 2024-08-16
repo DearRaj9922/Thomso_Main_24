@@ -37,7 +37,7 @@ export default function VerifyEmail() {
     setLoading({ loading: true });
 
     try {
-      const response = await axios.post(`/apiV1/verifyOTP`, {
+      const response = await axios.post(`https://api2.thomso.in/apiV1/verifyOTP`, {
         ...user,
         otp: Number(code),
       });

@@ -38,7 +38,7 @@ const Login = (props) => {
     if (validator.allValid()) {
       setLoading(true);
       await axios
-        .post("/api-token-auth/", user)
+        .post("https://api2.thomso.in/api-token-auth/", user)
         .then((res) => {
           if (res.status === 200) {
             if (res.data.status === "not_verified") {

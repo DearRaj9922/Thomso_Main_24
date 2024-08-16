@@ -9,7 +9,7 @@ function* getUser(action) {
   // console.log(action.payload, "request getuser");
   try {
     axios
-      .get(`/apiV1/current_user_participant`)
+      .get(`https://api2.thomso.in/apiV1/current_user_participant`)
       .then((res) => {
         // console.log(res.data, "userdata");
         dispatch({
@@ -53,7 +53,7 @@ function* getEvents() {
   try {
     // const { id } = user.id;
     const id = getState().user.user.id;
-    axios.get(`/apiV1/registeruserevent?participant_id=${id}`).then((res) => {
+    axios.get(`https://api2.thomso.in/apiV1/registeruserevent?participant_id=${id}`).then((res) => {
       // console.log(res.data);
       var arr = [];
       for (var i = 0; i < res.data.length; i++) {

@@ -63,7 +63,7 @@ const PersonalDetails = ({college,state,district,degree,year}) => {
 
       };
       // console.log(userresponse);
-      const response = await axios.post(`/apiV1/registeruser`, userresponse);
+      const response = await axios.post(`https://api2.thomso.in/apiV1/registeruser`, userresponse);
       const { data } = response;
           if (response.status === 201) {
         localStorage.setItem("user_id", data.user_id);

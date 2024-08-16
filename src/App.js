@@ -15,31 +15,31 @@ function App(props) {
   const [items,setItems] = useState();
 
 
-useEffect(() => {
-  if(localStorage.getItem("token")){
-    loadUserData();
-  };
-  }, [user]);
-
-
-  useEffect(() => {
-    const token = localStorage.getItem("token");
-    const userId = localStorage.getItem("user_id");
-    if (token) {
-      props?.userDetails && props?.fetchUsers({ id: userId });
-    }
-  }, []);
-
-    const loadUserData = async () => {
-    try {
-      axios.get(`/apiV1/current_user_participant`).then((res) => {
-        setUser(res.data);
-        // console.log("data", res.data);
-      });
-    } catch (error) {
-      console.log(error);
-    }
-  };
+// useEffect(() => {
+//   if(localStorage.getItem("token")){
+//     loadUserData();
+//   };
+//   }, [user]);
+//
+//
+//   useEffect(() => {
+//     const token = localStorage.getItem("token");
+//     const userId = localStorage.getItem("user_id");
+//     if (token) {
+//       props?.userDetails && props?.fetchUsers({ id: userId });
+//     }
+//   }, []);
+//
+//     const loadUserData = async () => {
+//     try {
+//       axios.get(`/apiV1/current_user_participant`).then((res) => {
+//         setUser(res.data);
+//         // console.log("data", res.data);
+//       });
+//     } catch (error) {
+//       console.log(error);
+//     }
+//   };
   return (
     <Router>
       <Routes>
