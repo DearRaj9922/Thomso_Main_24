@@ -9,6 +9,7 @@ import Login from "./components/Registration/login/Login";
 
 import React,{useEffect, useState} from "react";
 import axios from "axios"
+import Pevents from "./components/Pevents/Pevents";
 
 function App(props) {
   const [user,setUser] = useState({});
@@ -49,6 +50,7 @@ function App(props) {
         <Route exact={true} path="/emailverified" element={<EmailVerify />} />
         <Route exact={true} path="/regcompleted" element={<RegisComp />} />
         <Route exact={true} path="/login" element={<Login />} />
+        <Route exact={true} path="/pevents" element={<Pevents />} />
       </Routes>
     </Router>
 
