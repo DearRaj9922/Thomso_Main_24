@@ -1,0 +1,43 @@
+.EMP-container {
+  /* background: url("../Sponsors/images/bg.svg"); */
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+.EMP-hero {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 30px;
+  margin-left: 40px;
+  /* margin-right: 40px; */
+  margin-top: 3vh;
+    position: absolute;
+}
+
+.eventsBack{
+  width: 100vw;
+  position: fixed;
+  margin-top: -11vh;
+}
+
+.eventsNav{
+  background-color: transparent !important;
+  background: transparent !important;
+  position: relative;
+  z-index: 100000;
+}
+
+.Event-MObile-View{
+  display: none;
+}
+@media screen and (max-width:768px){
+  .Event-MObile-View{
+    display: contents;
+  }
+  .EMP-container{
+    display: none;
+  }
+}

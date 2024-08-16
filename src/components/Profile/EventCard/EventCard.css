@@ -1,0 +1,307 @@
+.eventcard {
+    height: 39vh;
+    width: 18.25vw;
+    /* background: url(../../../assests/footloose.png); */
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5.31px;
+    border: 0.664px solid #F9F9F9;
+    display: flex;
+    gap: 0px;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    cursor: pointer;
+    z-index: 0;
+    transition: 0.3s ease-out;
+    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 6.13%, rgba(0, 0, 0, 0.45) 25.45%, rgba(0, 0, 0, 0.86) 54.90%, #000 92.12%); */
+
+    /* border-radius: 8px; */
+    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 6.13%, rgba(0, 0, 0, 0.45) 25.45%, rgba(0, 0, 0, 0.86) 54.90%, #000 92.12%); */
+}
+
+.eventcard1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px;
+
+    align-items: center;
+    /* text-decoration: none; */
+}
+
+.card-delete {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    height: 28px;
+    width: 28px;
+    background-color: #FFF;
+    border-radius: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eventcard1 h2 {
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: 'Comic Neue';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    /* line-height: 13.275px; */
+    /* 100% */
+    letter-spacing: -0.266px;
+    margin-bottom: 2vh;
+}
+
+.eventcard:hover h2 {
+    font-size: 16px;
+    text-decoration: underline;
+    transition: 0.3s ease-out;
+}
+
+.eventcard hr {
+    width: 91.877px;
+    height: 0.332px;
+    margin-left: 15px;
+}
+
+.eventcard p {
+    color: #FFF;
+    font-family: 'Comic Sans MS';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 11.948px */
+    margin: 0 .8vw 1vh;
+    letter-spacing: -0.159px;
+    display: none;
+}
+
+.eventcard:hover p {
+    display: block;
+}
+
+.eventcard span {
+    display: none;
+}
+
+.eventcard:hover span {
+    display: block;
+}
+
+.eventcards {
+    display: flex;
+    gap: 2vw;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    margin: 0 0 2vh !important;
+    ;
+    height: 68vh;
+    flex-wrap: wrap;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888
+    ;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+/* .eventcards::-webkit-scrollbar{
+    display: block;
+    width: 10px !important;
+} */
+.eventcard-nav {
+    display: flex;
+    color: #FFF;
+    font-family: Comic Neue;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    width: 100%;
+    align-items: center;
+    gap: 3%;
+    /* 125% */
+}
+
+.eventcard-nav span {
+    cursor: pointer;
+}
+
+.eventcard-body {
+    margin: 9vh 0;
+    width: 75%;
+}
+
+.eventcard-nav button {
+    color: #333;
+    font-family: Comic Neue;
+    
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    /* 100% */
+    letter-spacing: -0.32px;
+    margin-left: auto;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    display: inline-flex;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: #F7B900;
+}
+
+.eventcard-nav button:hover {
+    background: transparent;
+    color: #F7B900;
+    border-color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+.events-team-name {
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Comic Neue;
+    font-size: .7vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 13.275px;
+    /* 110.628% */
+    margin: 0 15px 6px;
+    letter-spacing: -0.24px;
+    display: block;
+    margin-top: 2vh;
+}
+
+.events-team-name1 {
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Comic Neue;
+    font-size: .7vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 13.275px;
+    /* 110.628% */
+    margin: 0 15px 6px;
+    letter-spacing: -0.24px;
+    display: block;
+}
+
+.event-type-select {
+
+    background: white;
+    color: black;
+    padding: 5px 8px;
+}
+
+.blackShield {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0.13%, rgba(0, 0, 0, 0.45) 16.45%, rgba(0, 0, 0, 0.86) 54.90%, #000 92.12%);
+}
+
+
+@media only screen and (max-width: 1300px) {
+    .eventcard1 h2 {
+        font-size: 22px;
+    }
+    
+    .eventcard1 {
+        margin: 0 15px 0 10px;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .eventcard {
+        width: 25vw;
+    }
+
+    .eventcard1 {
+        margin: 0 10px 0 5px;
+    }
+    
+    .eventcard1 h2 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .eventcard {
+        width: 23vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .eventcard {
+        width: 22vw;
+    }
+    
+    .eventcard-nav-part {
+        display: none;
+    }
+    
+    .eventcard-nav {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    
+    .eventcard1 h2 {
+        font-size: 19px;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .events-team-name {
+        font-size: 11px !important;
+        line-height: 13px !important;
+        padding-bottom: 2px !important;
+    }
+    
+    .events-team-name1 {
+        font-size: 11px !important;
+        line-height: 13px !important;
+        padding-bottom: 2px !important;
+    }
+    
+    .eventcard p {
+        font-size: 13px !important;
+        margin-left: 13px !important;
+        padding-right: 3px !important;
+    }
+
+    .eventcard h2 {
+        font-size: 18px;
+        
+        line-height: 20px !important;
+        
+    }
+    
+    .eventcard {
+        width: 80vw;
+        height: 40vh;
+    }
+}
+

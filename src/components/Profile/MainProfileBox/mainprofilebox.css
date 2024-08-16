@@ -1,0 +1,332 @@
+.main-prof-box {
+  width: 65vw;
+  height: 75vh;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.main-prof-box-flex-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  margin-left: 3vw;
+  margin-top: 6vh;
+  width: 75vw;
+  overflow-x: hidden;
+  padding-bottom: 5vh;
+}
+
+div.main-prof-box-flex-1::-webkit-scrollbar {
+  /* width: 0px; */
+}
+
+.lsp-img1 {
+  cursor: pointer;
+}
+
+.lsp-text0 {
+  cursor: pointer;
+}
+
+.main-prof-box-head-text {
+  font-family: "Oxanium";
+  font-style: normal;
+  font-weight: 400;
+  border-bottom: 2px solid white;
+  width: 22vw;
+  height: 5vh;
+  font-size: 24px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.63);
+  color: #FFF;
+  font-family: Comic Neue;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.main-prof-box-details-div {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+
+}
+
+.main-prof-box-detail-row-text {
+  color: #FFF;
+  font-family: Comic Neue;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: #ffffff;
+  width: 40px;
+}
+
+.main-prof-box-detail-row-text-col {
+  color: #FFF;
+  font-family: Comic Neue;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  /* 125% */
+  /* width: 45vw; */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.main-prof-box-detail-row-text-col-2 {
+  color: #FFF;
+  font-family: Comic Neue;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  width: 53vw;
+}
+
+.main-prof-detail-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  justify-content: flex-start;
+}
+
+.main-prof-detail-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  justify-content: flex-start;
+}
+
+.main-prof-box-detail-row {
+  display: flex;
+  gap: 3vw;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.main-prof-box-flex-2 {
+  margin-top: 7vh;
+  margin-left: 5vw;
+}
+
+.none {
+  display: none;
+}
+
+.flex-2-title {
+  font-family: "Oxanium";
+  font-style: normal;
+  font-weight: 400;
+  border-bottom: 2px solid white;
+  width: 18vw;
+  height: 5vh;
+  font-size: 24px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.63);
+  color: #FFF;
+  font-family: Comic Neue;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.mpb-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 5vh;
+  color: #FFF;
+  font-family: Comic Neue;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.mpb-drop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+  border: 1px dashed #a3a4a5;
+  width: 24vw;
+  height: 28vh;
+  gap: 1vh;
+  cursor: pointer;
+}
+
+.drag-1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.drag-2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.drag-but {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 20px;
+  gap: 10px;
+  background: #ffffff;
+  cursor: pointer;
+  border: none;
+}
+
+.delete-but {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 20px;
+  gap: 10px;
+  background: #ff0000;
+  /* width: 100%; */
+  cursor: pointer;
+  border: none;
+  color: white !important;
+}
+
+.drag-3-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.drag-3 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: #333333;
+  cursor: pointer;
+}
+
+.delete-3 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.drag-3-input {
+  display: none;
+  cursor: pointer;
+}
+
+.main-logout-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 20px;
+  gap: 10px;
+  background: #ffffff;
+  cursor: pointer;
+  border: none;
+  width: 113.78px;
+  height: 32px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: white;
+  background: rgb(255, 53, 53);
+  margin-left: 10px;
+  margin-top: 0vh;
+}
+
+.c-line {
+  margin-top: 7vh;
+  /* margin-left: 7vw; */
+}
+
+.c-line1 {
+  margin-top: 16vh;
+  margin-left: 0px;
+}
+
+.c-line img {
+  width: 2px;
+}
+
+/* .c-line1-img{
+  width: 0.2vw;
+} */
+
+.mpb-mobileview {
+  display: none;
+}
+
+.after-upload-container {
+  padding: 12px 16px;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-prof-box-detail-row-text-col {
+    width: 45vw;
+  }
+
+  .main-logout-btn {
+    margin-left: 0px !important;
+  }
+}
+
+.ca-refferal {
+  position: absolute;
+  bottom: 2vh;
+  right: 2vh;
+  z-index: 2;
+  color: white !important;
+  font-family: Comic Neue;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.ca-refferal h1 {
+  font-size: 16px;
+}

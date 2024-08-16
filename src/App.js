@@ -6,6 +6,18 @@ import RegPage from "./components/Registration/RegPage/RegPage"
 import EmailVerify from "./components/Registration/EmailVerify/EmailVerify";
 import RegisComp from "./components/Registration/RegComp/RegCompleted";
 import Login from "./components/Registration/login/Login";
+import Profile from "./components/Profile/Profile/Profile";
+import Eventsnavbar from "./components/EventsNavbar/Eventsnavbar";
+import EventBox from "./components/Profile/EventBox/EventBox";
+import Paymentbox from "./components/Profile/PaymentBox/Paymentbox";
+import NewPaymentbox from "./components/Profile/PaymentBox/NewPaymentBox";
+import EventCard from "./components/Profile/EventCard/EventCard";
+import EventsMain from "./components/Profile/EventsPage/EventMainPage"
+import ProfileNameEditModel from "./components/Profile/MainProfileBox/ProfileNameEditModel";
+import Carousel1 from "./components/Profile/Carousel/Carousel1";
+import Profilenavbar from "./components/Navbar/Profilenavbar";
+// import EventMainPage from "./components/EventsPage/EventMainPage";
+// import EventPayment from "./components/EventPayment/EventPayment";
 
 import React,{useEffect, useState} from "react";
 import axios from "axios"
@@ -51,6 +63,21 @@ function App(props) {
         <Route exact={true} path="/regcompleted" element={<RegisComp />} />
         <Route exact={true} path="/login" element={<Login />} />
         <Route exact={true} path="/pevents" element={<Pevents />} />
+        <Route exact={true} path="/navbar" element={<Profilenavbar />} />
+          <Route exact={true} path="/profile" element={<Profile />} />
+          <Route exact={true} path="/eventsnavbar" element={<Eventsnavbar />} />
+          {/* <Route exact={true} path="/events/:id" element={<EventMainPage />} />
+          <Route exact={true} path="/eventpayment" element={<EventPayment />} /> */}
+          <Route exact={true} path="/pevents" element={<EventBox />} />
+          <Route exact={true} path="/payment" element={<Paymentbox />} />
+          <Route exact={true} path="/payment_gupt" element={<NewPaymentbox/>} />
+
+          <Route exact={true} path="/payment_thsp" element={<NewPaymentbox/>} />
+          <Route exact={true} path="/card" element={<EventCard/>} />
+          <Route exact={true} path="/events" element={<EventsMain />} />
+          <Route exact={true} path="/ProfileNameEdit" element={<ProfileNameEditModel />} />
+          <Route exact={true} path="/Carousel" element={<Carousel1/>} />
+
       </Routes>
     </Router>
 
