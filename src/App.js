@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Registeration from "./components/Registration/step1/collegeDetails.js"
 import Home from  "./components/Home/Home.js"
+import { fetchUser } from "./components/User/UserActions";
+import { connect, useDispatch } from "react-redux";
 import RegPage from "./components/Registration/RegPage/RegPage"
 import EmailVerify from "./components/Registration/EmailVerify/EmailVerify";
 import RegisComp from "./components/Registration/RegComp/RegCompleted";
@@ -42,17 +44,29 @@ function App(props) {
 //       props?.userDetails && props?.fetchUsers({ id: userId });
 //     }
 //   }, []);
-//
-//     const loadUserData = async () => {
-//     try {
-//       axios.get(`/apiV1/current_user_participant`).then((res) => {
-//         setUser(res.data);
-//         // console.log("data", res.data);
-//       });
-//     } catch (error) {
-//       console.log(error);
-//     }
-//   };
+
+    const dispatch = useDispatch()
+    useEffect(() => {
+        // console.log("main", props)
+
+        const token = localStorage.getItem("token");
+        const userId = localStorage.getItem("user_id");
+        if (token) {
+            dispatch(fetchUser({id:userId}))
+            props?.userDetails && props?.fetchUsers({ id: userId });
+        }
+    }, []);
+
+  //   const loadUserData = async () => {
+  //   try {
+  //     axios.get(`https://api2.thomso.in/apiV1/current_user_participant`).then((res) => {
+  //       setUser(res.data);
+  //       // console.log("data", res.data);
+  //     });
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
   return (
     <Router>
       <Routes>
@@ -84,4 +98,20 @@ function App(props) {
   );
 }
 
-export default App;
+const mapStateToProps = (state) => {
+  let userDetails = state.user.user;
+  let loading = state.user.loading;
+
+  return {
+    userDetails,
+    loading,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    fetchUsers: (params) => dispatch(fetchUser(params)),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

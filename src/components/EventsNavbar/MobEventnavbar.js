@@ -31,7 +31,7 @@ function MobEventnavbar() {
   }, []);
   const loadUserData = async () => {
     try {
-      axios.get(`/apiV1/current_user_participant`).then((res) => {
+      axios.get(`https://api2.thomso.in/apiV1/current_user_participant`).then((res) => {
         setUser(res.data);
         // console.log("data", res.data);
       });

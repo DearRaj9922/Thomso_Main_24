@@ -12,24 +12,30 @@ import axios from "axios";
 
 
 const Profile = ({ userDetails }) => {
+    const [loader, setLoader] = useState(false)
   const navigate = useNavigate();
   const [user, setuser] = useState({})
-  // useEffect(() => {
-  //   if (!userDetails?.id) {
-  //     // navigate.push("/login");
-  //   }
-  // }, [userDetails]);
+  useEffect(() => {
+      console.log(userDetails)
+    if(!(userDetails.user || userDetails.id)){
+        navigate('/login')
+    }
+    setLoader(true)
 
-   useEffect(() => {
-    loadUserData();
   }, []);
 
-  const loadUserData = async () => {
-    try {
+
+  // const loadUserData = async () => {
+  //
+  // };
+   useEffect(() => {
+    (async()=>{
+      try {
       axios
-        .get(`/apiV1/current_user_participant`)
+        .get(`https://api2.thomso.in/apiV1/current_user_participant`)
         .then((res) => {
           setuser(res.data);
+          // console.log(res.data)
           localStorage.setItem("user_id", res.data?.user_id);
           localStorage.setItem("id", res.data?.id);
           // console.log("data", res.data);
@@ -47,8 +53,13 @@ const Profile = ({ userDetails }) => {
     } catch (error) {
       console.log(error);
     }
-  };
-  return (
+    })()
+  }, []);
+   if(!loader){
+       return(<></>)
+   }
+   else{
+       return (
     <>
       <div className="nnp-container">
         <img src={Back} className="pro-back-img" alt="" />
@@ -73,6 +84,8 @@ const Profile = ({ userDetails }) => {
     </>
   );
 };
+   }
+
 
 const mapStateToProps = (state) => {
   let userDetails = state.user.user;

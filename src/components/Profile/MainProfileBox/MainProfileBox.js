@@ -172,10 +172,12 @@ const MainProfileBox = ({ data }) => {
 
   function handleLogout() {
     localStorage.removeItem("token");
-    localStorage.removeItem("userId");
-    localStorage.removeItem("Userobj");
+    localStorage.removeItem("user_id");
+    localStorage.removeItem("id");
+    localStorage.removeItem("state");
+    // localStorage.removeItem("Userobj");
     setLogout(!logout);
-    window.location.pathname = "/";
+    window.location.pathname = "/login";
   }
 
   function handleFileDelete() {

@@ -14,7 +14,14 @@ import { EyeInvisibleOutlined, EyeTwoTone } from "@ant-design/icons";
 
 const Login = (props) => {
   let navigate = useNavigate();
+  const [loader, setLoader] = useState(false)
+  useEffect(()=>{
+    if (localStorage.getItem("token")) {
+      navigate('/profile')
+    }
+    setLoader(true)
 
+  })
   const validator = new SimpleReactValidator();
 
   const [user, setUser] = useState({
@@ -56,7 +63,7 @@ const Login = (props) => {
               // props.fetchEvents();
               // localStorage.setItem("token", res.data?.access);
               // setAuthToken(localStorage.getItem("token"));
-              navigate(`/pevents`);
+              navigate(`/profile`);
               // console.log(res);
             }
             setLoading(false);
@@ -86,7 +93,10 @@ const Login = (props) => {
       setActive(false);
     }
   }, [user]);
-
+if(!loader){
+  return(<></>)
+}
+else{
   return (
     <>
     {loading && <Loader />}
@@ -178,6 +188,8 @@ const Login = (props) => {
     </>
   );
 };
+}
+
 
 const mapDispatchToProps = (dispatch) => {
   return {

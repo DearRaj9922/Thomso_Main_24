@@ -6,7 +6,14 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserHistory } from "history";
 import { Provider } from 'react-redux';
 import {Store} from "./Config/Store";
+import axios from 'axios'
 const history = createBrowserHistory();
+axios.defaults.headers.common.Authorization = `${
+    localStorage.getItem("token") === null
+        ? ``
+        : `Bearer ${localStorage.getItem("token")}`
+}`;
+axios.defaults.headers.post["Content-Type"] = "application/json";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
