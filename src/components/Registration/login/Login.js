@@ -9,6 +9,7 @@ import Loader from "../../Loader/Loader";
 // import setAuthToken from "../../User/setAuthToken";
 import Regback from "../../../assets/regbg.webp";
 import logo from "../../../assets/logowhite.svg"
+import regBackmob from "../../../assets/regbgmob.webp";
 import "./Login.css";
 import { EyeInvisibleOutlined, EyeTwoTone } from "@ant-design/icons";
 
@@ -102,6 +103,7 @@ else{
     {loading && <Loader />}
       <div className="login-fullpage">
         <img src={Regback} className="regbg" alt="" />
+        <img src={regBackmob} className="regbgmob" alt="" />
         <Link to="/">
           <img src={logo} className="logo-log" alt="" />
         </Link>

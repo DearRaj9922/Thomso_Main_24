@@ -1,5 +1,5 @@
 import logo from "../../../assets/logowhite.svg";
-import "./resetPassword.scss";
+import "./resetPassword.css";
 import Regback from "../../../assets/regbg.webp"
 import Regback1 from "../../../assets/regbgmob.webp"
 import { Input, message } from "antd";
@@ -22,7 +22,7 @@ const ResetPassword = () => {
           token: token,
           password: password,
         };
-        const response = await axios.post("/apiV1/verifypassword", data);
+        const response = await axios.post("https://api2.thomso.in/apiV1/verifypassword", data);
         if (response?.status === 200) {
           message.success("Password changed successfully");
           navigate("/login");
