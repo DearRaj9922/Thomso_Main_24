@@ -296,7 +296,7 @@ select option [value="Gender 1"] {
   .personal {
     /* width: auto; */
     border-radius: 0;
-    filter: drop-shadow(8px 8px 0px rgba(0, 0, 0, 0.32));
+    /* filter: drop-shadow(8px 8px 0px rgba(0, 0, 0, 0.32)); */
     padding: 3.8vh 6.1vw;
     margin-top: 3vh;
   }

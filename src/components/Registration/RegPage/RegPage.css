@@ -203,14 +203,14 @@
   
   
   @media only screen and (max-width:800px){
-    .otpBack img{
+    .otpBack{
     display: none;
     }
     .otpBackmob{
       display: block;
       height:100vh;
     width: 100vw;
-    position:absolute;
+    /* position:absolute; */
     }
     .otpVerify{
         background-color: black;

@@ -18,6 +18,8 @@ import EventsMain from "./components/Profile/EventsPage/EventMainPage"
 import ProfileNameEditModel from "./components/Profile/MainProfileBox/ProfileNameEditModel";
 import Carousel1 from "./components/Profile/Carousel/Carousel1";
 import Profilenavbar from "./components/Navbar/Profilenavbar";
+import Forget from "./components/forget_pwd/forget";
+import ResetPassword from "./components/Registration/ResetPass/ResetPass";
 // import EventMainPage from "./components/EventsPage/EventMainPage";
 // import EventPayment from "./components/EventPayment/EventPayment";
 
@@ -91,6 +93,12 @@ function App(props) {
           <Route exact={true} path="/events" element={<EventsMain />} />
           <Route exact={true} path="/ProfileNameEdit" element={<ProfileNameEditModel />} />
           <Route exact={true} path="/Carousel" element={<Carousel1/>} />
+          <Route exact={true} path="/forgotpassword" element={<Forget/>} />
+          <Route
+            exact={true}
+            path="/auth/reset-password/:email/:token"
+            element={<ResetPassword />}
+          />
 
       </Routes>
     </Router>
