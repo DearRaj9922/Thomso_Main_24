@@ -4,6 +4,9 @@
   margin-top: 10vh;
   display: flex;
   flex-direction: row;
+  border: 2px solid rgba(255, 255, 255,.21);
+  border-radius: 2px;
+  backdrop-filter: blur(5px);
 }
 
 .main-prof-box-flex-1 {
@@ -281,9 +284,10 @@ div.main-prof-box-flex-1::-webkit-scrollbar {
   margin-left: 0px;
 }
 
-.c-line img {
+/* .c-line img {
   width: 2px;
-}
+  display: none;
+} */
 
 /* .c-line1-img{
   width: 0.2vw;
