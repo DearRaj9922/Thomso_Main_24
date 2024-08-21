@@ -30,7 +30,7 @@ const EventMainPage = ({ events }) => {
     } else {
       axios
         .get(
-          `/apiV1/event?id=&category=${
+          `https://api2.thomso.in/apiV1/event?id=&category=${
             category === 0 ? "" : category
           }&status=true&is_zonal=`
         )
@@ -48,7 +48,7 @@ const EventMainPage = ({ events }) => {
     }
   };
   const getCategory = () => {
-    axios.get(`/apiV1/category?status=true`).then((response) => {
+    axios.get(`https://api2.thomso.in/apiV1/category?status=true`).then((response) => {
       setCategory(response.data);
       // console.log("data",response.data);
     });

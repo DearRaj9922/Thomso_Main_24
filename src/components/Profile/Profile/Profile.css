@@ -135,6 +135,9 @@
   justify-content: center;
   flex-direction: column;
   overflow-x: hidden;
+  backdrop-filter: blur(2px);
+  border:2px solid #555;
+  border-radius: 5px;
 }
 .mobpaymentcenterimg::-webkit-scrollbar{
   display: none !important;

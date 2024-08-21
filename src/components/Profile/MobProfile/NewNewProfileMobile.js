@@ -155,7 +155,7 @@ const NewNewProfileMobile = ({ data }) => {
   return (
     <div
       className="new-mob-profile"
-      style={{ height: "81vh", overflowY: "hidden", overflowX: "hidden" }}
+      style={{ height: "81vh", overflowY: "hidden", overflowX: "hidden",backdropFilter:"blur(2px)",border:"2px solid #555",borderRadius:"5px" }}
     >
       {loading && <Loader />}
       <div className="mpb-mobileview">
