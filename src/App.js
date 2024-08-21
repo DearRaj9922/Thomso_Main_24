@@ -78,7 +78,7 @@ function App(props) {
         <Route exact={true} path="/emailverified" element={<EmailVerify />} />
         <Route exact={true} path="/regcompleted" element={<RegisComp />} />
         <Route exact={true} path="/login" element={<Login />} />
-        <Route exact={true} path="/pevents" element={<Pevents />} />
+        {/* <Route exact={true} path="/pevents" element={<Pevents />} /> */}
         <Route exact={true} path="/navbar" element={<Profilenavbar />} />
           <Route exact={true} path="/profile" element={<Profile />} />
           <Route exact={true} path="/eventsnavbar" element={<Eventsnavbar />} />

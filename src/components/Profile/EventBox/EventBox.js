@@ -35,7 +35,7 @@ const EventBox = () => {
   const getEvents = async () => {
     const res = axios
       .get(
-        `/apiV1/registerusereventdetailed?participant_id=${localStorage.getItem(
+        `https://api2.thomso.in/apiV1/registerusereventdetailed?participant_id=${localStorage.getItem(
           "id"
         )}`
       )
@@ -234,9 +234,9 @@ const EventBox = () => {
                   </div>
                 </div>
               </div>
-              <div className="c-line1">
+              {/* <div className="c-line1">
                 <img className="c-line1-img" src={line} alt="line" />
-              </div>
+              </div> */}
               {events ? (
                 <div className="eventcard-body">
                   <div className="eventcard-nav">

@@ -395,13 +395,13 @@ const PaymentBox = (
                   </button>
                 </div>
               </div>
-              <div className="c-line1">
+              {/* <div className="c-line1">
                 <img className="c-line1-img" src={line} alt="line" />
-              </div>
+              </div> */}
 
               <div
                 className="Paycontainer"
-                style={{ display:"flex" ,justifyContent: "center", alignItems: "center" }}
+                style={{ display:"flex" ,justifyContent: "center", alignItems: "center" ,border:"2px solid #555",backdropFilter:"blur(2px)",borderRadius:"5px"}}
               >
                 <>
                 <img style={{width:"25vw",height:"40vh"}} src={paymentcenterpic} alt="" />

@@ -50,9 +50,9 @@ utton {
   */
 
   width: 68vw;
-  height: 72vh;
+  height: 75vh;
   color: white;
-  margin-top: 9vh;
+  margin-top: 10vh;
   overflow-y: scroll;
 }
 

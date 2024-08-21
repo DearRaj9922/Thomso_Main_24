@@ -101,7 +101,7 @@
     scroll-behavior: smooth;
     margin: 0 0 2vh !important;
     ;
-    height: 68vh;
+    height: 65vh;
     flex-wrap: wrap;
 }
 ::-webkit-scrollbar {
@@ -138,6 +138,7 @@
     line-height: 20px;
     width: 100%;
     align-items: center;
+    padding:2vh 2vw 0 2vw;
     gap: 3%;
     /* 125% */
 }
@@ -147,7 +148,11 @@
 }
 
 .eventcard-body {
-    margin: 9vh 0;
+    margin: 10vh 0 0 0;
+    height:75vh;
+    backdrop-filter: blur(2px);
+    border: 2px solid #555;
+    border-radius: 5px;
     width: 75%;
 }
 

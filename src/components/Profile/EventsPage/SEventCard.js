@@ -27,7 +27,7 @@ const SEventCard = ({ data, getEvents, fetchEvent, ispayment }) => {
   // };
   const deleteEvent = () => {
     setLoading(true);
-    axios.delete(`/apiV1/registerevent/${data.id}`).then((res) => {
+    axios.delete(`https://api2.thomso.in/apiV1/registerevent/${data.id}`).then((res) => {
       setLoading(false);
       fetchEvent();
       getEvents();
