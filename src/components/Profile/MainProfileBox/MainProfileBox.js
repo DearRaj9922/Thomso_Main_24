@@ -292,9 +292,9 @@ const MainProfileBox = ({ data }) => {
           </div>
         </div>
       </div>
-      <div className="c-line1">
+      {/* <div className="c-line1">
         <img className="c-line1-img" src={line} alt="line" />
-      </div>
+      </div> */}
       {loading && <Loader />}
       <div className="main-prof-box">
         <div className="main-prof-box-flex-1">
