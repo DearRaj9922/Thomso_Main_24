@@ -46,7 +46,7 @@ const NewNewProfileMobile = ({ data }) => {
       user_id: userDetails.user_id,
     };
     axios
-      .post("/apiV1/delete_user_image", obj)
+      .post("https://api2.thomso.in/apiV1/delete_user_image", obj)
       .then((res) => {
         fetchUser();
         // setLoading(false);

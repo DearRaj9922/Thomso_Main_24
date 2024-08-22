@@ -69,7 +69,7 @@ const MainProfileBox = ({ data }) => {
       user_id: userDetails.user_id,
     };
     axios
-      .post("/apiV1/delete_user_image", obj)
+      .post("https://api2.thomso.in/apiV1/delete_user_image", obj)
       .then((res) => {
         fetchUser();
         // setLoading(false);
@@ -111,7 +111,7 @@ const MainProfileBox = ({ data }) => {
       // window.location.reload(false);
     }
     const response = await axios.put(
-      `/apiV1/registeruser/${userId}`,
+      `https://api2.thomso.in/apiV1/registeruser/${userId}`,
       formData,
       {
         headers: {
@@ -150,7 +150,7 @@ const MainProfileBox = ({ data }) => {
       // window.location.reload(false);
     }
     const response = await axios.put(
-      `/apiV1/registeruser/${userId}`,
+      `https://api2.thomso.in/apiV1/registeruser/${userId}`,
       formData,
       {
         headers: {

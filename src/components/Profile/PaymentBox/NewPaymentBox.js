@@ -399,7 +399,7 @@ const NewPaymentBox = (
 
     try {
       const response = await axios.post(
-        `https://api1.thomso.in/apiV1/participant_payment`,
+        `https://api2.thomso.in/apiV1/participant_payment`,
         paymentData
       );
       const u = response.data;

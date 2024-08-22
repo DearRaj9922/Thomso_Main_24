@@ -20,6 +20,7 @@ import Carousel1 from "./components/Profile/Carousel/Carousel1";
 import Profilenavbar from "./components/Navbar/Profilenavbar";
 import Forget from "./components/forget_pwd/forget";
 import ResetPassword from "./components/Registration/ResetPass/ResetPass";
+import EventMainPage from "./components/Profile/EventsPage/EventMainPage";
 // import EventMainPage from "./components/EventsPage/EventMainPage";
 // import EventPayment from "./components/EventPayment/EventPayment";
 
@@ -82,8 +83,8 @@ function App(props) {
         <Route exact={true} path="/navbar" element={<Profilenavbar />} />
           <Route exact={true} path="/profile" element={<Profile />} />
           <Route exact={true} path="/eventsnavbar" element={<Eventsnavbar />} />
-          {/* <Route exact={true} path="/events/:id" element={<EventMainPage />} />
-          <Route exact={true} path="/eventpayment" element={<EventPayment />} /> */}
+          <Route exact={true} path="/events/:id" element={<EventMainPage />} />
+          {/* <Route exact={true} path="/eventpayment" element={<EventPayment />} /> */}
           <Route exact={true} path="/pevents" element={<EventBox />} />
           <Route exact={true} path="/payment" element={<Paymentbox />} />
           <Route exact={true} path="/payment_gupt" element={<NewPaymentbox/>} />

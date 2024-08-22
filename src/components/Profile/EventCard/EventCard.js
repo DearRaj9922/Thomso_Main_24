@@ -15,7 +15,7 @@ function EventCard({ data, getEvents, getData, }) {
   const [module, setmodule] = useState(false);
   const handleDelete = async () => {
     setLoading(true);
-    await axios.delete(`/apiV1/registerevent/${data.id}`).then((res) => {});
+    await axios.delete(`https://api2.thomso.in/apiV1/registerevent/${data.id}`).then((res) => {});
     await getEvents();
     await getData();
     setLoading(false);

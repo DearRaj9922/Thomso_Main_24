@@ -9,7 +9,7 @@ const ProfileNameEditModel = () => {
   const handleSubmit = async () => {
     try {
       const res = await axios.put(
-        `/apiV1/registeruser/${localStorage.getItem("user_id")}`,
+        `https://api2.thomso.in/apiV1/registeruser/${localStorage.getItem("user_id")}`,
         { name: name },
         {
           headers: {
