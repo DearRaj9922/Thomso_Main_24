@@ -30,7 +30,7 @@ const Carousel1 = () => {
   const [events, setevents] = useState([]);
   useEffect(() => {
     const fetchdata = async () => {
-      const response = await axios.get("/apiV1/event");
+      const response = await axios.get("https://api2.thomso.in/apiV1/event");
       // console.log(response);
       console.log(response.data);
       setevents(response.data);

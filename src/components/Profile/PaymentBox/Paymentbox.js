@@ -236,7 +236,7 @@ const PaymentBox = (
     };
     // console.log(obj);
     axios
-      .post("apiV1/participant_payment", obj)
+      .post("https://api2.thomso.in/apiV1/participant_payment", obj)
       .then((res) => {
         setLoading(false);
         window.location.href = res?.data?.link;
