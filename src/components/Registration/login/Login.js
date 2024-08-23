@@ -115,6 +115,7 @@ else{
                 <div id="login">Log In</div>
                 <form id="form" onSubmit={(e) => onSubmit(e)}>
                   <input
+                  className="emailplace"
                     type="email"
                     name="email"
                     placeholder="Email Id *"

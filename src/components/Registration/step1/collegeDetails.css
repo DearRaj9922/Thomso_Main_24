@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 .college {
     width: fit-content;
     /* height: fit-content; */
@@ -10,7 +11,7 @@
     padding: 7vh 5.4vw;
     margin-top: 5vh;
     margin-left: 18vw;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
   }
 
   #rgs-state-uks{
@@ -42,7 +43,7 @@
   }
   .regis{
     font-size: 1.5rem;
-    font-family: Comic Neue;
+    font-family: Public Sans;
     padding-bottom: 4vh;
     margin-top: -1vh;
   }
@@ -99,7 +100,7 @@ letter-spacing: 1.2px;
   }
   
   .college-step1-number-content {
-    font-family: Comic Neue;
+    font-family: Public Sans;
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.25rem;
@@ -118,7 +119,7 @@ letter-spacing: 1.2px;
   .college-step2-description-content-para1 {
     height: 8px;
     color: white;
-    font-family: Comic Neue;
+    font-family: Public Sans;
     font-size: 0.75rem;
     font-style: normal;
     font-weight: 400;
@@ -130,7 +131,7 @@ letter-spacing: 1.2px;
   .college-step2-description-content-para2 {
     height: 11px;
     color: white;
-    font-family: Comic Neue;
+    font-family: Public Sans;
     font-size: 1rem;
     font-style: normal;
     font-weight: 700;
@@ -151,7 +152,7 @@ letter-spacing: 1.2px;
   }
   
   .college-step2-number-content {
-    font-family: Comic Neue;
+    font-family: Public Sans;
     font-size: 20px;
     font-weight: 700;
     line-height: 20px;
@@ -185,16 +186,42 @@ letter-spacing: 1.2px;
     padding: 12px 20px;
     border-radius: 6px;
     border: 1.5px solid white;
-    color: black;
+    color: blue;
     background:transparent;
     /* box-shadow: 1.5px 3px 0px 0px #505050; */
-    font-family: Comic Sans MS;
+    font-family: Public Sans;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1rem;
     letter-spacing: 0em;
     text-align: left;
     height: 40px;
+  }
+  .input-field::placeholder{
+    color: white;
+  }
+  .input-field::placeholder:hover{
+    color: yellow;
+  }
+  .css-t3ipsp-control{
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  .css-1nmdiq5-menu{
+    background:white !important;
+    /* backdrop-filter: blur(20px) !important; */
+    z-index:1 !important;
+    color: black;
+    font-family: Public Sans;
+    /* width:50vw !important; */
+    margin-left: -2vw !important;
+  }
+  .css-19bb58m{
+    color: white !important;
+  }
+  .css-1dimb5e-singleValue{
+    color: white !important;
   }
   
   #reg-college-1{
@@ -231,7 +258,7 @@ letter-spacing: 1.2px;
     padding: 10px 20px;
     border-radius: 6px;
     border: 1.5px;
-    font-family: Comic Sans MS;
+    font-family: Public Sans;
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 1.25rem;
@@ -258,7 +285,7 @@ letter-spacing: 1.2px;
   }
   
   .college-button-submit:hover {
-    background-color: #ff5c00;
+    background-color:yellow;
     border: 1.52px solid #111111;
     box-shadow: 1.5px 3px 0px 0px #111111;
   }
@@ -385,7 +412,7 @@ letter-spacing: 1.2px;
     .mobRegis{
     display: block;
     font-size: 1.5rem;
-    font-family: Comic Neue;
+    font-family: Public Sans;
     color: #ffffff;
     margin-left: 10vw;
     /* padding-bottom: 4vh; */

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -29,7 +30,7 @@
 #box {
   margin-top: 12vh;
   background:transparent;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(2px);
   border-radius: 8px;
   border: 2px solid grey;
   /* filter: drop-shadow(12px 12px 0px rgba(0, 0, 0, 0.4)); */
@@ -52,7 +53,7 @@
   text-align: center;
   /* leading-trim: both;
     text-edge: cap; */
-  font-family: Comic Sans MS;
+  font-family: Public Sans;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -60,17 +61,23 @@
   letter-spacing: 0.64px;
   margin-top: 8vh;
 }
+.emailplace::placeholder{
+  color: white;
+}
+.login-pass::placeholder{
+  color:white !important;
+}
 
 #email1 {
   padding-left: 2vh;
   display: block;
   margin-top: 6vh;
   border-radius: 5.96px;
-  border: 1.49px solid #505050;
-  background: #fff;
-  box-shadow: 1.4900398254394531px 2.9800796508789062px 0px 0px #505050;
-  color: #505050;
-  font-family: Comic Sans MS;
+  border: 1.49px solid white;
+  background: transparent;
+  /* box-shadow: 1.4900398254394531px 2.9800796508789062px 0px 0px #505050; */
+  color: white;
+  font-family: Public Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -83,12 +90,12 @@
 }
 #email1:hover {
   cursor: pointer;
-  box-shadow: 1.4900398254394531px 2.9800796508789062px 0px 0px #000000;
+  box-shadow: 1.4900398254394531px 2.9800796508789062px 0px 0px white;
 }
 
 #password1:hover {
   cursor: pointer;
-  box-shadow: 1.4900398254394531px 2.9800796508789062px 0px 0px #000000;
+  box-shadow: 1.4900398254394531px 2.9800796508789062px 0px 0px white;
 }
 #password1 {
   padding-left: 2vh;
@@ -100,7 +107,7 @@
   background: #fff;
   box-shadow: 1.4900398254394531px 2.9800796508789062px 0px 0px #505050;
   color: #505050;
-  font-family: Comic Sans MS;
+  font-family: Public Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -117,11 +124,11 @@
   cursor: pointer;
   margin-top: 5vh;
   border-radius: 5.96px;
-  border: 1.49px solid #505050;
-  background: #fff;
-  box-shadow: 1.4900398254394531px 2.9800796508789062px 0px 0px #505050;
-  color: #505050;
-  font-family: Comic Sans MS;
+  border: 1.49px solid white;
+  background: transparent  !important;
+  /* box-shadow: 1.4900398254394531px 2.9800796508789062px 0px 0px #505050; */
+  color: white;
+  font-family: Public Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -154,7 +161,7 @@
   background: rgb(237, 215, 41);
   box-shadow: 1.518475890159607px 3.036951780319214px 0px 0px #505050;
   color: #fff;
-  font-family: Comic Sans MS;
+  font-family: Public Sans;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -178,7 +185,7 @@
   text-align: right;
   /* leading-trim: both;
     text-edge: cap; */
-  font-family: Comic Neue;
+    font-family: Public Sans;
   font-size: 13px;
   font-style: normal;
   font-weight: 700;
@@ -201,7 +208,7 @@
   text-align: center;
   /* leading-trim: both;
     text-edge: cap; */
-  font-family: Comic Neue;
+    font-family: Public Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -215,7 +222,7 @@
   color: rgb(237, 215, 41);
   /* leading-trim: both;
     text-edge: cap; */
-  font-family: Comic Neue;
+    font-family: Public Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;

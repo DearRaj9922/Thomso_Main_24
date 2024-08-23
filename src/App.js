@@ -21,6 +21,7 @@ import Profilenavbar from "./components/Navbar/Profilenavbar";
 import Forget from "./components/forget_pwd/forget";
 import ResetPassword from "./components/Registration/ResetPass/ResetPass";
 import EventMainPage from "./components/Profile/EventsPage/EventMainPage";
+import Home3d from "./components/3dhome/Home3d.js";
 // import EventMainPage from "./components/EventsPage/EventMainPage";
 // import EventPayment from "./components/EventPayment/EventPayment";
 
@@ -74,6 +75,7 @@ function App(props) {
     <Router>
       <Routes>
       {/* <Route exact={true} path="/" element={<Home />} /> */}
+      <Route exact={true} path="/" element={<Home3d/>}/>
         <Route exact={true} path="/register" element={<Registeration/>}/>
         <Route exact={true} path="/otpverify" element={<RegPage />} />
         <Route exact={true} path="/emailverified" element={<EmailVerify />} />
