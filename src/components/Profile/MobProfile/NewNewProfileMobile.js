@@ -96,7 +96,7 @@ const NewNewProfileMobile = ({ data }) => {
       // window.location.reload(false);
     }
     const response = await axios.put(
-      `/apiV1/registeruser/${userId}`,
+      `https://api2.thomso.in/apiV1/registeruser/${userId}`,
       formData,
       {
         headers: {
@@ -132,7 +132,7 @@ const NewNewProfileMobile = ({ data }) => {
       setprofilepic(true);
     }
     const response = await axios.put(
-      `/apiV1/registeruser/${userId}`,
+      `https://api2.thomso.in/apiV1/registeruser/${userId}`,
       formData,
       {
         headers: {

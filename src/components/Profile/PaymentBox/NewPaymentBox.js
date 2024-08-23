@@ -66,7 +66,7 @@ const NewPaymentBox = (
 
   const get_master_config = async () => {
     const ress = axios
-      .get(`/apiV1/payment_master`)
+      .get(`https://api2.thomso.in/apiV1/payment_master`)
       .then((ress) => {
         data = ress.data;
         SetConfig(data[0]);
@@ -87,7 +87,7 @@ const NewPaymentBox = (
   const getData = async () => {
     setLoading(true);
     const ress = axios
-      .get(`/apiV1/current_user_participant`)
+      .get(`https://api2.thomso.in/apiV1/current_user_participant`)
       .then((ress) => {
         setLoading(false);
         setuserDetails(ress.data);
@@ -256,7 +256,7 @@ const NewPaymentBox = (
     };
     try {
       const response = await axios.post(
-        `https://api1.thomso.in/apiV1/verify_thomso_id`,
+        `https://api2.thomso.in/apiV1/verify_thomso_id`,
         obj1
       );
       const u = response.data;

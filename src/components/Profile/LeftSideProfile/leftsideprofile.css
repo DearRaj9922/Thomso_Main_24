@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 .lsp-c1,
 .lsp-c2,
 .lsp-c3 {
@@ -37,7 +38,7 @@
 .lsp-text0 {
   color: white;
   font-size: 12px;
-  font-family: Comic Neue;
+  font-family: Public Sans;
   margin-top: 9px;
   display: flex;
   justify-content: center;
@@ -45,7 +46,7 @@
 
 .lsp-text1 {
   color: white;
-  font-family: Comic Neue;
+  font-family: Public Sans;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -59,7 +60,7 @@
 
 .lsp-text2 {
   color: white;
-  font-family: Comic Neue;
+  font-family: Public Sans;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -120,7 +121,7 @@
   color: rgba(18, 17, 17, 0.98);
   /* leading-trim: both; */
   /* text-edge: cap; */
-  font-family: Comic Neue;
+  font-family: Public Sans;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -142,7 +143,7 @@
   align-items: center; */
   letter-spacing: -0.02em;
   color: #FFF;
-  font-family: Comic Neue;
+  font-family: Public Sans;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;

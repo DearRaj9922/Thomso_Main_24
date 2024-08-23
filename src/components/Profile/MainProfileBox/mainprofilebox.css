@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 .main-prof-box {
   width: 68vw;
   height: 75vh;
@@ -43,7 +44,7 @@ div.main-prof-box-flex-1::-webkit-scrollbar {
   line-height: 30px;
   color: rgba(255, 255, 255, 0.63);
   color: #FFF;
-  font-family: Comic Neue;
+  font-family: Public Sans;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -59,7 +60,7 @@ div.main-prof-box-flex-1::-webkit-scrollbar {
 
 .main-prof-box-detail-row-text {
   color: #FFF;
-  font-family: Comic Neue;
+  font-family: Public Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -70,7 +71,7 @@ div.main-prof-box-flex-1::-webkit-scrollbar {
 
 .main-prof-box-detail-row-text-col {
   color: #FFF;
-  font-family: Comic Neue;
+  font-family: Public Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -84,7 +85,7 @@ div.main-prof-box-flex-1::-webkit-scrollbar {
 
 .main-prof-box-detail-row-text-col-2 {
   color: #FFF;
-  font-family: Comic Neue;
+  font-family: Public Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -133,7 +134,7 @@ div.main-prof-box-flex-1::-webkit-scrollbar {
   line-height: 30px;
   color: rgba(255, 255, 255, 0.63);
   color: #FFF;
-  font-family: Comic Neue;
+  font-family: Public Sans;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -149,7 +150,7 @@ div.main-prof-box-flex-1::-webkit-scrollbar {
   color: rgba(255, 255, 255, 0.6);
   margin-top: 5vh;
   color: #FFF;
-  font-family: Comic Neue;
+  font-family: Public Sans;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -324,7 +325,7 @@ div.main-prof-box-flex-1::-webkit-scrollbar {
   right: 2vh;
   z-index: 2;
   color: white !important;
-  font-family: Comic Neue;
+  font-family: Public Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;

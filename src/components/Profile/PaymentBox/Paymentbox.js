@@ -47,7 +47,7 @@ const PaymentBox = (
 
   const getData = async () => {
     const ress = axios
-      .get(`/apiV1/current_user_participant`)
+      .get(`https://api2.thomso.in/apiV1/current_user_participant`)
       .then((ress) => {
         setuserDetails(ress.data);
       })

@@ -344,7 +344,7 @@ const PersonalDetails = ({college,state,district,degree,year}) => {
               disabled={!active}
               style={
                 active === true
-                  ? { background: "#ff5c00" }
+                  ? { background: "yellow" }
                   : { background: "rgb(204, 204, 204)" }
               }
             >

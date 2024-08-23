@@ -329,8 +329,12 @@ const CollegeDetails = () => {
               disabled={!active}
               style={
                 active == true
-                  ? { background: "#ff5c00" }
-                  : { background: "rgb(204, 204, 204)" }
+                  ? { background: "yellow",
+                    color:"black"
+                   }
+                  : { background: "rgb(204, 204, 204)",
+                    color:"white"
+                   }
               }
             > Next
 

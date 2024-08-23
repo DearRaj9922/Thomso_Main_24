@@ -127,7 +127,7 @@ const Id_Card = () => {
         setVall(pngUrl);
 
         setLoading(true);
-        const response = await axios.put(`/apiV1/registeruser/${localStorage.getItem("user_id")}`, {"qr" : JSON.stringify(pngUrl)});
+        const response = await axios.put(`https://api2.thomso.in/apiV1/registeruser/${localStorage.getItem("user_id")}`, {"qr" : JSON.stringify(pngUrl)});
         if (response.status == 200) {
           // setprofilepic(true);
           // fetchUser();
@@ -191,7 +191,7 @@ const Id_Card = () => {
       // window.location.reload(false);
     }
     const response = await axios.put(
-      `/apiV1/registeruser/${userId}`,
+      `https://api2.thomso.in/apiV1/registeruser/${userId}`,
       formData,
       {
         headers: {

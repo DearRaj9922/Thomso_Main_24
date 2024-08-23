@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 .nav-comp {
     display: flex;
     background-color: #2C2C2C;
@@ -32,7 +33,7 @@
     text-align: justify;
     leading-trim: both;
     text-edge: cap;
-    font-family: Comic Sans MS;
+    font-family: Public sans;
     font-size: 20px;
     font-style: normal;
     cursor: default;
@@ -111,7 +112,7 @@
     color: #000;
     text-align: center;
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Comic Sans MS;
+    font-family: Public sans;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -162,7 +163,7 @@
     color: #fff;
     leading-trim: both;
     text-edge: cap;
-    font-family: Comic Sans MS;
+    font-family: Public sans;
     font-size: .8vw;
     font-style: normal;
     font-weight: 700;
@@ -311,7 +312,7 @@
         text-align: justify;
         leading-trim: both;
         text-edge: cap;
-        font-family: Comic Sans MS;
+        font-family: Public sans;
         font-size: 20px;
         font-style: normal;
         font-weight: 700;
@@ -325,7 +326,7 @@
         text-align: justify;
         leading-trim: both;
         text-edge: cap;
-        font-family: Comic Sans MS;
+        font-family: Public sans;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -459,7 +460,7 @@
     leading-trim: both;
     text-edge: cap;
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Comic Sans MS;
+    font-family: Public sans;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
