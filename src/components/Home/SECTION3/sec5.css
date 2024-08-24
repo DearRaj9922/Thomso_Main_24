@@ -1,0 +1,51 @@
+ .background-container {
+ 
+    
+  } 
+  
+  .video-mask {
+   width: 99.4vw;
+   height: 300vh;
+   position: absolute;
+   background-image: url('../../../assets/bg_s5.svg');
+  background-repeat: no-repeat;
+   background-size: cover;
+  }
+
+  .video-mask>p{
+    margin-top: 20vh;
+    text-align: center;
+    font-family: "Boecklins Universe";
+    font-size: 6.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+
+    background: linear-gradient(90deg, #008244 0%, #03CFCF 33.8%, #0049D6 64.3%, #BB0019 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+  }
+  /* .youtube-video{
+    width: 50%;
+    height: 80%;
+  } */
+
+  img{
+    object-fit: contain;
+    
+     width: 100%;
+    /*height: 200vh;
+    overflow: scroll; */
+  }
+  
+  /* .youtube-video iframe {
+    width: 100px;
+    height: 900px;
+  } */
+/* 
+  .bg-s5{
+    position: fixed;
+  } */
+  

@@ -1,0 +1,30 @@
+@import url('https://fonts.cdnfonts.com/css/boecklins-universe');
+
+.heading_s3{
+    font-family: 'Boecklins Universe', sans-serif;
+}
+
+.wrapper_s3{
+    background: url('./../../../assets/bg_peacock.png');
+    background-repeat: no-repeat;
+    background-size:contain;
+    /* overflow-x: hidden; */
+    height: 300vh;
+    /* width: 150vw */
+}
+
+.wrapper_s4{
+    background: url('./../../../assets/bgs4.svg') ;
+    background-repeat: no-repeat;
+    background-size:contain;
+    height: 300vh;
+    /* width: 100vw; */
+    /* z-index: -1000; */
+    margin-top: -120vh;
+}
+
+/* .wrapper_s5{
+        background: url('./../../../assets/bgs4.svg'),
+        clipPath:  url(${celeb}#clip-path-id)`, // Replace with the id of your SVG path
+        backgroundSize: "cover",
+} */
