@@ -28,6 +28,10 @@ import Home3d from "./components/3dhome/Home3d.js";
 import React,{useEffect, useState} from "react";
 import axios from "axios"
 import Pevents from "./components/Pevents/Pevents";
+// import Section3 from './components/Home/SECTION3/section3.js';
+import Section2 from './components/Home/SECTION3/section3.js';
+import Section5 from './components/Home/SECTION3/Section5.js';
+import Section4 from './components/Home/SECTION3/Section4.js';
 
 function App(props) {
   const [user,setUser] = useState({});
@@ -76,6 +80,11 @@ function App(props) {
       <Routes>
       {/* <Route exact={true} path="/" element={<Home />} /> */}
       <Route exact={true} path="/" element={<Home3d/>}/>
+
+      <Route exact={true} path="/section2" element={<Section2 />} />
+      <Route exact={true} path="/section4" element={<Section4 />} />
+        <Route exact={true} path="/section5" element={<Section5 />} />
+
         <Route exact={true} path="/register" element={<Registeration/>}/>
         <Route exact={true} path="/otpverify" element={<RegPage />} />
         <Route exact={true} path="/emailverified" element={<EmailVerify />} />
