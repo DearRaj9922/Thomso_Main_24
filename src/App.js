@@ -76,6 +76,8 @@ function App(props) {
       <Routes>
       {/* <Route exact={true} path="/" element={<Home />} /> */}
       <Route exact={true} path="/" element={<Home3d/>}/>
+
+        <Route exact={true} path="/home" element={<Home/>}/>
         <Route exact={true} path="/register" element={<Registeration/>}/>
         <Route exact={true} path="/otpverify" element={<RegPage />} />
         <Route exact={true} path="/emailverified" element={<EmailVerify />} />
