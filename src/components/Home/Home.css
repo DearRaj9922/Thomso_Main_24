@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+.home_wrapper {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.nav {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 5vw;
+    position: absolute;
+    z-index: 10;
+}
+
+.navlogo img {
+    height: 64px;
+}
+
+.navigation {
+    display: flex;
+    gap: 3vw;
+    font-family: "Averia Serif Libre", serif;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin: auto;
+}
+
+.nav-btn {
+    padding: 8px 32px;
+    font-size: 16px;
+    font-family: "Averia Serif Libre", serif;
+    border: 0;
+    border-radius: 8px;
+}
+
+.sec1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.backdrop {
+    width: 100vw;
+    height: 130vh;
+    position: absolute;
+}
+
+.sec1-title {
+    margin-top: 25vh;
+}
+
+.sec1-btns {
+    display: flex;
+    gap: 3vw;
+    margin-top: 2vw;
+}
+
+.sec1-btns button {
+    padding: 8px 32px;
+    font-size: 22px;
+    font-family: "Averia Serif Libre", serif;
+    border: 0;
+    border-radius: 8px;
+    background-color: #004D9D;
+    color: #fff;
+}
+
+.sec1-5 {
+    height: fit-content;
+    position: absolute;
+    top: 55vh;
+    margin-top: -4vh;
+}
+
+.sec1-ender {
+    position: absolute;
+    width: 120vw;
+    z-index: 5;
+    margin-left: -10vw;
+}
+
+.sec1-bird {
+    margin: 45vh 16vw;
+    position: absolute;
+    z-index: 10;
+    /* max-width: 1000px; */
+}
+
+.sec2 {
+    position: relative;
+    width: 100vw;
+    margin-top: 93vh;
+    /* background-image: url(/public/section2-2d-bg.png); */
+}
+
+.about {
+    background-color: #aa4b04;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 3rem;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    width: 45vw;
+    margin: auto;
+    position: relative;
+    border-radius: 12px;
+    opacity: 0.9;
+    margin-top: 33vh;
+}
+
+.about p {
+    font-family: 'Salsa', sans-serif;
+    color: #f3c790;
+    text-align: center;
+    line-height: 25px;
+}
+
+@media only screen and (max-width: 800px) {}
+
+@media only screen and (max-width: 1100px) {
+    .sec1-title {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1550px) {
+    .sec1-bird {
+        margin: 45vh 30vw;
+    }
+    .about p {
+        font-size: 24px;
+        line-height: 40px;
+    }
+}
