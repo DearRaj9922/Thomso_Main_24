@@ -59,7 +59,6 @@
 
 .sec1-title {
     margin-top: 25vh;
-    max-width: 850px;
 }
 
 .sec1-btns {
@@ -127,4 +126,22 @@
     color: #f3c790;
     text-align: center;
     line-height: 25px;
+}
+
+@media only screen and (max-width: 800px) {}
+
+@media only screen and (max-width: 1100px) {
+    .sec1-title {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1550px) {
+    .sec1-bird {
+        margin: 45vh 30vw;
+    }
+    .about p {
+        font-size: 24px;
+        line-height: 40px;
+    }
 }
