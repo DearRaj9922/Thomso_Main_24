@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from "react";
 import "./eventmainpage.css";
-import EventSideMenu from "./EventSideMenu";
+// import EventSideMenu from "./EventSideMenu";
 import "./eventcarddisplay.css";
-import EventCard from "./EventCard";
-import { AiOutlineSearch } from "react-icons/ai";
+// import EventCard from "./EventCard";
+// import { AiOutlineSearch } from "react-icons/ai";
 import axios from "axios";
-import EventMainPageMob from "./EventMainPageMob";
+// import EventMainPageMob from "./EventMainPageMob";
 import { Store } from "../../Config/Store";
 import { connect } from "react-redux";
-import { escapeRegex } from "./helper";
+// import { escapeRegex } from "./helper";
 // import { ImCross } from "react-icons/im";
 import Navbar2 from "../EventsNavbar/Eventsnavbar";
-import bgmobile from "../../assests/bgmobile.webp";
-import bg from "../../assests/eventback.webp";
-import photo from "../../assests/events.png";
+import bgmobile from "../../assets/eventregbgmob.webp";
+import bg from "../../assets/eventregbg.webp";
+import photo from "../../assets/events.png";
 // import photo1 from "../../assests/street_soccer_1.png";
 import { useNavigate, useParams } from "react-router-dom";
 import { message } from "antd";
@@ -70,7 +70,7 @@ const EventMainPage = ({ events }) => {
   const getEvents = async () => {
     axios
       .get(
-        `/apiV1/registerusereventdetailed?participant_id=${localStorage.getItem(
+        `https://api2.thomso.in/apiV1/registerusereventdetailed?participant_id=${localStorage.getItem(
           "id"
         )}`
       )
@@ -91,7 +91,7 @@ const EventMainPage = ({ events }) => {
     setLoading(true);
     try {
       axios
-        .get(`/apiV1/event`)
+        .get(`https://api2.thomso.in/apiV1/event`)
         .then((res) => {
           let selectedItem = res.data?.filter(function (el) {
             return el.id == id;
@@ -153,7 +153,7 @@ const EventMainPage = ({ events }) => {
 
       try{
         const response = await axios.post(
-          `https://api1.thomso.in/apiV1/paid_events_request`,
+          `https://api2.thomso.in/apiV1/paid_events_request`,
           { event_name: eventdata[0].name, slot: slot }
         );
         const u = response.data;
@@ -209,7 +209,7 @@ const EventMainPage = ({ events }) => {
         }
       } else {
         axios
-          .post("/apiV1/registerevent", eventuser)
+          .post("https://api2.thomso.in/apiV1/registerevent", eventuser)
           .then((res) => {
             if (res.status == 201) {
               message.success(
@@ -232,11 +232,31 @@ const EventMainPage = ({ events }) => {
   };
   return (
     <>
-      <div style={{ overflowY: "hidden" }}>
+      <div style={{ overflowY: "hidden" ,overflowX:"hidden"}}>
         <img src={bgmobile} alt="" className="bgmobile" />
-        <Navbar2 setregister={setregister} register="event" />
+        <Navbar2 
+        // style={{color:"black !important"}}
+        fontcolor="#000"
+        bright="brightness(0)"
+        setregister={setregister} register="event" />
         <img src={bg} alt="" className="bg-events" />
         <div className={register ? "events_back" : "events_back1"}>
+          <div className="eventwrappe">
+          {register && (
+            <div className="events-right">
+              <img
+                src={eventdata[0]?.image === null ? photo : eventdata[0]?.image}
+                className="event-photo"
+                alt=""
+              />
+              <img
+                src={eventdata[0]?.image === null ? photo : eventdata[0]?.image}
+                className="event-photo1"
+                alt=""
+              />
+            </div>
+            
+          )}
           <div className="events-left">
             {register ? (
               <>
@@ -497,20 +517,9 @@ const EventMainPage = ({ events }) => {
               </>
             )}
           </div>
-          {register && (
-            <div className="events-right">
-              <img
-                src={eventdata[0]?.image === null ? photo : eventdata[0]?.image}
-                className="event-photo"
-                alt=""
-              />
-              <img
-                src={eventdata[0]?.image === null ? photo : eventdata[0]?.image}
-                className="event-photo1"
-                alt=""
-              />
-            </div>
-          )}
+          
+          
+          </div>
         </div>
       </div>
     </>

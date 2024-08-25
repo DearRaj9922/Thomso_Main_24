@@ -33,7 +33,7 @@ import SuccessPaymentPage from "./index";
 import "./MobilePaymentBox.css";
 import { MdDelete } from "react-icons/md";
 import { message } from "antd";
-import { clear } from "@testing-library/user-event/dist/clear";
+import { clear } from "@testing-library/user-event";
 import Loader from "../../Loader/Loader"
 
 const NewPaymentBox = (

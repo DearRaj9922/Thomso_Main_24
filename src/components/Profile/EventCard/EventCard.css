@@ -225,6 +225,7 @@
 
 .blackShield {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0.13%, rgba(0, 0, 0, 0.45) 16.45%, rgba(0, 0, 0, 0.86) 54.90%, #000 92.12%);
+    border-radius: 5px;
 }
 
 

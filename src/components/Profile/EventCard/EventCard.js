@@ -49,6 +49,7 @@ function EventCard({ data, getEvents, getData, }) {
             >
               <div
                 className="card-delete"
+                style={{zIndex:"5"}}
                 onClick={() => {
                   setmodule(true);
                 }}

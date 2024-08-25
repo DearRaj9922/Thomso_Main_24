@@ -9,7 +9,7 @@ import { message } from "antd";
 import axios from "axios";
 import { Payment } from "@mui/icons-material";
 
-function Navbar({ color, disable, setregister, register, data }) {
+function Navbar({ color, disable, setregister, register, data,fontcolor ,bright}) {
   const [display1, setdisplay] = useState("none");
   const [userDetails, setuserDetails] = useState({});
   const [user, setuser] = useState({});
@@ -66,14 +66,19 @@ function Navbar({ color, disable, setregister, register, data }) {
 
   return (
     <div style={{ background: color }} className="nav-comp">
-      <MobEventnavbar />
+      <MobEventnavbar
+      brightMob={bright}
+       />
       <div className="mainnav">
         <Link to="/">
-          <img className="event-nav-left" src={logo} alt="" />
+          <img className="event-nav-left" 
+          style={{filter:bright}}
+          src={logo} alt="" />
         </Link>
         <div className="event-nav-right">
           <a
             className="event-nav-right-compo hover-underline-animation"
+            style={{color:fontcolor}}
             onClick={() => {
               navigate("/events");
             }}
@@ -90,6 +95,7 @@ function Navbar({ color, disable, setregister, register, data }) {
           </a> */}
           <a
             className="event-nav-right-compo hover-underline-animation"
+            style={{color:fontcolor}}
             onClick={() => {
               navigate("/MUN");
             }}
@@ -98,6 +104,7 @@ function Navbar({ color, disable, setregister, register, data }) {
           </a>
           <a
             className="event-nav-right-compo hover-underline-animation"
+            style={{color:fontcolor}}
             href="https://ca.thomso.in/"
             target="_blank"
           >
@@ -105,6 +112,7 @@ function Navbar({ color, disable, setregister, register, data }) {
           </a>
           <a
             className="event-nav-right-compo hover-underline-animation"
+            style={{color:fontcolor}}
             href="https://zonals.thomso.in/"
             target="_blank"
           >
@@ -117,6 +125,7 @@ function Navbar({ color, disable, setregister, register, data }) {
                   ? "event-nav-right-compo hover-underline-animation"
                   : "none_display"
               }
+              style={{color:fontcolor}}
               href="https://thomso.in/id_card"
             >
               ID-CARD
@@ -128,6 +137,7 @@ function Navbar({ color, disable, setregister, register, data }) {
                   ? "event-nav-right-compo hover-underline-animation"
                   : "none_display"
               }
+              style={{color:fontcolor}}
               href="https://thomso.in/payment"
             >
               ID-CARD
@@ -135,6 +145,7 @@ function Navbar({ color, disable, setregister, register, data }) {
           )}
           <a
             className="event-nav-right-compo hover-underline-animation"
+            style={{color:fontcolor}}
             onClick={() => {
               navigate("/spons");
             }}
@@ -157,6 +168,7 @@ function Navbar({ color, disable, setregister, register, data }) {
               <button
                 onClick={() => navigate("/login")}
                 className="event-regi-btn"
+                style={{color:fontcolor}}
                 id="registernow"
               >
                 LOG IN
