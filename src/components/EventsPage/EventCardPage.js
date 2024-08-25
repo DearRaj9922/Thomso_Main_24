@@ -58,7 +58,7 @@ const EventCardPage = ({
       participant: userDetails?.id,
     };
     axios
-      .post("/apiV1/registerevent", eventuser)
+      .post("https://api2.thomso.in/apiV1/registerevent", eventuser)
       .then((res) => {
         if (res.status == 201) {
           // console.log(res.data, "api data");

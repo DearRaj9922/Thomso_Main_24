@@ -6,7 +6,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { message } from "antd";
 import cross from "../../assets/Cross.webp";
-function MobEventnavbar() {
+function MobEventnavbar(brightMob) {
   const navigate = useNavigate();
   // const [event, setevent] = useState(false);
   const handleLogout = () => {
@@ -46,6 +46,7 @@ function MobEventnavbar() {
         <img
           className="event-nav-left logo-width"
           src={logo}
+          style={{filter:brightMob  }}
           alt=""
           onClick={() => {
             navigate("/");
@@ -56,6 +57,7 @@ function MobEventnavbar() {
             <img
               src={logo1}
               alt=""
+              style={{filter:brightMob}}
               onClick={() => {
                 show === false ? setshow(true) : setshow(false);
                 setdisplay("flex");

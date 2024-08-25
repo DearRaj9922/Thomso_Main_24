@@ -144,9 +144,13 @@ width: 215px;
     column-gap: 10px;
     /* max-height: 100vh; */
     padding-bottom: 200px;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     gap: 0px 24px;
     padding-left: 1vw;
+}
+.ECD-card-Display::-webkit-scrollbar{
+  width: 0;
+  display: none;
 }
 
 @media screen and (max-width: 768px) {

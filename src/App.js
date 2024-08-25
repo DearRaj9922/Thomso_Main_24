@@ -20,9 +20,9 @@ import Carousel1 from "./components/Profile/Carousel/Carousel1";
 import Profilenavbar from "./components/Navbar/Profilenavbar";
 import Forget from "./components/forget_pwd/forget";
 import ResetPassword from "./components/Registration/ResetPass/ResetPass";
-import EventMainPage from "./components/Profile/EventsPage/EventMainPage";
+// import EventMainPage from "./components/Profile/EventsPage/EventMainPage";
 import Home3d from "./components/3dhome/Home3d.js";
-// import EventMainPage from "./components/EventsPage/EventMainPage";
+import EventMainPage from "./components/EventsPage/EventMainPage";
 // import EventPayment from "./components/EventPayment/EventPayment";
 
 import React,{useEffect, useState} from "react";
