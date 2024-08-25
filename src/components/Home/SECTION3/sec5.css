@@ -6,20 +6,22 @@
   .video-mask {
    width: 99.4vw;
    height: 300vh;
-   position: absolute;
-   background-image: url('../../../assets/bg_s5.svg');
+   position: absolute; 
+   /* background-image: url('../../../assets/bg_s5.svg');
   background-repeat: no-repeat;
-   background-size: cover;
+   background-size: cover; */
   }
 
   .video-mask>p{
-    margin-top: 20vh;
+    margin-top: 10vw;
     text-align: center;
     font-family: "Boecklins Universe";
-    font-size: 6.2rem;
+    font-size: 8vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
+    z-index: 1000;
 
 
     background: linear-gradient(90deg, #008244 0%, #03CFCF 33.8%, #0049D6 64.3%, #BB0019 100%);

@@ -26,7 +26,7 @@ const Section4 = () => {
             <img src={bg4} alt="" />
         </div>
         
-        <div className='' style={{display:'flex', zIndex:'100', top:'338%', height:'10vh', position:'absolute', width:'60%',left:'30%'}}>
+        <div className='' style={{display:'flex', zIndex:'100', height:'10vh', position:'absolute', width:'60%',left:'30%', marginTop:'10vw'}}>
             <button className={curr=='E'?'btnimgclicked':'btn-home-img'}  onClick={()=>{setCurr('E')}}>
                 EVENTS
             </button>

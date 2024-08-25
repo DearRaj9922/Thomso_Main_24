@@ -24,6 +24,8 @@ const Section5 = () => {
     
       return (
         <div className="background-container">
+
+<img src={bg5} alt=""  className='bg-s5' style={{position:'absolute', zIndex:'0', width:'100%'}}/>
           <div className="video-mask">
           {/* <YouTube videoId="rVsg7yOYN44" opts={videoOptions} className="youtube-video" /> */}
 
@@ -33,11 +35,11 @@ const Section5 = () => {
 
 
 
-            {/* <img src={bg5} alt=""  className='bg-s5'/> */}
+            
             
 
             {/* <img src={bg4} alt="" id='image1' /> */}
-            <p>Thomso Aftermovie</p>
+            <p style={{zIndex:'1000'}}>Thomso Aftermovie</p>
           </div>
 
           <div style={styles.container}>
@@ -73,11 +75,11 @@ const Section5 = () => {
 const styles = {
   container: {
     // position:'fixed',
-    paddingTop:'77vh',
+    paddingTop:'35vw',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    height: '100vh',
+    height: '40.64vw',
     // backgroundColor: '#f9f9f9',
     backgroundColor:'transparent',
   },
@@ -88,7 +90,7 @@ const styles = {
   },
   video: {
     width:'44vw',  // Width smaller than height
-    height: '79vh', // Height larger than width
+    height: '32vw', // Height larger than width
   },
 };
 

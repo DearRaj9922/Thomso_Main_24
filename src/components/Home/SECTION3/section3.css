@@ -5,10 +5,10 @@
 }
 
 .wrapper_s3{
-    background: url('./../../../assets/bg_peacock.png');
+    /* background: url('./../../../assets/bg_peacock.png');
     background-repeat: no-repeat;
-    background-size:contain;
-    /* overflow-x: hidden; */
+    background-size:cover; */
+    overflow-x: hidden;
     height: 300vh;
     /* width: 150vw */
 }
@@ -20,7 +20,7 @@
     height: 300vh;
     /* width: 100vw; */
     /* z-index: -1000; */
-    margin-top: -120vh;
+    margin-top: -148vh;
 }
 
 /* .wrapper_s5{
