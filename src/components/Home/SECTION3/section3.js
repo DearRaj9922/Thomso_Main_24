@@ -16,14 +16,14 @@ const Section2 = () => {
 
   return (
     <div className='' style={{}}>
-        <img style={{height:'150vw', width:'100vw', zIndex:'-10', position:'absolute'}} src={bg}/>
+        <img style={{height:'150vw', width:'100vw', zIndex:'-10', position:'absolute', objectFit:'contain'}} src={bg}/>
 
         {/* <div className='heading_s3' style={{color:'red', zIndex:'100', fontSize:'10vw', position:'fixed'}}>
             
         </div> */}
         <div className='wrapper_s3' style={{display:'flex', flexDirection:'column', alignItems:'center', paddingTop:'16vw'}}>
           <div>
-          <img src={title} style={{ width:'80vw'}}/>
+          <img src={title} style={{ width:'80vw', }}/>
           </div>
           <div style={{marginTop:'20vh'}}>
             <img src={celeb} alt=""  style={{width:'60vw'}}/>
