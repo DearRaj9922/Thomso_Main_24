@@ -23,7 +23,7 @@ const Section4 = () => {
     <div>
         <div className='bgwrappers4' style={{zIndex:'10'}}>
             
-            <img src={bg4} alt="" />
+            <img src={bg4} alt="" style={{objectFit:'contain', width:'100%'}}/>
         </div>
         
         <div className='' style={{display:'flex', zIndex:'100', height:'10vh', position:'absolute', width:'60%',left:'30%', marginTop:'10vw'}}>
