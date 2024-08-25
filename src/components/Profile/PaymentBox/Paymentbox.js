@@ -29,6 +29,7 @@ import { AiFillCaretDown } from "react-icons/ai";
 import { IoMdClose } from "react-icons/io";
 import { BiRupee } from "react-icons/bi";
 import SuccessPaymentPage from "./index";
+// import { clear } from '@testing-library/user-event';
 import "./MobilePaymentBox.css";
 const PaymentBox = (
   events,

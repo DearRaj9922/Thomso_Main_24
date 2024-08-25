@@ -79,10 +79,10 @@ function App(props) {
     <Router>
       <Routes>
       {/* <Route exact={true} path="/" element={<Home />} /> */}
-      <Route exact={true} path="/" element={<Home3d/>}/>
+      <Route exact={true} path="/home3d" element={<Home3d/>}/>
 
 
-        <Route exact={true} path="/home" element={<Home/>}/>
+        <Route exact={true} path="/" element={<Home/>}/>
 
       <Route exact={true} path="/section2" element={<Section2 />} />
       <Route exact={true} path="/section4" element={<Section4 />} />
