@@ -8,6 +8,7 @@ import Section4 from './Section4'
 import title4 from './../../../assets/title_s4.svg'
 import Section5 from './Section5'
 import pattern from './../../../assets/pattern4-5.svg'
+import Footer from '../../Footer/Footer'
 
 
 
@@ -49,7 +50,8 @@ const Section2 = () => {
           
         </div>
 
-       
+       <Footer/>
+
         
     </div>
   )
