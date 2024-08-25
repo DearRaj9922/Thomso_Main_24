@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
 
+@keyframes moveTrain {
+  0% {
+    left: 50%; /* Start with half of the train image visible */
+    transform: translateX(-50%);
+  }
+  100% {
+    left: -100%; /* End off-screen to the left */
+    transform: translateX(0);
+  }
+}
+
 .home_wrapper {
     min-height: 100vh;
     width: 100vw;
@@ -57,6 +68,13 @@
     position: absolute;
 }
 
+.backdrop-mob {
+    display: none;
+}
+.backdrop-mob2 {
+    display: none;
+}
+
 .sec1-title {
     margin-top: 25vh;
 }
@@ -105,6 +123,11 @@
     /* background-image: url(/public/section2-2d-bg.png); */
 }
 
+.backdrop2 {
+    width: 100vw;
+    position: absolute;
+}
+
 .about {
     background-color: #aa4b04;
     display: flex;
@@ -118,7 +141,7 @@
     position: relative;
     border-radius: 12px;
     opacity: 0.9;
-    margin-top: 33vh;
+    margin-top: 50vh;
 }
 
 .about p {
@@ -128,7 +151,103 @@
     line-height: 25px;
 }
 
-@media only screen and (max-width: 800px) {}
+.sec-2-5 {
+    position: relative;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.sec2-ender {
+    position: absolute;
+    width: 100vw;
+}
+
+.sec2-title {
+    position: absolute;
+    /* margin: 500px 500px; */
+    bottom: 400px;
+}
+
+.train-wrapper {
+  position: relative; /* Position relative to contain the train image */
+  width: 100%; /* Full width of the wrapper */
+  height: 200px;
+  margin-top: 100vh;
+  z-index: 15;
+  margin-bottom: 100vh;
+}
+
+.train {
+  position: absolute; /* Position the train absolutely within the wrapper */
+  left: 100%; /* Start the train off-screen to the right */
+  transform: translateX(-50%); /* Offset by half the train's width to align it with the left edge */
+  animation: moveTrain 20s linear infinite;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .backdrop {
+        display: none;
+    }
+    .backdrop2 {
+        display: none;
+    }
+    .backdrop-mob {
+        display: block;
+        width: 100vw;
+        height: 115vh;
+        position: absolute;
+    }
+    .backdrop-mob2 {
+        display: block;
+        width: 100vw;
+        height: 90vh;
+        position: absolute;
+    }
+    .sec1-title {
+        z-index: 15;
+    }
+    .sec1-bird {
+        width: 70vw;
+        margin: 30vh 16vw;
+    }
+    .sec1-ender {
+        display: none;
+    }
+    .sec1-btns {
+        z-index: 1;
+    }
+    .sec1-btns button {
+        padding: 8px 18px;
+        font-size: 16px;
+        border: 1px white solid;
+    }
+    .sec2 {
+        margin-top: 76vh;
+    }
+    .about {
+        margin-top: 5vh;
+        padding: 1rem 1rem;
+        width: 70vw;
+    }
+    .about img {
+        width: 40vw;
+    }
+    .about p {
+        font-size: smaller;
+        line-height: 20px;
+    }
+    .train-wrapper {
+        margin-top: 22vh;
+        margin-bottom: 27vh;
+    }
+    .train {
+        height: 500px;
+    }
+}
 
 @media only screen and (max-width: 1100px) {
     .sec1-title {
@@ -143,5 +262,8 @@
     .about p {
         font-size: 24px;
         line-height: 40px;
+    }
+    .train-wrapper {
+        margin-top: 150vh;
     }
 }
