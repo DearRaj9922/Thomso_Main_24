@@ -1,12 +1,15 @@
 .EMP-container {
   /* background: url("../Sponsors/images/bg.svg"); */
   height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
+  width:100vw !important;
+  /* background-size: cover;
+  background-repeat: no-repeat; */
   flex-direction: column;
-  overflow-y: scroll;
+  overflow: hidden;
 }
 .EMP-hero {
+  overflow: hidden;
+    height: 86vh;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;

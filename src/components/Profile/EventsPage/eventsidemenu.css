@@ -10,6 +10,15 @@
 
 .ESM-Conatiner-list::-webkit-scrollbar {
   /* display: none !important; */
+  width:2px;
+  background: transparent;
+}
+.ESM-Conatiner-list::-webkit-scrollbar-track{
+  background: transparent;
+
+}
+.ESM-Conatiner-list::-webkit-scrollbar-thumb{
+  border-radius: 1px;
 }
 
 

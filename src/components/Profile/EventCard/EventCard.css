@@ -100,24 +100,25 @@
     gap: 2vw;
     overflow-y: scroll;
     scroll-behavior: smooth;
-    margin: 0 0 2vh !important;
+    margin: 0 5px 2vh 0 !important;
     ;
     height: 65vh;
     flex-wrap: wrap;
 }
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 2px;
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: transparent;
     
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #888
+    background: #888;
+    border-radius: 1px
     ;
 }
 

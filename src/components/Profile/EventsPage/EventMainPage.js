@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./eventmainpage.css";
 import EventSideMenu from "./EventSideMenu";
 import "./eventcarddisplay.css";
-import EventCard from "./EventCard";
+import EventCard from "./NewEventCard/NewEventcard.js";
 import { AiOutlineSearch } from "react-icons/ai";
 import axios from "axios";
 import EventMainPageMob from "./EventMainPageMob";
@@ -76,9 +76,9 @@ const EventMainPage = ({ events }) => {
         <div className="eventsNav">
           <Navbar2 color="transparent" />
         </div>
-        <div className="eventsBack">
+        {/* <div className="eventsBack">
           <img src={eventsback2} alt="events_back" />
-        </div>
+        </div> */}
         <div className="EMP-hero">
           <EventSideMenu
             activeCategory={categoryId}

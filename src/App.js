@@ -23,6 +23,7 @@ import ResetPassword from "./components/Registration/ResetPass/ResetPass";
 // import EventMainPage from "./components/Profile/EventsPage/EventMainPage";
 import Home3d from "./components/3dhome/Home3d.js";
 import EventMainPage from "./components/EventsPage/EventMainPage";
+import NewEve from "./components/Profile/EventsPage/NewEventCard/NewEventcard.js";
 // import EventPayment from "./components/EventPayment/EventPayment";
 
 import React,{useEffect, useState} from "react";
@@ -110,6 +111,7 @@ function App(props) {
           <Route exact={true} path="/ProfileNameEdit" element={<ProfileNameEditModel />} />
           <Route exact={true} path="/Carousel" element={<Carousel1/>} />
           <Route exact={true} path="/forgotpassword" element={<Forget/>} />
+          <Route exavt={true} path="/neweventcard" element={<NewEve/>}/>
           <Route
             exact={true}
             path="/auth/reset-password/:email/:token"

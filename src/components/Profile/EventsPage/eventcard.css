@@ -21,23 +21,22 @@
       rgba(255, 255, 255, 0.05) 100%);
 }
 
-#img_1__card_ec {
+/* #img_1__card_ec {
   height: 39vh;
   width: 100%;
-  /* background: url(../../../assests/footloose.png); */
+  
   background-size: cover;
   background-position: center center;
   border-radius: 5.31px;
-  /* border: 0.664px solid #F9F9F9; */
+  
   display: flex;
   gap: 0px;
   flex-direction: column;
   justify-content: flex-end;
   position: absolute;
   z-index: -1;
-  /* bottom: -17px; */
-  /* left: -13px; */
-}
+
+} */
 
 #text_1_card_ec_1 {
   font-family: "Oxanium";
