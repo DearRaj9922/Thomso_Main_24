@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
 
 .ESM-Conatiner {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding-left: 3vw;
+  /* margin-left: 5vw  ; */
   gap: 24px;
 
 }
@@ -23,8 +26,9 @@
 
 
 .ESM-Conatiner-heading-text {
-  color: white;
-  font-size: 32px;
+  display: none;
+  color: black !important;
+  font-size: 32px !important;
 }
 .ESM-Conatiner-list {
   display: flex;
@@ -35,7 +39,7 @@
   overflow: auto;
 }
 .ESM-Conatiner-list-item-highlighted {
-  font-family: 'Inter', sans-serif;
+  font-family: Salsa;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -48,7 +52,7 @@
 }
 .ESM-Conatiner-list-item {
   cursor: pointer;
-  font-family: 'Inter', sans-serif;
+  font-family:Salsa;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -58,7 +62,7 @@
   display: flex;
   align-items: center;
   letter-spacing: -0.02em;
-  color: rgba(255, 255, 255, 0.6);
+  color: black;
 }
 
 .ESM-Conatiner-list-item:hover{

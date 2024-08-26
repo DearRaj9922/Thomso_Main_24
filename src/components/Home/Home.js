@@ -1,12 +1,16 @@
 import React from "react"
 import "./Home.css"
 import Section2 from "./SECTION3/section3"
+import Navbar from "../EventsNavbar/Eventsnavbar"
+import { useNavigate } from "react-router-dom"
 
 export default function Home() {
+	const navigate=useNavigate();
 	return (
 		<div className='home_wrapper'>
 			{/* Navbar */}
-			<div className='nav'>
+			<Navbar/>
+			{/* <div className='nav'>
 				<div className='navlogo'>
 					<img src='/navlogo.svg' alt='thomso' />
 				</div>
@@ -27,7 +31,7 @@ export default function Home() {
 						Log In
 					</button>
 				</div>
-			</div>
+			</div> */}
 
 			{/* Section 1 */}
 			<div className='sec1'>
@@ -35,8 +39,8 @@ export default function Home() {
         <img className="backdrop-mob" src="/sec1-mobbg.png" alt="" />
 				<img className='sec1-title' src='/herotitle.webp' alt='Thomso 24' />
 				<div className='sec1-btns'>
-					<button>Register Now</button>
-					<button>Register Now</button>
+					<button onClick={()=>navigate('/register')}>Register Now</button>
+					{/* <button>Register Now</button> */}
 				</div>
 			</div>
 

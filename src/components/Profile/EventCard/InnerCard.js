@@ -3,6 +3,7 @@ import "./EventCard.css";
 import { RiHeart2Fill, RiHeart2Line } from "react-icons/ri";
 import { MdDelete } from "react-icons/md";
 import axios from "axios";
+import default_img from "../../../assets/events.png";
 import DeleteModule from "../MainProfileBox/DeleteModule";
 import Loader from "../../Loader/Loader";
 
@@ -22,7 +23,7 @@ function InnerCard({ data, getEvents }) {
       <div
         className="eventcard"
         style={{
-          background: `url(${data?.event__image})`,
+          background: `url(${data?.event__image==null ? default_img : data?.event__img})`,
           backgroundSize: "cover",
           backgroundPosition: "center center",
         }}

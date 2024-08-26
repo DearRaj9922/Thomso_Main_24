@@ -177,7 +177,7 @@ const MainProfileBox = ({ data }) => {
     localStorage.removeItem("state");
     // localStorage.removeItem("Userobj");
     setLogout(!logout);
-    window.location.pathname = "/login";
+    window.location.pathname = "/";
   }
 
   function handleFileDelete() {

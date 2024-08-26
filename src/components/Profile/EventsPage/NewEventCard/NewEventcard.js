@@ -35,10 +35,11 @@ const NewEventcard = ({data}) => {
             </div>
 
         </div>
-        <div className="newcdtitle">
+        <div className="newcdtitle"
+        style={{color:"black"}}>
         {datas?.solo_team ? (
                       <h2>
-                        {datas?.name}({datas?.solo_team})
+                        {datas?.name  }({datas?.solo_team})
                       </h2>
                     ) : (
                       <h2>{datas?.name}</h2>

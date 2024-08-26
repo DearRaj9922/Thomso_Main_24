@@ -73,9 +73,9 @@ const EventMainPage = ({ events }) => {
   return (
     <>
       <div className="EMP-container" id="event-page">
-        <div className="eventsNav">
+        {/* <div className="eventsNav">
           <Navbar2 color="transparent" />
-        </div>
+        </div> */}
         {/* <div className="eventsBack">
           <img src={eventsback2} alt="events_back" />
         </div> */}
