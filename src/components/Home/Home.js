@@ -3,6 +3,16 @@ import "./Home.css"
 import Section2 from "./SECTION3/section3"
 import Navbar from "../EventsNavbar/Eventsnavbar"
 import { useNavigate } from "react-router-dom"
+import sec1bg from '../../assets/section1-2d-bg.webp';
+import sec1bgmob from '../../assets/sec1-mobbg.png';
+import sec2bg from '../../assets/section2-2d-bgfull.webp';
+import sec2bgmob from '../../assets/sec2-mobbg.png';
+import herotitle from '../../assets/herotitle.webp';
+import clouds from '../../assets/clouds copy.svg';
+import bird from '../../assets/crossroad_bird.webp';
+import aboutus from '../../assets/about-us.webp';
+import train from '../../assets/train.webp';
+
 
 export default function Home() {
 	const navigate=useNavigate();
@@ -10,34 +20,12 @@ export default function Home() {
 		<div className='home_wrapper'>
 			{/* Navbar */}
 			<Navbar/>
-			{/* <div className='nav'>
-				<div className='navlogo'>
-					<img src='/navlogo.svg' alt='thomso' />
-				</div>
-				<div className='navigation'>
-					<a href='#' className='nav-link'>
-						Ca Portal
-					</a>
-					<a href='#' className='nav-link'>
-						Zonals
-					</a>
-					<a href='#' className='nav-link'>
-						Events
-					</a>
-					<a href='#' className='nav-link'>
-						Merch
-					</a>
-					<button type='button' className='nav-btn'>
-						Log In
-					</button>
-				</div>
-			</div> */}
 
 			{/* Section 1 */}
 			<div className='sec1'>
-				<img className='backdrop' src='/section1-2d-bg.webp' alt='bg' />
-        <img className="backdrop-mob" src="/sec1-mobbg.png" alt="" />
-				<img className='sec1-title' src='/herotitle.webp' alt='Thomso 24' />
+				<img className='backdrop' src={sec1bg} alt='bg' />
+        		<img className="backdrop-mob" src={sec1bgmob} alt="" />
+				<img className='sec1-title' src={herotitle} alt='Thomso 24' />
 				<div className='sec1-btns'>
 					<button onClick={()=>navigate('/register')}>Register Now</button>
 					{/* <button>Register Now</button> */}
@@ -46,16 +34,16 @@ export default function Home() {
 
 			{/* Section 1.5 */}
 			<div className='sec1-5'>
-				<img className='sec1-ender' src='/clouds.svg' alt='' />
-				<img className='sec1-bird' src='/crossroad_bird.webp' alt='' />
+				<img className='sec1-ender' src={clouds} alt='' />
+				<img className='sec1-bird' src={bird} alt='' />
 			</div>
 
 			{/* Section 2 */}
 			<div className='sec2'>
-				<img className='backdrop2' src='/section2-2d-bgfull.webp' alt='bg' />
-				<img className='backdrop-mob2' src='/sec2-mobbg.png' alt='bg' />
+				<img className='backdrop2' src={sec2bg} alt='bg' />
+				<img className='backdrop-mob2' src={sec2bgmob} alt='bg' />
 				<div className='about'>
-					<img src='/about-us.webp' alt='About Us' />
+					<img src={aboutus} alt='About Us' />
 					<p>
 						The theme of Thomso’23 is ‘An Eclectic Elysia’, which means a place
 						or state of perfect happiness derived from a broad and diverse range
@@ -72,7 +60,7 @@ export default function Home() {
 			</div>
       {/* Train */}
       <div className="train-wrapper">
-        <img className="train" src="/train.webp" alt="" />
+        <img className="train" src={train} alt="" />
       </div>
 
 
