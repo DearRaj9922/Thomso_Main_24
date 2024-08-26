@@ -1,7 +1,7 @@
 import React from "react";
 import "./eventsidemenu.css";
-import diamond from "./images/diamond.svg";
-import events from "./images/Events.svg";
+// import diamond from "./images/diamond.svg";
+// import events from "./images/Events.svg";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { connect } from "react-redux";

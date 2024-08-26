@@ -1,15 +1,15 @@
 import React from "react";
 import "./eventmobnav.css";
 import logo from "./images/logo.svg";
-import ham from "./images/ham.svg";
-import { CgClose } from "react-icons/cg";
-import { HiOutlineMenuAlt3 } from "react-icons/hi";
+// import ham from "./images/ham.svg";
+// import { CgClose } from "react-icons/cg";
+// import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
 import { useState } from "react";
 import Dropdown from "./Dropdown";
 import { Link } from "react-router-dom";
-import Navbar2 from "../Navbar/Navbar"
+// import Navbar2 from "../Navbar/Navbar"
 const EventMobileNav = () => {
   const [open, setOpen] = useState(null);
   return (

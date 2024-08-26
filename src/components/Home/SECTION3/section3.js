@@ -1,6 +1,6 @@
 import React from 'react'
 import './section3.css'
-import bg from './../../../assets/bg_peacock.png'
+import bg from './../../../assets/bg_peacock.svg'
 import title from './../../../assets/s3_title.svg'
 import celeb from './../../../assets/Celebs.svg'
 // import clouds from './../../../assets/clouds.svg'

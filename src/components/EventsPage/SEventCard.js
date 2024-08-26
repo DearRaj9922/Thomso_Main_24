@@ -1,7 +1,7 @@
 // import EventCardPage from "./EventCardPage";
 import React, { useState } from "react";
 import "./eventcard.css";
-import default_image from "./images/default_event.png";
+import default_image from "./images/default_event.webp";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import axios from "axios";
 import { fetchEvents } from "../User/UserActions";
