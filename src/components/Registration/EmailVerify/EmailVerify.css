@@ -43,9 +43,7 @@
   #log_bg12 img {
     display: none;
   }
-  #emailroot {
-    /* background-color: #000000; */
-  }
+
   .mob_view {
     display: block;
     color: white;
@@ -206,9 +204,7 @@
   #log_bg12 img {
     display: block;
   }
-  #emailroot {
-    /* background-color: #000000; */
-  }
+
   .mob_view {
     display: block;
     color: white;
