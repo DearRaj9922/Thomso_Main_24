@@ -3,6 +3,15 @@ import "./Home.css"
 import Section2 from "./SECTION3/section3"
 import Navbar from "../EventsNavbar/Eventsnavbar"
 import { useNavigate } from "react-router-dom"
+import clouds from "../../assets/clouds.svg";
+import secimg1 from "../../assets/section1-2d-bg.webp"
+import secimg2 from "../../assets/sec1-mobbg.png"
+import secimg3 from "../../assets/herotitle.webp"
+import secimg4 from "../../assets/crossroad_bird.webp"
+import secimg5 from "../../assets/section2-2d-bgfull.webp"
+import secimg6 from "../../assets/sec2-mobbg.png"
+import secimg7 from "../../assets/about-us.webp"
+import secimg8 from "../../assets/train.webp";
 
 export default function Home() {
 	const navigate=useNavigate();
@@ -35,9 +44,9 @@ export default function Home() {
 
 			{/* Section 1 */}
 			<div className='sec1'>
-				<img className='backdrop' src='/section1-2d-bg.webp' alt='bg' />
-        <img className="backdrop-mob" src="/sec1-mobbg.png" alt="" />
-				<img className='sec1-title' src='/herotitle.webp' alt='Thomso 24' />
+				<img className='backdrop' src={secimg1} alt='bg' />
+        <img className="backdrop-mob" src={secimg2} alt="" />
+				<img className='sec1-title' src={secimg3} alt='Thomso 24' />
 				<div className='sec1-btns'>
 					<button onClick={()=>navigate('/register')}>Register Now</button>
 					{/* <button>Register Now</button> */}
@@ -46,24 +55,24 @@ export default function Home() {
 
 			{/* Section 1.5 */}
 			<div className='sec1-5'>
-				<img className='sec1-ender' src='/clouds.svg' alt='' />
-				<img className='sec1-bird' src='/crossroad_bird.webp' alt='' />
+				<img className='sec1-ender' src={clouds} alt='' />
+				<img className='sec1-bird' src={secimg4} alt='' />
 			</div>
 
 			{/* Section 2 */}
 			<div className='sec2'>
-				<img className='backdrop2' src='/section2-2d-bgfull.webp' alt='bg' />
-				<img className='backdrop-mob2' src='/sec2-mobbg.png' alt='bg' />
+				<img className='backdrop2' src={secimg5} alt='bg' />
+				<img className='backdrop-mob2' src={secimg6} alt='bg' />
 				<div className='about'>
-					<img src='/about-us.webp' alt='About Us' />
+					<img src={secimg7} alt='About Us' />
 					<p>
-						The theme of Thomso’23 is ‘An Eclectic Elysia’, which means a place
+						The theme of Thomso’24 is ‘A crossroad of culture’, which means a place
 						or state of perfect happiness derived from a broad and diverse range
-						of sources. This theme reflects the vision and mission of Thomso’23,
+						of sources. This theme reflects the vision and mission of Thomso’24,
 						which is to celebrate the diversity and richness of human expression
-						and culture. Thomso’23 aims to provide a mesmerizing experience that
+						and culture. Thomso’24 aims to provide a mesmerizing experience that
 						will fuse the mystical charm of the universe with the vitality of
-						human expression. Thomso’23 invites you to escape from the dullness
+						human expression. Thomso’24 invites you to escape from the dullness
 						of your daily life and dive into a world full of wonder and
 						fascination, where every moment is a new adventure
 						waiting to happen.
@@ -72,7 +81,7 @@ export default function Home() {
 			</div>
       {/* Train */}
       <div className="train-wrapper">
-        <img className="train" src="/train.webp" alt="" />
+        <img className="train" src={secimg8} alt="" />
       </div>
 
 
