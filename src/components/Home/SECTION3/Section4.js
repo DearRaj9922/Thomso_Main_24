@@ -27,19 +27,19 @@ const Section4 = () => {
         </div>
         
         <div className='' style={{display:'flex', zIndex:'100', height:'10vh', position:'absolute', width:'60%',left:'30%', marginTop:'10vw'}}>
-            <button className={curr=='E'?'btnimgclicked':'btn-home-img'}  onClick={()=>{setCurr('E')}}>
+            <button className={curr==='E'?'btnimgclicked':'btn-home-img'}  onClick={()=>{setCurr('E')}}>
                 EVENTS
             </button>
 
-            <button className={curr=='G'?'btnimgclicked':'btn-home-img'} onClick={()=>{setCurr('G')}}>
+            <button className={curr==='G'?'btnimgclicked':'btn-home-img'} onClick={()=>{setCurr('G')}}>
                 GAMES
             </button>
 
-            <button className={curr=='W'?'btnimgclicked':'btn-home-img'} onClick={()=>{setCurr('W')}}>
+            <button className={curr==='W'?'btnimgclicked':'btn-home-img'} onClick={()=>{setCurr('W')}}>
                 WORKSHOPS
             </button>
 
-            <button className={curr=='C'?'btnimgclicked':'btn-home-img'} onClick={()=>{setCurr('C')}}>
+            <button className={curr==='C'?'btnimgclicked':'btn-home-img'} onClick={()=>{setCurr('C')}}>
                 CARNIVAL
             </button>
         </div>

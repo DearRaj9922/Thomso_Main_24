@@ -46,8 +46,8 @@
 
 .eventcard1 h2 {
     color: #FFF;
-    leading-trim: both;
-    text-edge: cap;
+    /* leading-trim: both; */
+    /* text-edge: cap; */
     font-family: Public Sans;
     font-size: 25px;
     font-style: normal;
@@ -188,8 +188,8 @@
 
 .events-team-name {
     color: #FFF;
-    leading-trim: both;
-    text-edge: cap;
+    /* leading-trim: both; */
+    /* text-edge: cap; */
     font-family: Public Sans;
     font-size: .7vw;
     font-style: normal;
@@ -204,8 +204,8 @@
 
 .events-team-name1 {
     color: #FFF;
-    leading-trim: both;
-    text-edge: cap;
+    /* leading-trim: both; */
+    /* text-edge: cap; */
     font-family: Public Sans;
     font-size: .7vw;
     font-style: normal;

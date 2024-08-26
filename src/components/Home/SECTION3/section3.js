@@ -3,7 +3,7 @@ import './section3.css'
 import bg from './../../../assets/bg_peacock.png'
 import title from './../../../assets/s3_title.svg'
 import celeb from './../../../assets/Celebs.svg'
-import clouds from './../../../assets/clouds.svg'
+// import clouds from './../../../assets/clouds.svg'
 import Section4 from './Section4'
 import title4 from './../../../assets/title_s4.svg'
 import Section5 from './Section5'
@@ -17,12 +17,12 @@ const Section2 = () => {
 
   return (
     <div className='' style={{}}>
-        <img style={{height:'150vw', width:'100vw', zIndex:'-10', position:'absolute', objectFit:'contain'}} src={bg}/>
+        <img style={{height:'150vw', width:'100vw', zIndex:'-10', position:'absolute', objectFit:'contain'}}  alt ="bgbg"src={bg}/>
 
         {/* <div className='heading_s3' style={{color:'red', zIndex:'100', fontSize:'10vw', position:'fixed'}}>
             
         </div> */}
-        <div className='wrapper_s3' style={{display:'flex', flexDirection:'column', alignItems:'center', paddingTop:'16vw'}}>
+        <div className='wrapper_s3' style={{display:'flex', flexDirection:'column', alignItems:'center', paddingTop:'16vw'}} alt="bgbgb">
           <div>
           <img src={title} style={{ width:'80vw', }}/>
           </div>
