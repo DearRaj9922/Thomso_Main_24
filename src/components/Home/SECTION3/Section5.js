@@ -1,8 +1,8 @@
 import React from 'react'
 import YouTube from 'react-youtube';
 import './sec5.css'
-import bg5 from '../../../assets/bg_s5.svg'
-import bg4 from '../../../assets/bgs4.svg'
+import bg5 from '../../../assets/bg_s5.webp'
+// import bg4 from '../../../assets/bgs4.svg'
 
 const Section5 = () => {
     const videoOptions = {

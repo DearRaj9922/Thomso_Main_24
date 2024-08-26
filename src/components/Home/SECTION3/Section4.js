@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Section4.css'
-import bg4 from './../../../assets/bg_s4.svg'
-import title4 from './../../../assets/title_s4.svg'
+import bg4 from './../../../assets/bg_s4.webp'
+// import title4 from './../../../assets/title_s4.svg'
 
 // import img1 from './../../../assets/bg event.svg'
 // import img2 from './../../../assets/bg event.svg'
@@ -9,11 +9,11 @@ import title4 from './../../../assets/title_s4.svg'
 // import img4 from './../../../assets/bg event.svg'
 // import img5 from './../../../assets/bg event.svg'
 
-import img1 from './../../../assets/bgeventcard.png'
-import img2 from './../../../assets/bgeventcard.png'
-import img3 from './../../../assets/bgeventcard.png'
-import img4 from './../../../assets/bgeventcard.png'
-import img5 from './../../../assets/bgeventcard.png'
+import img1 from './../../../assets/bgeventcard.webp'
+import img2 from './../../../assets/bgeventcard.webp'
+import img3 from './../../../assets/bgeventcard.webp'
+import img4 from './../../../assets/bgeventcard.webp'
+import img5 from './../../../assets/bgeventcard.webp'
 
 
 const Section4 = () => {

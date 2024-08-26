@@ -13,7 +13,7 @@ import { connect } from "react-redux";
 import Navbar2 from "../EventsNavbar/Eventsnavbar";
 import bgmobile from "../../assets/eventregbgmob.webp";
 import bg from "../../assets/eventregbg.webp";
-import photo from "../../assets/events.png";
+import photo from "../../assets/events.webp";
 // import photo1 from "../../assests/street_soccer_1.png";
 import { useNavigate, useParams } from "react-router-dom";
 import { message } from "antd";

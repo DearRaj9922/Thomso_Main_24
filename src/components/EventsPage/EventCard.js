@@ -1,7 +1,7 @@
 import EventCardPage from "./EventCardPage";
 import React, { useState } from "react";
 import "./eventcard.css";
-import default_image from "./images/default_event.png";
+import default_image from "./images/default_event.webp";
 // import { useState, useEffect } from "react";
 // import a from "./images/ls.svg";
 // import axios from "axios";
