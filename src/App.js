@@ -33,26 +33,27 @@ import Pevents from "./components/Pevents/Pevents";
 import Section2 from './components/Home/SECTION3/section3.js';
 import Section5 from './components/Home/SECTION3/Section5.js';
 import Section4 from './components/Home/SECTION3/Section4.js';
+import NewEventpage from './components/Profile/EventsPage/Neweventpage/newEventPage.js';
 
 function App(props) {
   const [user,setUser] = useState({});
   const [items,setItems] = useState();
 
 
-// useEffect(() => {
-//   if(localStorage.getItem("token")){
-//     loadUserData();
-//   };
-//   }, [user]);
-//
-//
-//   useEffect(() => {
-//     const token = localStorage.getItem("token");
-//     const userId = localStorage.getItem("user_id");
-//     if (token) {
-//       props?.userDetails && props?.fetchUsers({ id: userId });
-//     }
-//   }, []);
+useEffect(() => {
+  if(localStorage.getItem("token")){
+    loadUserData();
+  };
+  }, [user]);
+
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    const userId = localStorage.getItem("user_id");
+    if (token) {
+      props?.userDetails && props?.fetchUsers({ id: userId });
+    }
+  }, []);
 
     const dispatch = useDispatch()
     useEffect(() => {
@@ -66,16 +67,16 @@ function App(props) {
         }
     }, []);
 
-  //   const loadUserData = async () => {
-  //   try {
-  //     axios.get(`https://api2.thomso.in/apiV1/current_user_participant`).then((res) => {
-  //       setUser(res.data);
-  //       // console.log("data", res.data);
-  //     });
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
+    const loadUserData = async () => {
+    try {
+      axios.get(`https://api2.thomso.in/apiV1/current_user_participant`).then((res) => {
+        setUser(res.data);
+        // console.log("data", res.data);
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
   return (
     <Router>
       <Routes>
@@ -107,7 +108,8 @@ function App(props) {
 
           <Route exact={true} path="/payment_thsp" element={<NewPaymentbox/>} />
           <Route exact={true} path="/card" element={<EventCard/>} />
-          <Route exact={true} path="/events" element={<EventsMain />} />
+          {/* <Route exact={true} path="/events" element={<EventsMain />} /> */}
+          <Route exact={true} path="/events" element={<NewEventpage/>}/>
           <Route exact={true} path="/ProfileNameEdit" element={<ProfileNameEditModel />} />
           <Route exact={true} path="/Carousel" element={<Carousel1/>} />
           <Route exact={true} path="/forgotpassword" element={<Forget/>} />

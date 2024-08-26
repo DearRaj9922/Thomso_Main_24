@@ -9,12 +9,13 @@
 }
 .EMP-hero {
   overflow: hidden;
-    height: 86vh;
+    height: 60vw;
+    width:100vw;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
   gap: 30px;
-  margin-left: 40px;
+  margin-left: 0;
   /* margin-right: 40px; */
   margin-top: 3vh;
     position: absolute;

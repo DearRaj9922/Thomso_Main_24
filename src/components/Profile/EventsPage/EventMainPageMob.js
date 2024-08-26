@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./eventmainpagemob.css";
 import "./eventcarddisplay.css";
 // import EventMobileNav from "./EventMobileNav";
-import EventCard from "./EventCard";
+import EventCard from "./NewEventCard/NewEventcard";
 import { AiOutlineSearch } from "react-icons/ai";
 import { IoIosArrowDown } from "react-icons/io";
 import AllDropdown from "./AllDropdown";
@@ -46,11 +46,11 @@ const EventMainPageMob = ({
 
   return (
     <div className="event-mob-page-container">
-      <Navbar2 />
+      {/* <Navbar2 /> */}
       <div className="ECD-container">
         {!search ? (
           <div className="ECD-searchbar-div">
-            <h1 className="eventmain-headline">EVENTS</h1>
+            {/* <h1 className="eventmain-headline">EVENTS</h1> */}
             <div>
               <span
                style={{ marginLeft: "50px" }}

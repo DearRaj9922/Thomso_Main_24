@@ -6,6 +6,7 @@ import axios from "axios";
 import DeleteModule from "../MainProfileBox/DeleteModule";
 import Loader from "../../Loader/Loader";
 import InnerCard from "./InnerCard";
+import default_image from "../../../assets/events.png";
 import { useNavigate } from "react-router-dom";
 
 function EventCard({ data, getEvents, getData, }) {
@@ -41,7 +42,7 @@ function EventCard({ data, getEvents, getData, }) {
             <div
               className="eventcard"
               style={{
-                background: `url(${data?.event__image})`,
+                background: `url(${data?.event__image==null ? default_image : data?.event__image})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center center",
               }}

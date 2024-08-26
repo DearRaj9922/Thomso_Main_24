@@ -15,15 +15,15 @@
   border-image-source: linear-gradient(
     100.63deg,
     rgba(255, 255, 255, 0) -9.97%,
-    #ffffff 176.97%
-  );
+    black 176.97%
+  ) !important;
   border-image-slice: 1;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 12px 16px;
-  color: white;
+  color: black;
   height: 60px;
   min-width: 150px;
 }
@@ -94,8 +94,8 @@
   border-image-source: linear-gradient(
     100.63deg,
     rgba(255, 255, 255, 0) -9.97%,
-    #ffffff 176.97%
-  );
+    black 176.97% 
+  ) !important;
   border-image-slice: 1;
   transition-duration: 500ms;
 }
@@ -112,7 +112,7 @@
 
 .ECD-searchbar-text-mian {
   letter-spacing: -0.02em;
-  color: #ffffff;
+  color: black !important;
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -128,12 +128,17 @@ width: 215px;
 .pointer{
   cursor: pointer;
 }
+.ECD-searchbar-text-mian::placeholder{
+  color:black;
+  font-family: salsa;
+}
 .ECD-searchbar-div {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 80vw;
   margin: auto;
+  color: black;
   /* position: fixed;s */
 }
 .ECD-card-Display {
@@ -148,10 +153,10 @@ width: 215px;
     gap: 24px 15px;
     padding-left: 1vw;
 }
-.ECD-card-Display::-webkit-scrollbar{
+/* .ECD-card-Display::-webkit-scrollbar{
   width: 0;
   display: none;
-}
+} */
 
 @media screen and (max-width: 768px) {
   .ECD-card-Display {

@@ -94,6 +94,8 @@
     font-size: 1vw;
     z-index: 1;
     padding-bottom: 3vh;
+    text-align: center;
+    width:15vw;
     
 }
 .hidwrap{
@@ -138,4 +140,35 @@
     font-family: Salsa;
     margin-top: 2vw;
     font-size: 1.2vw;
+}
+@media only screen and (max-width:768px){
+    .new_ev_main{
+        width:50vw;
+        height:58vw;
+    }
+    .newcdwrap{
+        width:50vw;
+        height:58vw;
+        gap:7vw;
+    }
+    .newimgsec{
+        width:35vw;
+        height:35vw;
+    }
+    .newimg{
+        width:35vw;
+    }
+    .hidwrap{
+        width:35vw;
+        height:35vw;
+    }
+    .newhiddensec{
+        width:35vw;
+        height:35vw;
+    }
+    .newcdtitle{
+        font-size: 2vw;
+        width: 44vw;
+    text-align: center;
+    }
 }
