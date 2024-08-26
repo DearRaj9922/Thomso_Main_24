@@ -10,19 +10,19 @@ import { Store } from "../../../Config/Store";
 import { connect } from "react-redux";
 import { escapeRegex } from "./helper";
 import { ImCross } from "react-icons/im";
-import Navbar2 from "../../EventsNavbar/Eventsnavbar";
-import eventsback2 from "../../../assets/profileback.webp";
+// import Navbar2 from "../../EventsNavbar/Eventsnavbar";
+// import eventsback2 from "../../../assets/profileback.webp";
 
 const EventMainPage = ({ events }) => {
   const { dispatch } = Store;
   const [data, setData] = useState();
   const [category, setCategory] = useState();
-  const [eventdata, setEventData] = useState();
+  // const [eventdata, setEventData] = useState();
   const [categoryId, setCategoryId] = useState("");
   const [search, setSearch] = useState("");
 
   const getData = (category) => {
-    if (category == "") {
+    if (category === "") {
       category = 0;
     }
     if (events[category]) {

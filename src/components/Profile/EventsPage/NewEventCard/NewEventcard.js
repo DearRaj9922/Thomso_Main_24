@@ -1,6 +1,6 @@
 import React from 'react'
 import "./NewEventcard.css";
-import cdbg from "../../../../assets/eventcardbg.webp";
+// import cdbg from "../../../../assets/eventcardbg.webp";
 import default_image from "../../../../assets/events.png";
 import { useNavigate } from 'react-router-dom';
 

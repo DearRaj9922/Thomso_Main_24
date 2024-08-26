@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Registeration from "./components/Registration/step1/collegeDetails.js"
 import Home from  "./components/Home/Home.js"
@@ -14,7 +14,7 @@ import EventBox from "./components/Profile/EventBox/EventBox";
 import Paymentbox from "./components/Profile/PaymentBox/Paymentbox";
 import NewPaymentbox from "./components/Profile/PaymentBox/NewPaymentBox";
 import EventCard from "./components/Profile/EventCard/EventCard";
-import EventsMain from "./components/Profile/EventsPage/EventMainPage"
+// import EventsMain from "./components/Profile/EventsPage/EventMainPage"
 import ProfileNameEditModel from "./components/Profile/MainProfileBox/ProfileNameEditModel";
 import Carousel1 from "./components/Profile/Carousel/Carousel1";
 import Profilenavbar from "./components/Navbar/Profilenavbar";
@@ -28,7 +28,7 @@ import NewEve from "./components/Profile/EventsPage/NewEventCard/NewEventcard.js
 
 import React,{useEffect, useState} from "react";
 import axios from "axios"
-import Pevents from "./components/Pevents/Pevents";
+// import Pevents from "./components/Pevents/Pevents";
 // import Section3 from './components/Home/SECTION3/section3.js';
 import Section2 from './components/Home/SECTION3/section3.js';
 import Section5 from './components/Home/SECTION3/Section5.js';
@@ -37,7 +37,7 @@ import NewEventpage from './components/Profile/EventsPage/Neweventpage/newEventP
 
 function App(props) {
   const [user,setUser] = useState({});
-  const [items,setItems] = useState();
+  // const [items,setItems] = useState();
 
 
 useEffect(() => {

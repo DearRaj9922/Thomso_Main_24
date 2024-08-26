@@ -13,8 +13,8 @@ import "../Profile/Profile.css";
 import { message } from "antd";
 import axios from "axios";
 // import { Button } from "@mui/material";
-import { CgClose, CgGenderMale } from "react-icons/cg";
-import DeleteModule from "./DeleteModule";
+import { CgClose } from "react-icons/cg";
+// import DeleteModule from "./DeleteModule";
 import Loader from "../../Loader/Loader";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { fetchUser } from "../../User/UserActions";
@@ -158,7 +158,7 @@ const MainProfileBox = ({ data }) => {
         },
       }
     );
-    if (response.status == 200) {
+    if (response.status === 200) {
       // setprofilepic(true);
       fetchUser();
       setLoading(false);
@@ -466,7 +466,7 @@ const MainProfileBox = ({ data }) => {
           <div className="flex-2-title">College ID</div>
           {userDetails?.college_id ? (
             <div style={{ paddingTop: "10px", paddingRight: "50px" }}>
-              <img src={userDetails?.college_id} style={{ width: "50%" }} />
+              <img src={userDetails?.college_id} style={{ width: "50%" }} alt="essr" />
               <div
                 style={{
                   width: "50%",

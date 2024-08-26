@@ -215,8 +215,8 @@
   gap: 10px;
   color: white;
   text-align: center;
-  leading-trim: both;
-  text-edge: cap;
+  /* leading-trim: both; */
+  /* text-edge: cap; */
   font-feature-settings: 'clig' off, 'liga' off;
   font-family: Salsa;
   font-size: 16px;
@@ -246,8 +246,8 @@
   border: 1px solid rgba(255, 255, 255, 0.60);
   color: black;
   text-align: center;
-  leading-trim: both;
-  text-edge: cap;
+  /* leading-trim: both; */
+  /* text-edge: cap; */
   font-feature-settings: 'clig' off, 'liga' off;
   font-family: Salsa;
   font-size: 16px;
@@ -498,11 +498,9 @@
     height: 32vh;
   }
 
-  .events-left-event5-btn2,
+  /* .events-left-event5-btn2,
   .events-left-event5-btn2 {
     /* height: 40px !important; */
-  }
-
   .event-photo {
     display: none;
   }
