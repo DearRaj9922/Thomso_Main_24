@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Comic+Sans+MS:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -147,7 +146,7 @@
   font-weight: bolder;
   margin-top: 0rem;
   line-height: 32px;
-  font-family: Comic Sans MS;
+  font-family: Public Sans;
   display: flex;
   justify-content: center;
 }
@@ -165,7 +164,7 @@
   height: 40px;
   border-radius: 6px;
   font-size: 20px;
-  font-family: "Comic Neue", cursive;
+  font-family: Public Sans;
   font-weight: 700;
   cursor: pointer;
 }
@@ -176,7 +175,7 @@
   margin: 2rem auto 0 auto;
   border: 1.52px solid #505050;
   box-shadow: 1.518475890159607px 3.036951780319214px 0px 0px #505050;
-  font-family: Comic Sans MS;
+  font-family: Public Sans;
 }
 
 .reg-btn1 {
