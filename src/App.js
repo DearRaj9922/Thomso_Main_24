@@ -81,41 +81,41 @@ useEffect(() => {
     <Router>
       <Routes>
       {/* <Route exact={true} path="/" element={<Home />} /> */}
-      <Route exact={true} path="/home3d" element={<Home3d/>}/>
+      <Route path="/home3d" element={<Home3d/>}/>
 
 
-        <Route exact={true} path="/" element={<Home/>}/>
+        <Route path="/" element={<Home/>}/>
 
-      <Route exact={true} path="/section2" element={<Section2 />} />
-      <Route exact={true} path="/section4" element={<Section4 />} />
-        <Route exact={true} path="/section5" element={<Section5 />} />
+      <Route path="/section2" element={<Section2 />} />
+      <Route path="/section4" element={<Section4 />} />
+        <Route path="/section5" element={<Section5 />} />
 
 
-        <Route exact={true} path="/register" element={<Registeration/>}/>
-        <Route exact={true} path="/otpverify" element={<RegPage />} />
-        <Route exact={true} path="/emailverified" element={<EmailVerify />} />
-        <Route exact={true} path="/regcompleted" element={<RegisComp />} />
-        <Route exact={true} path="/login" element={<Login />} />
+        <Route path="/register" element={<Registeration/>}/>
+        <Route path="/otpverify" element={<RegPage />} />
+        <Route path="/emailverified" element={<EmailVerify />} />
+        <Route path="/regcompleted" element={<RegisComp />} />
+        <Route path="/login" element={<Login />} />
         {/* <Route exact={true} path="/pevents" element={<Pevents />} /> */}
-        <Route exact={true} path="/navbar" element={<Profilenavbar />} />
-          <Route exact={true} path="/profile" element={<Profile />} />
-          <Route exact={true} path="/eventsnavbar" element={<Eventsnavbar />} />
-          <Route exact={true} path="/events/:id" element={<EventMainPage />} />
+        <Route path="/navbar" element={<Profilenavbar />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/eventsnavbar" element={<Eventsnavbar />} />
+          <Route path="/events/:id" element={<EventMainPage />} />
           {/* <Route exact={true} path="/eventpayment" element={<EventPayment />} /> */}
-          <Route exact={true} path="/pevents" element={<EventBox />} />
-          <Route exact={true} path="/payment" element={<Paymentbox />} />
-          <Route exact={true} path="/payment_gupt" element={<NewPaymentbox/>} />
+          <Route path="/pevents" element={<EventBox />} />
+          <Route path="/payment" element={<Paymentbox />} />
+          <Route path="/payment_gupt" element={<NewPaymentbox/>} />
 
-          <Route exact={true} path="/payment_thsp" element={<NewPaymentbox/>} />
-          <Route exact={true} path="/card" element={<EventCard/>} />
+          <Route path="/payment_thsp" element={<NewPaymentbox/>} />
+          <Route path="/card" element={<EventCard/>} />
           {/* <Route exact={true} path="/events" element={<EventsMain />} /> */}
-          <Route exact={true} path="/events" element={<NewEventpage/>}/>
-          <Route exact={true} path="/ProfileNameEdit" element={<ProfileNameEditModel />} />
-          <Route exact={true} path="/Carousel" element={<Carousel1/>} />
-          <Route exact={true} path="/forgotpassword" element={<Forget/>} />
-          <Route exavt={true} path="/neweventcard" element={<NewEve/>}/>
+          <Route path="/events" element={<NewEventpage/>}/>
+          <Route path="/ProfileNameEdit" element={<ProfileNameEditModel />} />
+          <Route path="/Carousel" element={<Carousel1/>} />
+          <Route path="/forgotpassword" element={<Forget/>} />
+          <Route path="/neweventcard" element={<NewEve/>}/>
           <Route
-            exact={true}
+          
             path="/auth/reset-password/:email/:token"
             element={<ResetPassword />}
           />
