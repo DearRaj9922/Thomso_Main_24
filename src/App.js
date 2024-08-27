@@ -34,9 +34,10 @@ import Section2 from './components/Home/SECTION3/section3.js';
 import Section5 from './components/Home/SECTION3/Section5.js';
 import Section4 from './components/Home/SECTION3/Section4.js';
 import NewEventpage from './components/Profile/EventsPage/Neweventpage/newEventPage.js';
-
+import Newloader from "./components/Newloader/Newloader.js";
 function App(props) {
   const [user,setUser] = useState({});
+  const [isLoading, setIsLoading] = useState(true);
   // const [items,setItems] = useState();
 
 
@@ -61,6 +62,7 @@ useEffect(() => {
 
         const token = localStorage.getItem("token");
         const userId = localStorage.getItem("user_id");
+        
         if (token) {
             dispatch(fetchUser({id:userId}))
             props?.userDetails && props?.fetchUsers({ id: userId });
@@ -71,6 +73,7 @@ useEffect(() => {
     try {
       axios.get(`https://api2.thomso.in/apiV1/current_user_participant`).then((res) => {
         setUser(res.data);
+        setIsLoading(false);
         // console.log("data", res.data);
       });
     } catch (error) {
@@ -114,6 +117,7 @@ useEffect(() => {
           <Route path="/Carousel" element={<Carousel1/>} />
           <Route path="/forgotpassword" element={<Forget/>} />
           <Route path="/neweventcard" element={<NewEve/>}/>
+          <Route path="/loader" element={<Newloader/>}/>
           <Route
           
             path="/auth/reset-password/:email/:token"

@@ -12,10 +12,33 @@ import secimg5 from "../../assets/section2-2d-bgfull.webp"
 import secimg6 from "../../assets/sec2-mobbg.png"
 import secimg7 from "../../assets/about-us.webp"
 import secimg8 from "../../assets/train.webp";
+import Loader from "../Newloader/Newloader";
+import { useState } from "react"
 
 export default function Home() {
 	const navigate=useNavigate();
+	const [loader, setLoader] = useState(false)
+	const [loading, setLoading] = useState(false);
+	const handleNavigate = (path) => {
+		setLoading(true); // Show loader
+		setTimeout(() => {
+		  navigate(path);
+		  setLoading(false); // Hide loader after navigation
+		}, 1000); // Adjust delay as needed
+	  };
+	
+	
+	  const handleReisterClick = () => {
+		handleNavigate("/register"); // Navigate to home page
+	  };
+	  const handleEventsClick = () => {
+		handleNavigate("/events"); // Navigate to home page
+	  };
+	  
+	// const [loader, setLoader] = useState(false)
 	return (
+		<>
+		{loading && <Loader />} 
 		<div className='home_wrapper'>
 			{/* Navbar */}
 			<Navbar
@@ -51,8 +74,8 @@ export default function Home() {
         <img className="backdrop-mob" src={secimg2} alt="" />
 				<img className='sec1-title' src={secimg3} alt='Thomso 24' />
 				<div className='sec1-btns'>
-					<button onClick={()=>navigate('/register')}>Register Now</button>
-					{/* <button>Register Now</button> */}
+					<button style={{border:"2px solid white"}} onClick={handleReisterClick}>Register Now</button>
+					<button style={{backgroundColor:"yellow",color:"black",border:"2px solid black"}} onClick={handleEventsClick}>Explore Events!</button>
 				</div>
 			</div>
 
@@ -90,5 +113,6 @@ export default function Home() {
 
       <Section2 />
 		</div>
+		</>
 	)
 }

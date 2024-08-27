@@ -1,0 +1,40 @@
+.loaderentry{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:1000;
+    width:100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loaderwrappe{
+    position:absolute;
+    top:0;
+    left:0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes draw{
+    0%{
+        stroke-dashoffset: 4500;
+    }
+    100%{
+        stroke-dashoffset:0;
+    }
+}
+#svg{
+    width: 150px;
+    height:150px;
+    stroke: #fff;
+    fill-opacity: 0;
+    stroke-width: 1px;
+    stroke-dasharray: 4500;
+    animation: draw 30s infinite;
+}

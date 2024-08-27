@@ -41,10 +41,11 @@
 }.eventwrappe1{
   /* width:56vw; */
   /* height:50vw; */
+  height: 60vh;
   margin-top:15vh;
   display: flex;
   backdrop-filter: blur(5px);
-  border: 2px solid black;
+  /* border: 2px solid black; */
   border-radius: 1.3vw;
   background-color: #c4dffb;
 }
@@ -296,7 +297,7 @@
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.67px;
-  margin-top: 15%;
+  /* margin-top: 15%; */
   padding-bottom: 2%;
   gap: 24vw;
 }
@@ -577,6 +578,7 @@
   }
 
   .events-left1 {
+    width:80vw;
     margin-bottom: 1.5vh;
   }
 
@@ -595,7 +597,7 @@
   .events-left-event6 {
     padding-bottom: 20px;
     display: flex;
-    gap: 27vw;
+    /* gap: 27vw; */
   }
 
   .events-left-event6 {
@@ -681,7 +683,7 @@
   }
 
   .events-left-event7 input {
-    width: 77vw;
+    width: 50vw;
   }
 
   .events-left-event4 span {

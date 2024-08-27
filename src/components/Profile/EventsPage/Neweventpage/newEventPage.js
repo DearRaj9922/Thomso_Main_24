@@ -21,7 +21,7 @@ const NewEventPage = () => {
             </div>  
             <div className="newevpgtitle">
               <div className="newtitlewrapp">
-                <h3>welcome to thomso’24</h3>
+                <h3>Welcome to Thomso’24!</h3>
                 <h1> Events</h1>
                 <button onClick={()=>navigate('/register')}>Register Now</button>
               </div>

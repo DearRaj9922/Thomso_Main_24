@@ -5,7 +5,7 @@ import SimpleReactValidator from "simple-react-validator";
 import { login, fetchEvents, fetchUser } from "../../User/UserActions";
 import { connect } from "react-redux";
 import axios from "axios";
-import Loader from "../../Loader/Loader";
+import Loader from "../../Newloader/Newloader";
 // import setAuthToken from "../../User/setAuthToken";
 import Regback from "../../../assets/regbg.webp";
 import logo from "../../../assets/logowhite.svg"
@@ -82,6 +82,19 @@ const Login = (props) => {
       validator.showMessages();
     }
   };
+  // Show loader while navigating
+  const handleNavigate = (path) => {
+    setLoading(true); // Show loader
+    setTimeout(() => {
+      navigate(path);
+      setLoading(false); // Hide loader after navigation
+    }, 1000); // Adjust delay as needed
+  };
+
+
+  const handleLogoClick = () => {
+    handleNavigate("/"); // Navigate to home page
+  };
 
   useEffect(() => {
     if (
@@ -104,9 +117,9 @@ else{
       <div className="login-fullpage">
         <img src={Regback} className="regbg" alt="" />
         <img src={regBackmob} className="regbgmob" alt="" />
-        <Link to="/">
-          <img src={logo} className="logo-log" alt="" />
-        </Link>
+       
+          <img src={logo} onClick={handleLogoClick} className="logo-log" alt="" />
+        
 
         <div id="bg">
           <div id="log_bg1">
