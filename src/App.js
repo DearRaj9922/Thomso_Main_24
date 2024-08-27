@@ -41,7 +41,7 @@ function App(props) {
 
 
 useEffect(() => {
-  if(localStorage.getItem("token")){
+  if(!localStorage.getItem("token")){
     loadUserData();
   };
   }, [user]);

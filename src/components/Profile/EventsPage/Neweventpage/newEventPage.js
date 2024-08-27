@@ -1,6 +1,7 @@
 import React from 'react'
 import "./NewEventPage.css";
 import newevbg from "../../../../assets/eventbg.webp";
+import newevbgmob from "../../../../assets/eventbgmob.webp";
 import Navbar from "../../../EventsNavbar/Eventsnavbar"
 import { useNavigate } from 'react-router-dom';
 import textdec from "../../../../assets/textdec.svg";
@@ -11,7 +12,8 @@ const NewEventPage = () => {
   const navigate=useNavigate();
   return (
     <div className='neweventmain'>
-        <img src={newevbg} className='newbgevimg' alt="newbg"/>      
+        <img src={newevbg} className='newbgevimg' alt="newbg"/>     
+        <img src={newevbgmob} className='newbgevimgmob' alt="newbgmob"/>
         <div className="newevpgnav">
             <Navbar
             fontcolor="black"

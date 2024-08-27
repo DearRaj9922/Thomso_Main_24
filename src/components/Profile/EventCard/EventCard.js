@@ -42,11 +42,11 @@ function EventCard({ data, getEvents, getData, }) {
             <div
               className="eventcard"
               style={{
-                background: `url(${data?.event__image==null ? default_image : data?.event__image})`,
+                background: `url(${data?.event__image==="" ? default_image : data?.event__image})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center center",
               }}
-              onClick={() => {navigate(`/events/`+data?.event)}}
+              // onClick={() => {navigate(`/events/`+data?.event)}}
             >
               <div
                 className="card-delete"

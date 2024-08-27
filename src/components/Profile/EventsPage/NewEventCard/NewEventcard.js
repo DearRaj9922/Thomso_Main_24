@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./NewEventcard.css";
 // import cdbg from "../../../../assets/eventcardbg.webp";
 import default_image from "../../../../assets/events.png";
@@ -6,13 +6,22 @@ import { useNavigate } from 'react-router-dom';
 
 const NewEventcard = ({data}) => {
     const navigate = useNavigate();
+    
   const onHandleClick = (e) => {
     navigate(`/events/${e}`);
   };
+  useEffect(()=>{
+    console.log("data",data)
+  })
   return (
     <>
     {data &&
         data?.map((datas, index) => {
+          if(datas.id<=5){
+            return(<></>)
+          }
+          else{
+
           return (
             <>
     <div 
@@ -39,7 +48,7 @@ const NewEventcard = ({data}) => {
         style={{color:"black"}}>
         {datas?.solo_team ? (
                       <h2>
-                        {datas?.name  }({datas?.solo_team})
+                        {datas?.name.slice(0,15)}...({datas?.solo_team})
                       </h2>
                     ) : (
                       <h2>{datas?.name}</h2>
@@ -49,7 +58,7 @@ const NewEventcard = ({data}) => {
       
     </div>
     </>
-          );
+          )};
         })}
     </>
   )
