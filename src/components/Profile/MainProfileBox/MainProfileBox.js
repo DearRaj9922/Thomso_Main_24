@@ -18,7 +18,7 @@ import { CgClose } from "react-icons/cg";
 import Loader from "../../Loader/Loader";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { fetchUser } from "../../User/UserActions";
-import { useLocation, Link } from "react-router-dom";
+import { useLocation, Link,useNavigate } from "react-router-dom";
 import pic from "../../../assets/profile1.png.jpg";
 import icon1 from "../../../assets/icon1.png";
 import icon2 from "../../../assets/events.svg";
@@ -53,6 +53,7 @@ const MainProfileBox = ({ data }) => {
   useEffect(() => {
     fetchUser();
   });
+  const navigate=useNavigate();
 
   // const cadeta = () => {
   //   ca_id = userDetails?.referred_by_id;
@@ -177,7 +178,8 @@ const MainProfileBox = ({ data }) => {
     localStorage.removeItem("state");
     // localStorage.removeItem("Userobj");
     setLogout(!logout);
-    window.location.pathname = "/";
+    // window.location.pathname = "/";
+    navigate('/');
   }
 
   function handleFileDelete() {
