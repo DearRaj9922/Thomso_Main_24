@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Registeration from "./components/Registration/step1/collegeDetails.js"
 import Home from  "./components/Home/Home.js"
 import { fetchUser } from "./components/User/UserActions";
