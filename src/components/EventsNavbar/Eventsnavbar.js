@@ -93,7 +93,7 @@ function Navbar({ color, disable, setregister, register, data,fontcolor ,bright}
           >
             Merch
           </a> */}
-          <a
+          {/* <a
             className="event-nav-right-compo hover-underline-animation"
             style={{color:fontcolor}}
             onClick={() => {
@@ -101,7 +101,7 @@ function Navbar({ color, disable, setregister, register, data,fontcolor ,bright}
             }}
           >
             MUN
-          </a>
+          </a> */}
           <a
             className="event-nav-right-compo hover-underline-animation"
             style={{color:fontcolor}}
@@ -143,7 +143,7 @@ function Navbar({ color, disable, setregister, register, data,fontcolor ,bright}
               ID-CARD
             </a>
           )}
-          <a
+          {/* <a
             className="event-nav-right-compo hover-underline-animation"
             style={{color:fontcolor}}
             onClick={() => {
@@ -151,7 +151,7 @@ function Navbar({ color, disable, setregister, register, data,fontcolor ,bright}
             }}
           >
             Sponsors
-          </a>
+          </a> */}
           {localStorage.getItem("token") ? (
             <>
               {/* <img src={profile} alt=""  onClick={() => navigate("/newprofile")} className="ca-profile1" /> */}
@@ -168,7 +168,7 @@ function Navbar({ color, disable, setregister, register, data,fontcolor ,bright}
               <button
                 onClick={() => navigate("/login")}
                 className="event-regi-btn"
-                style={{color:fontcolor}}
+                style={{color:"white",backgroundColor:"black",border:"2px solid white"}}
                 id="registernow"
               >
                 LOG IN

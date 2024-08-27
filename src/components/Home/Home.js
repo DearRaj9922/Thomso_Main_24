@@ -18,7 +18,10 @@ export default function Home() {
 	return (
 		<div className='home_wrapper'>
 			{/* Navbar */}
-			<Navbar/>
+			<Navbar
+			fontcolor="black"
+			bright="brightness(0)"
+			/>
 			{/* <div className='nav'>
 				<div className='navlogo'>
 					<img src='/navlogo.svg' alt='thomso' />

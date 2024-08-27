@@ -241,7 +241,7 @@ const EventMainPage = ({ events }) => {
         setregister={setregister} register="event" />
         <img src={bg} alt="" className="bg-events" />
         <div className={register ? "events_back" : "events_back1"}>
-          <div className="eventwrappe">
+          <div className={register ? "eventwrappe" : "eventwrappe1"}>
           {register && (
             <div className="events-right">
               <img
@@ -257,7 +257,7 @@ const EventMainPage = ({ events }) => {
             </div>
             
           )}
-          <div className="events-left">
+          <div className={register ? "events-left" : "events-left1"}>
             {register ? (
               <>
                 <span className="events-left-event01">

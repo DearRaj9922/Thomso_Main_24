@@ -86,7 +86,9 @@ const EventBox = () => {
     navigate(`/events/${e}`);
   };
   const Locator = useLocation();
-
+  useEffect(()=>{
+    console.log("laudaaaa",events)
+  })
   return (
     <>
       <div className="nnp-container">

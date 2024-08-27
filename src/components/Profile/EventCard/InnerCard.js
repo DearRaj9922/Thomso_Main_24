@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./EventCard.css";
 import { RiHeart2Fill, RiHeart2Line } from "react-icons/ri";
 import { MdDelete } from "react-icons/md";
@@ -18,12 +18,15 @@ function InnerCard({ data, getEvents }) {
     setLoading(false);
     setmodule(false);
   };
+  useEffect(()=>{
+    console.log("lauda",data?.event__image)
+  },[])
   return (
     <>
       <div
         className="eventcard"
         style={{
-          background: `url(${data?.event__image==null ? default_img : data?.event__img})`,
+          background: `url(${(data?.event__image==null || data?.event__image=="") ? default_img : data?.event__img})`,
           backgroundSize: "cover",
           backgroundPosition: "center center",
         }}

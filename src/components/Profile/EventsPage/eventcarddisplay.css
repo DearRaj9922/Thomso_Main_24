@@ -57,9 +57,9 @@
   }
 
   .ECD-container {
-    width: auto;
+    width: 80vw;
     display: flex;
-    height: 90vh;
+    /* height: 100vh; */
     padding-bottom: 100px;
     overflow-y: auto;
     justify-content: flex-start;
@@ -188,6 +188,7 @@
     /* flex-direction: column; */
     align-items: center;
     justify-content: center;
+    height:300vh;
   }
 }
 
