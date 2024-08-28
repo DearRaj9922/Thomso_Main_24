@@ -169,6 +169,7 @@
 .events-left-event3 {
   display: flex;
   gap: 5px;
+  display: none;
 }
 
 .events-left-event3 span {
