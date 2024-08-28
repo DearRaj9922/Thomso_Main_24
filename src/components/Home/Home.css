@@ -81,7 +81,8 @@
 }
 
 .sec1-title {
-    margin-top: 25vh;
+    margin-top: 10vh;
+    width: 50vw;
 }
 
 .sec1-btns {
@@ -125,7 +126,7 @@
 .sec2 {
     position: relative;
     width: 100vw;
-    margin-top: 93vh;
+    margin-top: 90vh;
     /* background-image: url(/public/section2-2d-bg.png); */
 }
 
@@ -215,6 +216,8 @@
     }
     .sec1-title {
         z-index: 15;
+        margin-top: 18vh;
+        margin-bottom: 5vh;
     }
     .sec1-bird {
         width: 70vw;
@@ -232,7 +235,7 @@
         border: 1px white solid;
     }
     .sec2 {
-        margin-top: 76vh;
+        margin-top: 63vh;
     }
     .about {
         margin-top: 5vh;

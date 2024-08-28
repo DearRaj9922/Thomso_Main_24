@@ -75,7 +75,7 @@ export default function Home() {
 				<img className='sec1-title' src={secimg3} alt='Thomso 24' />
 				<div className='sec1-btns'>
 					<button style={{border:"2px solid white"}} onClick={handleReisterClick}>Register Now</button>
-					<button style={{backgroundColor:"yellow",color:"black",border:"2px solid black"}} onClick={handleEventsClick}>Explore Events!</button>
+					<button style={{backgroundColor:"white",color:"#004D9D",border:"2px solid #004D9D"}} onClick={handleEventsClick}>Explore Events!</button>
 				</div>
 			</div>
 
