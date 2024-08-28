@@ -1,13 +1,13 @@
 import React from 'react'
 import './section3.css'
 import bg from './../../../assets/bg_peacock.webp'
-import title from './../../../assets/s3_title.svg'
-import celeb from './../../../assets/Celebs.svg'
+import title from './../../../assets/s3_title.webp'
+import celeb from './../../../assets/Celebs.webp'
 // import clouds from './../../../assets/clouds.svg'
 import Section4 from './Section4'
 // import title4 from './../../../assets/title_s4.svg'
 import Section5 from './Section5'
-import pattern from './../../../assets/pattern4-5.svg'
+import pattern from './../../../assets/pattern.webp'
 import Footer from '../../Footer/Footer'
 
 
