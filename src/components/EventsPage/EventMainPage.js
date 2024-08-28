@@ -57,6 +57,7 @@ const EventMainPage = ({ events }) => {
 
   useEffect(() => {
     for (let num = 0; num < events1.length; num++) {
+      // console.log("meow", events1[num]?.event__payment_amount)
       if (
         events1[num]?.event == id &&
         events1[num]?.event__is_payment == true
@@ -96,7 +97,7 @@ const EventMainPage = ({ events }) => {
           let selectedItem = res.data?.filter(function (el) {
             return el.id == id;
           });
-
+          console.log("selecteditem", selectedItem)
           setEventData(selectedItem);
           setLoading(false);
           // setEventData(res.data);
@@ -279,10 +280,12 @@ const EventMainPage = ({ events }) => {
 
                 <div className="events-left-event1">
                   <h1>{eventdata[0]?.name}</h1>
+
                   {eventdata[0]?.solo_team != null && (
                     <span>({eventdata[0]?.solo_team})</span>
                   )}
                 </div>
+                {eventdata[0]?.is_payment?(<div>Event Price: {eventdata[0]?.payment_amount}</div>):(<></>)}
                 <p className="events-left-event2">
                   {eventdata[0]?.description}
                 </p>
