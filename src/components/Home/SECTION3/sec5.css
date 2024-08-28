@@ -5,7 +5,7 @@
   
   .video-mask {
    width: 99.4vw;
-   height: 300vh;
+   /* height: 300vh; */
    position: absolute; 
    /* background-image: url('../../../assets/bg_s5.svg');
   background-repeat: no-repeat;

@@ -1,3 +1,6 @@
+.footer_wrapper{
+  margin-top: -35vw;
+}
 .footerBox{
     width: 100%;
     /* padding-top: 10vw; */
@@ -90,7 +93,7 @@ cursor: pointer;
 
 .footerText1{
 color: #284551;
-font-family: Salsa Sans MS;
+font-family: Salsa;
 font-size: 16px;
 font-style: normal;
 font-weight: 700;
@@ -100,7 +103,7 @@ letter-spacing: 0.8px;
 
   .footerText2{
     color: #284551;
-font-family: Salsa Sans MS;
+font-family: Salsa;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -123,7 +126,7 @@ margin-bottom: 15px;
 
   .footerContactUs{
     color: #284551;
-font-family: Salsa Sans MS;
+font-family: Salsa;
 font-size: 16px;
 font-style: normal;
 font-weight: 700;
@@ -135,6 +138,10 @@ letter-spacing: 0.8px;
     display: flex;
     flex-direction: row;
     gap: 8vw;
+  }
+
+  .mobfooter{
+    display: none;
   }
 
 
@@ -151,7 +158,8 @@ letter-spacing: 0.8px;
     gap: 1vw;
 }
 .footerBoxB {
-  padding-left: 20px;
+  padding-left: 4vw;
+  width: 96%;
 }
 }
 @media only screen and (max-width:900px){
@@ -159,7 +167,8 @@ letter-spacing: 0.8px;
     gap: 0vw;
 }
 .footerBoxB {
-  padding-left: 20px;
+  padding-left: 3vw;
+  width: 97%;
 }
 .footerRight{
 position: relative;
@@ -167,8 +176,13 @@ left: 5vw;
 }
 
 }
-@media only screen and (max-width:800px){
+@media only screen and (max-width:768px){
   .footerBox{
       display: none;
+  }
+
+  .mobfooter{
+    display: block;
+    width: 80%;
   }
 }
