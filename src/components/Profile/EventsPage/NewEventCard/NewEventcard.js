@@ -38,7 +38,7 @@ const NewEventcard = ({data}) => {
              />
                 <div className="hidwrap">
             <div className="newhiddensec">
-                <p>{datas?.description.slice(0, 100)}</p>
+                <p>{datas?.note.slice(0, 100)}</p>
                 <button className='newcdbutton'>Know More</button>
                 </div>
             </div>
