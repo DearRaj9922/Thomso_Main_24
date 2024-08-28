@@ -5,11 +5,11 @@ import Navbar from "../EventsNavbar/Eventsnavbar"
 import { useNavigate } from "react-router-dom"
 import clouds from "../../assets/clouds.svg";
 import secimg1 from "../../assets/section1-2d-bg.webp"
-import secimg2 from "../../assets/sec1-mobbg.png"
+import secimg2 from "../../assets/sec1-mobbg.webp"
 import secimg3 from "../../assets/herotitle.webp"
-import secimg4 from "../../assets/crossroad_bird.webp"
+import secimg4 from "../../assets/bird.svg"
 import secimg5 from "../../assets/section2-2d-bgfull.webp"
-import secimg6 from "../../assets/sec2-mobbg.png"
+import secimg6 from "../../assets/sec2-mobbg.webp"
 import secimg7 from "../../assets/about-us.webp"
 import secimg8 from "../../assets/train.webp";
 import Loader from "../Newloader/Newloader";
