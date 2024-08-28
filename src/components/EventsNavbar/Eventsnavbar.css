@@ -5,12 +5,12 @@
     background:transparent;
     justify-content: space-between;
     align-items: center;
-    padding-left: 3vw;
-    padding-right: 4vw;
+    /* padding-left: 3vw; */
+    /* padding-right: 4vw; */
     height: 11vh;
     position: relative;
-    width: 93vw;
-    z-index: 2;
+    width: 100vw;
+    z-index: 20;
     user-select: none;
 }
 
@@ -378,6 +378,7 @@
     align-items: center;
     z-index: 100;
     justify-content: space-between;
+    padding: 0 10px;
 }
 
 @keyframes slide {
