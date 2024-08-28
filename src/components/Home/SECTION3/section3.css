@@ -28,3 +28,40 @@
         clipPath:  url(${celeb}#clip-path-id)`, // Replace with the id of your SVG path
         backgroundSize: "cover",
 } */
+
+.celeb_pic{
+    margin-top: 9vw;
+}
+@media only screen and (max-width:1100px){
+    .wrapper_s4{
+        margin-top: -185vh;
+    }
+}
+
+@media only screen and (max-width:930px){
+    
+}
+
+@media only screen and (max-width:850px){
+    .wrapper_s4{
+        margin-top: -200vh;
+    }
+}
+
+@media only screen and (max-width:650px){
+    .wrapper_s4{
+        margin-top: -232vh;
+    }
+}
+
+@media only screen and (max-width:650px){
+    .wrapper_s4{
+        margin-top: -246vh;
+    }
+}
+
+@media only screen and (max-width:360px){
+    .wrapper_s4{
+        margin-top: -256vh;
+    }
+}

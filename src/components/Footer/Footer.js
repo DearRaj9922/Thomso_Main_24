@@ -16,6 +16,7 @@ import linkedinLite from './Footer Images/linkedinLite.webp'
 import youtube from './Footer Images/youtube.webp'
 import youtubeLite from './Footer Images/youtubeLite.webp'
 import clouds from '../../assets/clouds.svg'
+import Footer_mob from './Footer_mob'
 
 
 const Footer = () => {
@@ -62,7 +63,7 @@ const Footer = () => {
   };
 
   return (
-    <div>
+    <div className='footer_wrapper'>
       <div className='footerBox'>
        <div className='clouds' >
        {/* <img src={clouds} alt="" style={{position:'absolute', height:'15vw', width:'100vw', zIndex:'1000'}} /> */}
@@ -86,12 +87,12 @@ const Footer = () => {
           </div>
           <div className='footerRight' style={{display:"flex",flexDirection:"column",gap:"30px"}}>
 
-<div className='footerPara1'>
+          <div className='footerPara1'>
 
             <div className='footerContactUs'>
             Contact Us
             </div>
-</div>
+            </div>
             <div className='footerPara2'>
 
           <div className='footerBoxBSub1'>
@@ -173,6 +174,11 @@ const Footer = () => {
         </div>
 
       </div>
+      
+      <div className="mobfooter">
+      <Footer_mob/>
+      </div>
+      
     </div>
   )
 }
