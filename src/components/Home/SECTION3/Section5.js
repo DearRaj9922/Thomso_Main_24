@@ -2,6 +2,7 @@ import React from 'react'
 import YouTube from 'react-youtube';
 import './sec5.css'
 import bg5 from '../../../assets/bg5 (1).webp'
+import zIndex from '@mui/material/styles/zIndex';
 // import bg4 from '../../../assets/bgs4.svg'
 
 const Section5 = () => {
@@ -39,7 +40,7 @@ const Section5 = () => {
             
 
             {/* <img src={bg4} alt="" id='image1' /> */}
-            <p style={{zIndex:'1000'}}>Thomso Aftermovie</p>
+            <p style={{zIndex:'1000'}}>Thomso'23 Aftermovie</p>
           </div>
 
           <div style={styles.container}>
@@ -48,11 +49,13 @@ const Section5 = () => {
         <iframe
           width="560"
           height="315"
-          src="https://www.youtube.com/watch?v=rVsg7yOYN44" // Replace with your video URL
+          src="https://www.youtube.com/embed/rVsg7yOYN44?rel=0&controls=0&modestbranding=1" // Replace with your video URL
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
+          // allowFullScreen
+          // controls='0'
+          // rel='0'
           style={styles.video}
         ></iframe>
       </div>
@@ -82,11 +85,13 @@ const styles = {
     height: '40.64vw',
     // backgroundColor: '#f9f9f9',
     backgroundColor:'transparent',
+    // zIndex:'1000'
   },
   videoWrapper: {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+    zIndex:'1000',
     marginLeft:'4vw'
   },
   video: {

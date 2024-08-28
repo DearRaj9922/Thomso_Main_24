@@ -35,6 +35,7 @@ import Section5 from './components/Home/SECTION3/Section5.js';
 import Section4 from './components/Home/SECTION3/Section4.js';
 import NewEventpage from './components/Profile/EventsPage/Neweventpage/newEventPage.js';
 import Newloader from "./components/Newloader/Newloader.js";
+// import VideoPlayer from "./components/Home/SECTION3/demo.js";
 function App(props) {
   const [user,setUser] = useState({});
   const [isLoading, setIsLoading] = useState(true);
@@ -85,6 +86,8 @@ useEffect(() => {
       <Routes>
       {/* <Route exact={true} path="/" element={<Home />} /> */}
       <Route path="/home3d" element={<Home3d/>}/>
+
+      {/* <Route path="/demo" element={<VideoPlayer/>}/> */}
 
 
         <Route path="/" element={<Home/>}/>
