@@ -42,7 +42,7 @@
   .ECD-searchbar {
     background: radial-gradient(237.5% 9923.25% at 28.55% -41.25%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 100%);
     /* backdrop-filter: blur(8px); */
-    border: 0.885px solid #FFF;
+    border: 2px solid #FFF;
 
     border-image-slice: 1;
     display: flex;
@@ -54,6 +54,7 @@
     height: 40px;
     min-width: 110px;
     gap: 10px;
+    filter: brightness(0);
   }
 
   .ECD-container {
