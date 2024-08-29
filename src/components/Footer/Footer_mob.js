@@ -12,13 +12,15 @@ const Footer_mob = () => {
 
         <div className="dxnfootermob">
             <p className='footermobhead'>Get Direction</p>
-            <p className='footermobcontent'>Thomso Office Multi Activity Centre <br />Indian Institute of Technology <br />Roorkee 247667</p>
+            <p className='footermobcontent'>Thomso Office, 1st Floor, MAC <br />Indian Institute of Technology <br />Roorkee 247667</p>
         </div>
 
         <div className="contactusfootermob">
             <p className="footermobhead">Contact Us</p>
             <div className="footermobcontent">
                 <div className="mail">
+
+
 
                     <p>thomso@iitr.ac.in</p>
                     <p>anunjay.thomso@gmail.com</p>
