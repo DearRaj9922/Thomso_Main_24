@@ -23,6 +23,7 @@ import Loader from "../Loader/Loader";
 import cross_img from "../../assets/Cross.webp";
 import { Link } from "react-router-dom";
 import Select from "react-select";
+import { BoldOutlined } from "@ant-design/icons";
 
 const slotsOptions = [
   { value: "Day 1", label: "Day 1" },
@@ -285,7 +286,7 @@ const EventMainPage = ({ events }) => {
                     <span>({eventdata[0]?.solo_team})</span>
                   )}
                 </div>
-                {eventdata[0]?.is_payment?(<div>Event Price: {eventdata[0]?.payment_amount}</div>):(<></>)}
+                {eventdata[0]?.is_payment?(<div style={{display:"flex",alignItems:"center",gap:"10px"}}>Event Price: <h2 style={{fontWeight:"600"}}>Rs.{eventdata[0]?.payment_amount}</h2></div>):(<></>)}
                 <p className="events-left-event2">
                   {eventdata[0]?.description}
                 </p>

@@ -26,6 +26,7 @@
   overflow-y: hidden;
   justify-content: center;
   margin-top: 5vh;
+  padding: 14px 0;
 
 }
 .eventwrappe{
@@ -34,9 +35,10 @@
   /* margin-top:15vh; */
   display: flex;
   backdrop-filter: blur(5px);
-  border: 2px solid black;
+  /* border: 2px solid black; */
   border-radius: 1.3vw;
   background-color: #c4dffb;
+  filter: drop-shadow(2px 4px 6px black);
   /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); Add this line */
 }.eventwrappe1{
   /* width:56vw; */
@@ -48,6 +50,7 @@
   /* border: 2px solid black; */
   border-radius: 1.3vw;
   background-color: #c4dffb;
+  filter: drop-shadow(2px 4px 6px black);
 }
 
 .events_back1 {
@@ -107,6 +110,7 @@
   height: 60vh;
   margin-right: 2px;
   border-radius: 1.5vw;
+  filter: drop-shadow(2px 4px 6px black);
   /* border: 2px solid #fff; */
 }
 
@@ -499,9 +503,9 @@
 
 
 
-  .events-left-event5-btn2 {
+  /* .events-left-event5-btn2 {
     padding: 15px 21px !important;
-  }
+  } */
 
   .events-left {
     width: 100vw;
@@ -536,6 +540,8 @@
   .event-photo1 {
     display: block !important;
     width: 70vw;
+    filter: drop-shadow(2px 4px 6px black);
+    border-radius: 10px;
     /* height: 30vh; */
   }
 

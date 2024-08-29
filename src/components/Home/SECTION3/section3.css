@@ -32,6 +32,20 @@
 .celeb_pic{
     margin-top: 9vw;
 }
+
+
+.title_s4{
+    position: absolute;
+    margin-top: 85vw;
+    z-index: 100;
+    padding-top: 10vw;
+
+    font-family: "Boecklins Universe";
+    font-size: 9vw;
+    color: #790800;
+  }
+
+
 @media only screen and (max-width:1100px){
     .wrapper_s4{
         margin-top: -185vh;

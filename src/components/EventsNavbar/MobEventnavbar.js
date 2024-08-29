@@ -108,14 +108,14 @@ function MobEventnavbar(brightMob) {
           >
             Merch
           </h1> */}
-          <h1
+          {/* <h1
             onClick={() => {
               navigate("/MUN");
               window.location.reload(false);
             }}
           >
             MUN
-          </h1>
+          </h1> */}
           {/* {event &&
             events.map((el) => {
               const { par, child } = el;
@@ -225,14 +225,14 @@ function MobEventnavbar(brightMob) {
           >
             Merch
           </h1> */}
-          <h1
+          {/* <h1
             onClick={() => {
               navigate("/MUN");
               window.location.reload(false);
             }}
           >
             MUN
-          </h1>
+          </h1> */}
           {/* {event &&
             events.map((el) => {
               const { par, child } = el;
@@ -292,7 +292,7 @@ function MobEventnavbar(brightMob) {
               Profile
             </h5>
           )}
-          <h5 onClick={()=>{navigate("/spons")}}>Sponsor</h5>
+          {/* <h5 onClick={()=>{navigate("/spons")}}>Sponsor</h5> */}
           {localStorage.getItem("token") ? (
             <>
               {/* <img src={profile} alt=""  onClick={() => navigate("/newprofile")} className="ca-profile1" /> */}
