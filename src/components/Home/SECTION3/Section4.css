@@ -6,7 +6,7 @@
 .eventimgflex{
     position: absolute;
     display: flex;
-    height: 53vw;
+    height: 51vw;
     background-color: antiquewhite;
     width: 95%;
     /* justify-content: space-between; */
@@ -16,7 +16,7 @@
 
 .eventimgflex img{
     width: 16vw;
-    height: 24vw;
+    height: 20vw;
     margin-left: 1vw;
 }
 
