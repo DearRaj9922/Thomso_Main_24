@@ -19,7 +19,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { message } from "antd";
 // import Cross from "../../assests/cross.webp";
 // import loader from "../../assests/loader.gif";
-import Loader from "../Loader/Loader";
+import Loader from "../Newloader/Newloader";
 import cross_img from "../../assets/Cross.webp";
 import { Link } from "react-router-dom";
 import Select from "react-select";

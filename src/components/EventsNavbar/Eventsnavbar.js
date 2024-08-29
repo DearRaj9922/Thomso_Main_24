@@ -125,7 +125,7 @@ function Navbar({ color, disable, setregister, register, data, fontcolor, bright
               <a
                 className={localStorage.getItem("token") ? "event-nav-right-compo hover-underline-animation" : "none_display"}
                 style={{ color: fontcolor }}
-                href="https://thomso.in/id_card"
+                href="https://thomso.in/#/id_card"
               >
                 ID-CARD
               </a>
@@ -133,7 +133,7 @@ function Navbar({ color, disable, setregister, register, data, fontcolor, bright
               <a
                 className={localStorage.getItem("token") ? "event-nav-right-compo hover-underline-animation" : "none_display"}
                 style={{ color: fontcolor }}
-                href="https://thomso.in/payment"
+                href="https://thomso.in/#/payment"
               >
                 ID-CARD
               </a>
