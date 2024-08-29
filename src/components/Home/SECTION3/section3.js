@@ -34,7 +34,10 @@ const Section2 = () => {
 
         <div className='wrapper_s4' >
           <div style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
-            {/* <img src={title4} alt="" style={{position:'absolute', marginTop:'85vw', zIndex:'100',paddingTop:'5vw'}}/> */}
+            {/* <img src={title4} alt="" style={{position:'absolute', marginTop:'85vw', zIndex:'100',paddingTop:'5vw'}}/>
+             */}
+
+             <p className='title_s4'>New Events</p>
           </div>
           <div style={{zIndex:'1000', marginTop:'39vw', width:'99.4vw'}}>
           <Section4/>
