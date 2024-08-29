@@ -90,4 +90,10 @@
         position:absolute;
         z-index:-1;
     }
+    .newtitlewrapp h1{
+        font-size: 20vw;
+    }
+    .newtitlewrapp h3{
+        font-size: 6.5vw;
+    }
 }

@@ -425,7 +425,7 @@
 }
 
 .slidebar2 {
-    position: absolute;
+    position: fixed;
     top: 0vh;
     right: -100vw;
     width: 100vw;
@@ -452,7 +452,7 @@
 }
 
 .mob-reg {
-    margin-top: auto;
+    /* margin-top: auto; */
     margin-bottom: 200px;
     display: inline-flex;
     padding: 8px 30px;

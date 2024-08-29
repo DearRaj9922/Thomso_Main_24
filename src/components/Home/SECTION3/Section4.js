@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Section4.css'
 import bg4 from './../../../assets/bg_s4.webp'
+import { useNavigate } from 'react-router-dom'
 // import title4 from './../../../assets/title_s4.svg'
 
 // import img1 from './../../../assets/bg event.svg'
@@ -17,6 +18,7 @@ import img5 from './../../../assets/bgeventcard.webp'
 
 
 const Section4 = () => {
+    const navigate=useNavigate();
 
     const [curr, setCurr]=useState('');
   return (
@@ -45,11 +47,11 @@ const Section4 = () => {
         </div> */}
 
         <div className='eventimgflex' >
-            <img src={img1} alt="" className='imgevent1' title='tote bag Artistry'/>
-            <img src={img2} alt="" className='imgevent2' title='Sneaker Design'/>
-            <img src={img3} alt="" className='imgevent3' title='Cubelelo'/>
-            <img src={img4} alt="" className='imgevent4' title='Mimicry'/>
-            <img src={img5} alt="" className='imgevent5' title=''/>
+            <img onClick={()=>{navigate('/events/80')}} src={img1} alt="" className='imgevent1' title='tote bag Artistry'/>
+            <img onClick={()=>{navigate('/events/79')}} src={img2} alt="" className='imgevent2' title='Sneaker Design'/>
+            <img onClick={()=>{navigate('/events/72')}} src={img3} alt="" className='imgevent3' title='Cubelelo'/>
+            <img onClick={()=>{navigate('/events/73')}} src={img4} alt="" className='imgevent4' title='Mimicry'/>
+            <img onClick={()=>{navigate('/events/74')}} src={img5} alt="" className='imgevent5' title=''/>
         </div>
 
     </div>
