@@ -19,8 +19,10 @@ const Footer_mob = () => {
             <p className="footermobhead">Contact Us</p>
             <div className="footermobcontent">
                 <div className="mail">
-                    <p>tech@thomso.in</p>
+
+                    <p>thomso@iitr.ac.in</p>
                     <p>anunjay.thomso@gmail.com</p>
+
                 </div>
                  <div className="number">
                     <p>8077071943 (Anunjay)</p>

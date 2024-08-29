@@ -36,6 +36,9 @@ import Section4 from './components/Home/SECTION3/Section4.js';
 import NewEventpage from './components/Profile/EventsPage/Neweventpage/newEventPage.js';
 import Newloader from "./components/Newloader/Newloader.js";
 
+import Id_Card from "./components/Profile/PaymentBox/Id_Card";
+
+
 import Pevents from "./components/Pevents/Pevents";
 
 // import VideoPlayer from "./components/Home/SECTION3/demo.js";
@@ -125,6 +128,7 @@ useEffect(() => {
           <Route path="/forgotpassword" element={<Forget/>} />
           <Route path="/neweventcard" element={<NewEve/>}/>
           <Route path="/loader" element={<Newloader/>}/>
+          <Route path= "/id_card" element={<Id_Card/>}/>
           <Route
           
             path="/auth/reset-password/:email/:token"
