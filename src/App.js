@@ -35,6 +35,7 @@ import Section5 from './components/Home/SECTION3/Section5.js';
 import Section4 from './components/Home/SECTION3/Section4.js';
 import NewEventpage from './components/Profile/EventsPage/Neweventpage/newEventPage.js';
 import Newloader from "./components/Newloader/Newloader.js";
+import Pevents from "./components/Pevents/Pevents";
 function App(props) {
   const [user,setUser] = useState({});
   const [isLoading, setIsLoading] = useState(true);
@@ -99,7 +100,7 @@ useEffect(() => {
         <Route path="/emailverified" element={<EmailVerify />} />
         <Route path="/regcompleted" element={<RegisComp />} />
         <Route path="/login" element={<Login />} />
-        {/* <Route exact={true} path="/pevents" element={<Pevents />} /> */}
+         <Route exact={true} path="/peventsmeow" element={<Pevents />} />
         <Route path="/navbar" element={<Profilenavbar />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/eventsnavbar" element={<Eventsnavbar />} />
