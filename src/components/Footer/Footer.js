@@ -81,7 +81,7 @@ const Footer = () => {
             </div>
             <div className='footerText2'>
 
-            Thomso Office Multi Activity Centre Indian Institute of Technology,Roorkee 247667
+            Thomso Office, 1st Floor MAC, <br/>Indian Institute of Technology,Roorkee 247667
 
             </div>
           </div>
@@ -97,10 +97,10 @@ const Footer = () => {
 
           <div className='footerBoxBSub1'>
             <div className='footerText2'>
-            tech@thomso.in
+            thomso@iitr.ac.in
             </div>
             <div className='footerText2'>
-            pranav.thomso@gmail.com
+            anunjay.thomso@gmail.com
             </div>
           </div>
 
@@ -123,45 +123,45 @@ const Footer = () => {
              <button onMouseEnter={handleClick1} onMouseLeave={handleClick12}>
               {
                 change1 ?
-                <img src={facebook} className='footerSub1img1' alt="facebook"/>
+                <img src={facebook} style={{color:"black",filter:"brightness(0)"}}className='footerSub1img1' alt="facebook"/>
                 :
-                <img src={facebookLite} className='footerSub1img1' alt="facebook"/>
+                <img src={facebookLite} style={{color:"black",filter:"brightness(0)"}} className='footerSub1img1' alt="facebook"/>
 
               }
               </button>
              <button onMouseEnter={handleClick2} onMouseLeave={handleClick22}>
              {
                 change2 ?
-                <img src={insta} className='footerSub1img2' alt="facebook"/>
+                <img src={insta}  style={{color:"black",filter:"brightness(0)"}} className='footerSub1img2' alt="facebook"/>
                 :
-                <img src={instaLite} className='footerSub1img2' alt="facebook"/>
+                <img src={instaLite} style={{color:"black",filter:"brightness(0)"}}  className='footerSub1img2' alt="facebook"/>
 
               }
               </button>
              <button onMouseEnter={handleClick3} onMouseLeave={handleClick32}>
              {
                 change3 ?
-                <img src={twitter} className='footerSub1img3' alt="facebook"/>
+                <img src={twitter} style={{color:"black",filter:"brightness(0)"}} className='footerSub1img3' alt="facebook"/>
                 :
-                <img src={twitterLite} className='footerSub1img3' alt="facebook"/>
+                <img src={twitterLite} style={{color:"black",filter:"brightness(0)"}} className='footerSub1img3' alt="facebook"/>
 
               }
               </button>
              <button onMouseEnter={handleClick4} onMouseLeave={handleClick42}>
              {
                 change4 ?
-                <img src={linkedin} className='footerSub1img4' alt="flinkedin"/>
+                <img src={linkedin} style={{color:"black",filter:"brightness(0)"}} className='footerSub1img4' alt="flinkedin"/>
                 :
-                <img src={linkedinLite} className='footerSub1img4' alt="flinkedin"/>
+                <img src={linkedinLite} style={{color:"black",filter:"brightness(0)"}} className='footerSub1img4' alt="flinkedin"/>
 
               }
               </button>
              <button onMouseEnter={handleClick5} onMouseLeave={handleClick52}>
              {
                 change5 ?
-                <img src={youtube} className='footerSub1img3' alt="fyoutube"/>
+                <img src={youtube} style={{color:"black",filter:"brightness(0)"}} className='footerSub1img3' alt="fyoutube"/>
                 :
-                <img src={youtubeLite} className='footerSub1img3' alt="fyoutube"/>
+                <img src={youtubeLite} style={{color:"black",filter:"brightness(0)"}} className='footerSub1img3' alt="fyoutube"/>
 
               }
               </button>
