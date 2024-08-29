@@ -86,9 +86,9 @@ const EventBox = () => {
     navigate(`/events/${e}`);
   };
   const Locator = useLocation();
-  useEffect(()=>{
-    console.log("laudaaaa",events)
-  })
+  // useEffect(()=>{
+  //   console.log("laudaaaa",events)
+  // })
   return (
     <>
       <div className="nnp-container">
@@ -276,10 +276,11 @@ const EventBox = () => {
                     </span> */}
                     {/* <div className="addEventButton-Profile">  */}
                     <button
-                      onClick={() => {
-                        setdisplay2(!display2);
-                        setdisable("disable");
-                      }}
+                      // onClick={() => {
+                      //   setdisplay2(!display2);
+                      //   setdisable("disable");
+                      // }}
+                      onClick={()=>{navigate('/events')}}
                     >
                       + Add Event
                     </button>
