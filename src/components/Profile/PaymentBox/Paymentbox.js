@@ -21,6 +21,7 @@ import icon3 from "../../../assets/pay_black.png";
 import icon31 from "../../../assets/payment.svg";
 import line from "../../../assets/line1.svg";
 import paymentcenterpic from "../../../assets/NonAcco.webp";
+import paymentlive from "../../../assets/pplive.webp";
 import PaymentSuccess from "./PaymentSuccess";
 // import { useHistory } from "react-router-dom";
 import CircularProgress from "@mui/material/CircularProgress";
@@ -405,7 +406,7 @@ const PaymentBox = (
                 style={{ display:"flex" ,justifyContent: "center", alignItems: "center" ,border:"2px solid #555",backdropFilter:"blur(2px)",borderRadius:"5px"}}
               >
                 <>
-                <img style={{width:"25vw",height:"40vh"}} src={paymentcenterpic} alt="" />
+                <img style={{width:"25vw",height:"40vh"}} src={paymentlive} alt="" />
                   {/* {paymentstatus ? (
                     <PaymentSuccess />
                   ) : (
@@ -755,7 +756,7 @@ const PaymentBox = (
                 </div>
                 <div className="mpb-line1" />
               </div>
-              <img style={{width:"50vw",height:"50vh",marginLeft:"20vw",marginTop:"14vh"}} src={paymentcenterpic} alt="" />
+              <img style={{width:"50vw",height:"50vh",marginLeft:"20vw",marginTop:"14vh"}} src={paymentlive} alt="" />
               {/* <div
                 className="MPaycontainer"
                 style={{ display:"flex" ,justifyContent: "center", alignItems: "center" }}

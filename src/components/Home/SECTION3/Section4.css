@@ -39,6 +39,21 @@
     margin-left: 4vw;
     /* left: 80%; */
 }
+.imgevent1:hover{
+    cursor: pointer;
+}
+.imgevent2:hover{
+    cursor: pointer;
+}
+.imgevent3:hover{
+    cursor: pointer;
+}
+.imgevent4:hover{
+    cursor: pointer;
+}
+.imgevent5:hover{
+    cursor: pointer;
+}
 
 .btn-home-img{
     /* width: 10vw; */
