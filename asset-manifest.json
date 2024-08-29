@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.266ed85c.css",
-    "main.js": "/static/js/main.4ad17e32.js",
+    "main.css": "/static/css/main.26b9e910.css",
+    "main.js": "/static/js/main.41cd7bf4.js",
     "static/js/208.134db665.chunk.js": "/static/js/208.134db665.chunk.js",
     "static/js/85.cfa20a5b.chunk.js": "/static/js/85.cfa20a5b.chunk.js",
     "static/js/453.3d3d444a.chunk.js": "/static/js/453.3d3d444a.chunk.js",
@@ -29,6 +29,7 @@
     "static/media/regbg.webp": "/static/media/regbg.305fc13dbde75358c1e0.webp",
     "static/media/eventbg.webp": "/static/media/eventbg.ff616aa7207acbab55cf.webp",
     "static/media/s3_title.webp": "/static/media/s3_title.4620ac4340c1bd8c0ad8.webp",
+    "static/media/logowhite.svg": "/static/media/logowhite.afb693a59fe1303d6bbdafbb6f1e9e73.svg",
     "static/media/profilebackmob.webp": "/static/media/profilebackmob.136296c2f901b7ed36dd.webp",
     "static/media/eventbgmob.webp": "/static/media/eventbgmob.26ad85dbb2282c75b5c5.webp",
     "static/media/spon.svg": "/static/media/spon.621a6c76c08148593c13e5af3f55bc7c.svg",
@@ -37,7 +38,6 @@
     "static/media/sneaker.jpeg": "/static/media/sneaker.9fe246d194654c31b953.jpeg",
     "static/media/regbgmob.webp": "/static/media/regbgmob.e8a82bfd0ca31c908301.webp",
     "static/media/events.webp": "/static/media/events.fde5c037766b7fb02ec7.webp",
-    "static/media/logowhite.svg": "/static/media/logowhite.954d2e1b619997ccf6ce997ce4e5344d.svg",
     "static/media/totebag.jpeg": "/static/media/totebag.7e2bd018d42f6977067f.jpeg",
     "static/media/herotitle.webp": "/static/media/herotitle.a9781f25d756c5649498.webp",
     "static/media/sec2-mobbg.webp": "/static/media/sec2-mobbg.bdddabb375fc1ef19531.webp",
@@ -45,6 +45,7 @@
     "static/media/NonAcco.webp": "/static/media/NonAcco.7b4f2c92e3e421fa9a65.webp",
     "static/media/sec1-mobbg.webp": "/static/media/sec1-mobbg.3e0722d08dd27031a573.webp",
     "static/media/profileimg.svg": "/static/media/profileimg.56edd884cdd32a20c86d0ab3dc69381e.svg",
+    "static/media/pplive.webp": "/static/media/pplive.69b4907c87352882c2b0.webp",
     "static/media/profile1.png.jpg": "/static/media/profile1.png.da7e7064ed2b96e76c47.jpg",
     "static/media/eventcardbg.webp": "/static/media/eventcardbg.4f1661a9e9b57ca00b5b.webp",
     "static/media/pay.svg": "/static/media/pay.1cc47b09e520356f23c74b99e352a2d4.svg",
@@ -76,8 +77,8 @@
     "static/media/TickCorrect.svg": "/static/media/TickCorrect.317b995981df69acdce1592e92ce5f74.svg",
     "static/media/profile.svg": "/static/media/profile.a0cd79691c7d2da42c0493e6ad98e630.svg",
     "static/media/diamond.svg": "/static/media/diamond.7e6e6a15583877c88e6a71723e75f3b6.svg",
-    "main.266ed85c.css.map": "/static/css/main.266ed85c.css.map",
-    "main.4ad17e32.js.map": "/static/js/main.4ad17e32.js.map",
+    "main.26b9e910.css.map": "/static/css/main.26b9e910.css.map",
+    "main.41cd7bf4.js.map": "/static/js/main.41cd7bf4.js.map",
     "208.134db665.chunk.js.map": "/static/js/208.134db665.chunk.js.map",
     "85.cfa20a5b.chunk.js.map": "/static/js/85.cfa20a5b.chunk.js.map",
     "453.3d3d444a.chunk.js.map": "/static/js/453.3d3d444a.chunk.js.map",
@@ -89,7 +90,7 @@
     "511.6d025d35.chunk.js.map": "/static/js/511.6d025d35.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.266ed85c.css",
-    "static/js/main.4ad17e32.js"
+    "static/css/main.26b9e910.css",
+    "static/js/main.41cd7bf4.js"
   ]
 }
