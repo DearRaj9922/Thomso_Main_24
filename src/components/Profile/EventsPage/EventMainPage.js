@@ -50,7 +50,7 @@ const EventMainPage = ({ events }) => {
   const getCategory = () => {
     axios.get(`https://api2.thomso.in/apiV1/category?status=true`).then((response) => {
       setCategory(response.data);
-      // console.log("data",response.data);
+      console.log("data",response.data);
     });
   };
   useEffect(() => {
@@ -61,6 +61,7 @@ const EventMainPage = ({ events }) => {
   const changeCategory = (category) => {
     setCategoryId(category);
     getData(category);
+    console.log(category);
   };
 
   const checkSearch = (pName) => {
@@ -120,6 +121,10 @@ const EventMainPage = ({ events }) => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="newevents">
+          <EventCard 
+          data={category===17?data:""}/>
         </div>
       </div>
       <div className="Event-MObile-View">

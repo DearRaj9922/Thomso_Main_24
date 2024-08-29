@@ -10,8 +10,8 @@ import axios from "axios";
 import { connect } from "react-redux";
 import Navbar from "../../EventsNavbar/Eventsnavbar";
 import { FileUploader } from "react-drag-drop-files";
-import Back from "../../../assets/profile1.webp";
-import Back1 from "../../../assets/landingpage.webp";
+import Back from "../../../assets/profilebackmob.webp";
+import Back1 from "../../../assets/profileback.webp";
 import { useLocation, Link } from "react-router-dom";
 import pic from "../../../assets/profile1.png.jpg";
 import icon1 from "../../../assets/profile.svg";
@@ -29,12 +29,13 @@ import line from "../../../assets/line1.svg";
 // import qrcode from "../../../assests/qr.webp";
 // import qr from "../../../PdfRenderer/qr.png";
 import "./Id_Card.css";
-import QRcode from "qrcode.react";
+import { QRCodeSVG } from 'qrcode.react';
+
 import { useNavigate } from "react-router-dom";
 // import PDFFile from "../../../PdfRenderer/Renderer";
 import { fetchUser } from "../../User/UserActions";
 // import { PDFDownloadLink } from "@react-pdf/renderer";
-import pic1 from "../../../assests/profile1.png.jpg"
+import pic1 from "../../../assets/profile1.png.jpg"
 const fileTypes = ["JPG", "PNG", "GIF"];
 
 const Id_Card = () => {
@@ -334,7 +335,7 @@ const Id_Card = () => {
                         />)}
 
                         {visible ? (
-                          <QRcode id="myqr" value={qr} size={100} />
+                          <QRCodeSVG id="myqr" value={qr} size={100} />
                         ) : (
                           <div className="id_box_qr">
                             <div className="id_box_qr_text">
@@ -559,7 +560,7 @@ const Id_Card = () => {
                         />)}
 
                         {visible ? (
-                          <QRcode id="myqr" value={qr} />
+                          <QRCodeSVG id="myqr" value={qr} />
                         ) : (
                           <div className="id_box_qr">
                             <div className="id_box_qr_text">

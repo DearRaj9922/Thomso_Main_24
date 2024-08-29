@@ -19,7 +19,7 @@ const Footer_mob = () => {
             <p className="footermobhead">Contact Us</p>
             <div className="footermobcontent">
                 <div className="mail">
-                    <p>tech@thomso.in</p>
+                    <p>thomso@iitr.ac.in</p>
                     <p>pranav.thomso@gmail.com</p>
                 </div>
                  <div className="number">
