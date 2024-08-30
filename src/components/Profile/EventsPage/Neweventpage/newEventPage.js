@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import "./NewEventPage.css";
 import newevbg from "../../../../assets/eventbg.webp";
 import newevbgmob from "../../../../assets/eventbgmob.webp";
@@ -9,6 +9,18 @@ import textdecrev from "../../../../assets/textdecrev.svg"
 import AllEvents from "../EventMainPage.js";
 
 const NewEventPage = () => {
+
+   	const [loading, setLoading] = useState(false);
+	const [loggedin, setLoggedin] = useState(false)
+
+	useEffect(()=>{
+		if (localStorage.getItem('token')){
+			setLoggedin(true)
+		}
+		else{
+			setLoggedin(false)
+		}
+	},[])
   const navigate=useNavigate();
   return (
     <div className='neweventmain'>
@@ -23,7 +35,7 @@ const NewEventPage = () => {
               <div className="newtitlewrapp">
                 <h3>Welcome to Thomso’24!</h3>
                 <h1> Events</h1>
-                <button onClick={()=>navigate('/register')}>Register Now</button>
+                  {!loggedin?(<button onClick={()=>navigate('/register')}>Register Now</button>):(<></>)}
               </div>
               </div>  
               <div className="newallevents">
