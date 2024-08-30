@@ -25,7 +25,24 @@ const EventMainPage = ({ events }) => {
     if (category === "") {
       category = 0;
     }
-    if (events[category]) {
+    if(category===19){
+
+            axios.get(`https://api2.thomso.in/apiV1/event`).then((res)=>{
+            const paidevent = res.data.filter((item)=>item.is_payment===true)
+              setData(paidevent)
+              console.log("paid event", paidevent)
+              dispatch({
+            type: "SET_EVENTS",
+            payload: {
+              ...events,
+              [category]: paidevent,
+            },
+          });
+            })
+
+    }
+    else{
+      if (events[category]) {
       setData(events[category]);
     } else {
       axios
@@ -36,17 +53,28 @@ const EventMainPage = ({ events }) => {
         )
         .then((response) => {
           setData(response.data);
-          console.log(response.data)
-          dispatch({
+          console.log("loda", response.data)
+          // console.log("category", category)
+
+
+             dispatch({
             type: "SET_EVENTS",
             payload: {
               ...events,
               [category]: response.data,
             },
           });
+
+
+
         });
     }
+    }
+
   };
+  // useEffect(()=>{
+  //   console.log(category)
+  // },[category])
   const getCategory = () => {
     axios.get(`https://api2.thomso.in/apiV1/category?status=true`).then((response) => {
       setCategory(response.data);
