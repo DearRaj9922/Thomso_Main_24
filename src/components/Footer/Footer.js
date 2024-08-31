@@ -166,6 +166,9 @@ const Footer = () => {
               }
               </button>
           </div>
+          <div className="whatsappcom">
+            <h3> For more info. Join our <a href="https://chat.whatsapp.com/BzmN59X5trv1XszmSRVHhB"> WhatsApp Community</a></h3>
+          </div>
           {/* <div className='footerSub2'>
             <button className='footerButton' onClick={handleClick}>
               {clicked ? <img src={UpArrow} alt="upArrow" /> : <img className='downarrow' src={DownArrow} alt="DownArrow" />}

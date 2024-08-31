@@ -381,7 +381,7 @@ const EventMainPage = ({ events }) => {
                           <button
                             className="events-left-event5-btn1"
                             id="newchangesinbutton"
-                            onClick={(e) => payForEvent(e)}
+                            onClick={(e) => console.log("payment initiated!")}
                           >
                             {loading ? (
                               <>
