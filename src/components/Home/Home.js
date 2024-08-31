@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect} from "react"
 import "./Home.css"
 import Section2 from "./SECTION3/section3"
 import Navbar from "../EventsNavbar/Eventsnavbar"
@@ -19,6 +19,16 @@ export default function Home() {
 	const navigate=useNavigate();
 	const [loader, setLoader] = useState(false)
 	const [loading, setLoading] = useState(false);
+	const [loggedin, setLoggedin] = useState(false)
+
+	useEffect(()=>{
+		if (localStorage.getItem('token')){
+			setLoggedin(true)
+		}
+		else{
+			setLoggedin(false)
+		}
+	},[])
 	const handleNavigate = (path) => {
 		setLoading(true); // Show loader
 		setTimeout(() => {
@@ -74,7 +84,7 @@ export default function Home() {
         <img className="backdrop-mob" src={secimg2} alt="" />
 				<img className='sec1-title' src={secimg3} alt='Thomso 24' />
 				<div className='sec1-btns'>
-					<button style={{border:"2px solid white"}} onClick={handleReisterClick}>Register Now</button>
+					{!loggedin?(<button style={{border:"2px solid white"}} onClick={handleReisterClick}>Register Now</button>):(<></>)}
 					<button style={{backgroundColor:"white",color:"#004D9D",border:"2px solid #004D9D"}} onClick={handleEventsClick}>Explore Events</button>
 				</div>
 			</div>

@@ -95,6 +95,7 @@ const EventMainPage = ({ events }) => {
       axios
         .get(`https://api2.thomso.in/apiV1/event`)
         .then((res) => {
+          console.log("meow",res.data)
           let selectedItem = res.data?.filter(function (el) {
             return el.id == id;
           });
