@@ -1,0 +1,186 @@
+/* Base Styles */
+.otpVerify {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+.thomso_logo {
+  position: absolute;
+  width: 80px;
+  margin: 16px 2vw;
+  cursor: pointer;
+}
+
+.otpBack, .otpBackmob {
+  height: 100vh;
+  width: 100vw;
+}
+
+.otpBackmob {
+  display: none;
+}
+
+.otpBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -72vh; /* Adjusted for better positioning */
+  padding-bottom: 15vh; /* Ensures spacing for buttons */
+}
+
+.otpContainer {
+  width: 40vw;
+  max-width: 90vw;
+  background: transparent;
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+  padding: 2rem 1rem;
+  border: 2px solid grey;
+  border-radius: 6px;
+}
+
+.verifyEmailText {
+  color: rgba(237, 215, 41, 1);
+  text-align: center;
+  font-family: "Comic Sans MS";
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.otpSent {
+  width: 90%;
+  color: white;
+  text-align: center;
+  font-family: "Comic Neue";
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.inputBoxes {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.inputBoxes input {
+  width: 54px;
+  height: 54px;
+  border-radius: 8px;
+  border: 1px solid black;
+  background: transparent;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.verify_btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 3rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 1.5px solid #505050;
+  background: rgba(237, 215, 41, 1);
+  box-shadow: 1.5px 3px 0px 0px #505050;
+  font-family: "Comic Sans MS";
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .otpContainer {
+    width: 60vw;
+    padding: 1rem;
+  }
+
+  .otpBack {
+    display: none;
+  }
+
+  .otpBackmob {
+    display: block;
+  }
+
+  .otpVerify {
+    background-color: black;
+  }
+
+  .thomso_logo {
+    width: 60px;
+  }
+
+  .otpboxin {
+    width: 30px;
+    height: 30px;
+  }
+
+  .inputBoxes input {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .verifyEmailText {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .otpContainer {
+    width: 70vw;
+  }
+
+  .mob_view {
+    font-size: 6vw;
+    top: 15vh;
+    left: 15vw;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .otpContainer {
+    width: 80vw;
+    padding: 1rem;
+  }
+
+  .verifyEmailText {
+    font-size: 1.25rem;
+  }
+
+  .otpSent {
+    width: 90%;
+  }
+
+  .thomso_logo img {
+    height: 8vw;
+  }
+
+  .mob_view {
+    font-size: 7vw;
+    left: 15vw;
+    top: 15vh;
+  }
+
+  .inputBoxes input {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+
+  .verify_btn {
+    width: 5rem;
+    height: 2.5rem;
+    font-size: 0.9rem;
+  }
+}
