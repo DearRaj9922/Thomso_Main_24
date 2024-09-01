@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./RegPage.css";
+import "./RegPage1.css";
 import { useState } from "react";
 import logbg1 from "../../../assets/regbg.webp";
 import logo from "../../../assets/logowhite.svg"
