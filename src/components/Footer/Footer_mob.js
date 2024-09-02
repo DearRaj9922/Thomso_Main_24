@@ -22,7 +22,7 @@ const Footer_mob = () => {
 
 
 
-                    <p>thomso@iitr.ac.in</p>
+                    <p>aayush.thomso@gmail.com</p>
                     <p>anunjay.thomso@gmail.com</p>
 
                 </div>

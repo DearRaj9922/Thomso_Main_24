@@ -97,7 +97,7 @@ const Footer = () => {
 
           <div className='footerBoxBSub1'>
             <div className='footerText2'>
-            thomso@iitr.ac.in
+            aayush.thomso@gmail.com
             </div>
             <div className='footerText2'>
             anunjay.thomso@gmail.com
