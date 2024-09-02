@@ -11,7 +11,7 @@ const NewEventcard = ({data}) => {
     navigate(`/events/${e}`);
   };
   useEffect(()=>{
-    console.log("data",data)
+    // console.log("data",data)
   })
   return (
     <>

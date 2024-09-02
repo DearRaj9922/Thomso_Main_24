@@ -1,6 +1,8 @@
 .event-mob-page-container {
   background:transparent;
   color: white;
+  display: flex;
+    justify-content: center;
 }
 .all-dropdown-flex {
   display: flex;

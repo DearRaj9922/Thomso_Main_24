@@ -35,6 +35,7 @@ import Section5 from './components/Home/SECTION3/Section5.js';
 import Section4 from './components/Home/SECTION3/Section4.js';
 import NewEventpage from './components/Profile/EventsPage/Neweventpage/newEventPage.js';
 import Newloader from "./components/Newloader/Newloader.js";
+import Newevents  from "./components/Profile/EventsPage/Newevents.js";
 
 import Id_Card from "./components/Profile/PaymentBox/Id_Card";
 
@@ -118,6 +119,7 @@ useEffect(() => {
           <Route path="/pevents" element={<EventBox />} />
           <Route path="/payment" element={<Paymentbox />} />
           <Route path="/payment_gupt" element={<NewPaymentbox/>} />
+          <Route path="/newev" element={<Newevents/>}/>
 
           <Route path="/payment_thsp" element={<NewPaymentbox/>} />
           <Route path="/card" element={<EventCard/>} />

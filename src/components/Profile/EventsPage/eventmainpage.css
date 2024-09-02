@@ -7,6 +7,18 @@
   flex-direction: column;
   overflow: hidden;
 }
+.EMP-container-new {
+  /* background: url("../Sponsors/images/bg.svg"); */
+  /* height: 46vh; */
+  width:96vw !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-size: cover;
+  background-repeat: no-repeat; */
+  flex-direction: column;
+  overflow: hidden;
+}
 .EMP-hero {
   overflow: hidden;
     height: 70vw;
@@ -41,7 +53,7 @@
   .Event-MObile-View{
     display: contents;
   }
-  .EMP-container{
+  .EMP-container,.EMP-container-new{
     display: none;
   }
 }

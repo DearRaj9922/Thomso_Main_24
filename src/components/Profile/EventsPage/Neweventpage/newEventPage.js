@@ -8,6 +8,7 @@ import textdec from "../../../../assets/textdec.svg";
 import textdecrev from "../../../../assets/textdecrev.svg"
 import AllEvents from "../EventMainPage.js";
 import scootergif from "../../../../assets/Events_bike Animation.gif";
+import Newevents from '../Newevents.js';
 const NewEventPage = () => {
 
    	const [loading, setLoading] = useState(false);
@@ -53,6 +54,19 @@ const NewEventPage = () => {
                 <AllEvents/>
 
                 </div>   
+
+                <div className="neweventsmain"> 
+                  <div className="neweventwrapp">
+                <div className="newalltitlediv">
+                  <img src={textdec} className='textdecimg' alt ="decimg"/>
+                <h1>New Events</h1>
+                <img src={textdecrev} className='textdecimg' alt ="decimg"/>
+                </div>
+                
+                <Newevents/>
+                </div>
+
+                </div>  
 
       
     </div>
