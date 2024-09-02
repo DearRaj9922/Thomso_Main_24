@@ -60,7 +60,7 @@
   .ECD-container {
     width: 80vw;
     display: flex;
-    height: 100vh;
+    height: 200vw;
     padding-bottom: 100px;
     overflow-y: auto;
     justify-content: flex-start;
@@ -172,6 +172,35 @@
   height: 74vh;
   overflow-y: auto;
 }
+.ECD-card-Display-new {
+  margin-top: 32px;
+  display: flex;
+  width: 92vw;
+  flex-direction: column;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  /* max-height: 100vh; */
+  /* padding-bottom: 100px; */
+  justify-content:center;
+  gap: 30px 24px;
+  height: 55vh;
+  overflow-y: auto;
+}
+.ECD-card-Display::-webkit-scrollbar{
+  display: none !important;
+  width: 0 !important;
+}
+.ecdwrap{
+  width:92vw;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px 24px;
+  column-gap: 10px;
+  flex-wrap: wrap;
+}
 
 .eventmain-headline {
   color: #FFF;
@@ -189,7 +218,7 @@
     /* flex-direction: column; */
     align-items: center;
     justify-content: center;
-    height:100vh;
+    height:300vw;
   }
 }
 

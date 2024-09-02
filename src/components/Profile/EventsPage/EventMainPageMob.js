@@ -14,6 +14,7 @@ const EventMainPageMob = ({
   category,
   activeCategory,
   changeCategory,
+  disp
 }) => {
   const [search, setSearch] = useState(0);
   const [searchText, setSearchText] = useState("");
@@ -49,7 +50,7 @@ const EventMainPageMob = ({
       {/* <Navbar2 /> */}
       <div className="ECD-container">
         {!search ? (
-          <div className="ECD-searchbar-div">
+          <div style={{display:disp}}className="ECD-searchbar-div">
             {/* <h1 className="eventmain-headline">EVENTS</h1> */}
             <div>
               <span
