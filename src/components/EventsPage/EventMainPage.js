@@ -24,6 +24,7 @@ import cross_img from "../../assets/Cross.webp";
 import { Link } from "react-router-dom";
 import Select from "react-select";
 import { BoldOutlined } from "@ant-design/icons";
+// import Footer from "../Footer/Footer.js";
 
 const slotsOptions = [
   { value: "Day 1", label: "Day 1" },

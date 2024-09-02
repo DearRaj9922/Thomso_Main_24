@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import textdec from "../../../../assets/textdec.svg";
 import textdecrev from "../../../../assets/textdecrev.svg"
 import AllEvents from "../EventMainPage.js";
-
+import scootergif from "../../../../assets/Events_bike Animation.gif";
 const NewEventPage = () => {
 
    	const [loading, setLoading] = useState(false);
@@ -26,18 +26,24 @@ const NewEventPage = () => {
     <div className='neweventmain'>
         <img src={newevbg} className='newbgevimg' alt="newbg"/>     
         <img src={newevbgmob} className='newbgevimgmob' alt="newbgmob"/>
+        <div className="scootergif">
+            
+            <img src={scootergif}  className="scooter_gif" alt="scootergif"/>
+            </div>
         <div className="newevpgnav">
             <Navbar
             fontcolor="black"
             bright="brightness(0)"/>
             </div>  
             <div className="newevpgtitle">
+            
               <div className="newtitlewrapp">
                 <h3>Welcome to Thomso’24!</h3>
                 <h1> Events</h1>
                   {!loggedin?(<button onClick={()=>navigate('/register')}>Register Now</button>):(<></>)}
               </div>
               </div>  
+              
               <div className="newallevents">
                 <div className="newalltitlediv">
                   <img src={textdec} className='textdecimg' alt ="decimg"/>
