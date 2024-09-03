@@ -465,6 +465,7 @@ const PaymentBox = (
                                                 </div>
                                                 <p className="Payinfo"></p>
 
+
                                                 <p className="Payevent">
                                                     Are you going to take Accommodation in IITR? (*
                                                     Accommdation Compulsory for Female)
@@ -527,6 +528,7 @@ const PaymentBox = (
                                                         No
                                                     </button>
                                                 </div>
+
 
                                                 <div className="Payimg" style={mystyle1}>
                                                     <img src={payment} alt="1"/>
@@ -668,6 +670,7 @@ const PaymentBox = (
                                 </>
                             </div>
                         </div>
+
                     </div>
                     <div className={!logout ? "none" : ""} id="logout">
                         <div className="l_body">
@@ -683,6 +686,7 @@ const PaymentBox = (
                                 </div>
                                 <div className="btns">
                                     <button className="btn1">
+
                 <span
                     onClick={() => {
                         setLogout(!logout);
