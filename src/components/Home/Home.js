@@ -13,6 +13,7 @@ import secimg6 from "../../assets/sec2-mobbg.webp"
 import secimg7 from "../../assets/about-us.webp"
 import secimg8 from "../../assets/train.webp";
 import Loader from "../Newloader/Newloader";
+import Footer from '../Footer/Footer';
 import { useState } from "react"
 
 export default function Home() {
@@ -112,6 +113,7 @@ export default function Home() {
 
 
       <Section2 />
+	  <Footer />
 		</div>
 		</>
 	)

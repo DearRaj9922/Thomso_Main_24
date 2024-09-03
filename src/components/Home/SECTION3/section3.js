@@ -8,7 +8,7 @@ import Section4 from './Section4'
 // import title4 from './../../../assets/title_s4.svg'
 import Section5 from './Section5'
 import pattern from './../../../assets/pattern.webp'
-import Footer from '../../Footer/Footer'
+// import Footer from '../../Footer/Footer'
 
 
 
@@ -16,7 +16,7 @@ const Section2 = () => {
 
 
   return (
-    <div className='' style={{width:'100vw'}}>
+    <div className='' style={{width:'100vw', zIndex:'101'}}>
         <img style={{height:'150vw', width:'100vw', zIndex:'-10', position:'absolute', objectFit:'contain'}}  alt ="bgbg"src={bg}/>
 
         {/* <div className='heading_s3' style={{color:'red', zIndex:'100', fontSize:'10vw', position:'fixed'}}>
@@ -50,7 +50,7 @@ const Section2 = () => {
           <Section5/>
           </div>
           
-          <Footer/>
+          {/* <Footer/> */}
         </div>
 
        
