@@ -406,8 +406,8 @@ const PaymentBox = (
                 style={{ display:"flex" ,justifyContent: "center", alignItems: "center" ,border:"2px solid #555",backdropFilter:"blur(2px)",borderRadius:"5px"}}
               >
                 <>
-                {/* <img style={{width:"25vw",height:"40vh"}} src={paymentlive} alt="" /> */}
-                  {paymentstatus ? (
+                <img style={{width:"25vw",height:"40vh"}} src={paymentlive} alt="" />
+                  {/* {paymentstatus ? (
                     <PaymentSuccess />
                   ) : (
                     <>
@@ -490,9 +490,9 @@ const PaymentBox = (
                         ) : (
                           <button className="PayNowBtn">Pay Now</button>
                         )}
-                      </div>
+                      </div> */}
 
-                      <div className="PayRight">
+                      {/* <div className="PayRight">
                         <p
                           className="Payevent"
                           style={{ marginTop: "-12px", maxWidth: "450px" }}
@@ -651,10 +651,10 @@ const PaymentBox = (
                             )}
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                     </>
-                   )}
-                </> 
+                  {/* )}
+                </> */}
               </div>
             </div>
           </div>
