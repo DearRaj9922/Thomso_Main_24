@@ -91,7 +91,7 @@ const NewPaymentBox = (
       .then((ress) => {
         setLoading(false);
         setuserDetails(ress.data);
-
+        console.log("payment__",paymentData)
         if (paymentData.length == 0) {
           var temp = paymentData;
           temp.push({ id: ress.data?.thomso_id, acco: acco1.toString() });
