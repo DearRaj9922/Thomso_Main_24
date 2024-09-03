@@ -23,7 +23,7 @@ import ResetPassword from "./components/Registration/ResetPass/ResetPass";
 // import EventMainPage from "./components/Profile/EventsPage/EventMainPage";
 import Home3d from "./components/3dhome/Home3d.js";
 import EventMainPage from "./components/EventsPage/EventMainPage";
-import NewEve from "./components/Profile/EventsPage/NewEventCard/NewEventcard.js";
+// import NewEve from "./components/Profile/EventsPage/NewEventCard/NewEventcard.js";
 // import EventPayment from "./components/EventPayment/EventPayment";
 
 import React,{useEffect, useState} from "react";
@@ -35,7 +35,7 @@ import Section5 from './components/Home/SECTION3/Section5.js';
 import Section4 from './components/Home/SECTION3/Section4.js';
 import NewEventpage from './components/Profile/EventsPage/Neweventpage/newEventPage.js';
 import Newloader from "./components/Newloader/Newloader.js";
-import Newevents  from "./components/Profile/EventsPage/Newevents.js";
+// import Newevents  from "./components/Profile/EventsPage/Newevents.js";
 
 import Id_Card from "./components/Profile/PaymentBox/Id_Card";
 
@@ -119,7 +119,7 @@ useEffect(() => {
           <Route path="/pevents" element={<EventBox />} />
           <Route path="/payment" element={<Paymentbox />} />
           <Route path="/payment_gupt" element={<NewPaymentbox/>} />
-          <Route path="/newev" element={<Newevents/>}/>
+          {/* <Route path="/newev" element={<Newevents/>}/> */}
 
           <Route path="/payment_thsp" element={<NewPaymentbox/>} />
           <Route path="/card" element={<EventCard/>} />
@@ -128,7 +128,7 @@ useEffect(() => {
           <Route path="/ProfileNameEdit" element={<ProfileNameEditModel />} />
           <Route path="/Carousel" element={<Carousel1/>} />
           <Route path="/forgotpassword" element={<Forget/>} />
-          <Route path="/neweventcard" element={<NewEve/>}/>
+          {/* <Route path="/neweventcard" element={<NewEve/>}/> */}
           <Route path="/loader" element={<Newloader/>}/>
           <Route path= "/id_card" element={<Id_Card/>}/>
           <Route
