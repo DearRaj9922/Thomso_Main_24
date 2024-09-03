@@ -490,9 +490,9 @@ const PaymentBox = (
                         ) : (
                           <button className="PayNowBtn">Pay Now</button>
                         )}
-                      </div> */}
+                      </div>
 
-                      {/* <div className="PayRight">
+                      <div className="PayRight">
                         <p
                           className="Payevent"
                           style={{ marginTop: "-12px", maxWidth: "450px" }}
@@ -651,10 +651,10 @@ const PaymentBox = (
                             )}
                           </div>
                         </div>
-                      </div> */}
+                      </div>
                     </>
-                  {/* )}
-                </> */}
+                   )} */}
+                </> 
               </div>
             </div>
           </div>
