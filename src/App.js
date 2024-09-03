@@ -38,6 +38,7 @@ import Newloader from "./components/Newloader/Newloader.js";
 // import Newevents  from "./components/Profile/EventsPage/Newevents.js";
 
 import Id_Card from "./components/Profile/PaymentBox/Id_Card";
+// import NewPaymentbox from "./components/Profile/PaymentBox/NewPaymentBox";
 
 
 import Pevents from "./components/Pevents/Pevents";
@@ -117,7 +118,7 @@ useEffect(() => {
           <Route path="/events/:id" element={<EventMainPage />} />
           {/* <Route exact={true} path="/eventpayment" element={<EventPayment />} /> */}
           <Route path="/pevents" element={<EventBox />} />
-          <Route path="/paymentnew" element={<Paymentbox />} />
+          <Route path="/payment" element={<Paymentbox />} />
           <Route path="/payment_gupt" element={<NewPaymentbox/>} />
           {/* <Route path="/newev" element={<Newevents/>}/> */}
 
