@@ -417,8 +417,8 @@ const PaymentBox = (
                                 }}
                             >
                                 <>
-                                    {/*<img style={{width:"25vw",height:"40vh"}} src={paymentlive} alt="" />*/}
-                                    {paymentstatus ? (
+                                    <img style={{width:"25vw",height:"40vh"}} src={paymentlive} alt="" />
+                                    {/* {paymentstatus ? (
                                         <PaymentSuccess/>
                                     ) : (
                                         <>
@@ -666,7 +666,7 @@ const PaymentBox = (
                                                 </div>
                                             </div>
                                         </>
-                                    )}
+                                    )} */}
                                 </>
                             </div>
                         </div>
