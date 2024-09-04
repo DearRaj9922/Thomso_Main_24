@@ -3,11 +3,11 @@ import "./Home.css"
 import Section2 from "./SECTION3/section3"
 import Navbar from "../EventsNavbar/Eventsnavbar"
 import { useNavigate } from "react-router-dom"
-import clouds from "../../assets/clouds.svg";
+import clouds from "../../assets/clouds.webp";
 import secimg1 from "../../assets/section1-2d-bg.webp"
 import secimg2 from "../../assets/sec1-mobbg.webp"
 import secimg3 from "../../assets/herotitle.webp"
-import secimg4 from "../../assets/bird.svg"
+import secimg4 from "../../assets/bird.webp"
 import secimg5 from "../../assets/section2-2d-bgfull.webp"
 import secimg6 from "../../assets/sec2-mobbg.webp"
 import secimg7 from "../../assets/about-us.webp"
@@ -56,28 +56,6 @@ export default function Home() {
 			fontcolor="black"
 			bright="brightness(0)"
 			/>
-			{/* <div className='nav'>
-				<div className='navlogo'>
-					<img src='/navlogo.svg' alt='thomso' />
-				</div>
-				<div className='navigation'>
-					<a href='#' className='nav-link'>
-						Ca Portal
-					</a>
-					<a href='#' className='nav-link'>
-						Zonals
-					</a>
-					<a href='#' className='nav-link'>
-						Events
-					</a>
-					<a href='#' className='nav-link'>
-						Merch
-					</a>
-					<button type='button' className='nav-btn'>
-						Log In
-					</button>
-				</div>
-			</div> */}
 
 			{/* Section 1 */}
 			<div className='sec1'>
