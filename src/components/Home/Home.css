@@ -12,6 +12,14 @@
   }
 }
 
+.blue-background {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    background-color: rgb(212, 221, 230);
+}
+
 .home_wrapper {
     min-height: 100vh;
     width: 100vw;
@@ -105,26 +113,26 @@
 .sec1-5 {
     height: fit-content;
     position: absolute;
-    top: 55vh;
-    margin-top: -4vh;
+    top: 80vh;
 }
 
 .sec1-ender {
     position: absolute;
+    height: 130vh;
     width: 120vw;
     z-index: 5;
     margin-left: -10vw;
 }
 
 .sec1-bird {
-    margin: 45vh 16vw;
+    margin: 36vh 16vw;
     position: absolute;
     z-index: 10;
     /* max-width: 1000px; */
 }
 
 .sec2 {
-    position: relative;
+    /* position: relative; */
     width: 100vw;
     margin-top: 90vh;
     /* background-image: url(/public/section2-2d-bg.png); */
@@ -133,6 +141,9 @@
 .backdrop2 {
     width: 100vw;
     position: absolute;
+    /* margin-top: 80vh; */
+    top: 150vh;
+
 }
 
 .about {
@@ -148,7 +159,7 @@
     position: relative;
     border-radius: 12px;
     opacity: 0.9;
-    margin-top: 50vh;
+    margin-top: 40vh;
 }
 
 .about p {
@@ -183,8 +194,8 @@
   width: 100%;
   height: 200px;
   margin-top: 100vh;
-  z-index: 15;
-  margin-bottom: 90vh;
+  z-index: 115;
+  margin-bottom: max(83vh, 690px);
 }
 
 .train {
@@ -196,7 +207,7 @@
 }
 
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 450px) {
     .backdrop {
         display: none;
     }
@@ -220,9 +231,12 @@
         margin-top: 18vh;
         margin-bottom: 5vh;
     }
+    .sec1-5 {
+        top: 80vh !important;
+    }
     .sec1-bird {
         width: 70vw;
-        margin: 30vh 16vw;
+        margin: 0vh 16vw !important;
     }
     .sec1-ender {
         display: none;
@@ -336,7 +350,10 @@
         line-height: 40px;
     }
     .train-wrapper {
-        margin-top: 100vh;
-        margin-bottom: 50vh;
+        margin-top: 110vh;
+        margin-bottom: 45vh;
+    }
+    .sec1-5 {
+        top: 75vh;
     }
 }
