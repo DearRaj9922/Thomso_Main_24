@@ -22,9 +22,9 @@ const EventMainPage = ({ events }) => {
   const [search, setSearch] = useState("");
 
   const getData = (category) => {
-    if (category === "") {
-      category = 0;
-    }
+    // if (category === "") {
+    //   category = 0;
+    // }
     if(category===19){
 
             axios.get(`https://api2.thomso.in/apiV1/event`).then((res)=>{
@@ -42,9 +42,9 @@ const EventMainPage = ({ events }) => {
 
     }
     else{
-      if (events[category]) {
-      setData(events[category]);
-    } else {
+    //   if (events[category]) {
+    //   setData(events[category]);
+    // } else {
       axios
         .get(
           `https://api2.thomso.in/apiV1/event?id=&category=${
@@ -53,8 +53,8 @@ const EventMainPage = ({ events }) => {
         )
         .then((response) => {
           setData(response.data);
-          console.log("loda", response.data)
-          // console.log("category", category)
+          // console.log("loda", response.data)
+          console.log("category", category)
 
 
              dispatch({
@@ -68,7 +68,7 @@ const EventMainPage = ({ events }) => {
 
 
         });
-    }
+    
     }
 
   };
@@ -89,7 +89,7 @@ const EventMainPage = ({ events }) => {
   const changeCategory = (category) => {
     setCategoryId(category);
     getData(category);
-    console.log(category);
+    // console.log(category);
   };
 
   const checkSearch = (pName) => {

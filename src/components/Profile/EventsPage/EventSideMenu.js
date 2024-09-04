@@ -25,7 +25,7 @@ const EventSideMenu = ({
 
   const [active, setActive] = useState(null);
   // console.log(activeCategory);
-  console.log(userDetails.payment);
+  // console.log(userDetails.payment);
   return (
     <div className="ESM-Conatiner">
       <div className="ESM-Conatiner-header">
