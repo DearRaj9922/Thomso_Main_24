@@ -17,7 +17,8 @@
     background: url('./../../../assets/bgs4.svg') ;
     background-repeat: no-repeat;
     background-size:contain;
-    height: 300vh;
+    /* height: 300vh; */
+    height: 124vw;
     /* width: 100vw; */
     /* z-index: -1000; */
     margin-top: -148vh;
