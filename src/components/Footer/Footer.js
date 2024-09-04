@@ -194,7 +194,7 @@ const Footer = () => {
           <div className="whatsappcom">
             <h3>
               For more info. Join our{' '}
-              <a href="https://chat.whatsapp.com/BzmN59X5trv1XszmSRVHhB">WhatsApp Community</a>
+              <a href="https://chat.whatsapp.com/BzmN59X5trv1XszmSRVHhB" target="_blank">WhatsApp Community</a>
             </h3>
           </div>
         </div>
