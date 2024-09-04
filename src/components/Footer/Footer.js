@@ -286,7 +286,7 @@ const Footer = () => {
 
         <div className='footerBoxA'>
           <div className='footerSub1'>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/thomsoiitroorkee" target="_blank" rel="noopener noreferrer">
               <button onMouseEnter={handleClick1} onMouseLeave={handleClick12}>
                 {change1 ? (
                   <img
@@ -305,7 +305,7 @@ const Footer = () => {
                 )}
               </button>
             </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/thomso.iitr" target="_blank" rel="noopener noreferrer">
               <button onMouseEnter={handleClick2} onMouseLeave={handleClick22}>
                 {change2 ? (
                   <img
@@ -324,7 +324,7 @@ const Footer = () => {
                 )}
               </button>
             </a>
-            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/Thomso_IITR" target="_blank" rel="noopener noreferrer">
               <button onMouseEnter={handleClick3} onMouseLeave={handleClick32}>
                 {change3 ? (
                   <img
@@ -343,7 +343,7 @@ const Footer = () => {
                 )}
               </button>
             </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/company/thomso-official/" target="_blank" rel="noopener noreferrer">
               <button onMouseEnter={handleClick4} onMouseLeave={handleClick42}>
                 {change4 ? (
                   <img
@@ -362,7 +362,7 @@ const Footer = () => {
                 )}
               </button>
             </a>
-            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.youtube.com/@iitrthomso" target="_blank" rel="noopener noreferrer">
               <button onMouseEnter={handleClick5} onMouseLeave={handleClick52}>
                 {change5 ? (
                   <img
