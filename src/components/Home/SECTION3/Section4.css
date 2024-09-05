@@ -22,21 +22,25 @@
 
 .eventimgflex>.imgevent2{
     margin-left: 4vw;
+    object-fit: cover;
     /* left: 80%; */
 }
 
 .eventimgflex>.imgevent3{
     margin-left: 5vw;
+    object-fit: cover;
     /* left: 80%; */
 }
 
 .eventimgflex>.imgevent4{
     margin-left: 5vw;
+    object-fit: cover;
     /* left: 80%; */
 }
 
 .eventimgflex>.imgevent5{
     margin-left: 4vw;
+    object-fit: cover;
     /* left: 80%; */
 }
 .imgevent1:hover{
