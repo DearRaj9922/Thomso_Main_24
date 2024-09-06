@@ -16,13 +16,14 @@ import {useLocation, Link} from "react-router-dom";
 import pic from "../../../assets/profile1.png.jpg";
 import icon1 from "../../../assets/profile.svg";
 import Closed from "../../../assets/PaymentClosedGirls.png";
-import Closed1 from "../../../assets/NonAcco.webp";
+import Closed1 from "../../../assets/pplive.webp";
 import icon2 from "../../../assets/events.svg";
 import icon3 from "../../../assets/pay_black.png";
 import icon31 from "../../../assets/payment.svg";
 import line from "../../../assets/line1.svg";
 // import paymentcenterpic from "../../../assests/paymentpic.webp";
 import PaymentSuccess from "./PaymentSuccess";
+// import paymentlive from "../../../assets/pplive.webp";
 // import { useHistory } from "react-router-dom";
 import CircularProgress from "@mui/material/CircularProgress";
 import payment from "./pay.svg";
@@ -501,7 +502,7 @@ const NewPaymentBox = (
                                 color: "white",
                                 cursor: "pointer",
                             }}
-                            href="https://drive.google.com/file/d/10pYZiG7enMSYHwjSYv-fTvTJkgLPNtJL/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1j3SrUhxlt6JUg3kjpK2mSLe6iy3onzCd/view?usp=drive_link"
                             target="_blank"
                         >
                             Agree Terms and Conditions *
@@ -592,7 +593,7 @@ const NewPaymentBox = (
                                 color: "white",
                                 cursor: "pointer",
                             }}
-                            href="https://drive.google.com/file/d/10pYZiG7enMSYHwjSYv-fTvTJkgLPNtJL/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1j3SrUhxlt6JUg3kjpK2mSLe6iy3onzCd/view?usp=drive_link"
                             target="_blank"
                         >
                             Agree Terms and Conditions *
@@ -733,7 +734,7 @@ const NewPaymentBox = (
                                 color: "white",
                                 cursor: "pointer",
                             }}
-                            href="https://drive.google.com/file/d/10pYZiG7enMSYHwjSYv-fTvTJkgLPNtJL/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1j3SrUhxlt6JUg3kjpK2mSLe6iy3onzCd/view?usp=drive_link"
                             target="_blank"
                         >
                             Agree Terms and Conditions *
@@ -825,7 +826,7 @@ const NewPaymentBox = (
                                 color: "white",
                                 cursor: "pointer",
                             }}
-                            href="https://drive.google.com/file/d/10pYZiG7enMSYHwjSYv-fTvTJkgLPNtJL/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1j3SrUhxlt6JUg3kjpK2mSLe6iy3onzCd/view?usp=drive_link"
                             target="_blank"
                         >
                             Agree Terms and Conditions *
