@@ -316,12 +316,18 @@ const Id_Card = () => {
                   flexDirection:"column",
                   overflowY:"scroll",
                   alignItems: "center",
+                  justifyContent:"center",  
+                  textAlign:"center"  
                 }}
               >
-                <div className="xyz">
+                
+                {/* <div className="xyz">
                   Please Download your ID Card
+                </div> */}
+                <div style={{color:"white",fontFamily:"Public Sans"}} className="id_message">
+                  <h2>ID_CARD will be available from 29th September</h2>
                 </div>
-                <div className="id_border1">
+                <div  style={{display:"none"}}className="id_border1">
                   <div className="id_border2">
                     <div className="id_box">
                       <div className="id_box_left">
@@ -393,7 +399,7 @@ const Id_Card = () => {
                     </div>
                   </div>
                 </div>
-                <div>
+                {/* <div>
                   <div className="right_id_card"
                   // style={{display:"none"}}
                   >
@@ -440,7 +446,7 @@ const Id_Card = () => {
                         )}
                     </>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -541,14 +547,18 @@ const Id_Card = () => {
                   overflowY: "scroll",
                   overflowX: "hidden",
                   marginTop: "5vh",
+                  textAlign:"center"  
                 }}
               >
-                 <div className="xyz">
+                 {/* <div className="xyz">
                   Please Download your ID Card
+                </div> */}
+                <div style={{color:"white",fontFamily:"Public Sans",textAlign:"center"}} className="id_message">
+                  <h2>ID_CARD will be available from 29th September</h2>
                 </div>
-                <div className="id_border1">
+                <div style={{display:"none"}} className="id_border1">
                   <div className="id_border2">
-                    <div className="id_box">
+                    <div className="id_box">  
                       <div className="id_box_left">
                       {userDetails?.avtar ? (
                         <img
@@ -615,7 +625,7 @@ const Id_Card = () => {
                     </div>
                   </div>
                 </div>
-                <div className="right_id_card">
+                {/* <div className="right_id_card">
                   <>
                     {!userDetails?.avtar && (
                       <FileUploader
@@ -668,7 +678,7 @@ const Id_Card = () => {
                       </div>
                         )}
                   </>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

@@ -501,7 +501,7 @@ const NewPaymentBox = (
                                 color: "white",
                                 cursor: "pointer",
                             }}
-                            href="https://drive.google.com/file/d/166MAX7s0VpYPHzaBoDUHY4OzPkWSXGXE/view?usp=drive_link"
+                            href="https://drive.google.com/file/d/10pYZiG7enMSYHwjSYv-fTvTJkgLPNtJL/view?usp=sharing"
                             target="_blank"
                         >
                             Agree Terms and Conditions *
@@ -548,7 +548,7 @@ const NewPaymentBox = (
                 <>
                     <p className="Payevent">
                         Are you going to take Accommodation in IITR?
-                        (* Accommdation Compulsory for Female)
+                        (* Accommodation Compulsory for Female)
                     </p>
                     <div
                         className="yesNo"
@@ -592,7 +592,7 @@ const NewPaymentBox = (
                                 color: "white",
                                 cursor: "pointer",
                             }}
-                            href="https://drive.google.com/file/d/166MAX7s0VpYPHzaBoDUHY4OzPkWSXGXE/view?usp=drive_link"
+                            href="https://drive.google.com/file/d/10pYZiG7enMSYHwjSYv-fTvTJkgLPNtJL/view?usp=sharing"
                             target="_blank"
                         >
                             Agree Terms and Conditions *
@@ -647,7 +647,7 @@ const NewPaymentBox = (
                     style={{marginBottom: "5vh"}}
                 >
                     {" "}
-                    * Accommdation is Compulsory for Female
+                    * Accommodation is Compulsory for Female
                 </p>
                 <div
                     className="agree-terms-and-conditions"
@@ -716,7 +716,7 @@ const NewPaymentBox = (
                 <>
                     <p className="MPayevent">
                         Accomodation is full now only get ticket for non accomodation
-                        (* Accommdation Compulsory for Female)
+                        (* Accommodation Compulsory for Female)
                     </p>
                     <div className="agree-terms-and-conditions">
                         <input
@@ -733,7 +733,7 @@ const NewPaymentBox = (
                                 color: "white",
                                 cursor: "pointer",
                             }}
-                            href="https://drive.google.com/file/d/166MAX7s0VpYPHzaBoDUHY4OzPkWSXGXE/view?usp=drive_link"
+                            href="https://drive.google.com/file/d/10pYZiG7enMSYHwjSYv-fTvTJkgLPNtJL/view?usp=sharing"
                             target="_blank"
                         >
                             Agree Terms and Conditions *
@@ -781,7 +781,7 @@ const NewPaymentBox = (
                 <>
                     <p className="MPayevent">
                         Are you going to take Accommodation in IITR?
-                        (* Accommdation Compulsory for Female)
+                        (* Accommodation Compulsory for Female)
                     </p>
                     <div
                         className="MyesNo"
@@ -825,7 +825,7 @@ const NewPaymentBox = (
                                 color: "white",
                                 cursor: "pointer",
                             }}
-                            href="https://drive.google.com/file/d/166MAX7s0VpYPHzaBoDUHY4OzPkWSXGXE/view?usp=drive_link"
+                            href="https://drive.google.com/file/d/10pYZiG7enMSYHwjSYv-fTvTJkgLPNtJL/view?usp=sharing"
                             target="_blank"
                         >
                             Agree Terms and Conditions *
@@ -881,7 +881,7 @@ const NewPaymentBox = (
                     style={{marginBottom: "5vh"}}
                 >
                     {" "}
-                    * Accommdation is Compulsory for Female
+                    * Accommodation is Compulsory for Female
                 </p>
                 <div
                     className="agree-terms-and-conditions"
