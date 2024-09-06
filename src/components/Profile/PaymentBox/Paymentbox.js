@@ -428,7 +428,7 @@ const PaymentBox = (
                                                     <div className="PayAmount">
                                                         <div>
                                                             <p>Thomso Fees</p>
-                                                            {acco == true || acco == null ? (
+                                                            {acco == "true" || acco == null ? (
                                                                 <p>Accommodation</p>
                                                             ) : (
                                                                 <p style={{color: "rgba(64, 64, 64, 1)"}}>
@@ -438,7 +438,7 @@ const PaymentBox = (
                                                         </div>
                                                         <div>
                                                             <p>₹ 2299</p>
-                                                            {acco == true || acco == null ? (
+                                                            {acco == "true" || acco == null ? (
                                                                 <p>₹ 500</p>
                                                             ) : (
                                                                 <p style={{color: "rgba(64, 64, 64, 1)"}}>
@@ -453,7 +453,7 @@ const PaymentBox = (
                                                         <p>
                               <span className="Paylarge">
                                 ₹{" "}
-                                  {acco == true || acco == null ? "2799" : "2299"}
+                                  {acco == "true" || acco == null ? "2799" : "2299"}
                               </span>
                                                             <span className="PayTaxes"> + Taxes</span>
                                                         </p>

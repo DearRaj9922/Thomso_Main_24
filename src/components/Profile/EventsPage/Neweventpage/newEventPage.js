@@ -3,74 +3,72 @@ import "./NewEventPage.css";
 import newevbg from "../../../../assets/eventbg.webp";
 import newevbgmob from "../../../../assets/eventbgmob.webp";
 import Navbar from "../../../EventsNavbar/Eventsnavbar"
-import { useNavigate } from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 import textdec from "../../../../assets/textdec.svg";
 import textdecrev from "../../../../assets/textdecrev.svg"
 import AllEvents from "../EventMainPage.js";
 import scootergif from "../../../../assets/Events_bike Animation.gif";
 import Newevents from '../Newevents.js';
+
 const NewEventPage = () => {
 
-   	const [loading, setLoading] = useState(false);
-	const [loggedin, setLoggedin] = useState(false)
+    const [loading, setLoading] = useState(false);
+    const [loggedin, setLoggedin] = useState(false)
 
-	useEffect(()=>{
-		if (localStorage.getItem('token')){
-			setLoggedin(true)
-		}
-		else{
-			setLoggedin(false)
-		}
-	},[])
-  const navigate=useNavigate();
-  return (
-    <div className='neweventmain'>
-        <img src={newevbg} className='newbgevimg' alt="newbg"/>     
-        <img src={newevbgmob} className='newbgevimgmob' alt="newbgmob"/>
-        <div className="scootergif">
-            
-            <img src={scootergif}  className="scooter_gif" alt="scootergif"/>
+    useEffect(() => {
+        if (localStorage.getItem('token')) {
+            setLoggedin(true)
+        } else {
+            setLoggedin(false)
+        }
+    }, [])
+    const navigate = useNavigate();
+    return (<div className='neweventmain'>
+            <img src={newevbg} className='newbgevimg' alt="newbg"/>
+            <img src={newevbgmob} className='newbgevimgmob' alt="newbgmob"/>
+            <div className="scootergif">
+
+                <img src={scootergif} className="scooter_gif" alt="scootergif"/>
             </div>
-        <div className="newevpgnav">
-            <Navbar
-            fontcolor="black"
-            bright="brightness(0)"/>
-            </div>  
+            <div className="newevpgnav">
+                <Navbar
+                    fontcolor="black"
+                    bright="brightness(0)"/>
+            </div>
             <div className="newevpgtitle">
-            
-              <div className="newtitlewrapp">
-                <h3>Welcome to Thomso’24!</h3>
-                <h1> Events</h1>
-                  {!loggedin?(<button onClick={()=>navigate('/register')}>Register Now</button>):(<></>)}
-              </div>
-              </div>  
-              
-              <div className="newallevents">
+
+                <div className="newtitlewrapp">
+                    <h3>Welcome to Thomso’24!</h3>
+                    <h1> Events</h1>
+                    {!loggedin ? (<button onClick={() => navigate('/register')}>Register Now</button>) : (<></>)}
+                </div>
+            </div>
+
+            <div className="newallevents">
                 <div className="newalltitlediv">
-                  <img src={textdec} className='textdecimg' alt ="decimg"/>
-                <h1>All Events</h1>
-                <img src={textdecrev} className='textdecimg' alt ="decimg"/>
+                    <img src={textdec} className='textdecimg' alt="decimg"/>
+                    <h1>All Events</h1>
+                    <img src={textdecrev} className='textdecimg' alt="decimg"/>
                 </div>
                 <AllEvents/>
 
-                </div>   
+            </div>
 
-                <div className="neweventsmain"> 
-                  <div className="neweventwrapp">
-                <div className="newalltitlediv">
-                  <img src={textdec} className='textdecimg' alt ="decimg"/>
-                <h1>New Events</h1>
-                <img src={textdecrev} className='textdecimg' alt ="decimg"/>
+            <div className="neweventsmain">
+                <div className="neweventwrapp">
+                    <div className="newalltitlediv">
+                        <img src={textdec} className='textdecimg' alt="decimg"/>
+                        <h1>New Events</h1>
+                        <img src={textdecrev} className='textdecimg' alt="decimg"/>
+                    </div>
+
+                    <Newevents/>
                 </div>
-                
-                <Newevents/>
-                </div>
 
-                </div>  
+            </div>
 
-      
-    </div>
-  )
+
+        </div>)
 }
 
 export default NewEventPage

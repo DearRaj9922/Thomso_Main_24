@@ -50,7 +50,13 @@ function App(props) {
   const [isLoading, setIsLoading] = useState(true);
   // const [items,setItems] = useState();
 
-
+  // useEffect(()=>{
+  //   (async()=>{
+  //     await axios.get("https://api2.thomso.in/apiV1/controls_get_participant?participant_id=Th-2400011").then((res)=>{
+  //       console.log("abc",res.data)
+  //     })
+  //   })()
+  // },[])
 useEffect(() => {
   if(!localStorage.getItem("token")){
     loadUserData();
