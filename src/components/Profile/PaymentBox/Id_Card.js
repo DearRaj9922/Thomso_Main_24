@@ -325,7 +325,7 @@ const Id_Card = () => {
                   Please Download your ID Card
                 </div> */}
                 <div style={{color:"white",fontFamily:"Public Sans"}} className="id_message">
-                  <h2>ID_CARD will be availabe from 29th September</h2>
+                  <h2>ID_CARD will be available from 29th September</h2>
                 </div>
                 <div  style={{display:"none"}}className="id_border1">
                   <div className="id_border2">
@@ -554,7 +554,7 @@ const Id_Card = () => {
                   Please Download your ID Card
                 </div> */}
                 <div style={{color:"white",fontFamily:"Public Sans",textAlign:"center"}} className="id_message">
-                  <h2>ID_CARD will be availabe from 29th September</h2>
+                  <h2>ID_CARD will be available from 29th September</h2>
                 </div>
                 <div style={{display:"none"}} className="id_border1">
                   <div className="id_border2">

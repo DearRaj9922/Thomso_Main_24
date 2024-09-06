@@ -548,7 +548,7 @@ const NewPaymentBox = (
                 <>
                     <p className="Payevent">
                         Are you going to take Accommodation in IITR?
-                        (* Accommdation Compulsory for Female)
+                        (* Accommodation Compulsory for Female)
                     </p>
                     <div
                         className="yesNo"
@@ -647,7 +647,7 @@ const NewPaymentBox = (
                     style={{marginBottom: "5vh"}}
                 >
                     {" "}
-                    * Accommdation is Compulsory for Female
+                    * Accommodation is Compulsory for Female
                 </p>
                 <div
                     className="agree-terms-and-conditions"
@@ -716,7 +716,7 @@ const NewPaymentBox = (
                 <>
                     <p className="MPayevent">
                         Accomodation is full now only get ticket for non accomodation
-                        (* Accommdation Compulsory for Female)
+                        (* Accommodation Compulsory for Female)
                     </p>
                     <div className="agree-terms-and-conditions">
                         <input
@@ -781,7 +781,7 @@ const NewPaymentBox = (
                 <>
                     <p className="MPayevent">
                         Are you going to take Accommodation in IITR?
-                        (* Accommdation Compulsory for Female)
+                        (* Accommodation Compulsory for Female)
                     </p>
                     <div
                         className="MyesNo"
@@ -881,7 +881,7 @@ const NewPaymentBox = (
                     style={{marginBottom: "5vh"}}
                 >
                     {" "}
-                    * Accommdation is Compulsory for Female
+                    * Accommodation is Compulsory for Female
                 </p>
                 <div
                     className="agree-terms-and-conditions"
