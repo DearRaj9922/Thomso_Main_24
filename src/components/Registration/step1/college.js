@@ -89,6 +89,7 @@ const College = [
   "BIT COLLEGE MEERUT UP",
   "BIT MEERUT",
   "BIT, DURG",
+  "BITS MESRA",
   "BITS PILANI",
   "BKBIET PILANI",
   "BKD",
