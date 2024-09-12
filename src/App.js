@@ -40,7 +40,11 @@ import Newloader from "./components/Newloader/Newloader.js";
 import Id_Card from "./components/Profile/PaymentBox/Id_Card";
 // import NewPaymentbox from "./components/Profile/PaymentBox/NewPaymentBox";
 
-
+import MUN from "./components/MUN/Home/Home.js";
+import Home2Reg from "./components/MUNmobile/Registration/Registration";
+import MUNMoreInfoPage1 from "./components/MUN/MoreInfo/Moreinfopage1/Moreinfopage1";
+import MUNMoreInfoPage2 from "./components/MUN/MoreInfo/Moreinfopage2/Moreinfopage2";
+import MUNMoreInfoPage3 from "./components/MUN/MoreInfo/Moreinfopage3/Moreinfopage3";
 import Pevents from "./components/Pevents/Pevents";
 
 // import VideoPlayer from "./components/Home/SECTION3/demo.js";
@@ -143,6 +147,11 @@ useEffect(() => {
             path="/auth/reset-password/:email/:token"
             element={<ResetPassword />}
           />
+          <Route exact={true} path="/mun" element={<MUN/>}/>
+          <Route exact={true} path="/MUNregister" element={<Home2Reg/>} />
+          <Route exact={true} path="/muninfo_page1" element={<MUNMoreInfoPage1/>} />
+          <Route exact={true} path="/muninfo_page2" element={<MUNMoreInfoPage2/>} />
+          <Route exact={true} path="/muninfo_page3" element={<MUNMoreInfoPage3/>} />
 
       </Routes>
     </Router>
