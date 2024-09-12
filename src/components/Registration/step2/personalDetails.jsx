@@ -78,7 +78,7 @@ const PersonalDetails = ({college,state,district,degree,year}) => {
       console.log("register Error:", data);
       var errorData = "";
       if (data?.error === "user_not_verified") {
-        errorData = `Please verify your registered email. <a href=/otpverify>Click Here.`;
+        errorData = `Please verify your registered email. <a href=/#/otpverify>Click Here.`;
       } else {
         for (var key in data) {
           errorData += data[key] + "<br>";
