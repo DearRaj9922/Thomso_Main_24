@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.MobileBG{
+    display: none;
+}
+.BGMunreg{
+    position: absolute;
+    width:100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+
+
+
+
+
+
+.mun-register{
+    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    overflow-x: hidden;
+}
+   
+
+.IRMUNtext
+{
+    display: flex;
+    position: relative;
+    margin-top: 3vh;
+}
+.Portfoliotext1
+{
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 162.2%; 
+}
+.portfolio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:0 16vw;
+}
+.Portfoliotext2
+{
+    color: rgba(255, 255, 255, 0.60);
+    font-family: 'Roboto', sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 162.2%;
+}
+.Portfolio1{
+    width:25vw;
+}
+.select-field-mun{
+    box-sizing: border-box;
+
+    background-color: #ffffff;
+    
+    font-family: Comic Sans MS;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1rem;
+    letter-spacing: 0em;
+    text-align: left;
+    height: 40px;
+}
+
+.RegistrationMain
+{
+  width: 90vw;
+  margin: 0 auto;
+  position: relative;
+
+}
+.DelegateApp
+{
+text-align: center;
+margin-top: 2vh;
+}
+.DelegateApp1
+{
+color: #FFF;
+text-align: center;
+font-family: Bangers;
+font-size: 31px;
+font-style: normal;
+font-weight: 400;
+line-height: 162.2%;
+margin-top: -2vh;
+}
+.DelegateApp2
+{
+    color: #FFF;
+    text-align: center;
+    font-family: Bangers;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 162.2%;
+}
+.Portfoliohead
+{
+    color: #FDD52E;
+    text-align: center;
+    font-family: Bangers;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 162.2%;
+    text-align: center;
+    margin-top: 2vh;
+}
+.Portfoliosubhead
+{
+    color: #53D0EB;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 16.676px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    line-height: 162.2%;
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: column;
+    gap:1vh;
+ 
+}
+
+.gap_set{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+.Portfolio_options{
+    background-color: #304d7f;
+    font-family: 'Roboto',sans-serif;
+}
+.sub-button{
+    display: flex;
+    justify-content: center;
+    margin-top:4vh;
+}
+.subbutton{
+    padding: 8px 15px 8px 15px;
+    border-radius: 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: white;
+    background: #264fa1;
+    font-weight: 600;
+    outline: none;
+    border: none;
+}
+
+
+
+@media screen and (max-width:768px){
+.mun-mob-registeration{
+    background: url(../../../assets/MUNmobilebg.png);
+    background-size: cover;
+
+    width: 100vw;
+    overflow-y: scroll;
+    padding-bottom: 5vh;
+    
+}
+.MobileBG{
+    display:block;
+   
+    height: 155vh;
+}
+.BGMunreg{
+    display: none;
+}
+.Portfolio1{
+    display: block;
+    width:90vw;
+}
+
+.portfolio{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    margin:0 0 0 0;
+    gap:5vh;
+    margin-top: 2vh;
+}
+
+.MobileBG {
+    position: absolute;
+    z-index: -1;
+  
+    width: 100vw;
+    height: 170vh;
+}
+
+
+
+.btn-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submitbtn {
+    color: #0C1D39;
+    background-color: #ffffff;
+    padding: 7px 23px;
+    border-radius: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6.07px;
+    text-align: center;
+    font-size: large;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.Portfoliohead{
+    text-align: left;
+    margin-bottom: 1.5vh;
+}
+.Portfoliosubhead{
+    gap:3.5vh;
+}
+.gap_set{
+    gap:3.5vh;
+}
+.DelegateApp1{
+    margin-top: 3vh;
+}
+.sub-button{
+    margin-top: 10vh;
+    
+}
+}
+
+@media screen and (max-width:376px) {
+    .MobileBG{
+        height: 180vh;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .submitbtn {
+        padding: 5px 18px;
+        font-size:medium;
+    }
+    .MobileBG{
+        height: 180vh;
+    }
+
+}
+
+@media screen and (max-width:280px) {
+    .submitbtn {
+        padding: 4px 15px;
+        font-size:medium;
+    }
+    .MobileBG{
+        height: 185vh;
+    }
+
+}
