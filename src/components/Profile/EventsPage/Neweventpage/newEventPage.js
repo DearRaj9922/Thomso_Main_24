@@ -9,6 +9,7 @@ import textdecrev from "../../../../assets/textdecrev.svg"
 import AllEvents from "../EventMainPage.js";
 import scootergif from "../../../../assets/Events_bike Animation.gif";
 import Newevents from '../Newevents.js';
+import MostParticipated from '../MostParticipated.js';
 
 const NewEventPage = () => {
 
@@ -43,6 +44,7 @@ const NewEventPage = () => {
                     {!loggedin ? (<button onClick={() => navigate('/register')}>Register Now</button>) : (<></>)}
                 </div>
             </div>
+            <div style={{display:"flex",flexDirection:"column",gap:"10vw"}} className="eventwrapps">
 
             <div className="newallevents">
                 <div className="newalltitlediv">
@@ -65,6 +67,19 @@ const NewEventPage = () => {
                     <Newevents/>
                 </div>
 
+            </div>
+            <div  className="neweventsmain">
+                <div className="neweventwrapp">
+                    <div className="newalltitlediv">
+                        <img src={textdec} className='textdecimg' alt="decimg"/>
+                        <h1 style={{fontSize:"7vw"}}>Most Participated</h1>
+                        <img src={textdecrev} className='textdecimg' alt="decimg"/>
+                    </div>
+
+                    <MostParticipated/>
+                </div>
+
+            </div>
             </div>
 
 
