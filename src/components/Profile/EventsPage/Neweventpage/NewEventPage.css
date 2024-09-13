@@ -24,7 +24,7 @@
     display: flex;
     justify-content: center;
     width:100vw;
-    height:70vw;    
+    height:60vw;    
     overflow: hidden;
 }
 .scootergif{
@@ -78,7 +78,7 @@
 }
 .newallevents{
     width:100vw;
-    height:75vw;
+    height:80vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -128,6 +128,11 @@
 }
 .newbgevimgmob{
     display: none;
+}
+@media only screen and (max-width:1200px){
+    .newevpgtitle{
+        height:50vw;
+    }
 }
 @media only screen and (max-width:768px){
     .newbgevimg{
