@@ -57,7 +57,9 @@ function EventCard({ data, getEvents, getData, }) {
               >
                 <MdDelete color="red" size="20px" />
               </div>
-              <div className="blackShield">
+              <div 
+              onClick={() => {navigate(`/events/`+data?.event)}}
+              className="blackShield">
               {/* <div style={{background: 'linear-gradient(180deg, rgba(0, 0, 0, 0.00) 6.13%, rgba(0, 0, 0, 0.45) 25.45%, rgba(0, 0, 0, 0.86) 54.90%, #000 92.12%)'}}> */}
 
               
