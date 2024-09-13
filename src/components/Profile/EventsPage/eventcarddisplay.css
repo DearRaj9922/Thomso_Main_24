@@ -173,7 +173,7 @@
   overflow-y: auto;
 }
 .ECD-card-Display-new {
-  margin-top: 32px;
+  /* margin-top: 32px; */
   display: flex;
   width: 92vw;
   flex-direction: column;
@@ -183,7 +183,7 @@
   /* padding-bottom: 100px; */
   justify-content:center;
   gap: 30px 24px;
-  height: 55vh;
+  height: 35vw;
   overflow-y: auto;
 }
 .ECD-card-Display::-webkit-scrollbar{
@@ -192,7 +192,7 @@
 }
 .ecdwrap{
   width:92vw;
-  height: 55vh;
+  height: 40vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
