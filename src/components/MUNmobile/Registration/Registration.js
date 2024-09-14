@@ -5,9 +5,9 @@ import { json, useNavigate } from "react-router-dom";
 // import Navbar from '../../EventsNavbar/MobEventnavbar';
 import Navbar from "../../EventsNavbar/Eventsnavbar";
 import Loader from "../../Newloader/Newloader"
-import BGimg from "../../../assets/MUNmobilebg.png";
+import BGimg from "../../../assets/munbg.svg";
 import Select from "react-select";
-import BgMunReg from "../../../assets/bgmunreg.webp";
+import BgMunReg from "../../../assets/munbg.svg";
 import CircularProgress from "@mui/material/CircularProgress";
 import {message} from "antd"
 
@@ -496,10 +496,10 @@ export default function MUNmobileregistration({ fetchMuns }) {
           {/* <> */}
         <div className="RegSmall">
           <div className="IRMUNmob">
-            <div className="IRMUNtext">
+            {/* <div className="IRMUNtext">
               <div className="Portfoliotext1">IRMUN/</div>
               <div className="Portfoliotext2">PORTFOLIO</div>
-            </div>
+            </div> */}
             <div className="DelegateApp">
               <div className="DelegateApp1">
                 DELEGATE APPLICATION FORM <br />
@@ -545,7 +545,7 @@ export default function MUNmobileregistration({ fetchMuns }) {
                   Preference 1
                   <Select
                     name="first_preference_choice_one"
-                    className="Portfolio_options1"
+                    className="Portfolio_options"
                     placeholder=""
                     // value={user.first_preference_choice_one}
                     onChange={handleChange11}
@@ -639,7 +639,7 @@ export default function MUNmobileregistration({ fetchMuns }) {
                   Preference 1
                   <Select
                     name="second_preference_choice_one"
-                    className="Portfolio_options1"
+                    className="Portfolio_options"
                     placeholder=""
                     // value={user.second_preference_choice_one}
                     onChange={handleChange21}
@@ -704,7 +704,7 @@ export default function MUNmobileregistration({ fetchMuns }) {
             {loading ? (
                 <CircularProgress color="inherit" size={20} />
               ) : (
-                "Submit"
+                "SUBMIT"
               )}
             </button>
           </div>}
