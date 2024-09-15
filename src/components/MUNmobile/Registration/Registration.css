@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Saira:ital,wdth,wght@0,75,100..900;1,75,100..900&display=swap");
 
 .MobileBG{
     display: none;
 }
 .BGMunreg{
     position: absolute;
-    width:100vw;
-    height: 100vh;
+    object-fit: cover;
+    width: 100vw;
+    min-height: 100vh;
     z-index: -1;
 }
 
@@ -17,10 +19,9 @@
 
 
 .mun-register{
-    width: 100vw;
-    min-height: 100vh;
-    height: auto;
-    overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
    
 
@@ -87,10 +88,10 @@ margin-top: 2vh;
 {
 color: #FFF;
 text-align: center;
-font-family: Bangers;
+font-family: "Saira", sans-serif;
 font-size: 31px;
 font-style: normal;
-font-weight: 400;
+font-weight: 700;
 line-height: 162.2%;
 margin-top: -2vh;
 }
@@ -98,17 +99,17 @@ margin-top: -2vh;
 {
     color: #FFF;
     text-align: center;
-    font-family: Bangers;
+    font-family: "Saira", sans-serif;
     font-size: 21px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 162.2%;
 }
 .Portfoliohead
 {
     color: #FDD52E;
     text-align: center;
-    font-family: Bangers;
+    font-family: "Saira", sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -120,7 +121,7 @@ margin-top: -2vh;
 {
     color: #53D0EB;
     text-align: center;
-    font-family: 'Roboto';
+    font-family: "Saira", sans-serif;
     font-size: 16.676px;
     font-style: normal;
     font-weight: 400;
@@ -150,31 +151,35 @@ margin-top: -2vh;
 .subbutton{
     padding: 8px 15px 8px 15px;
     border-radius: 3px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Saira", sans-serif;
     font-size: 16px;
-    color: white;
-    background: #264fa1;
+    color: #06212C;
+    background: white;
     font-weight: 600;
     outline: none;
-    border: none;
+    border: 3px solid #06212C;
 }
 
 
 
 @media screen and (max-width:768px){
 .mun-mob-registeration{
-    background: url(../../../assets/MUNmobilebg.png);
+    background: url(../../../assets/munbg.svg);
     background-size: cover;
-
-    width: 100vw;
+    background-position:centre;
+    background-repeat:no-repeat;
+    width: 100%;
     overflow-y: scroll;
     padding-bottom: 5vh;
     
 }
 .MobileBG{
     display:block;
-   
-    height: 155vh;
+    position: absolute;
+    object-fit:cover;
+    width:100vw;
+    z-index: -1;
+    height: 100vh !important;
 }
 .BGMunreg{
     display: none;
@@ -195,10 +200,9 @@ margin-top: -2vh;
 
 .MobileBG {
     position: absolute;
+    object-fit:cover;
     z-index: -1;
-  
     width: 100vw;
-    height: 170vh;
 }
 
 
@@ -245,7 +249,10 @@ margin-top: -2vh;
 
 @media screen and (max-width:376px) {
     .MobileBG{
-        height: 180vh;
+        position: absolute;
+        object-fit:cover;
+        width:100vw;
+        z-index: -1;
     }
 }
 
@@ -255,7 +262,10 @@ margin-top: -2vh;
         font-size:medium;
     }
     .MobileBG{
-        height: 180vh;
+        position: absolute;
+        object-fit:cover;
+        width:100vw;
+        z-index: -1;
     }
 
 }
@@ -266,7 +276,10 @@ margin-top: -2vh;
         font-size:medium;
     }
     .MobileBG{
-        height: 185vh;
+        position: absolute;
+        object-fit:cover;
+        width:100vw;
+        z-index: -1;
     }
 
 }
