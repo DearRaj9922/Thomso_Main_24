@@ -1,7 +1,19 @@
+.Committeemain{
+  background-color:rgba(0, 17, 46, 0.40);
+  box-shadow: 6px 6px 4px 0px #00000024 inset;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:80vw;
+  border-radius:10px;
+  margin: 0 auto;
+  padding:20px;
+}
 .CommitteeheadingImg
 {
   width: 50vh;
-  margin-top: 19vh;
+  margin-top: 5vh;
 }
 .Committeeheading
 {
@@ -13,13 +25,14 @@
 {
   width: 80vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 5vh auto 0;
 }
 .CommitteeBox
 {
   display: flex;
   justify-content: center;
+ 
 }
 .CommitteeBoxImg1
 {

@@ -1,18 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Numans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 .judges-container{
-    border-radius: 22.289px;
+    /* border-radius: 22.289px;
     background: rgba(0, 17, 46, 0.40);
     color: aliceblue;
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 75vw;
-    /* border:2px solid white; */
     gap: 15vh;
     margin: 0 auto;
-    padding: 5vh 10vw 25vh 10vw;
-
+    padding: 5vh 10vw 25vh 10vw; */
+    background-color: rgba(0, 17, 46, 0.40);
+    box-shadow: 6px 6px 4px 0px #00000024 inset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    border-radius: 10px;
+    margin: auto;
+    padding: 20px;
 }
 .head-judge{
     display: flex;

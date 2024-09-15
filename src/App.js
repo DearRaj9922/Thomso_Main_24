@@ -23,7 +23,7 @@ import ResetPassword from "./components/Registration/ResetPass/ResetPass";
 // import EventMainPage from "./components/Profile/EventsPage/EventMainPage";
 import Home3d from "./components/3dhome/Home3d.js";
 import EventMainPage from "./components/EventsPage/EventMainPage";
-// import NewEve from "./components/Profile/EventsPage/NewEventCard/NewEventcard.js";
+import NewEve from "./components/Profile/EventsPage/NewEventCard/NewEventcard.js";
 // import EventPayment from "./components/EventPayment/EventPayment";
 
 import React,{useEffect, useState} from "react";
@@ -139,7 +139,7 @@ useEffect(() => {
           <Route path="/ProfileNameEdit" element={<ProfileNameEditModel />} />
           <Route path="/Carousel" element={<Carousel1/>} />
           <Route path="/forgotpassword" element={<Forget/>} />
-          {/* <Route path="/neweventcard" element={<NewEve/>}/> */}
+          <Route path="/neweventcard" element={<NewEve/>}/> 
           <Route path="/loader" element={<Newloader/>}/>
           <Route path= "/id_card" element={<Id_Card/>}/>
           <Route

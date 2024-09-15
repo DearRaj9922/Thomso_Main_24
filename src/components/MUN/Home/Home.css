@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Saira:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic');
 .MUN-bg {
     /* background: url("../../../assests/BGMUN.webp"); */
     /* background-size: cover; */
@@ -54,7 +55,7 @@
 .registerNowBtnClick {
     border-radius: 16px;
     color: #000;
-    font-family: Bangers;
+    font-family: Saira;
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
@@ -73,21 +74,22 @@
 
 .prizesWorth {
     border-radius: 14px;
-    background: rgba(8, 48, 114, 0.40);
-    color: #FFF;
+    /* background: rgba(8, 48, 114, 0.40); */
+    color: black;
     text-align: center;
-    font-family: Roboto;
+    font-family: Saira;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 162.2%;
     /* 32.44px */
     letter-spacing: 1px;
-    width: 50vw;
+    width: 80vw;
     margin: auto;
     margin-top: 25vh;
     padding: 1.5vh 2vw;
     padding-bottom: 2.5vh;
+    border: 5px solid #F9C438;
 }
 
 .prizesWorth1 {
@@ -99,7 +101,7 @@
 .prizesWorthDiv {
     display: flex;
     justify-content: center;
-    color: #FFF;
+    color: black;
 text-align: center;
 font-family: Roboto;
 font-size: 20px;
@@ -187,7 +189,7 @@ letter-spacing: 1px;
 {
     .prizesWorth
     {
-        margin-top: 15vh;
+        margin-top: 75vh;
     }
 }
 @media only screen and (max-width:1200px)
