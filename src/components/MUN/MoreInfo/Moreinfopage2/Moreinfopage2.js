@@ -39,7 +39,8 @@ export default function Moreinfopage1() {
                             <div className="mun-infoPage1img1">
                                 <img src={InfoPage1Img} className="infoPage1img" alt="infoPage1img" />
                             </div>
-                            
+                            <h3 >ALL INDIA POLITICAL PARTY MEET ( AIPPM)</h3>
+
                         </div>
                     </div>
                 </div>

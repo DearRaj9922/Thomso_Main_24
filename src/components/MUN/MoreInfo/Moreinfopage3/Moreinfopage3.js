@@ -27,7 +27,7 @@ export default function Moreinfopage1() {
                                 <p className="muninfo-text">The Indian War Cabinet is a committee in Model United Nations (MUN) simulations that mirrors the decision-making process of India's highest leadership during crises. Delegates take on roles such as the Prime Minister and Defence Minister, collaborating to address simulated national security and defense challenges. This committee evaluates delegates' abilities in crisis management, national interest protection within a dynamic, high-pressure environment.
                                     <br />
                                     AGENDA: “Deliberation over the ongoing ethnic clashes in Manipur”</p>
-                                <p className="mobilemuninfo-text">The Indian War Cabinet is a committee in Model United Nations (MUN) simulations that mirrors the decision-making process of India's highest leadership during crises. Delegates take on roles such as the Prime Minister and Defence Minister, collaborating to address simulated national security and defense challenges. This committee evaluates delegates' abilities in crisis management, diplomacy, and national interest protection within a dynamic, high-pressure environment. 
+                                <p className="mobilemuninfo-text">The Indian War Cabinet is a committee in Model United Nations (MUN) simulations that mirrors the decision-making process of India's highest leadership during crises. Delegates take on roles such as the Prime Minister and Defence Minister, collaborating to address simulated national security and defense challenges. This committee evaluates delegates' abilities in crisis management, diplomacy, and national interest protection within a dynamic. 
                                     <br />
                                     AGENDA: “Deliberation over the ongoing ethnic clashes in Manipur”</p>
                                 <div className="portfolio_button">
@@ -39,7 +39,7 @@ export default function Moreinfopage1() {
                             <div className="mun-infoPage1img1">
                                 <img src={InfoPage1Img} className="infoPage1img" alt="infoPage1img" />
                             </div>
-                            
+                            <h3 >INDIAN WAR CABINET (HISTORIC COMMITTEE)</h3>
                         </div>
                     </div>
                 </div>

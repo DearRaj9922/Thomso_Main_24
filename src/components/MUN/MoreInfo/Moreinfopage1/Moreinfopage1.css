@@ -6,10 +6,12 @@
     position: relative;
     background-size: cover;
     background-position: center;
+    display: flex;
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
 }
+
 .mun_nav {
     position: absolute;
     z-index: 999;
@@ -63,7 +65,8 @@
     z-index: 999;
     color: #ffffff;
     display: flex;
-    font-family: Roboto Flex;
+    font-family: 'Saira', sans-serif;
+
     font-size: 1vw;
     margin-top: 12vh;
     padding: 0 7vw 0 7vw;
@@ -71,7 +74,8 @@
 
 .aippm {
     color: rgba(255, 255, 255, 0.60);
-    font-family: Roboto Flex;
+    font-family: 'Saira', sans-serif;
+
     /* font-size: 1vw; */
 }
 
@@ -119,7 +123,8 @@
 }
 
 .info_button {
-    font-family: Bangers;
+    font-family: 'Saira', sans-serif;
+
     font-weight: 400;
     font-size: 3vh;
     color: #ffffff;
@@ -171,6 +176,10 @@
         margin-top: 20vh;
         z-index: 1;
     }
+    .info_text1{
+        background: transparent;
+        box-shadow: none;
+    }
 
     .muninfo-text {
         display: none;
@@ -192,7 +201,7 @@
     }
 
     .infoPage1img {
-        width: 50vw;
+        width: 100%;
     }
 
     .info_img1 h3 {
@@ -237,6 +246,17 @@
         margin-right: 0;
     }
 
+    .info_box1 {
+        background: linear-gradient(to bottom, #061f2c, #0d2f3f);
+        /* Gradient colors based on the image */
+        border-radius: 15px;
+        /* Rounded corners */
+        margin: auto;
+        width: 80%;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        /* Slight shadow effect */
+    }
+
     .portfolio_button {
         display: flex;
         justify-content: center;
@@ -247,4 +267,6 @@
     .mobilemuninfo-text {
         font-size: 1vh;
     }
+
+
 }

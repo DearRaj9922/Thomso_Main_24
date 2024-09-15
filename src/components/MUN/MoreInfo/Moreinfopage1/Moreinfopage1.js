@@ -24,10 +24,10 @@ export default function Moreinfopage1() {
                         <div className="info_content">
                             <div className="info_text info_text2">
                                 <h2 className="info_heading">UNITED NATIONS GENERAL ASSEMBLY (UNGA)</h2>
-                                <p className="muninfo-text"> The UN General Assembly (UNGA) is one of the six main organs of the United Nations, comprising all 193 member states. It acts as a central forum for international dialogue, where countries convene annually in New York to discuss and address critical global issues, including climate change, human rights, and sustainable development. The UNGA aims to foster global cooperation and formulate collective solutions to the world's most pressing challenges.
+                                <p className="muninfo-text">The UN General Assembly (UNGA) is one of the six main organs of the United Nations, consisting of all 193 member states. It serves as a central platform for international dialogue, where countries meet annually in New York to discuss key global issues such as climate change, human rights, and sustainable development. The UNGA promotes global cooperation and seeks to develop collective solutions to major global challenges.
                                     <br />
                                     Agenda: "Unlawful Occupation and Forced Governance: Israel-Palestine Conflict."</p>
-                                <p className="mobilemuninfo-text">The UN General Assembly (UNGA) is one of the six main organs of the United Nations, comprising all 193 member states. It acts as a central forum for international dialogue, where countries convene annually in New York to discuss and address critical global issues, including climate change, human rights, and sustainable development. The UNGA aims to foster global cooperation and formulate collective solutions to the world's most pressing challenges.
+                                <p className="mobilemuninfo-text">The UN General Assembly (UNGA) is one of the six main organs of the United Nations, consisting of all 193 member states. It serves as a central platform for international dialogue, where countries meet annually in New York to discuss key global issues such as climate change, human rights, and sustainable development. The UNGA promotes global cooperation and seeks to develop collective solutions to major global challenges.
                                     <br />
                                     Agenda: "Unlawful Occupation and Forced Governance: Israel-Palestine Conflict."</p>
                                 <div className="portfolio_button">
@@ -39,7 +39,7 @@ export default function Moreinfopage1() {
                             <div className="mun-infoPage1img1">
                                 <img src={InfoPage1Img} className="infoPage1img" alt="infoPage1img" />
                             </div>
-                            
+                            <h3 >UNITED NATIONS GENERAL ASSEMBLY (UNGA)</h3>
                         </div>
                     </div>
                 </div>

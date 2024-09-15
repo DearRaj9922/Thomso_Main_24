@@ -8,6 +8,7 @@
     background-position: center;
     background-repeat: no-repeat;
     width: 100vw;
+    display: flex;
     height: 100vh;
 }
 .mun_nav{
@@ -68,6 +69,7 @@
    /* font-size: 1vw; */
 }
 .info_box2{
+    
     display: flex;
     margin-top: 18vh;
     padding: 0 7vw 0 7vw;
@@ -100,7 +102,7 @@
     display: none;
 }
 .info_button{
-    font-family: Bangers;
+    font-family: 'Saira', sans-serif;
     font-weight: 400;
     font-size: 3vh;
     color: #ffffff;
@@ -146,6 +148,16 @@ line-height: 162.2%;
         margin-top: 20vh;
         z-index: 1;
     }
+    .info_box2 {
+        background: linear-gradient(to bottom, #061f2c, #0d2f3f);
+        /* Gradient colors based on the image */
+        border-radius: 15px;
+        margin: auto;
+        width: 80%;
+        /* Rounded corners */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        /* Slight shadow effect */
+    }
     .muninfo-text{
         display: none;
     }
@@ -168,6 +180,12 @@ line-height: 162.2%;
     .info_img2 h3{
         font-size: 6vw;
         width:80vw;
+    }
+    .info_text2{
+        background: transparent;
+        box-shadow: none;
+        width: 100%;
+
     }
     .irmun{
        font-size: 3vw;
@@ -206,8 +224,19 @@ line-height: 162.2%;
         justify-content: center;
     }
 }
+
 @media screen and (max-width: 600px){
     .mobilemuninfo-text{
         font-size: 2.5vh;
     }
+    .info_box1 {
+        background: linear-gradient(to bottom, #061f2c, #0d2f3f);
+        /* Gradient colors based on the image */
+        border-radius: 15px;
+        /* Rounded corners */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        
+        /* Slight shadow effect */
+    }
+
 }
