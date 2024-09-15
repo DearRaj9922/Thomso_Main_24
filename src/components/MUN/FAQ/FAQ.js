@@ -1,7 +1,7 @@
   import React, { useState } from "react";
 import "./FAQ.css";
 import img1 from "../../../assets/Cross.webp";
-import FAQ1 from "../../../assets/FAQS.png";
+import FAQ1 from "../../../assets/FAQ.svg";
 import {
   AiOutlineMinus,
   AiFillPlusCircle,

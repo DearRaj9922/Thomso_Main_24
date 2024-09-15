@@ -7,14 +7,14 @@ import Judges from "../Judges/Judges";
 import FAQ from "../FAQ/FAQ";
 import Contact from "../Footer/Footer";
 import Commitee from "../Commitee/Commitee";
-import Prizes from "../../../assets/PrizesWorth100.png";
+import Prizes from "../../../assets/worth_img.svg";
 import MUNmob from "../../../components/MUNmobile/HomeMun/HomeMUN";
 import Footer from "../../../components/Footer/Footer.js";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Loader from "../../Newloader/Newloader.js";
-import MUN_Bg1 from "../../../assets/MUN-Bg1.webp";
-import MUN_Bg2 from "../../../assets/MUN-Bg2.webp";
+import MUN_Bg1 from "../../../assets/assests/munBG.svg";
+import MUN_Bg2 from "../../../assets/assests/munBG.svg";
 import "./Home.css";
 
 

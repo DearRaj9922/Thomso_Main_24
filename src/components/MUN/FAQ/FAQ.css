@@ -1,3 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Saira:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+/* .MUN_FAQ_main_div{
+  background-color:rgba(0, 17, 46, 0.40);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:80vw;
+  
+  margin: auto;
+  padding:20px;
+} */
+
+
 body {
   /* background-color: white; */
 }
@@ -9,22 +23,25 @@ body {
 .FAQimg
 {
   width: 18vw;
+  margin-top: 5vh;
   margin-bottom:5vh;
 }
 .MUN_FAQ_main_div {
-  background-color: transparent !important;
+  background-color:rgba(0, 17, 46, 0.40);
+  box-shadow: 6px 6px 4px 0px #00000024 inset;
   width: 75vw;
   color: white;
   margin: 0 auto;
   margin-top: 20vh;
   margin-bottom:17vh;
+  border-radius:10px;
 }
 
 .mun_faq_heading {
   display: flex;
   justify-content: center;
   color: #FDD52E;
-  font-family: Bangers;
+  font-family: Saira;
   font-size: 5rem;
 }
 
@@ -54,7 +71,7 @@ body {
   /* display: none; */
   overflow: hidden;
   color: var(--Secondary2, #A09FAF);
-  font-family: Roboto;
+  font-family: Saira;
   width: 107%;
   /* text-align: justify; */
 }
@@ -70,7 +87,7 @@ body {
 }
 
 .left_num_faq {
-  font-family: Comic neue;
+  font-family: Saira;
   font-size: 1.7rem;
   color: var(--Secondary2, #A09FAF);
   font-family: Comic Neue;
@@ -82,7 +99,7 @@ body {
   /* display: flex; */
   margin-top: 1vh;
   color: var(--Surface, #F6F6F6);
-  font-family: Roboto;
+  font-family: Saira;
 }
 
 .right_mun_faq_head1 {
