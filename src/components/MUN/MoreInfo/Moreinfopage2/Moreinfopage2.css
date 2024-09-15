@@ -1,16 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&family=Roboto:wght@300&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Saira:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 .infoBg{
     position: relative;
-    /* margin-top: -5vh; */
-    /* z-index: -999; */
-    /* width: 100vw; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
 }
 .mun_nav{
     position: absolute;
     z-index: 999;
 
+}
+.muninfo_main {
+    background-image: url('./munbg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .Bg-image{
     position:absolute;
@@ -19,7 +28,15 @@
     
 }
 .info_text2 {
+    width: 100%;
+    padding: 20px;
     margin-top: 3vh;
+    margin-bottom: 3vh;
+
+    /* height: 400px; Adjust as needed */
+    background: linear-gradient(to bottom, #061f2c, #0d2f3f); /* Gradient colors based on the image */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Slight shadow effect */
     width: 50vw;
     margin-right: 5vw;
 }
@@ -28,6 +45,7 @@
 }
 .info_box2{
     position:absolute;
+    justify-content: center;
     z-index: 999;
     color: #ffffff;
     margin-top: -2vh;
@@ -52,12 +70,7 @@
     margin-top: 18vh;
     padding: 0 7vw 0 7vw;
 }
-.info_heading{
-    font-family: Bangers;
-    font-weight: 400;
-    font-size: 3vw;
-    padding:0 0 5vh 0;
-}
+
 .info_content{
     display: flex;
     flex-direction: column;
@@ -72,8 +85,14 @@
     font-weight: 400;
     line-height: 162.2%; /* 32.44px */
     letter-spacing: 1px;
-    font-size: 1.5vw;
+    font-size: 1.15vw;
     padding: 0 0 5vh 0;
+    font-family: 'Saira Condensed', sans-serif;
+    /* font-size: 21px;
+    font-weight: 400;
+    line-height: 34.06px;
+    letter-spacing: 0.05em;
+    text-align: justify; */
 }
 .mobilemuninfo-text{
     display: none;

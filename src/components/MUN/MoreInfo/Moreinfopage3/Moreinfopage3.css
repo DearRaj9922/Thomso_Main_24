@@ -3,14 +3,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&family=Roboto:wght@300&display=swap');
 .infoBg{
     position: relative;
-    /* margin-top: -5vh; */
-    /* z-index: -999; */
-    /* width: 100vw; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
 }
 .mun_nav{
     position: absolute;
     z-index: 999;
 
+}
+.muninfo_main {
+    background-image: url('./munbg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .Bg-image{
     position:absolute;
@@ -18,16 +26,26 @@
     height: 100vh;
     
 }
-.Mob-Bg-image{
-    display: none;
-}
-.info_text3 {
+.info_text3{
+    width: 100%;
+    margin-bottom: 3vh;
+
+    padding: 20px;
     margin-top: 3vh;
+    /* height: 400px; Adjust as needed */
+    background: linear-gradient(to bottom, #061f2c, #0d2f3f); /* Gradient colors based on the image */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Slight shadow effect */
     width: 50vw;
     margin-right: 5vw;
 }
+.Mob-Bg-image{
+    display: none;
+}
 .info_box3{
     position:absolute;
+    justify-content: center;
+
     z-index: 999;
     color: #ffffff;
     margin-top: -2vh;
@@ -42,7 +60,7 @@
    margin-top: 12vh;
     padding: 0 7vw 0 7vw;
 }
-.historic{
+.aippm{
     color:rgba(255, 255, 255, 0.60);
     font-family: Roboto Flex;
    /* font-size: 1vw; */
@@ -52,12 +70,7 @@
     margin-top: 18vh;
     padding: 0 7vw 0 7vw;
 }
-.info_heading{
-    font-family: Bangers;
-    font-weight: 400;
-    font-size: 3vw;
-    padding:0 0 5vh 0;
-}
+
 .info_content{
     display: flex;
     flex-direction: column;
@@ -72,8 +85,14 @@
     font-weight: 400;
     line-height: 162.2%; /* 32.44px */
     letter-spacing: 1px;
-    font-size: 1.3vw;
+    font-size: 1.15vw;
     padding: 0 0 5vh 0;
+    font-family: 'Saira Condensed', sans-serif;
+    /* font-size: 21px; */
+    /* font-weight: 400;
+    line-height: 34.06px;
+    letter-spacing: 0.05em;
+    text-align: justify; */
 }
 .mobilemuninfo-text{
     display: none;
@@ -91,17 +110,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-top: -15vh; */
+    margin-top: 0;
     /* width:40vw; */
+    margin: auto;
+
 }
 .infoPage3img{
-    width:25vw;
+    width:28vw;
 }
-.mun-infoPageimg3{
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    width:40vw; */
+.mun-infopageimg1{
+    width:40vw;
 }
 .info_img3 h3{
     width: 25vw;
@@ -113,23 +131,9 @@ font-style: normal;
 font-weight: 400;
 line-height: 162.2%; 
 }
-
 @media screen and (max-width: 930px){
     .muninfo-text{
         font-size: 2vw;
-    }
-    .info_img3{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 0vh;
-        /* width:40vw; */
-    }
-    .Bg-image{
-        position:absolute;
-        width: 100vw;
-        height: 110vh;
-        
     }
 }
 @media screen and (max-width: 768px){
@@ -137,7 +141,7 @@ line-height: 162.2%;
         display: flex;
         flex-direction: column-reverse;
         gap:2vh;
-        margin-top: 12vh;
+        margin-top: 20vh;
         z-index: 1;
     }
     .muninfo-text{
@@ -157,24 +161,22 @@ line-height: 162.2%;
         padding: 0 0 5vh 0;        
     }
     .infoPage3img{
-        width:40vw;
+        width:50vw;
     }
     .info_img3 h3{
         font-size: 6vw;
         width:80vw;
-        margin-top: -2.5vh;
     }
     .irmun{
        font-size: 3vw;
        margin-top: 12vh;
         padding: 0 7vw 0 5vw;
-        z-index: 1;
     }
     .Mob-Bg-image{
         display: block;
         position:absolute;
         width: 100vw;
-        height: 120vh;
+        height: 100vh;
     }
     .info_heading{
         display:none
@@ -192,13 +194,6 @@ line-height: 162.2%;
         color: #0D1E3B;
         line-height: 162.2%;
     }
-    .info_img3{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 0vh;
-        /* width:40vw; */
-    }
     .info_text3 {
         margin-top: 1vh;
         width: auto;
@@ -208,26 +203,9 @@ line-height: 162.2%;
         display: flex;
         justify-content: center;
     }
-    .infoPage3img{
-        margin: 5vh 0;
-    }
 }
 @media screen and (max-width: 600px){
     .mobilemuninfo-text{
         font-size: 2.5vh;
-    }
-    .Mob-Bg-image{
-        display: block;
-        position:absolute;
-        width: 100vw;
-        height: 141vh;
-    }
-}
-@media screen and (max-width: 390px){
-    .Mob-Bg-image{
-        display: block;
-        position:absolute;
-        width: 100vw;
-        height: 150vh;
     }
 }

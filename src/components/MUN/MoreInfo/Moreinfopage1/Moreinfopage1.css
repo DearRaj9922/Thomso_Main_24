@@ -3,25 +3,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&family=Roboto:wght@300&display=swap');
 .infoBg{
     position: relative;
-    /* margin-top: -5vh; */
-    /* z-index: -999; */
-    /* width: 100vw; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
 }
 .mun_nav{
     position: absolute;
     z-index: 999;
 
 }
-.info_text1 {
-    margin-top: 3vh;
-    width: 50vw;
-    margin-right: 5vw;
+.muninfo_main {
+    background-image: url('./munbg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .Bg-image{
     position:absolute;
     width: 100vw;
     height: 100vh;
     
+}
+.info_text1{
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+    /* height: 400px; Adjust as needed */
+    background: linear-gradient(to bottom, #061f2c, #0d2f3f); /* Gradient colors based on the image */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Slight shadow effect */
+    width: 50vw;
+    margin-right: 5vw;
 }
 .Mob-Bg-image{
     display: none;
@@ -42,20 +57,21 @@
    margin-top: 12vh;
     padding: 0 7vw 0 7vw;
 }
-.unga{
+.aippm{
     color:rgba(255, 255, 255, 0.60);
     font-family: Roboto Flex;
    /* font-size: 1vw; */
 }
 .info_box1{
     display: flex;
+    justify-content: center;
     margin-top: 18vh;
     padding: 0 7vw 0 7vw;
 }
 .info_heading{
-    font-family: Bangers;
+    font-family: 'Saira', sans-serif;
     font-weight: 400;
-    font-size: 3vw;
+    font-size: 2vw;
     padding:0 0 5vh 0;
 }
 .info_content{
@@ -72,8 +88,14 @@
     font-weight: 400;
     line-height: 162.2%; /* 32.44px */
     letter-spacing: 1px;
-    font-size: 1.5vw;
+    font-size: 1.15vw;
     padding: 0 0 5vh 0;
+    font-family: 'Saira Condensed', sans-serif;
+    /* font-size: 21px;
+    font-weight: 400;
+    line-height: 34.06px;
+    letter-spacing: 0.05em;
+    text-align: justify; */
 }
 .mobilemuninfo-text{
     display: none;
@@ -89,18 +111,15 @@
 }
 .info_img1{
     display: flex;
-    /* height: 100vh; */
-    /* width: 40vw; */
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-top: -5vh;
-    margin: auto;
+    margin-top: 0;
     /* width:40vw; */
+    margin: auto;
 
 }
 .infoPage1img{
-    width:28vw;
+    width:20vw;
 }
 .mun-infopageimg1{
     width:40vw;
@@ -125,7 +144,7 @@ line-height: 162.2%;
         display: flex;
         flex-direction: column-reverse;
         gap:2vh;
-        margin-top: 12vh;
+        margin-top: 20vh;
         z-index: 1;
     }
     .muninfo-text{
@@ -145,8 +164,7 @@ line-height: 162.2%;
         padding: 0 0 5vh 0;        
     }
     .infoPage1img{
-        margin-top: 5vh;
-        width:60vw;
+        width:50vw;
     }
     .info_img1 h3{
         font-size: 6vw;
@@ -180,7 +198,7 @@ line-height: 162.2%;
         line-height: 162.2%;
     }
     .info_text1 {
-        margin-top: 0vh;
+        margin-top: 1vh;
         width: auto;
         margin-right: 0;
     }

@@ -4,6 +4,7 @@ import InfoPage1Img from '../../../../assets/muninfopage3img.webp';
 import './Moreinfopage3.css';
 import Navbar from "../../../../components/EventsNavbar/Eventsnavbar";
 import MobMoreInfo from "../../../../assets/munmobileinfobg.webp";
+import MunFooter from '../../../MUNfooter/MunFooter';
 
 export default function Moreinfopage1() {
   return (
@@ -13,8 +14,8 @@ export default function Moreinfopage1() {
             <Navbar color="transparent"/>
         </div>       
         <div className="infoBg">
-            <img src={MoreInfo} className="Bg-image" alt="Bg-image"/> 
-            <img src={MobMoreInfo} className="Mob-Bg-image" alt="Mob-Bg-image"/> 
+            {/* <img src={MoreInfo} className="Bg-image" alt="Bg-image"/> 
+            <img src={MobMoreInfo} className="Mob-Bg-image" alt="Mob-Bg-image"/>  */}
             <div className="irmun">
                 <h3> IRMUN / </h3>
                 <h3 className='historic'> HISTORIC COMMITTEE</h3>
@@ -42,6 +43,8 @@ export default function Moreinfopage1() {
             </div>
         </div>
         </div>
+        <MunFooter />
+
     </div>
     </>
   )

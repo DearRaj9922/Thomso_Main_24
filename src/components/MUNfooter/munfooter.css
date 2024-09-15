@@ -1,0 +1,192 @@
+.munfooter_wrapper {
+  background-color: transparent !important;
+  background-size: cover;
+  /* Make sure the background covers the whole area */
+  background-position: center;
+  /* Center the background image */
+}
+
+.munfooterBox {
+  width: 100%;
+  background-color: transparent;
+  /* Ensure it's transparent */
+  position: relative;
+  bottom: 0;
+}
+
+.munfooterButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.munfooterButton:hover {}
+
+.downarrow {
+  width: 20px;
+}
+
+.munfooterBoxB {
+  position: relative;
+  background-color: transparent !important;
+  /* Keep background transparent */
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5vw;
+}
+
+.munfooterBoxA {
+  height: 8vh;
+  position: relative;
+  display: flex;
+  /* width: 87%; */
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2%;
+  background-color: transparent;
+  /* Ensure it's transparent */
+}
+
+.munfooterSub1 {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.munfooterSub1 button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.munfooterSub1img1,
+.munfooterSub1img2,
+.munfooterSub1img3,
+.munfooterSub1img4 {
+  object-fit: cover;
+  height: 6vh;
+  width: auto;
+}
+
+.munfooterText1 {
+  color: #284551;
+  font-family: Salsa;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.8px;
+}
+
+.munfooterText2 {
+  color: #284551;
+  font-family: Salsa;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.8px;
+  margin-bottom: 15px;
+}
+
+.munfooterBoxBSub1 {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.munfooterBoxBSub1 img {
+  width: 120px;
+  object-fit: cover;
+}
+
+.munfooterContactUs {
+  color: #284551;
+  font-family: Salsa;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.8px;
+}
+
+.munfooterSub1 button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.munfooterSub1 button img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.munfooterSub1 button:hover img {
+  transform: scale(1.1);
+  /* Slightly increase size */
+  filter: invert(100%) brightness(100%);
+  /* Change color to white */
+}
+
+.munfooterPara2 {
+  display: flex;
+  flex-direction: row;
+  gap: 8vw;
+}
+
+.mobmunfooter {
+  display: none;
+}
+
+@media only screen and (max-width:1150px) {
+  .munfooterPara2 {
+    gap: 3vw;
+  }
+
+  .munfooterBoxB {
+    gap: 0vw;
+  }
+}
+
+@media only screen and (max-width:1000px) {
+  .munfooterPara2 {
+    gap: 1vw;
+  }
+
+  .munfooterBoxB {
+    padding-left: 4vw;
+    width: 96%;
+  }
+}
+
+@media only screen and (max-width:900px) {
+  .munfooterPara2 {
+    gap: 0vw;
+  }
+
+  .munfooterBoxB {
+    padding-left: 3vw;
+    width: 97%;
+  }
+
+  .munfooterRight {
+    position: relative;
+    left: 5vw;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .munfooterBox {
+    display: none;
+  }
+
+  .mobmunfooter {
+    display: block;
+    width: 80%;
+  }
+}
