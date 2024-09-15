@@ -1,16 +1,12 @@
 import React from 'react'
-import MoreInfo from '../../../../assets/munbg.svg';
+import MoreInfo from '../../../../assets/munbg.webp';
 import InfoPage1Img from '../../../../assets/muninfopage1.svg';
 import './Moreinfopage1.css';
 import Navbar from "../../../../components/EventsNavbar/Eventsnavbar";
 import MobMoreInfo from "../../../../assets/munmobileinfobg.webp";
-import { useNavigate } from "react-router-dom"
 import MunFooter from '../../../MUNfooter/MunFooter';
 
-
 export default function Moreinfopage1() {
-
-    const navigate = useNavigate();
     return (
         <>
             <div className="muninfo_main">
@@ -22,31 +18,33 @@ export default function Moreinfopage1() {
                     {/* <img src={MobMoreInfo} className="Mob-Bg-image" alt="Mob-Bg-image" /> */}
                     <div className="irmun">
                         <h3> IRMUN / </h3>
-                        <h3 className='unga'> UNGA</h3>
+                        <h3 className='aippm'> UNGA</h3>
                     </div>
-                    <div className="info_box1">
+                    <div className="info_box2">
                         <div className="info_content">
-                            <div className="info_text info_text1">
+                            <div className="info_text info_text2">
                                 <h2 className="info_heading">UNITED NATIONS GENERAL ASSEMBLY (UNGA)</h2>
-                                <p className="muninfo-text"> UNGA is one of the six principal organs of the United Nations, consisting of all 193 member states. It serves as a forum for international diplomacy, where countries come together to discuss and collaborate on global issues. UNGA sessions are held annually in New York, allowing nations to address a wide range of topics, from climate change to human rights, with the aim of fostering cooperation and finding solutions to global challenges.
+                                <p className="muninfo-text"> The UN General Assembly (UNGA) is one of the six main organs of the United Nations, comprising all 193 member states. It acts as a central forum for international dialogue, where countries convene annually in New York to discuss and address critical global issues, including climate change, human rights, and sustainable development. The UNGA aims to foster global cooperation and formulate collective solutions to the world's most pressing challenges.
                                     <br />
-                                    AGENDA: “Deliberation over unlawful occupation of territory and forced governance with special emphasis on Israel Palestine conflict.”</p>
-                                <p className="mobilemuninfo-text"> UNGA is one of the six principal organs of the United Nations, consisting of all 193 member states. It serves as a forum for international diplomacy, where countries come together to discuss and collaborate on global issues. UNGA sessions are held annually in New York, allowing nations to address a wide range of topics, from climate change to human rights, with the aim of fostering cooperation and finding solutions to global challenges.
+                                    Agenda: "Unlawful Occupation and Forced Governance: Israel-Palestine Conflict."</p>
+                                <p className="mobilemuninfo-text">The UN General Assembly (UNGA) is one of the six main organs of the United Nations, comprising all 193 member states. It acts as a central forum for international dialogue, where countries convene annually in New York to discuss and address critical global issues, including climate change, human rights, and sustainable development. The UNGA aims to foster global cooperation and formulate collective solutions to the world's most pressing challenges.
                                     <br />
-                                    AGENDA: “Deliberation over unlawful occupation of territory and forced governance with special emphasis on Israel Palestine conflict.”</p>
+                                    Agenda: "Unlawful Occupation and Forced Governance: Israel-Palestine Conflict."</p>
                                 <div className="portfolio_button">
-                                    <button className='info_button' onClick={() => window.open("https://docs.google.com/spreadsheets/d/1f_1kJOrr7MSdctuNRdjqVQKhARYkzlbpZeokivqnreA/edit?pli=1#gid=0", "_blank")}>PORTFOLIO MATRIX</button>
+                                    <button className='info_button' onClick={() => window.open("https://docs.google.com/spreadsheets/d/1f_1kJOrr7MSdctuNRdjqVQKhARYkzlbpZeokivqnreA/edit?pli=1#gid=952637532", "_blank")}>PORTFOLIO MATRIX</button>
                                 </div>
                             </div>
                         </div>
-                        <div className="info_img1">
-
-                            <img src={InfoPage1Img} className="infoPage1img" alt="infoPage1img" />
-
+                        <div className="info_img2">
+                            <div className="mun-infoPage1img1">
+                                <img src={InfoPage1Img} className="infoPage1img" alt="infoPage1img" />
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
                 <MunFooter />
+
             </div>
         </>
     )

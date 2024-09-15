@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&family=Roboto:wght@300&display=swap');
-.infoBg{
+
+.infoBg {
     position: relative;
     background-size: cover;
     background-position: center;
@@ -9,86 +10,101 @@
     width: 100vw;
     height: 100vh;
 }
-.mun_nav{
+.mun_nav {
     position: absolute;
     z-index: 999;
 
 }
+
 .muninfo_main {
     background-image: url('./munbg.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
-.Bg-image{
-    position:absolute;
+
+.Bg-image {
+    position: absolute;
     width: 100vw;
     height: 100vh;
-    
+
 }
-.info_text1{
+
+.info_text1 {
     width: 100%;
-    padding: 20px;
+    padding: 3vh;
     margin-bottom: 3vh;
     margin-top: 3vh;
     /* height: 400px; Adjust as needed */
-    background: linear-gradient(to bottom, #061f2c, #0d2f3f); /* Gradient colors based on the image */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Slight shadow effect */
+    background: linear-gradient(to bottom, #061f2c, #0d2f3f);
+    /* Gradient colors based on the image */
+    border-radius: 15px;
+    /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    /* Slight shadow effect */
     width: 50vw;
     margin-right: 5vw;
 }
-.Mob-Bg-image{
+
+.Mob-Bg-image {
     display: none;
 }
-.info_box1{
-    position:absolute;
+
+.info_box1 {
+    position: absolute;
     z-index: 999;
     color: #ffffff;
     margin-top: -2vh;
 }
-.irmun{
-    position:absolute;
+
+.irmun {
+    position: absolute;
     z-index: 999;
     color: #ffffff;
     display: flex;
-   font-family: Roboto Flex;
-   font-size: 1vw;
-   margin-top: 12vh;
+    font-family: Roboto Flex;
+    font-size: 1vw;
+    margin-top: 12vh;
     padding: 0 7vw 0 7vw;
 }
-.aippm{
-    color:rgba(255, 255, 255, 0.60);
+
+.aippm {
+    color: rgba(255, 255, 255, 0.60);
     font-family: Roboto Flex;
-   /* font-size: 1vw; */
+    /* font-size: 1vw; */
 }
-.info_box1{
+
+.info_box1 {
     display: flex;
     justify-content: center;
     margin-top: 18vh;
     padding: 0 7vw 0 7vw;
 }
-.info_heading{
+
+.info_heading {
     font-family: 'Saira', sans-serif;
     font-weight: 400;
     font-size: 2vw;
-    padding:0 0 5vh 0;
+    padding: 0 0 5vh 0;
 }
-.info_content{
+
+.info_content {
     display: flex;
     flex-direction: column;
-    gap:5vh;
+    gap: 5vh;
 }
-.muninfo-text{
+
+.muninfo-text {
     color: #FFF;
     text-align: justify;
-    font-family: Roboto;
-    /* font-size: 20px; */
+    font-family: 'Saira Condensed', sans-serif;
     font-style: normal;
     font-weight: 400;
-    line-height: 162.2%; /* 32.44px */
+    line-height: 162.2%;
+    /* 32.44px */
     letter-spacing: 1px;
-    font-size: 1.15vw;
+    font-size: 1vw;
     padding: 0 0 5vh 0;
     font-family: 'Saira Condensed', sans-serif;
     /* font-size: 21px;
@@ -97,19 +113,22 @@
     letter-spacing: 0.05em;
     text-align: justify; */
 }
-.mobilemuninfo-text{
+
+.mobilemuninfo-text {
     display: none;
 }
-.info_button{
+
+.info_button {
     font-family: Bangers;
     font-weight: 400;
     font-size: 3vh;
     color: #ffffff;
-    background-color:rgba(217, 217, 217, 0.3);
+    background-color: rgba(217, 217, 217, 0.3);
     border: none;
-    padding:0.5vh 0.5vw 0.5vh 0.5vw;
+    padding: 0.5vh 0.5vw 0.5vh 0.5vw;
 }
-.info_img1{
+
+.info_img1 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -118,39 +137,46 @@
     margin: auto;
 
 }
-.infoPage1img{
-    width:20vw;
+
+.infoPage1img {
+    width: 20vw;
 }
-.mun-infopageimg1{
-    width:40vw;
+
+.mun-infopageimg1 {
+    width: 40vw;
 }
-.info_img1 h3{
+
+.info_img1 h3 {
     width: 25vw;
     color: #FFF;
-text-align: center;
-font-family: Bangers;
-font-size: 2.5vw;
-font-style: normal;
-font-weight: 400;
-line-height: 162.2%; 
+    text-align: center;
+    font-family: Bangers;
+    font-size: 2.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 162.2%;
 }
-@media screen and (max-width: 930px){
-    .muninfo-text{
+
+@media screen and (max-width: 930px) {
+    .muninfo-text {
         font-size: 2vw;
     }
 }
-@media screen and (max-width: 768px){
-    .info_box1{
+
+@media screen and (max-width: 768px) {
+    .info_box1 {
         display: flex;
         flex-direction: column-reverse;
-        gap:2vh;
+        gap: 2vh;
         margin-top: 20vh;
         z-index: 1;
     }
-    .muninfo-text{
+
+    .muninfo-text {
         display: none;
     }
-    .mobilemuninfo-text{
+
+    .mobilemuninfo-text {
         display: block;
         color: #FFF;
         font-family: Roboto;
@@ -158,57 +184,67 @@ line-height: 162.2%;
         font-style: normal;
         text-align: justify;
         font-weight: 500;
-        line-height: 162.2%; /* 32.44px */
+        line-height: 162.2%;
+        /* 32.44px */
         letter-spacing: 1px;
-        font-size: 2vh;
-        padding: 0 0 5vh 0;        
+        font-size: 1vh;
+        padding: 0 0 5vh 0;
     }
-    .infoPage1img{
-        width:50vw;
+
+    .infoPage1img {
+        width: 50vw;
     }
-    .info_img1 h3{
+
+    .info_img1 h3 {
         font-size: 6vw;
-        width:80vw;
+        width: 80vw;
     }
-    .irmun{
-       font-size: 3vw;
-       margin-top: 12vh;
+
+    .irmun {
+        font-size: 3vw;
+        margin-top: 12vh;
         padding: 0 7vw 0 5vw;
     }
-    .Mob-Bg-image{
+
+    .Mob-Bg-image {
         display: block;
-        position:absolute;
+        position: absolute;
         width: 100vw;
         height: 100vh;
     }
-    .info_heading{
-        display:none
+
+    .info_heading {
+        display: none
     }
-    .info_button{
+
+    .info_button {
         font-family: Bangers;
         font-weight: 400;
         font-size: 3vh;
-        background-color:#FFF;
+        background-color: #FFF;
         border: solid;
         border-color: #0D1E3B;
         border-width: 2px;
         border-radius: 6px;
-        padding:0.5vh 0.5vw 0.5vh 0.5vw;
+        padding: 0.5vh 0.5vw 0.5vh 0.5vw;
         color: #0D1E3B;
         line-height: 162.2%;
     }
+
     .info_text1 {
         margin-top: 1vh;
         width: auto;
         margin-right: 0;
     }
-    .portfolio_button{
+
+    .portfolio_button {
         display: flex;
         justify-content: center;
     }
 }
-@media screen and (max-width: 600px){
-    .mobilemuninfo-text{
-        font-size: 2.5vh;
+
+@media screen and (max-width: 600px) {
+    .mobilemuninfo-text {
+        font-size: 1vh;
     }
 }

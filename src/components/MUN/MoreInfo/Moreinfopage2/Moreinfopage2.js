@@ -1,6 +1,6 @@
 import React from 'react'
 import MoreInfo from '../../../../assets/munbg.webp';
-import InfoPage1Img from '../../../../assets/muninfopage2img.webp';
+import InfoPage1Img from '../../../../assets/muninfopage1.svg';
 import './Moreinfopage2.css';
 import Navbar from "../../../../components/EventsNavbar/Eventsnavbar";
 import MobMoreInfo from "../../../../assets/munmobileinfobg.webp";
@@ -37,9 +37,9 @@ export default function Moreinfopage1() {
                         </div>
                         <div className="info_img2">
                             <div className="mun-infoPage1img1">
-                                <img src={InfoPage1Img} className="infoPage2img" alt="infoPage1img" />
+                                <img src={InfoPage1Img} className="infoPage1img" alt="infoPage1img" />
                             </div>
-                            <h3>ALL INDIA POLITICAL PARTY MEET ( AIPPM)</h3>
+                            
                         </div>
                     </div>
                 </div>
