@@ -74,7 +74,7 @@ function FAQ() {
                 <div>There are three committees this year: <br />
                 AIPPM: Evaluating the ongoing ethnic clashes in Manipur <br />
                 UNGA: Deliberation over unlawful occupation of territory and forced governance with special emphasis on Israel Palestine conflict <br /> 
-                SHIELD (Strategic Homeland Intervention, Enforcement, and Logistics Division)
+                SHIELD: The agenda is to protect Earth from global and extraterrestrial threats.
  <br />
                 {/* <a href="https://thomso.in/#/events" style={{color:"#a09faf",opacity:".5"}}>https://thomso.in/#/events</a> */}
                 </div>
