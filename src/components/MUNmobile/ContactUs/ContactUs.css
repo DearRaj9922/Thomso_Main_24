@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Saira:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 .ContactUsMUN
 {
     border-radius: 25px;
@@ -16,7 +17,7 @@
     display: flex;
     justify-content: center;
     color: var(--Surface-main, #FFF);
-    font-family: Roboto;
+    font-family: Saira !important;
     font-size: 25px;
     font-style: normal;
     font-weight: 700;
@@ -33,7 +34,7 @@
 {
     color: #FFF;
     text-align: left;
-    font-family: Roboto;
+    font-family: Saira !important;
     font-size: 18.218px;
     font-style: normal;
     font-weight: 700;
@@ -42,7 +43,7 @@
 .phoneContact
 {
     color: rgba(255, 255, 255, 0.63);
-    font-family: Numans;
+    font-family: Saira !important;
     font-size: 15.41px;
     font-style: normal;
     font-weight: 400;
@@ -70,7 +71,7 @@
 .directionsHeading
 {
     color: #FFF;
-    font-family: Comic Neue;
+    font-family: Saira !important;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
@@ -82,7 +83,7 @@
 .directionElements
 {
     color: #FFF;
-    font-family: Comic Neue;
+    font-family: Saira;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;

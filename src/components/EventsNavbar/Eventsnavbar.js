@@ -108,6 +108,13 @@ function Navbar({ color, disable, setregister, register, data, fontcolor, bright
             <a
               className="event-nav-right-compo hover-underline-animation"
               style={{ color: fontcolor }}
+              onClick={() => handleNavigate("/mun")}
+            >
+              MUN
+            </a>
+            <a
+              className="event-nav-right-compo hover-underline-animation"
+              style={{ color: fontcolor }}
               href="https://ca.thomso.in/"
               target="_blank"
             >

@@ -3,15 +3,18 @@ import Carousel from 'react-spring-3d-carousel';
 import Icon from 'react-icons';
 import { BsFillArrowLeftCircleFill,BsFillArrowRightCircleFill } from "react-icons/bs";
 // import mun1 from "../../../assests/MUNImg1.png";
-import mun2 from "../../../assets/Component 2.png";
-import mun3 from "../../../assets/Component 3.png";
+// import mun2 from "../../../assets/Component 2.png";
+// import mun3 from "../../../assets/Component 3.png";
 // import { v4 as uuidv4 } from "uuid";
 // import { config } from "react-spring";
 // import Committee from "../../../assests/CommitteeMUN.png";
-import UNGA from "../../../assets/Component 1.png";
+// import UNGA from "../../../assets/SHIELD.webp";
 import Arrow from "../../../assets/ArrowMUN.png";
 // import UNGA from "../../../assests/UNGAmob.png";
 // import UNGA from "../../../assests/UNGAmob.png";
+import UNGA from "../../../assets/cardBG.png";
+import mun2 from "../../../assets/cardBG2.png";
+import mun3 from "../../../assets/SHIELD.webp";
 
 import "./Committee.css"
 import {useNavigate} from "react-router-dom"

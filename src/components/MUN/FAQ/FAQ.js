@@ -1,7 +1,7 @@
   import React, { useState } from "react";
 import "./FAQ.css";
 import img1 from "../../../assets/Cross.webp";
-import FAQ1 from "../../../assets/FAQS.png";
+import FAQ1 from "../../../assets/FAQ.svg";
 import {
   AiOutlineMinus,
   AiFillPlusCircle,
@@ -43,7 +43,9 @@ function FAQ() {
               />
               <div class="panel">
               Registration can be done at &nbsp;
-                <a href="https://thomso.in/#/register" style={{color:"#a09faf",opacity:".5"}}>https://thomso.in/#/register</a>
+
+                <a href="https://thomso.in/#/register " style={{color:"#a09faf",opacity:".5"}}>https://thomso.in/#/register </a>
+
               </div>
             </>
           )}
@@ -53,7 +55,7 @@ function FAQ() {
       <div className="accordion">
         <div className="left_num_faq">02</div>
         <div className="right_mun_faq_head">
-        What are the agendas of the IITR MUN 2023?
+        What are the agendas of the IITR MUN 2024?
           {plus["2nd"] ? (
             <AiFillPlusCircle
               class="accordion_1 plus_btn_mun"
@@ -74,8 +76,11 @@ function FAQ() {
                 <div>There are three committees this year: <br />
                 AIPPM: Evaluating the ongoing ethnic clashes in Manipur <br />
                 UNGA: Deliberation over unlawful occupation of territory and forced governance with special emphasis on Israel Palestine conflict <br /> 
-                S.H.I.E.L.D: Bangladesh Liberation War of 1971 <br />
-                {/* <a href="https://thomso.in/events" style={{color:"#a09faf",opacity:".5"}}>https://thomso.in/events</a> */}
+
+                SHIELD: The agenda is to protect Earth from global and extraterrestrial threats.
+ <br />
+                {/* <a href="https://thomso.in/#/events" style={{color:"#a09faf",opacity:".5"}}>https://thomso.in/#/events</a> */}
+
                 </div>
                 
   
@@ -108,7 +113,7 @@ function FAQ() {
               />
               <div class="panel">
                 <p>
-                Registration fee is Rs.2799+taxes. <br />
+                Registration fee is Rs.2949+taxes. <br />
                 It will include accommodation(compulsory for girls) for three days, breakfast and lunch, goodies, participation in all events and pronites. <br /> 
                 What about dinner? <br />
                 At the time of dinner, pronites will be going on but participants could avail the facilities of stalls and canteens.
@@ -169,7 +174,7 @@ function FAQ() {
               />
               <div class="panel">
                 <p>
-                IITR MUN is a two days conference and will be held on 13th and 14th October
+                IITR MUN is a two days conference and will be held on 4th and 6th October
                 </p>
               </div>
             </>
