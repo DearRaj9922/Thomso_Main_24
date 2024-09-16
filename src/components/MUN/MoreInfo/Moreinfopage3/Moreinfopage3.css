@@ -10,7 +10,8 @@
     background-repeat: no-repeat;
     width: 100vw;
     display: flex;
-    height: 100vh;
+    justify-content: center;
+    height: 95vh;
 }
 
 .mun_nav {
@@ -39,7 +40,7 @@
     width: 100%;
     padding: 20px;
     margin-top: 3vh;
-    margin-bottom: 3vh;
+    /* margin-bottom: 3vh; */
 
     /* height: 400px; Adjust as needed */
     background: linear-gradient(to bottom, #061f2c, #0d2f3f);
@@ -70,9 +71,9 @@
     color: #ffffff;
     display: flex;
     font-family: Roboto Flex;
-    font-size: 1vw;
+    font-size: 1.5vw;
     margin-top: 12vh;
-    padding: 0 7vw 0 7vw;
+    padding: 0 7vw 0 11vw;
 }
 
 .aippm {
@@ -83,8 +84,11 @@
 
 .info_box2 {
     display: flex;
+    width: 85vw;
+    justify-content: center;
+    align-items: center;
     margin-top: 18vh;
-    padding: 0 7vw 0 7vw;
+    /* padding: 0 7vw 0 7vw; */
 }
 
 .info_content {
@@ -103,7 +107,7 @@
     line-height: 162.2%;
     /* 32.44px */
     letter-spacing: 1px;
-    font-size: 1.15vw;
+    font-size: 1.3vw;
     padding: 0 0 5vh 0;
     font-family: 'Saira Condensed', sans-serif;
     /* font-size: 21px;
@@ -121,7 +125,7 @@
     font-family: 'Saira', sans-serif;
 
     font-weight: 400;
-    font-size: 3vh;
+    font-size: 1.6vh;
     color: #ffffff;
     background-color: rgba(217, 217, 217, 0.3);
     border: none;
@@ -133,8 +137,9 @@
     flex-direction: column;
     align-items: center;
     margin-top: 0;
+    width: 100%;
     /* width:40vw; */
-    margin: auto;
+    margin: 0;
 
 }
 
@@ -164,9 +169,11 @@
         font-size: 2vw;
     }
 
-    .infoPage1img {
-        height: 100%;
+    .infoBg {
+        height: 80vh;
     }
+
+    
 
 
 }
@@ -178,21 +185,33 @@
         gap: 2vh;
         margin-top: 20vh;
         padding-top: 2vh;
+        width: 85vw;
         z-index: 1;
+        padding: 5vw;
         background: linear-gradient(to bottom, #061f2c, #0d2f3f);
         /* Gradient colors based on the image */
         border-radius: 15px;
         /* Rounded corners */
-        margin-left: 1.5vh;
-        margin-right: 3vh;
-        width: 80%;
+        margin-left: 2vh;
+        margin-right: 2vh;
+        /* width: 85%; */
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     }
-    .info_text2{
+    .infoBg {
+        height: 100vh;
+    }
+
+    .infoPage1img {
+        height: 100%;
+        width: 86vw;
+    }
+
+    .info_text2 {
         background: transparent;
         box-shadow: none;
         width: 100%;
     }
+
     .muninfo-text {
         display: none;
     }
@@ -217,7 +236,7 @@
     }
 
     .info_img2 h3 {
-        font-size: 6vw;
+        font-size: 3.5vw;
         font-family: 'Saira', sans-serif;
         width: 80vw;
         display: block;

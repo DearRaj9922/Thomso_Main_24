@@ -3,6 +3,7 @@
   background-size: cover;
   /* Make sure the background covers the whole area */
   background-position: center;
+  /* height: 50vh; */
   /* Center the background image */
 }
 
@@ -41,11 +42,11 @@
   height: 8vh;
   position: relative;
   display: flex;
-  /* width: 87%; */
+  width: 100%;
   margin: auto;
   align-items: center;
   justify-content: space-between;
-  padding: 0 2%;
+  padding: 0 6%;
   background-color: transparent;
   /* Ensure it's transparent */
 }
@@ -117,6 +118,7 @@
 .munfooterSub1 button {
   background: none;
   border: none;
+  margin-left: 1vh;
   cursor: pointer;
 }
 
@@ -177,6 +179,9 @@
   .munfooterRight {
     position: relative;
     left: 5vw;
+  }
+  .munfooterBoxA{
+    padding: 0 2%;
   }
 }
 
