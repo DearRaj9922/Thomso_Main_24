@@ -18,8 +18,8 @@ const App = () => {
       key: 1,
       content: <div className="judge1div">
         <img src={judge1} className="judge1-img j1"alt="1" />
-        <div className='judge1-discription1'>LAKSHIT TANDON</div> 
-        <div className='judge1-discription'>CHAIR OF HISTORIC COMMITEE</div>
+        {/* <div className='judge1-discription1'>LAKSHIT TANDON</div>  */}
+        <div className='judge1-discription'>TO BE DECLARED</div>
 
       </div> 
     },
@@ -27,16 +27,16 @@ const App = () => {
       key: 2,
       content: <div className="judge2div">
         <img src={judge2} className="judge2-img j2" alt="2" />
-        <div className='judge1-discription2'>AISHNIT YADAV</div> 
-        <div className='judge1-discription'>PRESIDENT OF UNGA</div>
+        {/* <div className='judge1-discription2'>AISHNIT YADAV</div>  */}
+        <div className='judge1-discription'>TO BE DECLARED</div>
       </div>
     },
     {
       key: 3,
       content: <div className="judge3div">
         <img src={judge3} className="judge3-img j3"alt="3" />
-        <div className='judge1-discription3'>RAUNAK UPMANYU</div> 
-        <div className='judge1-discription'>CHAIR OF AIPPM</div>
+        {/* <div className='judge1-discription3'>RAUNAK UPMANYU</div>  */}
+        <div className='judge1-discription'>TO BE DECLARED</div>
       </div>
     }
   ]; 

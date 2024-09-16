@@ -43,7 +43,7 @@ function FAQ() {
               />
               <div class="panel">
               Registration can be done at &nbsp;
-                <a href="https://thomso.in/register " style={{color:"#a09faf",opacity:".5"}}>https://thomso.in/register </a>
+                <a href="https://thomso.in/#/register" style={{color:"#a09faf",opacity:".5"}}>https://thomso.in/#/register</a>
               </div>
             </>
           )}
@@ -74,7 +74,7 @@ function FAQ() {
                 <div>There are three committees this year: <br />
                 AIPPM: Evaluating the ongoing ethnic clashes in Manipur <br />
                 UNGA: Deliberation over unlawful occupation of territory and forced governance with special emphasis on Israel Palestine conflict <br /> 
-                INDIAN WAR CABINET: Bangladesh Liberation War of 1971 <br />
+                S.H.I.E.L.D: Bangladesh Liberation War of 1971 <br />
                 {/* <a href="https://thomso.in/events" style={{color:"#a09faf",opacity:".5"}}>https://thomso.in/events</a> */}
                 </div>
                 
@@ -140,7 +140,7 @@ function FAQ() {
               />
               <div class="panel">
                 <p>
-                Details can be found at - <a href="https://thomso.in/events" style={{color:"#a09faf",opacity:".5"}}>https://thomso.in/events</a>
+                Details can be found at - <a href="https://thomso.in/#/events" style={{color:"#a09faf",opacity:".5"}}>https://thomso.in/#/events</a>
                 </p>
               </div>
             </>

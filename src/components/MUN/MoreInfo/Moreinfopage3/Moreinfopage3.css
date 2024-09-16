@@ -143,10 +143,6 @@
 
 }
 
-.infoPage2img {
-    width: 28vw;
-}
-
 .mun-infopageimg1 {
     width: 40vw;
 }
@@ -200,7 +196,9 @@
     .infoBg {
         height: 100vh;
     }
-
+    .infoPage3img {
+        content: url('../../../../assets/shieldlogomob.webp');
+      }
     .infoPage1img {
         height: 100%;
         width: 86vw;
@@ -229,10 +227,6 @@
         letter-spacing: 1px;
         font-size: 2vh;
         padding: 0 0 2vh 0;
-    }
-
-    .infoPage2img {
-        width: 50vw;
     }
 
     .info_img2 h3 {

@@ -119,9 +119,7 @@
     margin: auto;
 
 }
-.infoPage2img{
-    width:28vw;
-}
+
 .mun-infopageimg1{
     width:40vw;
 }
@@ -161,8 +159,8 @@ line-height: 162.2%;
     .muninfo-text{
         display: none;
     }
-    .infoPage1img {
-        content: url('mob.svg');
+    .infoPage2img {
+        content: url('../../../../assets/aippmmob.webp');
       }
     .mobilemuninfo-text{
         display: block;
@@ -177,8 +175,8 @@ line-height: 162.2%;
         font-size: 2vh;
         padding: 0 0 5vh 0;        
     }
-    .infoPage2img{
-        width:50vw;
+    .infoPage1img{
+        width:86vw;
     }
     .info_img2 h3{
         font-size: 6vw;
