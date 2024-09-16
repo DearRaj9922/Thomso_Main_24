@@ -15,7 +15,7 @@ import {message} from "antd"
 const Portfolio = [
   "UNITED NATIONS GENERAL ASSEMBLY (UNGA)",
   "ALL INDIA POLITICAL PARTY MEET (AIPPM)",
-  "INDIAN WAR CABINET (HISTORIC COMMITTEE)",
+  "S.H.I.E.L.D (Strategic Homeland Intervention, Enforcement, and Logistics Division)",
 ].map((Portfolio) => ({
   value: Portfolio,
   label: Portfolio,
@@ -23,7 +23,7 @@ const Portfolio = [
 
 const Portfolio1 = [
   "ALL INDIA POLITICAL PARTY MEET (AIPPM)",
-  "INDIAN WAR CABINET (HISTORIC COMMITTEE)",
+  "S.H.I.E.L.D (Strategic Homeland Intervention, Enforcement, and Logistics Division)",
 ].map((Portfolio) => ({
   value: Portfolio,
   label: Portfolio,
@@ -31,7 +31,7 @@ const Portfolio1 = [
 
 const Portfolio2 = [
   "UNITED NATIONS GENERAL ASSEMBLY (UNGA)",
-  "INDIAN WAR CABINET (HISTORIC COMMITTEE)",
+  "S.H.I.E.L.D (Strategic Homeland Intervention, Enforcement, and Logistics Division)",
 ].map((Portfolio) => ({
   value: Portfolio,
   label: Portfolio,
@@ -326,52 +326,41 @@ const AIPPM = [
   label: AIPPM,
 }));
 const Historic = [
-  "Indira Gandhi",
-  "Sanjay Gandhi",
-  "S. Swaran Singh",
-  "Jagjivan Ram",
-  "Kodardas Kalidas Shah",
-  "Raj Bahadur",
-  "Chidambaram Subramaniam",
-  "Yashwantrao Chavan",
-  "Hemavati Nandan Bahuguna",
-  "Nandini Satpathy",
-  "DP Chatopadhyay",
-  "Mohan Dhariya",
-  "KC Pant",
-  "Ram Niwas Mirdha",
-  "KR Ganesh",
-  "General Manoj Mukund Naravane",
-  "General Bipin Rawat (Late)",
-  "General Vipin Rawat (Late)",
-  "Lieutenant General Ranbir Singh",
-  "General Dalbir Singh Suhag (Retired)",
-  "Lieutenant General KJS Dhillon",
-  "Lieutenant General Abhay Krishna",
-  "Lieutenant General Anil Chauhan",
-  "Lieutenant General Nav K Khanduri",
-  "Lieutenant General Pradeep Chandran Nair",
-  "Admiral Sunil Lanba (Retired)",
-  "Admiral Robin Dhowan (Retired)",
-  "Admiral R. Hari Kumar (Retired)",
-  "Admiral D. K. Joshi (Retired)",
-  "Admiral Karambir Singh",
-  "Admiral Sureesh Mehta (Retired)",
-  "Admiral Vishnu Bhagwat (Retired)",
-  "Admiral L. Ramdas (Retired)",
-  "Admiral S. Lanba (Retired)",
-  "Admiral K. R. Nair (Retired)",
-  "Air Chief Marshal Rakesh Kumar Singh Bhadauria",
-  "Air Chief Marshal Birender Singh Dhanoa (Retired)",
-  "Air Marshal RKS Bhadauria (Retired)",
-  "Air Marshal Arjan Singh (Late)",
-  "Air Marshal N. A. K. Browne (Retired)",
-  "Air Marshal B. S. Dhanoa (Retired)",
-  "Air Marshal R. K. S. Bhadauria",
-  "Air Marshal HS Arora",
-  "Air Marshal VR Chaudhari",
-  "Air Marshal Rajesh Kumar (Retired)",
-].map((Historic) => ({
+  "Nick Fury",
+  "Tony Stark",
+  "Maria Hill",
+  "Phil Coulson",
+  "Alexander Pierce",
+  "Carol Denvers",
+  "Thor Odinson",
+  "Stephen Strange",
+  "Melinda May",
+  "Natasha Romanoff",
+  "Clint Barton",
+  "Peggy Carter",
+  "Sam Wilson",
+  "James \"Rhodey\" Rhodes",
+  "Jessica Drew",
+  "Shuri",
+  "Daisy Johnson",
+  "Leopold Fitz",
+  "Jemma Simmons",
+  "Bobbi Morse (Mockingbird)",
+  "Helmut Zemo",
+  "Sharon Carter",
+  "T'Challa",
+  "Hank Pym",
+  "Wanda Maximoff",
+  "Bruce Banner",
+  "Charles Xavier",
+  "Reed Richards",
+  "Valkyrie",
+  "Okoye",
+  "Magneto",
+  "Hope van Dyne",
+  "Hank McCoy"
+]
+.map((Historic) => ({
   value: Historic,
   label: Historic,
 }));
@@ -532,7 +521,7 @@ export default function MUNmobileregistration({ fetchMuns }) {
                           "ALL INDIA POLITICAL PARTY MEET (AIPPM)"
                         ? Portfolio2
                         : user.second_preference ===
-                          "INDIAN WAR CABINET (HISTORIC COMMITTEE)"
+                          "S.H.I.E.L.D (Strategic Homeland Intervention, Enforcement, and Logistics Division)"
                         ? Portfolio3
                         : Portfolio
                     }
@@ -627,7 +616,7 @@ export default function MUNmobileregistration({ fetchMuns }) {
                           "ALL INDIA POLITICAL PARTY MEET (AIPPM)"
                         ? Portfolio2
                         : user.first_preference ===
-                          "INDIAN WAR CABINET (HISTORIC COMMITTEE)"
+                          "S.H.I.E.L.D (Strategic Homeland Intervention, Enforcement, and Logistics Division)"
                         ? Portfolio3
                         : Portfolio
                     }

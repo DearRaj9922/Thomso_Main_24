@@ -2,7 +2,7 @@ import React from 'react'
 import Committee from "../../../assets/COMMITTEE.svg";
 import UNGA from "../../../assets/cardBG.png";
 import AIPPM from "../../../assets/cardBG2.png";
-import Historic from "../../../assets/cardBG3.png";
+import Historic from "../../../assets/SHIELD.webp";
 import ArrowMUN from "../../../assets/ArrowMUN.png";
 import "./Commitee.css";
 import { Link, useNavigate } from "react-router-dom";

@@ -31,13 +31,13 @@ export default function Moreinfopage1() {
                                     <br />
                                     Agenda: "Unlawful Occupation and Forced Governance: Israel-Palestine Conflict."</p>
                                 <div className="portfolio_button">
-                                    <button className='info_button' onClick={() => window.open("https://docs.google.com/spreadsheets/d/1f_1kJOrr7MSdctuNRdjqVQKhARYkzlbpZeokivqnreA/edit?pli=1#gid=952637532", "_blank")}>PORTFOLIO MATRIX</button>
+                                    <button className='info_button' onClick={() => window.open("https://docs.google.com/spreadsheets/d/14l_D_IPAHMAtAjGXDP3wuygbgloxCzNajbAj9vhdQLA/edit?usp=sharing", "_blank")}>PORTFOLIO MATRIX</button>
                                 </div>
                             </div>
                         </div>
                         <div className="info_img2">
                             <div className="mun-infoPage1img1">
-                                <img src={InfoPage1Img} className="infoPage1img" alt="infoPage1img" />
+                                <img src={InfoPage1Img} className="infoPage1img infoPage" alt="infoPage1img" />
                             </div>
                             <h3 >UNITED NATIONS GENERAL ASSEMBLY (UNGA)</h3>
                         </div>

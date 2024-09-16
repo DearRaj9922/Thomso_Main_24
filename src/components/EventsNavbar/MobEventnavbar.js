@@ -108,14 +108,14 @@ function MobEventnavbar({brightMob}) {
           >
             Merch
           </h1> */}
-          {/* <h1
+          <h1
             onClick={() => {
-              navigate("/MUN");
+              navigate("/mun");
               window.location.reload(false);
             }}
           >
             MUN
-          </h1> */}
+          </h1>
           {/* {event &&
             events.map((el) => {
               const { par, child } = el;
@@ -225,14 +225,14 @@ function MobEventnavbar({brightMob}) {
           >
             Merch
           </h1> */}
-          {/* <h1
+          <h1
             onClick={() => {
-              navigate("/MUN");
+              navigate("/mun");
               window.location.reload(false);
             }}
           >
             MUN
-          </h1> */}
+          </h1>
           {/* {event &&
             events.map((el) => {
               const { par, child } = el;

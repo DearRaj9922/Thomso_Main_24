@@ -10,7 +10,7 @@
     background-repeat: no-repeat;
     width: 100vw;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     height: 95vh;
 }
 
@@ -73,7 +73,7 @@
     font-family: Roboto Flex;
     font-size: 1.5vw;
     margin-top: 12vh;
-    padding: 0 7vw 0 11vw;
+    padding: 0 7vw 0 8vw;
 }
 
 .aippm {
@@ -143,10 +143,6 @@
 
 }
 
-.infoPage2img {
-    width: 28vw;
-}
-
 .mun-infopageimg1 {
     width: 40vw;
 }
@@ -189,18 +185,16 @@
         z-index: 1;
         padding: 5vw;
         background: linear-gradient(to bottom, #061f2c, #0d2f3f);
-        /* Gradient colors based on the image */
         border-radius: 15px;
-        /* Rounded corners */
-        margin-left: 2vh;
         margin-right: 2vh;
-        /* width: 85%; */
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     }
     .infoBg {
         height: 100vh;
     }
-
+    .infoPage3img {
+        content: url('../../../../assets/shieldlogomob.webp');
+      }
     .infoPage1img {
         height: 100%;
         width: 86vw;
@@ -229,10 +223,6 @@
         letter-spacing: 1px;
         font-size: 2vh;
         padding: 0 0 2vh 0;
-    }
-
-    .infoPage2img {
-        width: 50vw;
     }
 
     .info_img2 h3 {

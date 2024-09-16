@@ -1,6 +1,6 @@
 import React from 'react'
 import MoreInfo from '../../../../assets/munbg.webp';
-import InfoPage1Img from '../../../../assets/muninfopage1.svg';
+import InfoPage2Img from '../../../../assets/aippm.webp';
 import './Moreinfopage2.css';
 import Navbar from "../../../../components/EventsNavbar/Eventsnavbar";
 import MobMoreInfo from "../../../../assets/munmobileinfobg.webp";
@@ -31,13 +31,13 @@ export default function Moreinfopage1() {
                                     <br />
                                     AGENDA: “Deliberation over the ongoing ethnic clashes in Manipur”</p>
                                 <div className="portfolio_button">
-                                    <button className='info_button' onClick={() => window.open("https://docs.google.com/spreadsheets/d/1f_1kJOrr7MSdctuNRdjqVQKhARYkzlbpZeokivqnreA/edit?pli=1#gid=952637532", "_blank")}>PORTFOLIO MATRIX</button>
+                                    <button className='info_button' onClick={() => window.open("https://docs.google.com/spreadsheets/d/14l_D_IPAHMAtAjGXDP3wuygbgloxCzNajbAj9vhdQLA/edit?usp=sharing", "_blank")}>PORTFOLIO MATRIX</button>
                                 </div>
                             </div>
                         </div>
                         <div className="info_img2">
                             <div className="mun-infoPage1img1">
-                                <img src={InfoPage1Img} className="infoPage1img" alt="infoPage1img" />
+                                <img src={InfoPage2Img} className="infoPage1img infoPage2img" alt="infoPage1img" />
                             </div>
                             <h3 >ALL INDIA POLITICAL PARTY MEET ( AIPPM)</h3>
 
