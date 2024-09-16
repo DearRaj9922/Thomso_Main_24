@@ -16,7 +16,7 @@ export default function Moreinfopage1() {
                 <div className="infoBg">
                     <div className="irmun">
                         <h3> IRMUN / </h3>
-                        <h3 className='aippm'> HISTORIC COMMITTEE</h3>
+                        <h3 className='aippm'> S.H.I.E.L.D</h3>
                     </div>
                     <div className="info_box2">
                         <div className="info_content">
@@ -37,7 +37,7 @@ export default function Moreinfopage1() {
                             <div className="mun-infoPage1img1">
                                 <img src={InfoPage3Img} className="infoPage1img infoPage3img" alt="infoPage1img" />
                             </div>
-                            <h3 >INDIAN WAR CABINET (HISTORIC COMMITTEE)</h3>
+                            <h3 >S.H.I.E.L.D (Strategic Homeland Intervention, Enforcement, and Logistics Division)</h3>
                         </div>
                     </div>
                 </div>
