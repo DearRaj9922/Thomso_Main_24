@@ -4,17 +4,17 @@ import MUNTop from "../../../assets/IITRMUN.png";
 import Navbar from "../../../components/EventsNavbar/Eventsnavbar";
 import Contact from "../../../components/MUNmobile/ContactUs/ContactUs";
 import Executives from "../Executive/Executive";
-import Executive from "../../../assets/Executive.png";
+import Executive from '../../../assets/judge.svg';
 import Comittee from "../Committee/Committee";
-import Prizes from "../../../assets/PrizesWorth100.png";
-import Committee from "../../../assets/COMMITTEE.png";
+import Prizes from "../../../assets/worth_img.svg";
+import Committee from "../../../assets/COMMITTEE.svg";
 import "./HomeMUN.css"
 import FAQ from '../../MUN/FAQ/FAQ';
 import Loader from "../../Newloader/Newloader"
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import MobBG1 from "../../../assets/MUN_mobbg1.webp"
-import MobBG2 from "../../../assets/MUN_mobbg2.webp"
+// import MobBG1 from "../../../assets/assests/munBG.svg"
+import MobBG2 from "../../../assets/munBGmob.svg"
 
 function HomeMUN() {
   const navigate = useNavigate();
@@ -56,7 +56,7 @@ function HomeMUN() {
     {loading && <Loader />}
     <div className="HomeMUN-body">
       <div className='HomeMUN-bg'>
-        <img src={MobBG1} className="HomeMUN-bg-1" alt="" />
+        {/* <img src={MobBG1} className="HomeMUN-bg-1" alt="" /> */}
         <img src={MobBG2} className="HomeMUN-bg-2" alt="" />
       </div>
       <Navbar/>
@@ -88,17 +88,20 @@ function HomeMUN() {
           Model United Nations, referred to as MUN, offers participants a distinctive opportunity to immerse themselves in the realm of international diplomacy and the resolution of global challenges through constructive forums for open dialogue. Delegates will uphold their countries' national policies while engaging in negotiations amid other, at times divergent, international policies.
           </div>
         </div>
+        <div className='committee_sec'>
         <div className="CommitteeHead" id="committeeHead1">
           <img src={Committee} alt="" />
         </div>
         <Comittee/>
+        </div>
+        <div className='executive-sec'>
         <div className="CommitteeHead" id="committeeHead2">
           <img src={Executive} alt="" />
         </div>
         <div className="ExecutiveMobile">
         <Executives/>
         </div>
-        
+        </div>
         
         
         <FAQ/>
