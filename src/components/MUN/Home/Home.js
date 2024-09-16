@@ -13,8 +13,8 @@ import Footer from "../../../components/Footer/Footer.js";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Loader from "../../Newloader/Newloader.js";
-import MUN_Bg1 from "../../../assets/assests/munBG.svg";
-import MUN_Bg2 from "../../../assets/assests/munBG.svg";
+import MUN_Bg1 from "../../../assets/munBG copy.svg";
+// import MUN_Bg2 from "../../../assets/assests/munBG.svg";
 import "./Home.css";
 
 
@@ -66,7 +66,7 @@ function Home() {
       <div className="MUN-bg">
         <div className="MUN-Bg">
           <img src={MUN_Bg1} className="Bg-top" alt="" />
-          <img src={MUN_Bg2} className="Bg-bottom" alt="" />
+          {/* <img src={MUN_Bg2} className="Bg-bottom" alt="" /> */}
         </div>
         <Navbar color="transparent" />
         <div className="top-MUN-img">

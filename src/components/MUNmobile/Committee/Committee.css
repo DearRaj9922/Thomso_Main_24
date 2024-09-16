@@ -1,6 +1,8 @@
 .CarouselCommittee {
-    height: 110vh;
+    height: 90vh;
     width: 100vw;
+    margin:-10vh 0;
+
     /* z-index:-1; */
     /* position: absolute; */
 }
@@ -9,6 +11,7 @@
     display: flex;
     align-items: center;
 }
+
 
 .moreInfobtn {
     display: flex;
@@ -24,7 +27,7 @@
 
 .css-1qzevvg {
     margin-left: auto !important;
-    margin-top: 0px !important;
+    margin-top: -10vh !important;
 }
 
 .css-1qzevvg img {
@@ -57,6 +60,10 @@
         height: 65vh;
         position: relative;
         z-index: 0;
+    }
+    .carouselcontent{
+        margin:5vw;
+        position:relative;
     }
 }
 
@@ -270,7 +277,7 @@
 }
 
 .carouselcontentimg {
-    width: 52vw;
+    width: 40vw;
 }
 
 .MUNcarousel {
