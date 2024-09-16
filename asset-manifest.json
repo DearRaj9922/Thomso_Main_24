@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.93695abd.css",
+    "main.css": "/static/css/main.76f8ff95.css",
     "main.js": "/static/js/main.6c53c2f9.js",
     "static/js/511.6d025d35.chunk.js": "/static/js/511.6d025d35.chunk.js",
     "static/media/bgs4.svg": "/static/media/bgs4.a2186bd99a8e07adf56b.svg",
@@ -8,6 +8,7 @@
     "static/media/munBG.svg": "/static/media/munBG.25521b27e0c3fd3b705b7ce3ec6ddae0.svg",
     "static/media/clouds.svg": "/static/media/clouds.60224859c67b4031e2b3ef103eb58889.svg",
     "static/media/cardBG.svg": "/static/media/cardBG.946a3c556341bd3d062402e5a69362a7.svg",
+    "static/media/mob.svg": "/static/media/mob.a688fc2f2e2e20c98632.svg",
     "static/media/muninfopage1.svg": "/static/media/muninfopage1.f702d26cb420ab13c9c0f6875b991fbc.svg",
     "static/media/cardBG2.svg": "/static/media/cardBG2.c830ee26a75076709108f9c0f2c07059.svg",
     "static/media/cardBG3.svg": "/static/media/cardBG3.1f81ff0c2c1d9de8acb71d29e0e10800.svg",
@@ -100,12 +101,12 @@
     "static/media/TickCorrect.svg": "/static/media/TickCorrect.317b995981df69acdce1592e92ce5f74.svg",
     "static/media/profile.svg": "/static/media/profile.a0cd79691c7d2da42c0493e6ad98e630.svg",
     "static/media/diamond.svg": "/static/media/diamond.7e6e6a15583877c88e6a71723e75f3b6.svg",
-    "main.93695abd.css.map": "/static/css/main.93695abd.css.map",
+    "main.76f8ff95.css.map": "/static/css/main.76f8ff95.css.map",
     "main.6c53c2f9.js.map": "/static/js/main.6c53c2f9.js.map",
     "511.6d025d35.chunk.js.map": "/static/js/511.6d025d35.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.93695abd.css",
+    "static/css/main.76f8ff95.css",
     "static/js/main.6c53c2f9.js"
   ]
 }
