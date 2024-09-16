@@ -174,7 +174,7 @@ function FAQ() {
               />
               <div class="panel">
                 <p>
-                IITR MUN is a two days conference and will be held on 4th and 6th October
+                IITR MUN is a two days conference and will be held on 4th and 5th October
                 </p>
               </div>
             </>
