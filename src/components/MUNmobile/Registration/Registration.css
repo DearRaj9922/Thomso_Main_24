@@ -134,6 +134,27 @@ margin-top: -2vh;
  
 }
 
+.MUNnuminp{
+    border: none;
+    font-size: 1rem;
+    padding: 0.7rem;
+    color: white;
+    width: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+.MUNnum{
+    padding-left: 16vw;
+    padding-right: 17.5vw;
+}
+
 .gap_set{
     display: flex;
     flex-direction: column;
@@ -172,6 +193,11 @@ margin-top: -2vh;
     overflow-y: scroll;
     padding-bottom: 5vh;
     
+}
+.MUNnum{
+    padding-left: 0vw;
+    padding-right: 3.5vw;
+    margin-top: 10vw;
 }
 .MobileBG{
     display:block;
@@ -253,6 +279,11 @@ margin-top: -2vh;
         object-fit:cover;
         width:100vw;
         z-index: -1;
+    }
+
+    .MUNnum{
+        padding-left: 0vw;
+        padding-right: 5.5vw;
     }
 }
 
