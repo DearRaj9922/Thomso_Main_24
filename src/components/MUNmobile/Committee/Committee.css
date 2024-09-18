@@ -177,7 +177,7 @@
     }
 
     .carouselcontentbtn {
-        height: 4vh !important;
+        height: 3vh !important;
         bottom: 2vh !important;
     }
 }
@@ -236,7 +236,7 @@
     }
 
     .carouselcontentbtn {
-        height: 4vh !important;
+        height: 2vh !important;
         bottom: 3vh !important;
     }
 }
@@ -263,7 +263,7 @@
     border: 1.402px solid #F7F7F7;
     display: flex;
     justify-content: center;
-    padding: 2vh 2vw;
+    padding: 0.5vh 1vw;
     height: auto;
     /* display: flex;
     align-items: center; */
