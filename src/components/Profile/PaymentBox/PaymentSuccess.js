@@ -8,7 +8,7 @@ import tick from "../../../assets/TickCorrect.svg"
 // import download from "../../../assests/downloadsign.png"
 import Loader from "../../Loader/Loader"
 
-import spon from '../../../assets/spon.svg'
+import spon from '../../../assets/spon.png'
 import Carousel1 from "../Carousel/Carousel1";
 
 
