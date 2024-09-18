@@ -13,7 +13,7 @@ import Arrow from "../../../assets/ArrowMUN.png";
 // import UNGA from "../../../assests/UNGAmob.png";
 // import UNGA from "../../../assests/UNGAmob.png";
 import UNGA from "../../../assets/cardBG.png";
-import mun2 from "../../../assets/cardBG2.png";
+import mun2 from "../../../assets/SHIELD.webp";
 import mun3 from "../../../assets/SHIELD.webp";
 
 import "./Committee.css"

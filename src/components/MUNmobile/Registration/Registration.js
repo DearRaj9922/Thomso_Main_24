@@ -381,6 +381,7 @@ export default function MUNmobileregistration({ fetchMuns }) {
     second_preference_choice_one: "",
     second_preference_choice_two: "",
     second_preference_choice_three: "",
+    MUN_num:"0",
   });
 
   const navigate = useNavigate();
@@ -430,6 +431,15 @@ export default function MUNmobileregistration({ fetchMuns }) {
       second_preference_choice_three: second_preference_choice_three?.value,
     });
   };
+
+  const HandleChangeMUNnumber=(evt)=>{
+    // const updatedUser=(...user, MUN_num:0);
+    // setUser(updatedUser);
+
+    const val=evt.target.value;
+    setUser({...user, MUN_num:val});
+    // console.log(typeof val);
+  }
 
   useEffect(() => {
     setLoading(true);
@@ -686,6 +696,23 @@ export default function MUNmobileregistration({ fetchMuns }) {
                 </div>
               </div>
             </div>
+          </div>
+
+          <div className="MUNnum">
+            <div className="Portfoliosubhead">No of MUNs you have done before? </div>
+            <div className="">
+              <input
+                type="number"
+                className="Portfolio_options MUNnuminp"
+                name="mun_number"
+                // placeholder="Enter MUN Number"
+                // value={user.MUN_num}
+                onChange={evt=>{HandleChangeMUNnumber(evt)}}
+                required
+              />
+            </div>
+          
+            
           </div>
           {localStorage.getItem("token") &&
           <div className="sub-button">
