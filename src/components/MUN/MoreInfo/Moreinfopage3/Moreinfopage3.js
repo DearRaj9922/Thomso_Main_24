@@ -24,10 +24,10 @@ export default function Moreinfopage1() {
                                 <h2 className="info_heading">S.H.I.E.L.D (Strategic Homeland Intervention, Enforcement, and Logistics Division)</h2>
                                 <p className="muninfo-text">S.H.I.E.L.D. protects Earth from global and extraterrestrial threats. Delegates, acting as agents, address terrorism, advanced technology, and superpowered beings, coordinating diplomacy, intelligence, and defense to maintain global stability and security.
                                     <br />
-                                    AGENDA: “The agenda is to protect Earth from global and extraterrestrial threats.”</p>
+                                    AGENDA: “TDeveloping a Global Defense Strategy Against Extraterrestrial Threats to Earth.”</p>
                                 <p className="mobilemuninfo-text">S.H.I.E.L.D. protects Earth from global and extraterrestrial threats. Delegates, acting as agents, address terrorism, advanced technology, and superpowered beings, coordinating diplomacy, intelligence, and defense to maintain global stability and security. 
                                     <br />
-                                    AGENDA: “The agenda is to protect Earth from global and extraterrestrial threats.”</p>
+                                    AGENDA: “Developing a Global Defense Strategy Against Extraterrestrial Threats to Earth.”</p>
                                 <div className="portfolio_button">
                                     <button className='info_button' onClick={() => window.open("https://docs.google.com/spreadsheets/d/14l_D_IPAHMAtAjGXDP3wuygbgloxCzNajbAj9vhdQLA/edit?usp=sharing", "_blank")}>PORTFOLIO MATRIX</button>
                                 </div>
