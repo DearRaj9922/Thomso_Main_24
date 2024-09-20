@@ -465,7 +465,7 @@ export default function MUNmobileregistration({ fetchMuns }) {
         no_of_mun: user.MUN_num,
       };
       console.log(userresponse)
-      const response = await axios.post("http://127.0.0.1:8000/apiV1/mun_register", userresponse);
+      const response = await axios.post("https://api2.thomso.in/apiV1/mun_register", userresponse);
       // const { data } = response;
       setLoading(false);
       if(response.status == 201){
