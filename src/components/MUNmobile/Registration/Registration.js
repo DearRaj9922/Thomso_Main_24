@@ -464,11 +464,12 @@ export default function MUNmobileregistration({ fetchMuns }) {
         second_preference_choice_two: user.second_preference_choice_two,
         second_preference_choice_three: user.second_preference_choice_three,
       };
+      console.log(userresponse)
       const response = await axios.post("https://api2.thomso.in/apiV1/mun_register", userresponse);
       // const { data } = response;
       setLoading(false);
       if(response.status == 201){
-          message.success("🎉 You are Registered Successsully for MUN")
+          message.success("🎉 You are Registered Successully for MUN")
       }
 
       if(response.status == 200){

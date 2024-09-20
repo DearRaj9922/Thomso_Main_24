@@ -1,4 +1,4 @@
-  import React, { useState } from "react";
+import React, { useState } from "react";
 import "./FAQ.css";
 import img1 from "../../../assets/Cross.webp";
 import FAQ1 from "../../../assets/FAQ.svg";
@@ -25,7 +25,7 @@ function FAQ() {
       <div className="accordion">
         <div className="left_num_faq">01</div>
         <div className="right_mun_faq_head">
-        Where can I register for Thomso?
+          Where can I register for Thomso?
           {plus["1st"] ? (
             <AiFillPlusCircle
               class="accordion_1 plus_btn_mun"
@@ -42,9 +42,9 @@ function FAQ() {
                 }}
               />
               <div class="panel">
-              Registration can be done at &nbsp;
+                Registration can be done at &nbsp;
 
-                <a href="https://thomso.in/#/register " style={{color:"#a09faf",opacity:".5"}}>https://thomso.in/#/register </a>
+                <a href="https://thomso.in/#/register " style={{ color: "#a09faf", opacity: ".5" }}>https://thomso.in/#/register </a>
 
               </div>
             </>
@@ -55,7 +55,7 @@ function FAQ() {
       <div className="accordion">
         <div className="left_num_faq">02</div>
         <div className="right_mun_faq_head">
-        What are the agendas of the IITR MUN 2024?
+          What are the agendas of the IITR MUN 2024?
           {plus["2nd"] ? (
             <AiFillPlusCircle
               class="accordion_1 plus_btn_mun"
@@ -73,18 +73,22 @@ function FAQ() {
               />
               <div className="panel">
                 <p>
-                <div>There are three committees this year: <br />
-                AIPPM: National-Revocation of the Central Government's Decision on Lateral Entry into Civil Services<br />
+
+                <div>
+                There are three committees this year: <br />
+                AIPPM: National-Revocation of the Central Governments Decision on Lateral Entry into Civil Services<br />
                 UNGA: International- The Kursk Incursion by Ukraine: Addressing Escalation in the Ukraine-Russia Conflict <br /> 
 
                 SHIELD: Developing a Global Defense Strategy Against Extraterrestrial Threats to Earth..
  <br />
                 {/* <a href="https://thomso.in/#/events" style={{color:"#a09faf",opacity:".5"}}>https://thomso.in/#/events</a> */}
 
-                </div>
-                
-  
-                
+
+                  </div>
+
+
+
+
                 </p>
               </div>
             </>
@@ -95,7 +99,7 @@ function FAQ() {
       <div className="accordion">
         <div className="left_num_faq">03</div>
         <div className="right_mun_faq_head">
-        What will be included in the registration fees?
+          What will be included in the registration fees?
           {plus["3rd"] ? (
             <AiFillPlusCircle
               class="accordion_1 plus_btn_mun"
@@ -113,10 +117,10 @@ function FAQ() {
               />
               <div class="panel">
                 <p>
-                Registration fee is Rs.2949+taxes. <br />
-                It will include accommodation(compulsory for girls) for three days, breakfast and lunch, goodies, participation in all events and pronites. <br /> 
-                What about dinner? <br />
-                At the time of dinner, pronites will be going on but participants could avail the facilities of stalls and canteens.
+                  Registration fee is Rs.2949+taxes. <br />
+                  It will include accommodation(compulsory for girls) for three days, breakfast and lunch, goodies, participation in all events and pronites. <br />
+                  What about dinner? <br />
+                  At the time of dinner, pronites will be going on but participants could avail the facilities of stalls and canteens.
                 </p>
               </div>
             </>
@@ -127,7 +131,7 @@ function FAQ() {
       <div className="accordion">
         <div className="left_num_faq">04</div>
         <div className="right_mun_faq_head">
-        How do I get the details/rulebook for any particular event?
+          How do I get the details/rulebook for any particular event?
           {plus["4th"] ? (
             <AiFillPlusCircle
               class="accordion_1 plus_btn_mun"
@@ -145,7 +149,7 @@ function FAQ() {
               />
               <div class="panel">
                 <p>
-                Details can be found at - <a href="https://thomso.in/#/events" style={{color:"#a09faf",opacity:".5"}}>https://thomso.in/#/events</a>
+                  Details can be found at - <a href="https://thomso.in/#/events" style={{ color: "#a09faf", opacity: ".5" }}>https://thomso.in/#/events</a>
                 </p>
               </div>
             </>
@@ -156,7 +160,7 @@ function FAQ() {
       <div className="accordion">
         <div className="left_num_faq">05</div>
         <div className="right_mun_faq_head">
-        What are the dates of IITR MUN?
+          What are the dates of IITR MUN?
           {plus["5th"] ? (
             <AiFillPlusCircle
               class="accordion_1 plus_btn_mun"
@@ -174,7 +178,7 @@ function FAQ() {
               />
               <div class="panel">
                 <p>
-                IITR MUN is a two days conference and will be held on 4th and 5th October
+                  IITR MUN is a two days conference and will be held on 4th and 5th October
                 </p>
               </div>
             </>
@@ -185,7 +189,7 @@ function FAQ() {
       <div className="accordion">
         <div className="left_num_faq">06</div>
         <div className="right_mun_faq_head">
-        What is the prize worth of the event?
+          What is the prize worth of the event?
           {plus["6th"] ? (
             <AiFillPlusCircle
               class="accordion_1 plus_btn_mun"
@@ -203,7 +207,7 @@ function FAQ() {
               />
               <div class="panel">
                 <p>
-                The prize worth is 100k
+                  The prize worth is 100k
                 </p>
               </div>
             </>

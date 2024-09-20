@@ -90,7 +90,7 @@ function Navbar({ color, disable, setregister, register, data, fontcolor, bright
       <div style={{ background: color }} className="nav-comp">
         <MobEventnavbar brightMob={bright} />
         <div className="mainnav">
-        <img
+          <img
             className="event-nav-left"
             style={{ filter: bright }}
             src={logo}
