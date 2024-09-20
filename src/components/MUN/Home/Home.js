@@ -105,8 +105,9 @@ function Home() {
         <div className="MUNFooter">
           <Contact />
         </div>
-        <div className="MUNFooter">
-          <Footer style={{backgroundColor:"transparent"}} className="mun_footer_web"/>
+        <div className="MUNFooterweb">
+          <Footer/>
+          <Footer></Footer>
         </div>
       </div>
       <div className="MUN-mob">
