@@ -77,7 +77,7 @@ function FAQ() {
                 AIPPM: National-Revocation of the Central Government's Decision on Lateral Entry into Civil Services<br />
                 UNGA: International- The Kursk Incursion by Ukraine: Addressing Escalation in the Ukraine-Russia Conflict <br /> 
 
-                SHIELD: TDeveloping a Global Defense Strategy Against Extraterrestrial Threats to Earth..
+                SHIELD: Developing a Global Defense Strategy Against Extraterrestrial Threats to Earth..
  <br />
                 {/* <a href="https://thomso.in/#/events" style={{color:"#a09faf",opacity:".5"}}>https://thomso.in/#/events</a> */}
 
