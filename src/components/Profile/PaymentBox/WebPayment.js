@@ -77,6 +77,12 @@ const NewPaymentBox = (
                     setStyle1({background: "white", color: "black"});
                     setStyle2({background: "transparent", color: "white"});
                 }
+                else{
+                    data[0].all_acco_close=true;
+                    setacco(false);
+                    setStyle1({background: "white", color: "black"});
+                    setStyle2({background: "transparent", color: "white"});
+                }
             })
             .catch((err) => {
                 console.log(err);

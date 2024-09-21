@@ -24,6 +24,7 @@ import ResetPassword from "./components/Registration/ResetPass/ResetPass";
 import Home3d from "./components/3dhome/Home3d.js";
 import EventMainPage from "./components/EventsPage/EventMainPage";
 import NewEve from "./components/Profile/EventsPage/NewEventCard/NewEventcard.js";
+import WebPayment from "./components/Profile/PaymentBox/WebPayment.js";
 // import EventPayment from "./components/EventPayment/EventPayment";
 
 import React,{useEffect, useState} from "react";
@@ -129,7 +130,8 @@ useEffect(() => {
           {/* <Route exact={true} path="/eventpayment" element={<EventPayment />} /> */}
           <Route path="/pevents" element={<EventBox />} />
           <Route path="/payment" element={<Paymentbox />} />
-          <Route path="/transaction_gatewayV1" element={<NewPaymentbox/>} />
+          <Route path="/paymentV1" element={<NewPaymentbox/>} />
+          <Route path="/webpaynow" element={<WebPayment/>}/>
           {/* <Route path="/newev" element={<Newevents/>}/> */}
 
           <Route path="/payment_thsp" element={<NewPaymentbox/>} />
