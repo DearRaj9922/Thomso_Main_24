@@ -16,7 +16,7 @@ import {useLocation, Link} from "react-router-dom";
 import pic from "../../../assets/profile1.png.jpg";
 import icon1 from "../../../assets/profile.svg";
 import Closed3 from "../../../assets/PaymentClosedGirls.png";
-import Closed from "../../../assets/paymenttempgirl.jpg";
+import Closed from "../../../assets/paymenttempgirl.png";
 import Closed1 from "../../../assets/pplive.webp";
 import icon2 from "../../../assets/events.svg";
 import icon3 from "../../../assets/pay_black.png";
