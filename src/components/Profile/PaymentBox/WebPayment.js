@@ -1079,7 +1079,7 @@ const NewPaymentBox = (
                                     {/* <img src={paymentcenterpic} alt="" /> */}
                                     {userDetails.payment ? (
                                         <PaymentSuccess/>
-                                    ) : userDetails.gender == "Female" &&
+                                    ) : userDetails.gender == "Female" ||
                                     config.girls_payment_close ? (
                                         <>
                                             <img className="PaymentClosedAll1" src={Closed} alt=""/>
@@ -1475,7 +1475,7 @@ const NewPaymentBox = (
                             </div>
                             {userDetails.payment ? (
                                 <PaymentSuccess/>
-                            ) : userDetails.gender == "Female" &&
+                            ) : userDetails.gender == "Female" ||
                             config.girls_payment_close ? (
                                 <>
                                     <img className="PaymentClosedAll" src={Closed} alt=""/>
