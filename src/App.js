@@ -136,7 +136,7 @@ useEffect(() => {
           <Route path="/payment" element={<WebPayment/>}/>
           {/* <Route path="/pdf" element={<Pdffile/>}/> */}
 
-          <Route path="/payment_thsp" element={<NewPaymentbox/>} />
+          <Route path="/payment_thsp" element={<WebPayment/>} />
           <Route path="/card" element={<EventCard/>} />
           {/* <Route exact={true} path="/events" element={<EventsMain />} /> */}
           <Route path="/events" element={<NewEventpage/>}/>
