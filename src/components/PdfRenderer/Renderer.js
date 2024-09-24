@@ -8,14 +8,14 @@ import {
   View,
   StyleSheet,
 } from "@react-pdf/renderer";
-import id_logo from "./ID_Logo.png";  
+import id_logo from "./ID_Logo.png";
 import iitr_logo from "./Group 36648.png";
 import thomso_logo from "./MerchLogo.png";
 import qr from "./qr.png";
 import CS_normal from "./COMIC.TTF";
 import { connect } from "react-redux";
-import { fetchUser, logout } from "../User/UserActions";
-import { Store } from "../../Config/Store";
+import { fetchUser, logout } from "../User/UserActions.js"
+import { Store } from "../../Config/Store.js";
 import CS_bold from "./design.graffiti.comicsansmsgras.ttf";
 import axios from "axios";
 
@@ -207,52 +207,48 @@ const styles = StyleSheet.create({
   },
 });
 
-const Renderer = ({User,Items}) => {
+const Renderer = ({user}) => {
+console.log(user,"ddd");  
 
+//  const [items, setItems] = useState();
 
- const [items, setItems] = useState();
+  // const[user,setUser] = useState({});
 
-  const[user,setUser] = useState({});
-
-
-  useEffect(() => {
-    loadUserData();
-  }, []);
-
-
-  useEffect(() => {
-    console.log("loda");
-
-      const items = JSON.parse(localStorage.getItem("dataKey"));
-    if (items) {
-      setItems(items);
-      setUser(items);
-    }
-  }, [items]);
-  console.log(User,"please");
-
-  
-
-  const func=()=>{
-    const { dispatch } = Store;
-    dispatch(fetchUser());
-  }
+  // useEffect(() => {
+  //   loadUserData();
+  // }, []);
 
 
 
-  const loadUserData = async () => {
-    console.log("laoda")
-    try {
-      axios.get(`https://api2.thomso.in/apiV1/current_user_participant`).then((res) => {
-        console.log("API response:", res);
-        setUser(res.data);
-        console.log("data", res.data);
-      });
-    } catch (error) {
-      console.log(error);
-    }
-  };
-  console.log(user, "ddddd");
+
+  // useEffect(() => {
+
+  //     const items = JSON.parse(localStorage.getItem("dataKey"));
+  //   if (items) {
+  //     setItems(items);
+  //     setUser(data);
+  //   }
+  // }, [items]);
+  // console.log(user,"please");
+
+
+
+  // const func=()=>{
+  //   const { dispatch } = Store;
+  //   dispatch(fetchUser());
+  // }
+
+  // const loadUserData = async () => {
+  //   try {
+  //     axios.get(`/apiV1/current_user_participant`).then((res) => {
+  //       setUser(res.data);
+  //       // console.log("data", res.data);
+  //     });
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
+  // console.log(user, "ddddd");
   return (
     <Document>
       <Page size="A4" style={styles.id_page}>

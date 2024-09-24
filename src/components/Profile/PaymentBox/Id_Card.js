@@ -19,17 +19,14 @@ import icon2 from "../../../assets/events.svg";
 import icon3 from "../../../assets/payment.svg";
 // import done from "../../../assests/Done.svg";
 import downloadd from "../../../assets/downloadsign.png";
-import { message } from "antd";
+import { message } from "antd";         
+
 import icon31 from "../../../assets/payment.svg";
 import line from "../../../assets/line1.svg";
-// import paymentcenterpic from "../../../assests/paymentpic.webp";
-// // import { useHistory } from "react-router-dom";
-// import CircularProgress from "@mui/material/CircularProgress";
-// import id_card_bg from "../../../assests/idback.webp";
-// import qrcode from "../../../assests/qr.webp";
-// import qr from "../../../PdfRenderer/qr.png";
+
 import "./Id_Card.css";
-import { QRCodeSVG } from 'qrcode.react';
+import {QRCodeCanvas} from "qrcode.react";
+// import { QRCodeSVG } from 'qrcode.react';
 
 import { useNavigate } from "react-router-dom";
 // import PDFFile from "../../../PdfRenderer/Renderer";
@@ -120,7 +117,7 @@ const Id_Card = () => {
       setDownload(true);
       setTimeout( async () => {
         const canvas = document.getElementById("myqr");
-        // console.log(canvas, "sdkcjanh");
+        console.log(canvas, "sdkcjanh");
         const pngUrl = canvas
           .toDataURL("image/png")
           .replace("image/png", "image/octet-stream");
@@ -341,7 +338,7 @@ const Id_Card = () => {
                         />)}
 
                         {visible ? (
-                          <QRCodeSVG id="myqr" value={qr} size={100} />
+                          <QRCodeCanvas id="myqr" value={qr} size={100} />
                         ) : (
                           <div className="id_box_qr">
                             <div className="id_box_qr_text">
@@ -570,7 +567,7 @@ const Id_Card = () => {
                         />)}
 
                         {visible ? (
-                          <QRCodeSVG id="myqr" value={qr} />
+                          <QRCodeCanvas id="myqr" value={qr} />
                         ) : (
                           <div className="id_box_qr">
                             <div className="id_box_qr_text">
