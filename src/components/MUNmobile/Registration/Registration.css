@@ -205,7 +205,7 @@ input::-webkit-inner-spin-button {
     object-fit:cover;
     width:100vw;
     z-index: -1;
-    height: 161vh !important;
+    height: 206vh !important;
 }
 .BGMunreg{
     display: none;
@@ -297,7 +297,7 @@ input::-webkit-inner-spin-button {
         object-fit:cover;
         width:100vw;
         z-index: -1;
-        height: 174vh !important;
+        height: 215vh !important;
     }
 
 }
@@ -312,7 +312,7 @@ input::-webkit-inner-spin-button {
         object-fit:cover;
         width:100vw;
         z-index: -1;
-        height: 180vh !important;
+        height: 215vh !important;
     }
 
 }
