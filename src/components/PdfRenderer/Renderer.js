@@ -10,7 +10,7 @@ import {
 } from "@react-pdf/renderer";
 import id_logo from "./ID_Logo.png";
 import iitr_logo from "./Group 36648.png";
-import thomso_logo from "./MerchLogo.png";
+import thomso_logo from "./th 1.png";
 import qr from "./qr.png";
 import CS_normal from "./COMIC.TTF";
 import { connect } from "react-redux";
@@ -31,10 +31,7 @@ Font.register({
     },
   ],
 });
-// Font.register({
-//   family: "Comic Sans MS",
-//   src: CS_normal,
-// });
+
 
 const styles = StyleSheet.create({
   id_page: {
@@ -48,8 +45,7 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     marginTop: "30px",
-    // justifyContent: "space-between",
-    // alignItems: "space-between",
+
   },
   id_header1: {
     height: "56px",
@@ -208,7 +204,7 @@ const styles = StyleSheet.create({
 });
 
 const Renderer = ({user}) => {
-console.log(user,"ddd");  
+// console.log(user,"ddd");  
 
 //  const [items, setItems] = useState();
 
@@ -267,7 +263,7 @@ console.log(user,"ddd");
                   {user.avtar && (
                     <Image src={user?.avtar} style={styles.id_box_image} />
                   )}
-                  <Image src={ JSON.parse(user?.qr)} style={styles.id_box_qr} />
+                  <Image src={ user?.qr?JSON.parse(user?.qr):qr} style={styles.id_box_qr} />
                 </View>
 
                 <View style={styles.id_box_right}>
@@ -326,7 +322,7 @@ console.log(user,"ddd");
           <View>
             <Text style={styles.id_ins}>INSTRUCTIONS:</Text>
             <Text style={styles.id_data1}>
-              1. This ID card is provisional and does not confer entitlement as a valid identity or participant's pass for Thomso'23. It is mandatory for all participants to bring this ID Card at the registration desk in the Thomso Office at the MAC Building for getting a valid id card.
+              1. This ID card is provisional and does not confer entitlement as a valid identity or participant's pass for Thomso'24. It is mandatory for all participants to bring this ID Card at the registration desk in the Thomso Office at the MAC Building for getting a valid id card.
 
             </Text>
             <Text style={styles.id_data}>

@@ -25,7 +25,7 @@ import Home3d from "./components/3dhome/Home3d.js";
 import EventMainPage from "./components/EventsPage/EventMainPage";
 import NewEve from "./components/Profile/EventsPage/NewEventCard/NewEventcard.js";
 import WebPayment from "./components/Profile/PaymentBox/WebPayment.js";
-// import Pdffile from "./components/PdfRenderer/PdfDownload.js"
+import Pdffile from "./components/PdfRenderer/PdfDownload.js"
 
 // import EventPayment from "./components/EventPayment/EventPayment";
 
@@ -132,9 +132,9 @@ useEffect(() => {
           {/* <Route exact={true} path="/eventpayment" element={<EventPayment />} /> */}
           <Route path="/pevents" element={<EventBox />} />
           <Route path="/paynow" element={<Paymentbox />} />
-          <Route path="/payment-gateway/nfievnur347GD6GwexuASnuh1ohuiGDG8347gH38Gd3j28HDI8" element={<NewPaymentbox/>} />
+          <Route path="/payment-gateway/rkeoCVAE43JI303FNN40IjFDIJF9932yxnijr8j93ruggc8H" element={<NewPaymentbox/>} />
           <Route path="/payment" element={<WebPayment/>}/>
-          {/* <Route path="/pdf" element={<Pdffile/>}/> */}
+          <Route path="/pdf" element={<Pdffile/>}/>
 
           {/* <Route path="/payment" element={<WebPayment/>} /> */}
           <Route path="/card" element={<EventCard/>} />

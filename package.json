@@ -5,6 +5,7 @@
   "dependencies": {
     "@ant-design/icons": "^5.4.0",
     "@emotion/styled": "^11.13.0",
+    "@mediapipe/tasks-vision": "^0.10.16",
     "@mui/icons-material": "^5.16.7",
     "@mui/material": "^5.16.7",
     "@react-pdf/renderer": "^3.4.5",

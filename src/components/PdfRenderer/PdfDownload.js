@@ -8,19 +8,18 @@ import { Store } from "../../Config/Store";
 import "./Pdfcss.css";
 
 const PdfDownload = ({ userDetails, loading }) => { // Destructure props correctly here
-  // Check if userDetails exist
-  console.log("User Details:", userDetails);
 
-  const func = () => {
-    const { dispatch } = Store;
-    dispatch(fetchUser());
-  }
+
+  // const func = () => {
+  //   const { dispatch } = Store;
+  //   dispatch(fetchUser());
+  // }
 
   return (
     <>
       <div className="laptop">
         <PDFViewer style={{ width: "100vw", height: "100vh" }}>
-          <Renderer user={userDetails} /> {/* Pass the userDetails as props */}
+          <Renderer user={userDetails} /> 
         </PDFViewer>
       </div>
       <div className="mobile">
