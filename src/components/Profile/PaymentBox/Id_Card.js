@@ -318,13 +318,13 @@ const Id_Card = () => {
                 }}
               >
                 
-                <div className="xyz">
+                {/* <div className="xyz">
                   Please Download your ID Card
-                </div>
-                {/* <div style={{color:"white",fontFamily:"Public Sans"}} className="id_message">
-                  <h2>ID_CARD will be available from 29th September</h2>
                 </div> */}
-                <div  style={{display:"block"}}className="id_border1">
+                <div style={{color:"white",fontFamily:"Public Sans"}} className="id_message">
+                  <h2>ID_CARD will be available from 29th September</h2>
+                </div>
+                <div  style={{display:"none"}}className="id_border1">
                   <div className="id_border2">
                     <div className="id_box">
                       <div className="id_box_left">
@@ -396,7 +396,7 @@ const Id_Card = () => {
                     </div>
                   </div>
                 </div>
-                <div>
+                {/* <div>
                   <div className="right_id_card"
                   // style={{display:"none"}}
                   >
@@ -443,7 +443,7 @@ const Id_Card = () => {
                         )}
                     </>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
