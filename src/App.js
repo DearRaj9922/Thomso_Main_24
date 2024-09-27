@@ -49,7 +49,7 @@ import MUNMoreInfoPage1 from "./components/MUN/MoreInfo/Moreinfopage1/Moreinfopa
 import MUNMoreInfoPage2 from "./components/MUN/MoreInfo/Moreinfopage2/Moreinfopage2";
 import MUNMoreInfoPage3 from "./components/MUN/MoreInfo/Moreinfopage3/Moreinfopage3";
 import Pevents from "./components/Pevents/Pevents";
-
+import EventPayment from "./components/EventPayment/EventPayment";
 // import VideoPlayer from "./components/Home/SECTION3/demo.js";
 
 function App(props) {
@@ -146,6 +146,7 @@ useEffect(() => {
           <Route path="/neweventcard" element={<NewEve/>}/> 
           <Route path="/loader" element={<Newloader/>}/>
           <Route path= "/id_card" element={<Id_Card/>}/>
+          <Route exact={true} path="/eventpayment" element={<EventPayment />} />
           <Route
           
             path="/auth/reset-password/:email/:token"
