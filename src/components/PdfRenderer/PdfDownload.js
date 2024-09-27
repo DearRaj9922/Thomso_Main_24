@@ -14,6 +14,9 @@ const PdfDownload = ({ userDetails, loading }) => { // Destructure props correct
   //   const { dispatch } = Store;
   //   dispatch(fetchUser());
   // }
+  useEffect(()=>{
+    // console.log("lauda",userDetails)
+  },[])
 
   return (
     <>
@@ -23,6 +26,7 @@ const PdfDownload = ({ userDetails, loading }) => { // Destructure props correct
         </PDFViewer>
       </div>
       <div className="mobile">
+                             
         <div>
           <PDFDownloadLink document={<Renderer user={userDetails} />} fileName='Id Card'>
             {({ loading }) =>
