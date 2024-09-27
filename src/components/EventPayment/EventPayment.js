@@ -3,58 +3,71 @@ import "./EventPayment.css";
 import logo from "../../assets/Logo-blue.png";
 import axios from "axios";
 import { message } from "antd";
-
-// import PopUp from "../Merch_page/PopUp/PopUp";
 import Loader from "../Loader/Loader";
+import PopUp from "./PopUp"; // Import PopUp component
+
 function EventPayment() {
-  const [events, setevents] = useState([]);
-  const [event, setevent] = useState("");
+  const [events, setEvents] = useState([]);
+  const [event, setEvent] = useState("");
   const [loading, setLoading] = useState(false);
   const [slot, setSlot] = useState("");
+  const [details, setDetails] = useState(false); // Control PopUp visibility
+  const [gsuiteID, setGsuiteID] = useState(""); // Store GSuite ID
+  const [name, setName] = useState(""); // Store Name
+  const [enrollmentNo, setEnrollmentNo] = useState(""); // Store Enrollment Number
+
   useEffect(() => {
-    const fetchdata = async () => {
-      const response = await axios.get("https://api2.thomso.in/apiV1/event");
-      // console.log(response);
-      console.log(response.data);
-      setevents(response.data);
-      setLoading(false);
-    };
-    fetchdata();
-  }, []);
-  async function payForEvent() {
-    setLoading(true);
-    // setdetails(!details);
-    // setevent(el.name);
-
-    if(events[0].name == "SILENT DJ" && slot.length < 2){
-      message.error("Please Select any slot");
-      setLoading(false);
-    }else{
-
-      try{
-        const response = await axios.post(
-          `https://api2.thomso.in/apiV1/paid_events_iitr`,
-          { event_name: events[0].name, slot: slot }
-        );
-        const u = response.data;
-        // console.log("data", response.data);
-        if (response.data.status == "true") {
-          setTimeout(() => {
-            window.open(response.data.payment_url, "_blank");
-          });
-        } else {
-          message.error(`${response.data.error}`);
-        }
+    const fetchData = async () => {
+      setLoading(true);
+      try {
+        const response = await axios.get("https://api2.thomso.in/apiV1/event");
+        setEvents(response.data);
         setLoading(false);
       } catch (error) {
-        console.error("Error:", error);
+        message.error("Error fetching events data");
         setLoading(false);
       }
+    };
+    fetchData();
+  }, []);
+
+  async function payForEvent() {
+    setLoading(true);
+
+    // Slot validation for "SILENT DJ"
+    if (event === "SILENT DJ" && !slot) {
+      message.error("Please select a slot.");
+      setLoading(false);
+      return;
     }
+
+    try {
+      const response = await axios.post(
+        `https://api2.thomso.in/apiV1/paid_events_iitr`,
+        {
+          event_name: event,
+          slot: slot,
+          name: name,
+          email: gsuiteID,
+          enrollment_no: enrollmentNo,
+        }
+      );
+
+      if (response.data.status === "true") {
+        setTimeout(() => {
+          window.open(response.data.payment_url, "_blank");
+        }, 500);
+      } else {
+        message.error(response.data.error);
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      message.error("Something went wrong, please try again.");
+    }
+
+    setLoading(false);
   }
 
-
-  const [details, setdetails] = useState(false);
   return (
     <div className="eventpayment">
       {loading && <Loader />}
@@ -63,13 +76,12 @@ function EventPayment() {
       </div>
       <div className="eventpayment_body">
         <h1>Paid events</h1>
+
         {events
-          .filter((el) => {
-            return el.is_payment === true && el.name==="SILENT DJ";
-          })
+          .filter((el) => el.is_payment === true)
           .map((el) => {
             return (
-              <div className="eventpayment_card" id={el.id}>
+              <div className="eventpayment_card" id={el.id} key={el.id}>
                 <div className="eventpayment_left">
                   <img src={el.image} alt="" className="eventpayment_image" />
                 </div>
@@ -80,38 +92,12 @@ function EventPayment() {
                     <span className="entry">Entry Fee :</span>
                     <span className="fee">Rs. {el.payment_amount}/-</span>
                   </div>
-                  <div
-                    className="eventpayment_pay"
-                    onClick= {payForEvent}
-                  >
-                    PAY NOWs
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        {events
-          .filter((el) => {
-            return el.is_payment === true && el.name!=="SILENT DJ";
-          })
-          .map((el) => {
-            return (
-              <div className="eventpayment_card" id={el.id}>
-                <div className="eventpayment_left">
-                  <img src={el.image} alt="" className="eventpayment_image" />
-                </div>
-                <div className="eventpayment_right">
-                  <h2>{el.name}</h2>
-                  <p>{el.description}</p>
-                  <div className="eventpayment_entry_fee">
-                    <span className="entry">Entry Fee :</span>
-                    <span className="fee">Rs. {el.payment_amount}/-</span>
-                  </div>
+
                   <div
                     className="eventpayment_pay"
                     onClick={() => {
-                      setdetails(!details);
-                      setevent(el.name);
+                      setEvent(el.name); // Set the selected event name
+                      setDetails(true); // Show the PopUp
                     }}
                   >
                     PAY NOW
@@ -121,9 +107,20 @@ function EventPayment() {
             );
           })}
       </div>
-      {/* {details && (
-        <PopUp details={details} setdetails={setdetails} event={event}/>
-      )} */}
+
+      {/* PopUp component for user details input */}
+      {details && (
+        <PopUp
+          details={details}
+          setDetails={setDetails}
+          setSlot={setSlot}
+          setGsuiteID={setGsuiteID}
+          setName={setName}
+          setEnrollmentNo={setEnrollmentNo}
+          payForEvent={payForEvent}
+          event={event} // Pass selected event
+        />
+      )}
     </div>
   );
 }
