@@ -313,7 +313,7 @@ console.log(user,"ddd");
 
         <View>
         <Text style={styles.id_box_red}>
-                    Bring Coloured Printed Copy of ID card with you.
+                    Bring a A4 size Coloured Printed Copy of ID card with you.
                   </Text>
         </View>
 
