@@ -4,6 +4,7 @@ import Renderer from "./Renderer";
 import { connect } from "react-redux";
 import { fetchUser, logout } from "../User/UserActions";
 import { Store } from "../../Config/Store";
+import loader from "../../components/Newloader/Newloader.js"
 
 import "./Pdfcss.css";
 
@@ -21,6 +22,7 @@ const PdfDownload = ({ userDetails, loading }) => { // Destructure props correct
   return (
     <>
       <div className="laptop">
+        
         <PDFViewer style={{ width: "100vw", height: "100vh" }}>
           <Renderer user={userDetails} /> 
         </PDFViewer>
@@ -34,7 +36,7 @@ const PdfDownload = ({ userDetails, loading }) => { // Destructure props correct
                 <button>Loading document...</button>
               ) : (
                 <button>Download</button>
-              )
+              )   
             }
           </PDFDownloadLink>
         </div>
