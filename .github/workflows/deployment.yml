@@ -28,11 +28,10 @@ jobs:
     
       
     - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@v4
+      uses: JamesIves/github-pages-deploy-action@v4.4.3
       with:
           branch: gh-pages
           folder: build 
           token: ${{ secrets.GITHUB_TOKEN }}
           clean: true
-          force: true
-          cache: false # The folder the action should deploy.
+          force: true # The folder the action should deploy.
