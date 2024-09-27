@@ -204,7 +204,7 @@ const styles = StyleSheet.create({
 });
 
 const Renderer = ({user}) => {
-// console.log(user,"ddd");  
+console.log(user,"ddd");  
 
 //  const [items, setItems] = useState();
 
