@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./EventPayment.css";
-import logo from "../../assets/Logo-blue.png";
+import logo from "../../assets/logowhite.svg";
 import axios from "axios";
 import { message } from "antd";
 import Loader from "../Loader/Loader";
@@ -74,10 +74,10 @@ function EventPayment() {
     <div className="eventpayment">
       {loading && <Loader />}
       <div className="eventpayment_header">
-        <img className="eventpayment_logo" src={logo} alt="" />
+        <img style={{width:"200px"}} className="eventpayment_logo" src={logo} alt="" />
       </div>
       <div className="eventpayment_body">
-        <h1>Paid events</h1>
+        <h1 style={{color:"white"}}>Paid events</h1>
 
         {events
           .filter((el) => el.is_payment === true)
