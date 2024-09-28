@@ -16,12 +16,15 @@ function EventPayment() {
   const [name, setName] = useState(""); // Store Name
   const [enrollmentNo, setEnrollmentNo] = useState(""); // Store Enrollment Number
   const [contact,setContact] = useState(0);
+  const [category,setCategory]= useState("");
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
       try {
         const response = await axios.get("https://api2.thomso.in/apiV1/event");
         setEvents(response.data);
+        
+        
         setLoading(false);
         console.log(response.data)
       } catch (error) {
@@ -100,7 +103,8 @@ function EventPayment() {
                           className="eventpayment_pay"
                           onClick={() => {
                             setEvent(el.name); // Set the selected event name
-                            setDetails(true); // Show the PopUp
+                            setDetails(true);
+                            setCategory(el.solo_team); // Show the PopUp
                           }}
                       >
                         PAY NOW
@@ -151,7 +155,8 @@ function EventPayment() {
           setContact={setContact}
           setEnrollmentNo={setEnrollmentNo}
           payForEvent={payForEvent}
-          event={event} // Pass selected event
+          event={event}
+          category={category} // Pass selected event
         />
       )}
     </div>
