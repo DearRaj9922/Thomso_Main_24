@@ -11,6 +11,7 @@ function PopUp({
   payForEvent,
   event,
   setContact,
+  category
 }) {
     console.log(event);
   return (
@@ -22,7 +23,7 @@ function PopUp({
           <label>Name:</label>
           <input
             type="text"
-            placeholder="Your Name"
+            placeholder={category==="Solo"?"Your Name":"Team Name"}
             onChange={(e) => setName(e.target.value)}
           />
         </div>
