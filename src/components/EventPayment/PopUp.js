@@ -10,6 +10,7 @@ function PopUp({
   setEnrollmentNo,
   payForEvent,
   event,
+  setContact,
 }) {
     console.log(event);
   return (
@@ -30,6 +31,14 @@ function PopUp({
             type="email"
             placeholder="Your GSuite ID"
             onChange={(e) => setGsuiteID(e.target.value)}
+          />
+        </div>
+        <div>
+          <label>Contact:</label>
+          <input
+            type="number"
+            placeholder="Your Contact Number"
+            onChange={(e) => setContact(e.target.value)}
           />
         </div>
         <div>
