@@ -15,7 +15,7 @@ function EventPayment() {
   const [gsuiteID, setGsuiteID] = useState(""); // Store GSuite ID
   const [name, setName] = useState(""); // Store Name
   const [enrollmentNo, setEnrollmentNo] = useState(""); // Store Enrollment Number
-
+  const [contact,setContact] = useState(0);
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
@@ -23,6 +23,7 @@ function EventPayment() {
         const response = await axios.get("https://api2.thomso.in/apiV1/event");
         setEvents(response.data);
         setLoading(false);
+        console.log(response.data)
       } catch (error) {
         message.error("Error fetching events data");
         setLoading(false);
@@ -50,6 +51,7 @@ function EventPayment() {
           name: name,
           email: gsuiteID,
           enrollment_no: enrollmentNo,
+          contact:contact
         }
       );
 
@@ -80,31 +82,61 @@ function EventPayment() {
         {events
           .filter((el) => el.is_payment === true)
           .map((el) => {
-            return (
-              <div className="eventpayment_card" id={el.id} key={el.id}>
-                <div className="eventpayment_left">
-                  <img src={el.image} alt="" className="eventpayment_image" />
-                </div>
-                <div className="eventpayment_right">
-                  <h2>{el.name}</h2>
-                  <p>{el.description}</p>
-                  <div className="eventpayment_entry_fee">
-                    <span className="entry">Entry Fee :</span>
-                    <span className="fee">Rs. {el.payment_amount}/-</span>
-                  </div>
+            if(el.name==="Sneaker Design"){
+              return (
+                  <div className="eventpayment_card" id={el.id} key={el.id}>
+                    <div className="eventpayment_left">
+                      <img src={el.image} alt="" className="eventpayment_image" />
+                    </div>
+                    <div className="eventpayment_right">
+                      <h2>{el.name} ({el.solo_team})</h2>
+                      <p>{el.description}</p>
+                      <div className="eventpayment_entry_fee">
+                        <span className="entry">Entry Fee :</span>
+                        <span className="fee">Rs. {el.payment_amount}/-</span>
+                      </div>
 
-                  <div
-                    className="eventpayment_pay"
-                    onClick={() => {
-                      setEvent(el.name); // Set the selected event name
-                      setDetails(true); // Show the PopUp
-                    }}
-                  >
-                    PAY NOW
+                      <div
+                          className="eventpayment_pay"
+                          onClick={() => {
+                            setEvent(el.name); // Set the selected event name
+                            setDetails(true); // Show the PopUp
+                          }}
+                      >
+                        PAY NOW
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            );
+              );
+            }
+            else{
+              return (
+                  <div className="eventpayment_card" id={el.id} key={el.id}>
+                    <div className="eventpayment_left">
+                      <img src={el.image} alt="" className="eventpayment_image" />
+                    </div>
+                    <div className="eventpayment_right">
+                      <h2>{el.name}</h2>
+                      <p>{el.description}</p>
+                      <div className="eventpayment_entry_fee">
+                        <span className="entry">Entry Fee :</span>
+                        <span className="fee">Rs. {el.payment_amount}/-</span>
+                      </div>
+
+                      <div
+                          className="eventpayment_pay"
+                          onClick={() => {
+                            setEvent(el.name); // Set the selected event name
+                            setDetails(true); // Show the PopUp
+                          }}
+                      >
+                        PAY NOW
+                      </div>
+                    </div>
+                  </div>
+              );
+            }
+
           })}
       </div>
 
@@ -116,6 +148,7 @@ function EventPayment() {
           setSlot={setSlot}
           setGsuiteID={setGsuiteID}
           setName={setName}
+          setContact={setContact}
           setEnrollmentNo={setEnrollmentNo}
           payForEvent={payForEvent}
           event={event} // Pass selected event
