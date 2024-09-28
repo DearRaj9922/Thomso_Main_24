@@ -14,6 +14,7 @@ function PopUp({
 }) {
     console.log(event);
   return (
+    <div className="popwrap">
     <div className="popup">
       <div className="popup_inner">
         <h2>Enter Payment Details</h2>
@@ -74,6 +75,7 @@ function PopUp({
           </button>
         </div>
       </div>
+    </div>
     </div>
   );
 }
