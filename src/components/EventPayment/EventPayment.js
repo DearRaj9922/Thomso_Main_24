@@ -82,7 +82,7 @@ function EventPayment() {
         {events
           .filter((el) => el.is_payment === true)
           .map((el) => {
-            if(el.name==="Sneaker Design"){
+            if(el.name==="Sneaker Design" || el.name==="Tote Bag Artistry"){
               return (
                   <div className="eventpayment_card" id={el.id} key={el.id}>
                     <div className="eventpayment_left">
