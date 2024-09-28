@@ -19,17 +19,14 @@ import icon2 from "../../../assets/events.svg";
 import icon3 from "../../../assets/payment.svg";
 // import done from "../../../assests/Done.svg";
 import downloadd from "../../../assets/downloadsign.png";
-import { message } from "antd";
+import { message } from "antd";         
+
 import icon31 from "../../../assets/payment.svg";
 import line from "../../../assets/line1.svg";
-// import paymentcenterpic from "../../../assests/paymentpic.webp";
-// // import { useHistory } from "react-router-dom";
-// import CircularProgress from "@mui/material/CircularProgress";
-// import id_card_bg from "../../../assests/idback.webp";
-// import qrcode from "../../../assests/qr.webp";
-// import qr from "../../../PdfRenderer/qr.png";
+
 import "./Id_Card.css";
-import { QRCodeSVG } from 'qrcode.react';
+import {QRCodeCanvas} from "qrcode.react";
+// import { QRCodeSVG } from 'qrcode.react';
 
 import { useNavigate } from "react-router-dom";
 // import PDFFile from "../../../PdfRenderer/Renderer";
@@ -120,7 +117,7 @@ const Id_Card = () => {
       setDownload(true);
       setTimeout( async () => {
         const canvas = document.getElementById("myqr");
-        // console.log(canvas, "sdkcjanh");
+        console.log(canvas, "sdkcjanh");
         const pngUrl = canvas
           .toDataURL("image/png")
           .replace("image/png", "image/octet-stream");
@@ -316,12 +313,18 @@ const Id_Card = () => {
                   flexDirection:"column",
                   overflowY:"scroll",
                   alignItems: "center",
+                  justifyContent:"center",  
+                  textAlign:"center"  
                 }}
               >
+                
                 <div className="xyz">
                   Please Download your ID Card
                 </div>
-                <div className="id_border1">
+                {/* <div style={{color:"white",fontFamily:"Public Sans"}} className="id_message">
+                  <h2>ID_CARD will be available from 29th September</h2>
+                </div> */}
+                <div  style={{display:"block"}}className="id_border1">
                   <div className="id_border2">
                     <div className="id_box">
                       <div className="id_box_left">
@@ -335,7 +338,7 @@ const Id_Card = () => {
                         />)}
 
                         {visible ? (
-                          <QRCodeSVG id="myqr" value={qr} size={100} />
+                          <QRCodeCanvas id="myqr" value={qr} size={100} />
                         ) : (
                           <div className="id_box_qr">
                             <div className="id_box_qr_text">
@@ -541,14 +544,18 @@ const Id_Card = () => {
                   overflowY: "scroll",
                   overflowX: "hidden",
                   marginTop: "5vh",
+                  textAlign:"center"  
                 }}
               >
                  <div className="xyz">
                   Please Download your ID Card
                 </div>
-                <div className="id_border1">
+                {/* <div style={{color:"white",fontFamily:"Public Sans",textAlign:"center"}} className="id_message">
+                  <h2>ID_CARD will be available from 29th September</h2>
+                </div> */}
+                <div style={{display:"block"}} className="id_border1">
                   <div className="id_border2">
-                    <div className="id_box">
+                    <div className="id_box">  
                       <div className="id_box_left">
                       {userDetails?.avtar ? (
                         <img
@@ -560,7 +567,7 @@ const Id_Card = () => {
                         />)}
 
                         {visible ? (
-                          <QRCodeSVG id="myqr" value={qr} />
+                          <QRCodeCanvas id="myqr" value={qr} />
                         ) : (
                           <div className="id_box_qr">
                             <div className="id_box_qr_text">

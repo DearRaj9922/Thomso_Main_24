@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css?family=Saira:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+/* .MUN_FAQ_main_div{
+  background-color:rgba(0, 17, 46, 0.40);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:80vw;
+  
+  margin: auto;
+  padding:20px;
+} */
+
+
+body {
+  /* background-color: white; */
+}
+.FAQdiv 
+{
+  display: flex;
+  justify-content: center;
+}
+.FAQimg
+{
+  width: 18vw;
+  margin-top: 5vh;
+  margin-bottom:5vh;
+}
+.MUN_FAQ_main_div {
+  background-color:rgba(0, 17, 46, 0.40);
+  box-shadow: 6px 6px 4px 0px #00000024 inset;
+  width: 75vw;
+  color: white;
+  margin: 0 auto;
+  margin-top: 20vh;
+  margin-bottom:17vh;
+  border-radius:10px;
+}
+
+.mun_faq_heading {
+  display: flex;
+  justify-content: center;
+  color: #FDD52E;
+  font-family: Saira;
+  font-size: 5rem;
+}
+
+.accordion {
+  cursor: pointer;
+  padding: 18px;
+  width: 75vw;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  display: flex;
+  gap: 10px;
+  /* margin-left:10vw; */
+}
+
+.accordion_1 {
+  position: absolute;
+  /* right: -30vw; */
+  left: 66vw;
+}
+
+.panel {
+  /* padding: 0 18px; */
+  padding-top: 10px;
+  /* display: none; */
+  overflow: hidden;
+  color: var(--Secondary2, #A09FAF);
+  font-family: Saira;
+  width: 107%;
+  /* text-align: justify; */
+}
+
+.panel p {
+  width: 96%;
+}
+
+.plus_btn_mun {}
+
+.minus_btn_mun {
+  display: none;
+}
+
+.left_num_faq {
+  font-family: Saira;
+  font-size: 1.7rem;
+  color: var(--Secondary2, #A09FAF);
+  font-family: Comic Neue;
+}
+
+
+.right_mun_faq_head {
+  position: relative;
+  /* display: flex; */
+  margin-top: 1vh;
+  color: var(--Surface, #F6F6F6);
+  font-family: Saira;
+}
+
+.right_mun_faq_head1 {
+  display: flex;
+}
+
+.mun_faq_cutline {
+  border: 1px solid #373D41;
+  width: 75vw;
+  margin: auto;
+}
+
+@media only screen and (max-width:768px) {
+  .accordion_1 {
+    right: -10vw;
+  }
+
+  .panel p {
+    width: 100%;
+  }
+
+  .MUN_FAQ_main_div {
+    width: 90vw;
+  }
+  .accordion{
+    width: 100%;
+  }
+  .right_mun_faq_head {
+    width: 70%;
+  }
+  .panel {
+    padding: 0;
+    padding-top: 10px;
+  }
+}

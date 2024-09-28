@@ -17,7 +17,8 @@
     background: url('./../../../assets/bgs4.svg') ;
     background-repeat: no-repeat;
     background-size:contain;
-    height: 300vh;
+    /* height: 300vh; */
+    height: 124vw;
     /* width: 100vw; */
     /* z-index: -1000; */
     margin-top: -148vh;
@@ -44,6 +45,19 @@
     font-size: 9vw;
     color: #790800;
   }
+  .mobwrapper_s4 {
+    display: none;
+    background-image: url(/src/assets/mobsection3.webp);
+    width: 100vw;
+    height: 2000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    margin-bottom: -700px;
+    margin-top: 0px;
+}
+
 
 
 @media only screen and (max-width:1100px){
@@ -62,7 +76,19 @@
     }
 }
 
-@media only screen and (max-width:650px){
+@media only screen and (max-width: 768px){
+    .wrapper_s3{
+        height: auto;
+    }
+    .wrapper_s4{
+        display: none;
+    }
+    .mobwrapper_s4{
+        display: block;
+    }
+}
+
+/* @media only screen and (max-width:650px){
     .wrapper_s4{
         margin-top: -232vh;
     }
@@ -78,4 +104,4 @@
     .wrapper_s4{
         margin-top: -256vh;
     }
-}
+} */

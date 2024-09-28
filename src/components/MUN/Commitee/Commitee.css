@@ -1,0 +1,83 @@
+.Committeemain{
+  background-color:rgba(0, 17, 46, 0.40);
+  box-shadow: 6px 6px 4px 0px #00000024 inset;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:80vw;
+  border-radius:10px;
+  margin: 0 auto;
+  padding:20px;
+}
+.CommitteeheadingImg
+{
+  width: 50vh;
+  margin-top: 5vh;
+}
+.Committeeheading
+{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.CommitteeBoxs
+{
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  margin: 5vh auto 0;
+}
+.CommitteeBox
+{
+  display: flex;
+  justify-content: center;
+ 
+}
+.CommitteeBoxImg1
+{
+  width: 20vw;
+  height: 65vh;
+}
+.CommitteeBoxImg2
+{
+  width: 20vw;
+  height: 65vh;
+}
+.CommitteeBoxImg3
+{
+  width: 20vw;
+  height: 65vh;
+  /* margin-top: 5.3vh; */
+}
+.CommitteeBox
+{
+  position: relative;
+}
+.CommitteeBoxBtn
+{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 5vh;
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid #F7F7F7;
+  width: 10vw;
+  padding: 2vh 0;
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-items: center;
+  right: 5vw;
+}
+@media screen and (max-width:1000px) {
+  .CommitteeBoxBtnText{
+    font-size: 1.5vw;
+  }
+}

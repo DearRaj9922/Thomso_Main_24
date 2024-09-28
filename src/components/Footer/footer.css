@@ -1,7 +1,7 @@
 .footer_wrapper{
   /* position: relative; */
   z-index: 100;
-  margin-top: -35vw;
+  margin-top: 10vw;
 }
 .footerBox{
     width: 100%;
@@ -146,6 +146,17 @@ letter-spacing: 0.8px;
     display: none;
   }
 
+  /* @media only screen and (max-width:1300px){
+    .footer_wrapper{
+      margin-top: -14vh;
+    }
+  } */
+
+  @media only screen and (max-width:1200px){
+    /* .footer_wrapper{
+      margin-top: -37vh;
+    } */
+  }
 
 @media only screen and (max-width:1150px){
   .footerPara2 {
@@ -154,6 +165,10 @@ letter-spacing: 0.8px;
 .footerBoxB {
   gap: 0vw;
 }
+
+/* .footer_wrapper{
+  margin-top: -51vh;
+} */
 }
 @media only screen and (max-width:1000px){
   .footerPara2 {
@@ -163,6 +178,10 @@ letter-spacing: 0.8px;
   padding-left: 4vw;
   width: 96%;
 }
+
+/* .footer_wrapper{
+  margin-top: -81vh;
+} */
 }
 @media only screen and (max-width:900px){
   .footerPara2 {
@@ -176,8 +195,17 @@ letter-spacing: 0.8px;
 position: relative;
 left: 5vw;
 }
+/* .footer_wrapper{
+  margin-top: -103vh;
+} */
 
 }
+
+/* @media only screen and (max-width:822px){
+  .footer_wrapper{
+    margin-top: -118vh;
+  }
+} */
 @media only screen and (max-width:768px){
   .footerBox{
       display: none;
@@ -185,6 +213,17 @@ left: 5vw;
 
   .mobfooter{
     display: block;
+    /* padding-top: 17vw; */
     width: 80%;
   }
+
+  /* .footer_wrapper{
+    margin-top: -209vh;
+  } */
 }
+
+/* @media only screen and (max-width:500px){
+  .footer_wrapper{
+    margin-top: -241vh;
+  }
+} */

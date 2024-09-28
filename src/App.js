@@ -23,7 +23,10 @@ import ResetPassword from "./components/Registration/ResetPass/ResetPass";
 // import EventMainPage from "./components/Profile/EventsPage/EventMainPage";
 import Home3d from "./components/3dhome/Home3d.js";
 import EventMainPage from "./components/EventsPage/EventMainPage";
-// import NewEve from "./components/Profile/EventsPage/NewEventCard/NewEventcard.js";
+import NewEve from "./components/Profile/EventsPage/NewEventCard/NewEventcard.js";
+import WebPayment from "./components/Profile/PaymentBox/WebPayment.js";
+import Pdffile from "./components/PdfRenderer/PdfDownload.js"
+
 // import EventPayment from "./components/EventPayment/EventPayment";
 
 import React,{useEffect, useState} from "react";
@@ -38,10 +41,15 @@ import Newloader from "./components/Newloader/Newloader.js";
 // import Newevents  from "./components/Profile/EventsPage/Newevents.js";
 
 import Id_Card from "./components/Profile/PaymentBox/Id_Card";
+// import NewPaymentbox from "./components/Profile/PaymentBox/NewPaymentBox";
 
-
+import MUN from "./components/MUN/Home/Home.js";
+import Home2Reg from "./components/MUNmobile/Registration/Registration";
+import MUNMoreInfoPage1 from "./components/MUN/MoreInfo/Moreinfopage1/Moreinfopage1";
+import MUNMoreInfoPage2 from "./components/MUN/MoreInfo/Moreinfopage2/Moreinfopage2";
+import MUNMoreInfoPage3 from "./components/MUN/MoreInfo/Moreinfopage3/Moreinfopage3";
 import Pevents from "./components/Pevents/Pevents";
-
+import EventPayment from "./components/EventPayment/EventPayment";
 // import VideoPlayer from "./components/Home/SECTION3/demo.js";
 
 function App(props) {
@@ -49,7 +57,13 @@ function App(props) {
   const [isLoading, setIsLoading] = useState(true);
   // const [items,setItems] = useState();
 
-
+  // useEffect(()=>{
+  //   (async()=>{
+  //     await axios.get("https://api2.thomso.in/apiV1/controls_get_participant?participant_id=Th-2400011").then((res)=>{
+  //       console.log("abc",res.data)
+  //     })
+  //   })()
+  // },[])
 useEffect(() => {
   if(!localStorage.getItem("token")){
     loadUserData();
@@ -117,25 +131,32 @@ useEffect(() => {
           <Route path="/events/:id" element={<EventMainPage />} />
           {/* <Route exact={true} path="/eventpayment" element={<EventPayment />} /> */}
           <Route path="/pevents" element={<EventBox />} />
-          <Route path="/payment" element={<Paymentbox />} />
-          <Route path="/payment_gupt" element={<NewPaymentbox/>} />
-          {/* <Route path="/newev" element={<Newevents/>}/> */}
+          <Route path="/paynow" element={<Paymentbox />} />
+          <Route path="/payment-gateway/rkeoCVAE43JI303FNN40IjFDIJF9932yxnijr8j93ruggc8H" element={<NewPaymentbox/>} />
+          <Route path="/payment" element={<WebPayment/>}/>
+          <Route path="/pdf" element={<Pdffile/>}/>
 
-          <Route path="/payment_thsp" element={<NewPaymentbox/>} />
+          {/* <Route path="/payment" element={<WebPayment/>} /> */}
           <Route path="/card" element={<EventCard/>} />
           {/* <Route exact={true} path="/events" element={<EventsMain />} /> */}
           <Route path="/events" element={<NewEventpage/>}/>
           <Route path="/ProfileNameEdit" element={<ProfileNameEditModel />} />
           <Route path="/Carousel" element={<Carousel1/>} />
           <Route path="/forgotpassword" element={<Forget/>} />
-          {/* <Route path="/neweventcard" element={<NewEve/>}/> */}
+          <Route path="/neweventcard" element={<NewEve/>}/> 
           <Route path="/loader" element={<Newloader/>}/>
           <Route path= "/id_card" element={<Id_Card/>}/>
+          <Route exact={true} path="/eventpayment" element={<EventPayment />} />
           <Route
           
             path="/auth/reset-password/:email/:token"
             element={<ResetPassword />}
           />
+          <Route exact={true} path="/mun" element={<MUN/>}/>
+          <Route exact={true} path="/MUNregister" element={<Home2Reg/>} />
+          <Route exact={true} path="/muninfo_page1" element={<MUNMoreInfoPage1/>} />
+          <Route exact={true} path="/muninfo_page2" element={<MUNMoreInfoPage2/>} />
+          <Route exact={true} path="/muninfo_page3" element={<MUNMoreInfoPage3/>} />
 
       </Routes>
     </Router>

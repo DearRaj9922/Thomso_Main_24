@@ -90,7 +90,7 @@ function Navbar({ color, disable, setregister, register, data, fontcolor, bright
       <div style={{ background: color }} className="nav-comp">
         <MobEventnavbar brightMob={bright} />
         <div className="mainnav">
-        <img
+          <img
             className="event-nav-left"
             style={{ filter: bright }}
             src={logo}
@@ -104,6 +104,13 @@ function Navbar({ color, disable, setregister, register, data, fontcolor, bright
               onClick={() => handleNavigate("/events")}
             >
               Events
+            </a>
+            <a
+              className="event-nav-right-compo hover-underline-animation"
+              style={{ color: fontcolor }}
+              onClick={() => handleNavigate("/mun")}
+            >
+              MUN
             </a>
             <a
               className="event-nav-right-compo hover-underline-animation"

@@ -27,7 +27,7 @@ const Footer_mob = () => {
 
                 </div>
                  <div className="number">
-                    <p>8077071943 (Anunjay)</p>
+                    <p>9128004995 (Anunjay)</p>
                     <p>9056667714 (Sehaj)</p>
                 </div>
             </div>
