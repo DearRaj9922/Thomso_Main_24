@@ -962,7 +962,7 @@ letter-spacing: -0.48px;
 
 @media only screen and (max-width: 350px) {
   .dacc {
-    font-size: 15px;
+    font-size: 13px;
   }
   .submit-par {
     font-size: 10px !important ;
