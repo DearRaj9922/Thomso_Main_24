@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ed28e0ac.css",
-    "main.js": "/static/js/main.59f02ed6.js",
+    "main.js": "/static/js/main.0983f227.js",
     "static/js/511.6d025d35.chunk.js": "/static/js/511.6d025d35.chunk.js",
     "static/media/bgs4.svg": "/static/media/bgs4.a2186bd99a8e07adf56b.svg",
     "static/media/Events_bike Animation.gif": "/static/media/Events_bike Animation.b5a443126fe8b2f37f7a.gif",
@@ -40,6 +40,7 @@
     "static/media/LOGOMUN.svg": "/static/media/LOGOMUN.b1bd40a0e1008f30352aae3a81f99c65.svg",
     "static/media/aippmmob.webp": "/static/media/aippmmob.1bcd2b07aa5b125b29fc.webp",
     "static/media/paymenttempgirl.png": "/static/media/paymenttempgirl.1b8949301424d9052c79.png",
+    "static/media/tempclosed.png": "/static/media/tempclosed.6d5be11b7936c0664228.png",
     "static/media/spon.png": "/static/media/spon.bb4a128315f167f1a636.png",
     "static/media/PaymentClosedGirls.png": "/static/media/PaymentClosedGirls.d49cd775d764387afd2d.png",
     "static/media/shieldlogomob.webp": "/static/media/shieldlogomob.e7722be3ad88ee3d4399.webp",
@@ -107,11 +108,11 @@
     "static/media/profile.svg": "/static/media/profile.a0cd79691c7d2da42c0493e6ad98e630.svg",
     "static/media/diamond.svg": "/static/media/diamond.7e6e6a15583877c88e6a71723e75f3b6.svg",
     "main.ed28e0ac.css.map": "/static/css/main.ed28e0ac.css.map",
-    "main.59f02ed6.js.map": "/static/js/main.59f02ed6.js.map",
+    "main.0983f227.js.map": "/static/js/main.0983f227.js.map",
     "511.6d025d35.chunk.js.map": "/static/js/511.6d025d35.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ed28e0ac.css",
-    "static/js/main.59f02ed6.js"
+    "static/js/main.0983f227.js"
   ]
 }
