@@ -17,7 +17,7 @@ import pic from "../../../assets/profile1.png.jpg";
 import icon1 from "../../../assets/profile.svg";
 import Closed3 from "../../../assets/PaymentClosedGirls.png";
 import Closed from "../../../assets/paymenttempgirl.png";
-import Closed1 from "../../../assets/pplive.webp";
+import Closed1 from "../../../assets/tempclosed.png";
 import icon2 from "../../../assets/events.svg";
 import icon3 from "../../../assets/pay_black.png";
 import icon31 from "../../../assets/payment.svg";
@@ -71,6 +71,7 @@ const NewPaymentBox = (
             .get(`https://api2.thomso.in/apiV1/payment_master`)
             .then((ress) => {
                 data = ress.data;
+                console.log(data,"hfh")
                 SetConfig(data[0]);
                 // console.log(data[0], "acco close");
                 if (data[0].all_acco_close == true) {
@@ -78,12 +79,16 @@ const NewPaymentBox = (
                     setStyle1({background: "white", color: "black"});
                     setStyle2({background: "transparent", color: "white"});
                 }
-                else{
+                else if(data[0].all_acco_close==false){
                     data[0].all_acco_close=true;
                     setacco(false);
                     setStyle1({background: "white", color: "black"});
                     setStyle2({background: "transparent", color: "white"});
                 }
+                else if(data[0].all_payment_close==false){
+                    data[0].all_payment_close=true;
+                }
+                
             })
             .catch((err) => {
                 console.log(err);
@@ -1090,193 +1095,9 @@ const NewPaymentBox = (
                                         </>
                                     ) : (
                                         <>
-                                            {paying ? (
-                                                <>
-                                                    <div
-                                                        className="Payleft1"
-                                                        style={{marginRight: "auto", marginTop: "0"}}
-                                                    >
-                                                        <table className="pay-table">
-                                                            <thead className="par-head">
-                                                            <tr className="pay-tr-head">
-                                                                <th className="pay-th">Sr. No.</th>
-                                                                <th className="pay-th">Thomso ID</th>
-                                                                <th className="pay-th">Gender</th>
-                                                                <th className="pay-th">Accomodation</th>
-                                                            </tr>
-                                                            </thead>
-                                                            <hr/>
-                                                            <tbody
-                                                                className="pay-body-data"
-                                                                style={{overflowY: "scroll"}}
-                                                            >
-                                                            <>
-                                                                {paymentData1.map((data, index) => {
-                                                                    return (
-                                                                        <tr className="pay-tr">
-                                                                            <td className="pay-th">{index + 1}.</td>
-                                                                            <td className="pay-th">{data?.id}</td>
-                                                                            <td className="pay-th">
-                                                                                {data?.gender}
-                                                                            </td>
-
-                                                                            <td className="pay-th">
-                                                                                {data?.acco == "true" ? "YES" : "NO"}
-                                                                            </td>
-                                                                            <td
-                                                                                style={{width: "20px"}}
-                                                                                className="pay-th"
-                                                                            >
-                                                                                <MdDelete
-                                                                                    onClick={() =>
-                                                                                        deletePayment(data?.id)
-                                                                                    }
-                                                                                    style={{
-                                                                                        cursor: "pointer",
-                                                                                        size: "20px",
-                                                                                    }}
-                                                                                    color="red"
-                                                                                    size="20px"
-                                                                                />
-                                                                            </td>
-                                                                        </tr>
-                                                                    );
-                                                                })}
-                                                            </>
-                                                            </tbody>
-                                                        </table>
-                                                        <div
-                                                            onClick={() => setAddpar(!addpar)}
-                                                            className="add-participant"
-                                                            style={{
-                                                                color: "Selective-Yellow",
-                                                                cursor: "pointer",
-                                                            }}
-                                                        >
-                                                            + Add Participant
-                                                        </div>
-                                                        <div className="total-pay">
-                                                            <div className="total-pay-1">
-                                                                <h1 className="total-pay-1-h1">TOTAL</h1>
-                                                                <h2 className="total-pay-1-h2">
-                                                                    No. of Participants
-                                                                </h2>
-                                                            </div>
-                                                            <div className="total-pay-2">
-                                                                <p className="total-pay-1-p1">
-                                                                    ₹{totalpay}
-                                                                    <span style={{fontSize: "0.8vw"}}>
-                                    {" "}
-                                                                        (incl. all the taxes)
-                                  </span>
-                                                                </p>
-                                                                <p className="total-pay-1-p2">
-                                                                    {paymentData.length}
-                                                                </p>
-                                                            </div>
-                                                            <div className="total-pay-3">
-                                                                <button
-                                                                    className="total-pay-3-btn"
-                                                                    onClick={makePayment}
-                                                                    disabled={!paymentData.length}
-                                                                >
-                                                                    Pay Now
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </>
-                                            ) : (
-                                                <>
-                                                    <div
-                                                        className="Payleft"
-                                                        style={{
-                                                            marginRight: "auto",
-                                                            display: "flex",
-                                                            justifyContent: "center",
-                                                            alignItems: "center",
-                                                            gap: "10vw",
-                                                            marginLeft: "auto",
-                                                        }}
-                                                    >
-                                                        <div
-                                                            className="Payleft-left"
-                                                            style={{
-                                                                display: "flex",
-                                                                flexDirection: "column",
-                                                            }}
-                                                        >
-                                                            <>
-                                                                <p className="payheading">Payment Details</p>
-                                                                <div className="amountBox">
-                                                                    <div className="PayAmount">
-                                                                        <div>
-                                                                            <p>Thomso Fees</p>
-                                                                            {acco == true || acco == null ? (
-                                                                                <p>Accommodation</p>
-                                                                            ) : (
-                                                                                <p
-                                                                                    style={{
-                                                                                        color: "rgba(64, 64, 64, 1)",
-                                                                                    }}
-                                                                                >
-                                                                                    Accommodation
-                                                                                </p>
-                                                                            )}
-                                                                        </div>
-                                                                        <div>
-                                                                            <p>₹ {config.min_amount}</p>
-                                                                            {acco == true || acco == null ? (
-                                                                                <p>
-                                                                                    ₹{" "}
-                                                                                    {config.max_amount -
-                                                                                        config.min_amount}
-                                                                                </p>
-                                                                            ) : (
-                                                                                <p
-                                                                                    style={{
-                                                                                        color: "rgba(64, 64, 64, 1)",
-                                                                                    }}
-                                                                                >
-                                                                                    ₹{" "}
-                                                                                    {config.max_amount -
-                                                                                        config.min_amount}
-                                                                                </p>
-                                                                            )}
-                                                                        </div>
-                                                                    </div>
-                                                                    <div className="Payline1"></div>
-                                                                    <div className="TotalAmount">
-                                                                        <p className="Paylarge">TOTAL</p>
-                                                                        <p>
-                                      <span className="Paylarge">
-                                        ₹{" "}
-                                          {acco == true || acco == null
-                                              ? `${config.max_amount}`
-                                              : `${config.min_amount}`}
-                                      </span>
-                                                                            <br/>
-                                                                            <span className="PayTaxes">+ (Convenience Fees & Taxes)</span>
-                                                                        </p>
-                                                                    </div>
-                                                                    <p className="PayAccommodation">
-                                                                        Accommodation includes 4 day-4 night stay
-                                                                        and Food (Breakfast + Lunch){" "}
-                                                                    </p>
-                                                                </div>
-                                                            </>
-                                                        </div>
-
-                                                        {/* acco non-acco conditions for male and female */}
-                                                        <div>
-                                                            {AccomodationCondition()}
-                                                        </div>
-                                                        {/* end page 1 */}
-
-                                                    </div>
-                                                </>
-                                            )}
+                                        <img className="PaymentClosedAll" src={Closed1} alt=""/>
                                         </>
+
                                     )}
                                 </>
                             </div>
@@ -1486,177 +1307,7 @@ const NewPaymentBox = (
                                 </>
                             ) : (
                                 <>
-                                    {paying ? (
-                                        <>
-                                            <div
-                                                className="Payleft1"
-                                                style={{marginRight: "auto", marginTop: "0"}}
-                                            >
-                                                <table className="pay-table">
-                                                    <thead className="par-head">
-                                                    <tr className="pay-tr-head">
-                                                        <th className="pay-th">Thomso ID</th>
-                                                        <th className="pay-th" style={{width: "14vw"}}>
-                                                            Gender
-                                                        </th>
-                                                        <th className="pay-th">Accomodation</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <hr/>
-                                                    <tbody
-                                                        className="pay-body-data"
-                                                        style={{overflowY: "scroll"}}
-                                                    >
-                                                    <>
-                                                        {paymentData1.map((data) => {
-                                                            return (
-                                                                <tr className="pay-tr">
-                                                                    <td className="pay-th">{data?.id}</td>
-                                                                    <td
-                                                                        className="pay-th"
-                                                                        style={{width: "14vw"}}
-                                                                    >
-                                                                        {data?.gender}
-                                                                    </td>
-                                                                    <td
-                                                                        className="pay-th"
-                                                                        style={{width: "14vw"}}
-                                                                        // style={{ gap: "10px",alignItems:"center" }}
-                                                                    >
-                                                                        <>{data?.acco == "true" ? "YES" : "NO"}</>
-                                                                    </td>
-                                                                    <td
-                                                                        className="pay-th"
-                                                                        style={{width: "20px"}}
-                                                                    >
-                                                                        <>
-                                                                            <MdDelete
-                                                                                onClick={(index) =>
-                                                                                    deletePayment(data?.id)
-                                                                                }
-                                                                                style={{
-                                                                                    cursor: "pointer",
-                                                                                    size: "10px",
-                                                                                }}
-                                                                                color="red"
-                                                                                size="20px"
-                                                                            />
-                                                                        </>
-                                                                    </td>
-                                                                </tr>
-                                                            );
-                                                        })}
-                                                    </>
-                                                    </tbody>
-                                                </table>
-
-                                                <div
-                                                    onClick={() => setAddpar(!addpar)}
-                                                    className="add-participant"
-                                                    style={{
-                                                        color: "Selective-Yellow",
-                                                        cursor: "pointer",
-                                                    }}
-                                                >
-                                                    + Add Participant
-                                                </div>
-                                                <div className="total-pay">
-                                                    <div className="total-pay-up">
-                                                        <div className="total-pay-1">
-                                                            <h1 className="total-pay-1-h1">TOTAL</h1>
-                                                            <h2 className="total-pay-1-h2">
-                                                                No. of Participants
-                                                            </h2>
-                                                        </div>
-                                                        <div className="total-pay-2">
-                                                            <p className="total-pay-1-p1">
-                                                                ₹{totalpay}
-                                                                <span style={{fontSize: "11px"}}>
-                                  {" "}
-                                                                    (incl. all the taxes)
-                                </span>
-                                                            </p>
-                                                            <p className="total-pay-1-p2">
-                                                                {paymentData.length}
-                                                            </p>
-                                                        </div>
-                                                    </div>
-
-                                                    <div className="total-pay-3">
-                                                        <button
-                                                            className="total-pay-3-btn"
-                                                            onClick={makePayment}
-                                                            disabled={!paymentData.length}
-                                                        >
-                                                            Pay Now
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </>
-                                    ) : (
-                                        <>
-                                            <div
-                                                className="main_boxx"
-                                                style={{overflowY: "scroll"}}
-                                            >
-                                                <div className="MPaycontainer">
-                                                    <div className="MPayleft">
-                                                        <p className="Mpayheading">Payment Details</p>
-                                                        <div className="MamountBox">
-                                                            <div className="MPayAmount">
-                                                                <div>
-                                                                    <p>Thomso Fees</p>
-                                                                    {acco == true || acco == null ? (
-                                                                        <p>Accommodation</p>
-                                                                    ) : (
-                                                                        <p style={{color: "rgba(64, 64, 64, 1)"}}>
-                                                                            Accommodation
-                                                                        </p>
-                                                                    )}
-                                                                </div>
-                                                                <div>
-                                                                    <p>₹ {config.min_amount}</p>
-                                                                    {acco == true || acco == null ? (
-                                                                        <p>
-                                                                            ₹ {config.max_amount - config.min_amount}
-                                                                        </p>
-                                                                    ) : (
-                                                                        <p style={{color: "rgba(64, 64, 64, 1)"}}>
-                                                                            ₹ {config.max_amount - config.min_amount}
-                                                                        </p>
-                                                                    )}
-                                                                </div>
-                                                            </div>
-                                                            <div className="MPayline1"></div>
-                                                            <div className="MTotalAmount">
-                                                                <p className="MPaylarge">TOTAL</p>
-                                                                <p>
-                                  <span className="MPaylarge">
-                                    ₹{" "}
-                                      {acco == true || acco == null
-                                          ? `${config.max_amount}`
-                                          : `${config.min_amount}`}
-                                  </span>
-                                                                    <span className="MPayTaxes"> +(Convenience Fees & Taxes)</span>
-                                                                </p>
-                                                            </div>
-                                                            <p className="MPayAccommodation">
-                                                                Accommodation includes 4 day-4 night stay and
-                                                                Food (Breakfast + Lunch){" "}
-                                                            </p>
-                                                        </div>
-                                                        <p className="MPayinfo"></p>
-
-                                                        {/* Mobile acc non acco confirmation */}
-                                                        {AccomodationConditionMob()}
-                                                        {/* end */}
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </>
-                                    )}
+                                 <img className="PaymentClosedAll1" src={Closed1} alt=""/>
                                 </>
                             )}
                         </div>
