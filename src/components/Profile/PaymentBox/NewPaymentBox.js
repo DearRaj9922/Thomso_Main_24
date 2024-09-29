@@ -15,7 +15,7 @@ import Back1 from "../../../assets/profilebackmob.webp";
 import {useLocation, Link} from "react-router-dom";
 import pic from "../../../assets/profile1.png.jpg";
 import icon1 from "../../../assets/profile.svg";
-import Closed from "../../../assets/PaymentClosedGirls.png";
+import Closed from "../../../assets/paymenttempgirl.png";
 import Closed1 from "../../../assets/pplive.webp";
 import icon2 from "../../../assets/events.svg";
 import icon3 from "../../../assets/pay_black.png";
@@ -139,8 +139,8 @@ const NewPaymentBox = (
     const [isOpen3, setIsOpen3] = useState(false);
     const [loading, setLoading] = useState(false);
     const [eventArray, seteventArray] = useState([]);
-    const [acco, setacco] = useState(
-        userDetails?.gender == "Female" ? true : null
+    const [acco, setacco] = useState(true
+        // userDetails?.gender == "Female" ? true : null
     );
     const [teamevent, setTeamEvent] = useState(null);
     const [selectedOption, setSelectedOption] = useState("Select Event");
@@ -549,15 +549,15 @@ const NewPaymentBox = (
                 <>
                     <p className="Payevent">
                         Are you going to take Accommodation in IITR?
-                        (* Accommodation Compulsory for Female)
+                        (* Accommodation Compulsory for Everyone)
                     </p>
-                    <div
+                    {/* <div
                         className="yesNo"
                         style={{opacity: is_female ? "0.5" : "1"}}
                     >
                         <button
                             className="yesbtn"
-                            disabled={is_female}
+                            disabled={is_female }
                             onClick={() => {
                                 setAcco1("true");
                                 Accommdation();
@@ -568,7 +568,7 @@ const NewPaymentBox = (
                         </button>
                         <button
                             className="nobtn"
-                            disabled={is_female}
+                            disabled={is_female }
                             onClick={() => {
                                 setAcco1("false");
                                 noAccommdation();
@@ -577,7 +577,7 @@ const NewPaymentBox = (
                         >
                             No
                         </button>
-                    </div>
+                    </div> */}
                     <div className="agree-terms-and-conditions">
                         <input
                             className="agree-checkbox"
@@ -648,7 +648,7 @@ const NewPaymentBox = (
                     style={{marginBottom: "5vh"}}
                 >
                     {" "}
-                    * Accommodation is Compulsory for Female
+                    * Accommodation is Compulsory for Everyone
                 </p>
                 <div
                     className="agree-terms-and-conditions"
@@ -717,7 +717,7 @@ const NewPaymentBox = (
                 <>
                     <p className="MPayevent">
                         Accomodation is full now only get ticket for non accomodation
-                        (* Accommodation Compulsory for Female)
+                        (* Accommodation Compulsory for Everyone)
                     </p>
                     <div className="agree-terms-and-conditions">
                         <input
@@ -782,9 +782,9 @@ const NewPaymentBox = (
                 <>
                     <p className="MPayevent">
                         Are you going to take Accommodation in IITR?
-                        (* Accommodation Compulsory for Female)
+                        (* Accommodation Compulsory for Everyone)
                     </p>
-                    <div
+                    {/* <div
                         className="MyesNo"
                         style={{opacity: is_female ? "0.5" : "1"}}
                     >
@@ -810,7 +810,7 @@ const NewPaymentBox = (
                         >
                             No
                         </button>
-                    </div>
+                    </div> */}
                     <div className="agree-terms-and-conditions">
                         <input
                             className="agree-checkbox"
@@ -882,7 +882,7 @@ const NewPaymentBox = (
                     style={{marginBottom: "5vh"}}
                 >
                     {" "}
-                    * Accommodation is Compulsory for Female
+                    * Accommodation is Compulsory for Everyone
                 </p>
                 <div
                     className="agree-terms-and-conditions"
@@ -1319,8 +1319,9 @@ const NewPaymentBox = (
                             >
                                 {genderr === "Male" && !config.all_acco_close ? (
                                     <div className="add-acco">
-                                        <div className="does-he">
-                                            <h1 className="dacc">Does he want accomodation?</h1>
+                                        <div style={{display:"flex",flexDirection:"column"}} className="does-he">
+                                            <h1 className="dacc">Accomodation is Compulsory for Everyone.</h1>
+                                            <h1 className="dacc">Do you want to proceed?</h1>
                                         </div>
                                         <div className="fle-ro2">
                                             <button
@@ -1335,7 +1336,7 @@ const NewPaymentBox = (
                                             >
                                                 YES
                                             </button>
-                                            <button
+                                            {/* <button
                                                 onClick={() => {
                                                     // setSubmitid(false);
                                                     setAddpar(!addpar);
@@ -1348,7 +1349,7 @@ const NewPaymentBox = (
                                                 style={{fontSize: "16px", padding: "6px"}}
                                             >
                                                 NO
-                                            </button>
+                                            </button> */}
                                         </div>
                                     </div>
                                 ) : (

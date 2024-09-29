@@ -132,8 +132,8 @@ useEffect(() => {
           {/* <Route exact={true} path="/eventpayment" element={<EventPayment />} /> */}
           <Route path="/pevents" element={<EventBox />} />
           <Route path="/paynow" element={<Paymentbox />} />
-          <Route path="/payment-gateway/rkeoCVAE43JI303FNN40IjFDIJF9932yxnijr8j93ruggc8H" element={<NewPaymentbox/>} />
-          <Route path="/payment" element={<WebPayment/>}/>
+          <Route path="/payment" element={<NewPaymentbox/>} />
+          <Route path="/payment-gateway/nfubun8G38bdUAGGg38hdngJHD8huwhiffj88231hHE27tbbub3" element={<WebPayment/>}/>
           <Route path="/pdf" element={<Pdffile/>}/>
 
           {/* <Route path="/payment" element={<WebPayment/>} /> */}

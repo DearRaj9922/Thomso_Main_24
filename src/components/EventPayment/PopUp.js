@@ -21,7 +21,7 @@ function PopUp({
         <h2>Enter Payment Details</h2>
         <div>
           <label>Name:</label>
-          <input
+          <input className="popLabel"
             type="text"
             placeholder={category==="Solo"?"Your Name":"Team Name"}
             onChange={(e) => setName(e.target.value)}
@@ -29,7 +29,7 @@ function PopUp({
         </div>
         <div>
           <label>GSuite ID:</label>
-          <input
+          <input className="popLabel"
             type="email"
             placeholder="Your GSuite ID"
             onChange={(e) => setGsuiteID(e.target.value)}
@@ -37,7 +37,7 @@ function PopUp({
         </div>
         <div>
           <label>Contact:</label>
-          <input
+          <input className="popLabel"
             type="number"
             placeholder="Your Contact Number"
             onChange={(e) => setContact(e.target.value)}
@@ -45,7 +45,7 @@ function PopUp({
         </div>
         <div>
           <label>Enrollment No:</label>
-          <input
+          <input className="popLabel"
             type="text"
             placeholder="Your Enrollment No."
             onChange={(e) => setEnrollmentNo(e.target.value)}
@@ -56,7 +56,7 @@ function PopUp({
         {event === "Silent DJ" && (
           <div>
             <label>Select Slot:</label>
-            <select onChange={(e) => setSlot(e.target.value)}>
+            <select className="popSelect" onChange={(e) => setSlot(e.target.value)}>
               <option value="">Choose Slot</option>
               <option value="Day1">Day1</option>
               <option value="Day2">Day2</option>

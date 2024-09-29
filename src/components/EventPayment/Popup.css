@@ -23,9 +23,13 @@
     margin: 1rem 0;
   }
   
-  input,
-  select {
-    width: 100%;
+  .popLabel {
+    width: 95% !important;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .popSelect {
+    width: 99% !important;
     padding: 0.5rem;
     margin-top: 0.5rem;
   }
