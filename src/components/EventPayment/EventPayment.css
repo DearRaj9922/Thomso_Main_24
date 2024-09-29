@@ -179,13 +179,13 @@
     display: block;
     margin: 1rem 0;
   }
-  
+/*   
   input,
   select {
     width: 95% !important;
     padding: 0.5rem;
     margin-top: 0.7rem !important;
-  }
+  } */
   
   .popbutton {
     padding: 0.7rem 1.5rem;
