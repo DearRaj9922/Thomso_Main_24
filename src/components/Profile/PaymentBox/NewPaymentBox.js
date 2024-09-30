@@ -274,26 +274,26 @@ const NewPaymentBox = (
                         ) {
                             config.girls_payment_close=true
                             var temp = paymentData;
-                            temp.push({id: input, acco: "true"});
-                            setPaymentData(temp);
-                            var temp1 = paymentData1;
-                            temp1.push({id: input, acco: "true", gender: u.gender});
-                            setPaymentData1(temp1);
-                            let amount = 0;
-                            for (let i = 0; i < paymentData1.length; i++) {
-                                if (paymentData1[i].acco == "true") {
-                                    amount = amount + config.max_amount + config.tax;
-                                } else if (paymentData1[i].acco == "false") {
-                                    amount = amount + config.min_amount + config.tax;
-                                }
-                            }
+                            // temp.push({id: input, acco: "true"});
+                            // setPaymentData(temp);
+                            // var temp1 = paymentData1;
+                            // temp1.push({id: input, acco: "true", gender: u.gender});
+                            // setPaymentData1(temp1);
+                            // let amount = 0;
+                            // for (let i = 0; i < paymentData1.length; i++) {
+                            //     if (paymentData1[i].acco == "true") {
+                            //         amount = amount + config.max_amount + config.tax;
+                            //     } else if (paymentData1[i].acco == "false") {
+                            //         amount = amount + config.min_amount + config.tax;
+                            //     }
+                            // }
 
-                            setTotalpay(amount);
+                            // setTotalpay(amount);
                             // console.log(amount,"amount");
-                            setGenderr(u.gender);
-                            setAddpar(!addpar);
+                            // setGenderr(u.gender);
+                            // setAddpar(!addpar);
                             // setTotalpay(() => totalpay + config.max_amount + config.tax);
-                            clearthomsoid();
+                            // clearthomsoid();
                         }
 
                         if (u.status === "true" && config.all_acco_close) {
