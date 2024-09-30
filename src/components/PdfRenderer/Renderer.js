@@ -261,7 +261,7 @@ console.log(user,"ddd");
               <View style={styles.id_box}>
                 <View style={styles.id_box_left}>
                   {user.avtar && (
-                    <Image src={user?.avtar} style={styles.id_box_image} />
+                    <Image src={user?.avtar} style={styles.id_box_image} onError={(err)=> console.error(err)}/>
                   )}
                   <Image src={ user?.qr?JSON.parse(user?.qr):qr} style={styles.id_box_qr} />
                 </View>
