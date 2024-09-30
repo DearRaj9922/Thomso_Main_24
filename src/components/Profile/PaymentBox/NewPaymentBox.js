@@ -272,6 +272,7 @@ const NewPaymentBox = (
                             config.girls_payment_close == false &&
                             !config.all_acco_close
                         ) {
+                            config.girls_payment_close=true
                             var temp = paymentData;
                             temp.push({id: input, acco: "true"});
                             setPaymentData(temp);
