@@ -134,7 +134,7 @@ useEffect(() => {
           <Route path="/pevents" element={<EventBox />} />
           <Route path="/paynow" element={<Paymentbox />} />
           <Route path="/payment" element={<NewPaymentbox/>} />
-          <Route path="/payment-gateway/nfubun8G38bdUAGGg38hdngJHD8huwhiffj88231hHE27tbbub3" element={<WebPayment/>}/>
+          <Route path="/payment-gateway/nfubun8G38bdUAGGg38hdngJHD8huwhiffH836g7Gh&37GVu3GHHgufheuwi" element={<WebPayment/>}/>
           <Route path="girls_payment_gateway" element={<Girlpayment/>}/>
           <Route path="/pdf" element={<Pdffile/>}/>
 
