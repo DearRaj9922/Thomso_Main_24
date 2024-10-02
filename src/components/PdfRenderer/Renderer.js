@@ -205,7 +205,7 @@ const styles = StyleSheet.create({
 
 const Renderer = ({user}) => {
 console.log(user,"ddd");  
-
+const [loaded,setLoaded] = useState(false);
 //  const [items, setItems] = useState();
 
   // const[user,setUser] = useState({});
@@ -245,114 +245,128 @@ console.log(user,"ddd");
   //   }
   // };
   // console.log(user, "ddddd");
+  useEffect(() => {
+    if(user){
+      setLoaded(true)
+    }
+  }, [user]);
   return (
-    <Document>
-      <Page size="A4" style={styles.id_page}>
-        <View style={styles.id_header}>
-          <Image src={iitr_logo} style={styles.id_header1} />
-          <Text style={styles.id_header2}>Provisional ID card</Text>
-          <Image src={thomso_logo} style={styles.id_header3}></Image>
-        </View>
 
-        <View style={styles.id_container}>
-
-          <View style={styles.id_border1}>
-            <View style={styles.id_border2}>
-              <View style={styles.id_box}>
-                <View style={styles.id_box_left}>
-                  {user.avtar && (
-                    <Image src={user?.avtar} style={styles.id_box_image} onError={(err)=> console.error(err)}/>
-                  )}
-                  <Image src={ user?.qr?JSON.parse(user?.qr):qr} style={styles.id_box_qr} />
-                </View>
-
-                <View style={styles.id_box_right}>
-                  <Text style={styles.id_box_id}>{user?.thomso_id}</Text>
-
-                  <Text style={styles.id_box_text1}>Name</Text>
-                  <Text style={styles.id_box_text2}>{user?.name}</Text>
-
-                  <View style={styles.id_box_text_split}>
-                    <View>
-                      <Text style={styles.id_box_text1}>Contact</Text>
-                      <Text style={styles.id_box_text2}>{user?.contact}</Text>
-                    </View>
-                    {user?.is_ca && (
-                      <View>
-                        <Text style={styles.id_box_text1}>CA ID</Text>
-                        <Text style={styles.id_box_text2}>{user?.ca_thomso_id}</Text>
-
+      (
+          loaded?
+              (
+                  <Document>
+                    <Page size="A4" style={styles.id_page}>
+                      <View style={styles.id_header}>
+                        <Image src={iitr_logo} style={styles.id_header1} />
+                        <Text style={styles.id_header2}>Provisional ID card</Text>
+                        <Image src={thomso_logo} style={styles.id_header3}></Image>
                       </View>
-                    )}
-                  </View>
 
-                  <Text style={styles.id_box_text1}>College</Text>
-                  <Text style={styles.id_box_text2}>
-                  {user?.college}
+                      <View style={styles.id_container}>
+
+                        <View style={styles.id_border1}>
+                          <View style={styles.id_border2}>
+                            <View style={styles.id_box}>
+                              <View style={styles.id_box_left}>
+                                {user.avtar && (
+                                    <Image src={user?.avtar} style={styles.id_box_image} />
+                                )}
+                                <Image src={ JSON.parse(user?.qr)} style={styles.id_box_qr} />
+                              </View>
+
+                              <View style={styles.id_box_right}>
+                                <Text style={styles.id_box_id}>{user?.thomso_id}</Text>
+
+                                <Text style={styles.id_box_text1}>Name</Text>
+                                <Text style={styles.id_box_text2}>{user?.name}</Text>
+
+                                <View style={styles.id_box_text_split}>
+                                  <View>
+                                    <Text style={styles.id_box_text1}>Contact</Text>
+                                    <Text style={styles.id_box_text2}>{user?.contact}</Text>
+                                  </View>
+                                  {user?.is_ca && (
+                                      <View>
+                                        <Text style={styles.id_box_text1}>CA ID</Text>
+                                        <Text style={styles.id_box_text2}>{user?.ca_thomso_id}</Text>
+
+                                      </View>
+                                  )}
+                                </View>
+
+                                <Text style={styles.id_box_text1}>College</Text>
+                                <Text style={styles.id_box_text2}>
+                                  {user?.college}
 
 
-                  </Text>
+                                </Text>
 
-                  <Text style={styles.id_box_text1}>CA Referral & Name</Text>
-                  {user?.referred_by_id ? (
-                    <Text style={styles.id_box_text2}>
-                      {user?.ca_thomso_id} ({user?.ca_name})
-                    </Text>
-                  ) : (
-                    <Text style={styles.id_box_text2}>None</Text>
-                  )}
+                                <Text style={styles.id_box_text1}>CA Referral & Name</Text>
+                                {user?.referred_by_id ? (
+                                    <Text style={styles.id_box_text2}>
+                                      {user?.ca_thomso_id} ({user?.ca_name})
+                                    </Text>
+                                ) : (
+                                    <Text style={styles.id_box_text2}>None</Text>
+                                )}
 
-                  <Text style={styles.id_box_textB}>
-                    Accommodation - {user?.accommodation ? "Yes" : "No"}
-                  </Text>
-                </View>
-              </View>
-            </View>
-          </View>
-        </View>
+                                <Text style={styles.id_box_textB}>
+                                  Accommodation - {user?.accommodation ? "Yes" : "No"}
+                                </Text>
+                              </View>
+                            </View>
+                          </View>
+                        </View>
+                      </View>
 
-        <View>
-        <Text style={styles.id_box_red}>
-                    Bring a A4 size Coloured Printed Copy of ID card with you.
-                  </Text>
-        </View>
 
-        <View style={styles.id_insdata}>
-          <View style={styles.id_line}></View>
-          <View>
-            <Text style={styles.id_ins}>INSTRUCTIONS:</Text>
-            <Text style={styles.id_data1}>
-              1. This ID card is provisional and does not confer entitlement as a valid identity or participant's pass for Thomso'24. It is mandatory for all participants to bring this ID Card at the registration desk in the Thomso Office at the MAC Building for getting a valid id card.
+                      <View>
+                        <Text style={styles.id_box_red}>
+                          Bring a A4 size Coloured Printed Copy of ID card with you.
+                        </Text>
+                      </View>
 
-            </Text>
-            <Text style={styles.id_data}>
-              2. This provisional ID Card must be in an undamaged condition and it is advised to be carried within a file case to prevent any folding or creasing.
+                      <View style={styles.id_insdata}>
+                        <View style={styles.id_line}></View>
+                        <View>
+                          <Text style={styles.id_ins}>INSTRUCTIONS:</Text>
+                          <Text style={styles.id_data1}>
+                            1. This ID card is provisional and does not confer entitlement as a valid identity or participant's pass for Thomso'24. It is mandatory for all participants to bring this ID Card at the registration desk in the Thomso Office at the MAC Building for getting a valid id card.
 
-            </Text>
-            <Text style={styles.id_data}>
-              3. Additionally, participants are required to bring two identical
-              passport-sized photographs and aadhar card or any government issued photo identity proof.
-            </Text>
-            <Text style={styles.id_data}>
-              4. Outer line of id card must be appropriately cut along the dotted lines and presented at the registration desk.
+                          </Text>
+                          <Text style={styles.id_data}>
+                            2. This provisional ID Card must be in an undamaged condition and it is advised to be carried within a file case to prevent any folding or creasing.
 
-            </Text>
-            <Text style={styles.id_data}>
-              5. Participants must bring a minimum of two printed copies of this ID Card for the registration process.
+                          </Text>
+                          <Text style={styles.id_data}>
+                            3. Additionally, participants are required to bring two identical
+                            passport-sized photographs and aadhar card or any government issued photo identity proof.
+                          </Text>
+                          <Text style={styles.id_data}>
+                            4. Outer line of id card must be appropriately cut along the dotted lines and presented at the registration desk.
 
-            </Text>
-            <Text style={styles.id_data}>
-              6. Any forgery with the ID Card will lead to the jurisdiction of the Thomso Organizing Committee and the authorities of IIT Roorkee.
-            </Text>
+                          </Text>
+                          <Text style={styles.id_data}>
+                            5. Participants must bring a minimum of two printed copies of this ID Card for the registration process.
 
-            <Text style={styles.id_data}>
-              7. This identification card does not serve as a valid proof of payment status. It is exclusively designated as a provisional identification card, intended solely for the purpose of verifying payment at the registration desk.
-            </Text>
-          </View>
-        </View>
+                          </Text>
+                          <Text style={styles.id_data}>
+                            6. Any forgery with the ID Card will lead to the jurisdiction of the Thomso Organizing Committee and the authorities of IIT Roorkee.
+                          </Text>
 
-      </Page>
-    </Document>
+                          <Text style={styles.id_data}>
+                            7. This identification card does not serve as a valid proof of payment status. It is exclusively designated as a provisional identification card, intended solely for the purpose of verifying payment at the registration desk.
+                          </Text>
+                        </View>
+                      </View>
+
+                    </Page>
+                  </Document>
+              ):
+              (<p>Please wait</p>)
+      )
+
   );
 };
 
