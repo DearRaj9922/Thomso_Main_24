@@ -38,18 +38,16 @@ const PdfDownload = ({ userDetails, loading }) => {
             <div className="mobile">
               <div>
                 {/* Provide a download link on mobile */}
-                <PDFDownloadLink
-                    document={<Renderer user={userDetails} />}
-                    fileName='IdCard.pdf'
-                >
+                <PDFDownloadLink document={<Renderer user={userDetails} />} fileName='IdCard.pdf'>
                   {({ loading }) =>
                       loading ? (
-                          <button>Loading document...</button>
+                          <button disabled>Preparing document...</button>
                       ) : (
                           <button>Download PDF</button>
                       )
                   }
                 </PDFDownloadLink>
+
               </div>
             </div>
         )}
