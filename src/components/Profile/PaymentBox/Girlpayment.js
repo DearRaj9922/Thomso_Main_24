@@ -15,9 +15,8 @@ import Back1 from "../../../assets/profilebackmob.webp";
 import {useLocation, Link} from "react-router-dom";
 import pic from "../../../assets/profile1.png.jpg";
 import icon1 from "../../../assets/profile.svg";
-import Closed3 from "../../../assets/PaymentClosedGirls.png";
 import Closed from "../../../assets/paymenttempgirl.png";
-import Closed1 from "../../../assets/tempclosed.png";
+import Closed1 from "../../../assets/pplive.webp";
 import icon2 from "../../../assets/events.svg";
 import icon3 from "../../../assets/pay_black.png";
 import icon31 from "../../../assets/payment.svg";
@@ -71,7 +70,6 @@ const NewPaymentBox = (
             .get(`https://api2.thomso.in/apiV1/payment_master`)
             .then((ress) => {
                 data = ress.data;
-                console.log(data,"hfh")
                 SetConfig(data[0]);
                 // console.log(data[0], "acco close");
                 if (data[0].all_acco_close == true) {
@@ -79,16 +77,6 @@ const NewPaymentBox = (
                     setStyle1({background: "white", color: "black"});
                     setStyle2({background: "transparent", color: "white"});
                 }
-                else if(data[0].all_acco_close==false){
-                    data[0].all_acco_close=true;
-                    setacco(false);
-                    setStyle1({background: "white", color: "black"});
-                    setStyle2({background: "transparent", color: "white"});
-                }
-                else if(data[0].all_payment_close==false){
-                    data[0].all_payment_close=true;
-                }
-                
             })
             .catch((err) => {
                 console.log(err);
@@ -569,7 +557,7 @@ const NewPaymentBox = (
                     >
                         <button
                             className="yesbtn"
-                            disabled={is_female}
+                            disabled={is_female }
                             onClick={() => {
                                 setAcco1("true");
                                 Accommdation();
@@ -580,7 +568,7 @@ const NewPaymentBox = (
                         </button>
                         <button
                             className="nobtn"
-                            disabled={is_female}
+                            disabled={is_female }
                             onClick={() => {
                                 setAcco1("false");
                                 noAccommdation();
@@ -728,7 +716,7 @@ const NewPaymentBox = (
             >
                 <>
                     <p className="MPayevent">
-                        Accomodation is full now, only get ticket for non accomodation
+                        Accomodation is full now only get ticket for non accomodation
                         (* Accommodation Compulsory for Female)
                     </p>
                     <div className="agree-terms-and-conditions">
@@ -1085,6 +1073,7 @@ const NewPaymentBox = (
                                     {userDetails.payment ? (
                                         <PaymentSuccess/>
                                     ) : userDetails.gender == "Female" 
+                                    && config.girls_payment_close
                                      ? (
                                         <>
                                             <img className="PaymentClosedAll1" src={Closed} alt=""/>
@@ -1095,7 +1084,7 @@ const NewPaymentBox = (
                                         </>
                                     ) : (
                                         <>
-                                         {paying ? (
+                                            {paying ? (
                                                 <>
                                                     <div
                                                         className="Payleft1"
@@ -1282,7 +1271,6 @@ const NewPaymentBox = (
                                                 </>
                                             )}
                                         </>
-
                                     )}
                                 </>
                             </div>
@@ -1332,8 +1320,9 @@ const NewPaymentBox = (
                             >
                                 {genderr === "Male" && !config.all_acco_close ? (
                                     <div className="add-acco">
-                                        <div className="does-he">
-                                            <h1 className="dacc">Does he want accomodation?</h1>
+                                        <div style={{display:"flex",flexDirection:"column"}} className="does-he">
+                                            <h1 className="dacc">Accomodation is Compulsory for Female.</h1>
+                                            <h1 className="dacc">Do you want to proceed?</h1>
                                         </div>
                                         <div className="fle-ro2">
                                             <button
@@ -1482,7 +1471,8 @@ const NewPaymentBox = (
                             {userDetails.payment ? (
                                 <PaymentSuccess/>
                             ) : userDetails.gender == "Female" 
-                            ? (
+                            && config.girls_payment_close
+                             ? (
                                 <>
                                     <img className="PaymentClosedAll" src={Closed} alt=""/>
                                 </>
@@ -1492,7 +1482,7 @@ const NewPaymentBox = (
                                 </>
                             ) : (
                                 <>
-                                 {paying ? (
+                                    {paying ? (
                                         <>
                                             <div
                                                 className="Payleft1"

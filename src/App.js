@@ -26,6 +26,7 @@ import EventMainPage from "./components/EventsPage/EventMainPage";
 import NewEve from "./components/Profile/EventsPage/NewEventCard/NewEventcard.js";
 import WebPayment from "./components/Profile/PaymentBox/WebPayment.js";
 import Pdffile from "./components/PdfRenderer/PdfDownload.js"
+import Girlpayment from "./components/Profile/PaymentBox/Girlpayment.js";
 
 // import EventPayment from "./components/EventPayment/EventPayment";
 
@@ -132,8 +133,9 @@ useEffect(() => {
           {/* <Route exact={true} path="/eventpayment" element={<EventPayment />} /> */}
           <Route path="/pevents" element={<EventBox />} />
           <Route path="/paynow" element={<Paymentbox />} />
-          <Route path="/payment-gateway/rkeoCVAE43JI303FNN40IjFDIJF9932yxnijr8j93ruggc8H" element={<NewPaymentbox/>} />
-          <Route path="/payment" element={<WebPayment/>}/>
+          <Route path="/payment" element={<NewPaymentbox/>} />
+          <Route path="/payment-gateway/nfubun8G38bdUAGGg38hdngJHD8huwhiffHebf8gbe8huf27bziojHU7h8" element={<WebPayment/>}/>
+          <Route path="girls_payment_gateway" element={<Girlpayment/>}/>
           <Route path="/pdf" element={<Pdffile/>}/>
 
           {/* <Route path="/payment" element={<WebPayment/>} /> */}

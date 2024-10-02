@@ -251,6 +251,7 @@ const [loaded,setLoaded] = useState(false);
     }
   }, [user]);
   return (
+
       (
           loaded?
               (
@@ -318,6 +319,7 @@ const [loaded,setLoaded] = useState(false);
                           </View>
                         </View>
                       </View>
+
 
                       <View>
                         <Text style={styles.id_box_red}>

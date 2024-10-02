@@ -21,7 +21,7 @@ import icon3 from "../../../assets/pay_black.png";
 import icon31 from "../../../assets/payment.svg";
 import line from "../../../assets/line1.svg";
 import paymentcenterpic from "../../../assets/NonAcco.webp";
-import paymentlive from "../../../assets/pplive.webp";
+import paymentlive from "../../../assets/tempclosed.png";
 import PaymentSuccess from "./PaymentSuccess";
 // import { useHistory } from "react-router-dom";
 import CircularProgress from "@mui/material/CircularProgress";

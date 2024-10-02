@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./EventPayment.css";
-import logo from "../../assets/Logo-blue.png";
+import logo from "../../assets/logowhite.svg";
 import axios from "axios";
 import { message } from "antd";
 import Loader from "../Loader/Loader";
@@ -16,12 +16,15 @@ function EventPayment() {
   const [name, setName] = useState(""); // Store Name
   const [enrollmentNo, setEnrollmentNo] = useState(""); // Store Enrollment Number
   const [contact,setContact] = useState(0);
+  const [category,setCategory]= useState("");
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
       try {
         const response = await axios.get("https://api2.thomso.in/apiV1/event");
         setEvents(response.data);
+        
+        
         setLoading(false);
         console.log(response.data)
       } catch (error) {
@@ -74,15 +77,15 @@ function EventPayment() {
     <div className="eventpayment">
       {loading && <Loader />}
       <div className="eventpayment_header">
-        <img className="eventpayment_logo" src={logo} alt="" />
+        <img style={{width:"200px"}} className="eventpayment_logo" src={logo} alt="" />
       </div>
       <div className="eventpayment_body">
-        <h1>Paid events</h1>
+        <h1 style={{color:"white"}}>Paid events</h1>
 
         {events
           .filter((el) => el.is_payment === true)
           .map((el) => {
-            if(el.name==="Sneaker Design"){
+            if(el.name==="Sneaker Design" || el.name==="Tote Bag Artistry"){
               return (
                   <div className="eventpayment_card" id={el.id} key={el.id}>
                     <div className="eventpayment_left">
@@ -100,7 +103,8 @@ function EventPayment() {
                           className="eventpayment_pay"
                           onClick={() => {
                             setEvent(el.name); // Set the selected event name
-                            setDetails(true); // Show the PopUp
+                            setDetails(true);
+                            setCategory(el.solo_team); // Show the PopUp
                           }}
                       >
                         PAY NOW
@@ -151,7 +155,8 @@ function EventPayment() {
           setContact={setContact}
           setEnrollmentNo={setEnrollmentNo}
           payForEvent={payForEvent}
-          event={event} // Pass selected event
+          event={event}
+          category={category} // Pass selected event
         />
       )}
     </div>
