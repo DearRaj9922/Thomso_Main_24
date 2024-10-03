@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.fdaaf89f.css",
-    "main.js": "/static/js/main.d68bc9a7.js",
+    "main.js": "/static/js/main.c35bd9d3.js",
     "static/js/511.6d025d35.chunk.js": "/static/js/511.6d025d35.chunk.js",
     "static/media/bgs4.svg": "/static/media/bgs4.a2186bd99a8e07adf56b.svg",
     "static/media/Events_bike Animation.gif": "/static/media/Events_bike Animation.b5a443126fe8b2f37f7a.gif",
@@ -63,7 +63,6 @@
     "static/media/bird.webp": "/static/media/bird.c8fbc0c5e02a46f72bd9.webp",
     "static/media/profileimg.svg": "/static/media/profileimg.56edd884cdd32a20c86d0ab3dc69381e.svg",
     "static/media/pplive.webp": "/static/media/pplive.69b4907c87352882c2b0.webp",
-    "static/media/MUN-Top.webp": "/static/media/MUN-Top.09e1c67df91811380808.webp",
     "static/media/munmobileinfobg.webp": "/static/media/munmobileinfobg.f76d34c1c4a84d5fad64.webp",
     "static/media/SHIELD.webp": "/static/media/SHIELD.8cc47dcb78268fdcde8e.webp",
     "static/media/profile1.png.jpg": "/static/media/profile1.png.da7e7064ed2b96e76c47.jpg",
@@ -105,14 +104,15 @@
     "static/media/logout-logo.svg": "/static/media/logout-logo.dcc4bafe58165b8fbbfeec7868251fbb.svg",
     "static/media/events.svg": "/static/media/events.77a5156103986e7ccddd2b1de9dd55a8.svg",
     "static/media/TickCorrect.svg": "/static/media/TickCorrect.317b995981df69acdce1592e92ce5f74.svg",
+    "static/media/MUN-Top.webp": "/static/media/MUN-Top.372579103e728612fecc.webp",
     "static/media/profile.svg": "/static/media/profile.a0cd79691c7d2da42c0493e6ad98e630.svg",
     "static/media/diamond.svg": "/static/media/diamond.7e6e6a15583877c88e6a71723e75f3b6.svg",
     "main.fdaaf89f.css.map": "/static/css/main.fdaaf89f.css.map",
-    "main.d68bc9a7.js.map": "/static/js/main.d68bc9a7.js.map",
+    "main.c35bd9d3.js.map": "/static/js/main.c35bd9d3.js.map",
     "511.6d025d35.chunk.js.map": "/static/js/511.6d025d35.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fdaaf89f.css",
-    "static/js/main.d68bc9a7.js"
+    "static/js/main.c35bd9d3.js"
   ]
 }
