@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+.sponsors-grid-container h2 {
+    font-size: 4rem; /* Base font size */
+    font-family: 'Almendra Display', sans-serif;
+    color: #264149;
+    font-weight: bolder;
+    text-shadow:
+        -1px -1px 0 #2D4D64,
+        1px -1px 0 #2D4D64,
+        -1px 1px 0 #2D4D64,
+        1px 1px 0 #2D4D64;
+    text-align: center;
+    margin: 3rem 0 2rem; /* Top, bottom margins */
+}
+
+.sponsors-grid-container h3 {
+    font-family: 'Salsa', sans-serif;
+    font-size: 2.5rem; /* Base font size */
+    color: #F4DB80;
+    text-shadow:
+        -1px -1px 0 #2D4D64,
+        1px -1px 0 #2D4D64,
+        -1px 1px 0 #2D4D64,
+        1px 1px 0 #2D4D64;
+    text-align: center;
+    margin: 2rem 0; /* Top, bottom margins */
+}
+
+.beverage {
+    font-family: 'Salsa', sans-serif;
+    font-size: 2rem; /* Base font size */
+    color: #97E9FF !important;
+    text-shadow:
+        -1px -1px 0 #2D4D64,
+        1px -1px 0 #2D4D64,
+        -1px 1px 0 #2D4D64,
+        1px 1px 0 #2D4D64;
+    text-align: center;
+    margin: 2rem 0 1rem; /* Top, bottom margins */
+}
+
+.sponsors-grid-container {
+    text-align: center;
+    padding: 4rem; /* Responsive padding */
+    background-color: transparent;
+}
+
+.sponsors-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem; /* Responsive margin */
+    gap: 2rem; /* Responsive gap */
+    position: relative;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.sponsor {
+    width: 20%; /* Responsive width */
+    height: auto; /* Height auto to maintain aspect ratio */
+    position: relative;
+}
+
+.sponsor img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 10px; /* Reduced padding for better spacing */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.sponsor img:hover {
+    transform: scale(1.1);
+}
+
+.vertical-divider {
+    width: 4px;
+    height: auto; /* Height auto to adapt to content */
+    background-color: #6099C1;
+    margin: 0 2rem; /* Responsive margin */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .sponsors-row {
+        gap: 1rem; /* Smaller gap on medium screens */
+    }
+
+    .sponsor {
+        width: 30%; /* Three sponsors per row */
+    }
+
+    .sponsors-grid-container h2 {
+        font-size: 3rem; /* Adjusted font size for medium screens */
+    }
+
+    .sponsors-grid-container h3,
+    .beverage {
+        font-size: 2rem; /* Adjusted font size for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .sponsors-row {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        align-items: center;
+    }
+
+    .sponsor {
+        width: 80%; /* Full width on small screens */
+        margin-bottom: 2rem; /* Margin below each sponsor */
+    }
+
+    .sponsors-grid-container h2 {
+        font-size: 2.5rem; /* Smaller font size for small screens */
+    }
+
+    .sponsors-grid-container h3,
+    .beverage {
+        font-size: 2rem; /* Smaller font size for small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .sponsors-grid-container h2 {
+        font-size: 2.5rem; /* Smaller font size for very small screens */
+    }
+
+    .sponsors-grid-container h3,
+    .beverage {
+        font-size: 1.75rem; /* Smaller font size for very small screens */
+    }
+}

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns by default */
+    gap: 20px; /* Space between grid items */
+    overflow: hidden; /* Prevents overflow */
+    background-color: transparent; /* Transparent background */
+    padding: 20px; /* Padding around the grid */
+}
+
+.grid-item-wrapper {
+    position: relative; /* Allows absolute positioning of inner elements */
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column; /* Aligns items vertically */
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically */
+    padding: 30px; /* Increased padding for larger cards */
+    border-radius: 10px; /* Rounding corners */
+    background-color: transparent; /* Transparent background */
+}
+
+.vertical-line {
+    position: absolute; /* Positioned relative to grid item */
+    top: 10%; /* Adjusts vertical position */
+    bottom: 30%; /* Adjusts vertical position */
+    right: -10px; /* Position to the right */
+    width: 2px; /* Thickness of the vertical line */
+    background-color: #2D4D64; /* Color of the vertical line */
+}
+
+/* Font family and text alignment */
+.grid-container,
+.grid-item {
+    font-family: 'Salsa', sans-serif; /* Font family */
+    text-align: center; /* Center text alignment */
+}
+
+.partner-type {
+    margin-top: 15px; /* Space above partner type */
+    font-size: 20px; /* Increased font size for partner type */
+    color: #333; /* Text color */
+    font-weight: bold; /* Bold text */
+    padding: 15px 0; /* Increased padding above and below text */
+}
+
+.grid-item,
+.grid-item img {
+    font-size: 26px; /* Increased font size for grid item text */
+}
+
+.grid-item img {
+    min-width: 50%; /* Increased minimum width for images */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: contain; /* Ensures image fits inside the container */
+    border-radius: 12px; /* Rounding corners for images */
+    background-color: #fff; /* White background for images */
+    padding: 20px; /* Padding inside image container */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: transform 0.3s ease-in-out; /* Smooth scaling on hover */
+}
+
+.partner-logo {
+    width: 100px; /* Increased fixed width for partner logos */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.partner-logo:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+    }
+
+    .vertical-line {
+        display: none; /* Hide vertical line on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+
+    .partner-type {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+
+    .grid-item img {
+        min-width: 80%; /* Increase min-width for better visibility */
+    }
+}

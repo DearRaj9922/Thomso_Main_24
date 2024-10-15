@@ -46,6 +46,7 @@ import MUNMoreInfoPage1 from "./components/MUN/MoreInfo/Moreinfopage1/Moreinfopa
 import MUNMoreInfoPage2 from "./components/MUN/MoreInfo/Moreinfopage2/Moreinfopage2";
 import MUNMoreInfoPage3 from "./components/MUN/MoreInfo/Moreinfopage3/Moreinfopage3";
 import Pevents from "./components/Pevents/Pevents";
+import ParentComponent from "./components/Sponsers/ParentComponent.js";
 
 // import VideoPlayer from "./components/Home/SECTION3/demo.js";
 
@@ -109,6 +110,7 @@ useEffect(() => {
       {/* <Route path="/demo" element={<VideoPlayer/>}/> */}
 
 
+        <Route path="/sponsers" element={<ParentComponent />} />
         <Route path="/" element={<Home/>}/>
 
       <Route path="/section2" element={<Section2 />} />
