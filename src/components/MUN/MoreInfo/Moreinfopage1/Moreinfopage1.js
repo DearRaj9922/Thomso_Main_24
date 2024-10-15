@@ -26,10 +26,10 @@ export default function Moreinfopage1() {
                                 <h2 className="info_heading">UNITED NATIONS GENERAL ASSEMBLY (UNGA)</h2>
                                 <p className="muninfo-text">The UN General Assembly (UNGA) is one of the six main organs of the United Nations, consisting of all 193 member states. It serves as a central platform for international dialogue, where countries meet annually in New York to discuss key global issues such as climate change, human rights, and sustainable development. The UNGA promotes global cooperation and seeks to develop collective solutions to major global challenges.
                                     <br />
-                                    Agenda: "Unlawful Occupation and Forced Governance: Israel-Palestine Conflict."</p>
+                                    Agenda: "International- The Kursk Incursion by Ukraine: Addressing Escalation in the Ukraine-Russia Conflict"</p>
                                 <p className="mobilemuninfo-text">The UN General Assembly (UNGA) is one of the six main organs of the United Nations, consisting of all 193 member states. It serves as a central platform for international dialogue, where countries meet annually in New York to discuss key global issues such as climate change, human rights, and sustainable development. The UNGA promotes global cooperation and seeks to develop collective solutions to major global challenges.
                                     <br />
-                                    Agenda: "Unlawful Occupation and Forced Governance: Israel-Palestine Conflict."</p>
+                                    Agenda: "International- The Kursk Incursion by Ukraine: Addressing Escalation in the Ukraine-Russia Conflict"</p>
                                 <div className="portfolio_button">
                                     <button className='info_button' onClick={() => window.open("https://docs.google.com/spreadsheets/d/14l_D_IPAHMAtAjGXDP3wuygbgloxCzNajbAj9vhdQLA/edit?usp=sharing", "_blank")}>PORTFOLIO MATRIX</button>
                                 </div>

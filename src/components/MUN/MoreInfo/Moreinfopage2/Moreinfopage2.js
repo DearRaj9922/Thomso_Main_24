@@ -26,10 +26,10 @@ export default function Moreinfopage1() {
                                 <h2 className="info_heading">ALL INDIA POLITICAL PARTY MEET ( AIPPM)</h2>
                                 <p className="muninfo-text">AIPPM is a simulated event that brings together delegates from various Indian political parties to discuss and debate key national and international issues. Modelled after the real-life political landscape of India, AIPPM provides a platform for participants to engage in lively debates, negotiations, and policy-making, aiming to find common ground and develop effective solutions to address the country's most pressing concerns.
                                     <br />
-                                    AGENDA: “Deliberation over the ongoing ethnic clashes in Manipur”</p>
+                                    AGENDA: “National-Revocation of the Central Government's Decision on Lateral Entry into Civil Services”</p>
                                 <p className="mobilemuninfo-text">AIPPM is a simulated event that brings together delegates from various Indian political parties to discuss and debate key national and international issues. Modelled after the real-life political landscape of India, AIPPM provides a platform for participants to engage in lively debates, negotiations, and policy-making, aiming to find common ground and develop effective solutions to address the country's most pressing concerns.
                                     <br />
-                                    AGENDA: “Deliberation over the ongoing ethnic clashes in Manipur”</p>
+                                    AGENDA: “National-Revocation of the Central Government's Decision on Lateral Entry into Civil Services”</p>
                                 <div className="portfolio_button">
                                     <button className='info_button' onClick={() => window.open("https://docs.google.com/spreadsheets/d/14l_D_IPAHMAtAjGXDP3wuygbgloxCzNajbAj9vhdQLA/edit?usp=sharing", "_blank")}>PORTFOLIO MATRIX</button>
                                 </div>

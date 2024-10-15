@@ -24,6 +24,7 @@ import cross_img from "../../assets/Cross.webp";
 import { Link } from "react-router-dom";
 import Select from "react-select";
 import { BoldOutlined } from "@ant-design/icons";
+import {fetchUser} from "../User/UserActions";
 // import Footer from "../Footer/Footer.js";
 
 const slotsOptions = [
@@ -32,7 +33,7 @@ const slotsOptions = [
   { value: "Day 3", label: "Day 3" },
 ];
 
-const EventMainPage = ({ events }) => {
+const EventMainPage = ({ events, userDetails }) => {
   const id = useParams()?.id;
   const navigate = useNavigate();
   const { dispatch } = Store;
@@ -93,6 +94,7 @@ const EventMainPage = ({ events }) => {
   const loadUserData = async () => {
     setLoading(true);
     try {
+
       axios
         .get(`https://api2.thomso.in/apiV1/event`)
         .then((res) => {
@@ -382,7 +384,10 @@ const EventMainPage = ({ events }) => {
                           <button
                             className="events-left-event5-btn1"
                             id="newchangesinbutton"
-                            onClick={(e) => console.log("payment initiated!")}
+                            onClick={(e) => {
+                              e.preventDefault()
+                              payForEvent()
+                            }}
                           >
                             {loading ? (
                               <>
@@ -534,10 +539,18 @@ const EventMainPage = ({ events }) => {
 
 const mapStateToProps = (state) => {
   let events = state.user.total_events;
+  let userDetails = state.user.user;
 
   return {
     events,
+    userDetails
   };
 };
 
-export default connect(mapStateToProps, null)(EventMainPage);
+const mapDispatchToProps = (dispatch) => {
+  return {
+    fetchUser: (params) => dispatch(fetchUser(params)),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(EventMainPage);

@@ -139,8 +139,8 @@ const NewPaymentBox = (
     const [isOpen3, setIsOpen3] = useState(false);
     const [loading, setLoading] = useState(false);
     const [eventArray, seteventArray] = useState([]);
-    const [acco, setacco] = useState(true
-        // userDetails?.gender == "Female" ? true : null
+    const [acco, setacco] = useState(
+        userDetails?.gender == "Female" ? true : null
     );
     const [teamevent, setTeamEvent] = useState(null);
     const [selectedOption, setSelectedOption] = useState("Select Event");
@@ -272,28 +272,27 @@ const NewPaymentBox = (
                             config.girls_payment_close == false &&
                             !config.all_acco_close
                         ) {
-                            config.girls_payment_close=true
                             var temp = paymentData;
-                            // temp.push({id: input, acco: "true"});
-                            // setPaymentData(temp);
-                            // var temp1 = paymentData1;
-                            // temp1.push({id: input, acco: "true", gender: u.gender});
-                            // setPaymentData1(temp1);
-                            // let amount = 0;
-                            // for (let i = 0; i < paymentData1.length; i++) {
-                            //     if (paymentData1[i].acco == "true") {
-                            //         amount = amount + config.max_amount + config.tax;
-                            //     } else if (paymentData1[i].acco == "false") {
-                            //         amount = amount + config.min_amount + config.tax;
-                            //     }
-                            // }
+                            temp.push({id: input, acco: "true"});
+                            setPaymentData(temp);
+                            var temp1 = paymentData1;
+                            temp1.push({id: input, acco: "true", gender: u.gender});
+                            setPaymentData1(temp1);
+                            let amount = 0;
+                            for (let i = 0; i < paymentData1.length; i++) {
+                                if (paymentData1[i].acco == "true") {
+                                    amount = amount + config.max_amount + config.tax;
+                                } else if (paymentData1[i].acco == "false") {
+                                    amount = amount + config.min_amount + config.tax;
+                                }
+                            }
 
-                            // setTotalpay(amount);
+                            setTotalpay(amount);
                             // console.log(amount,"amount");
-                            // setGenderr(u.gender);
-                            // setAddpar(!addpar);
+                            setGenderr(u.gender);
+                            setAddpar(!addpar);
                             // setTotalpay(() => totalpay + config.max_amount + config.tax);
-                            // clearthomsoid();
+                            clearthomsoid();
                         }
 
                         if (u.status === "true" && config.all_acco_close) {
@@ -550,9 +549,9 @@ const NewPaymentBox = (
                 <>
                     <p className="Payevent">
                         Are you going to take Accommodation in IITR?
-                        (* Accommodation Compulsory for Everyone)
+                        (* Accommodation Compulsory for Female)
                     </p>
-                    {/* <div
+                    <div
                         className="yesNo"
                         style={{opacity: is_female ? "0.5" : "1"}}
                     >
@@ -578,7 +577,7 @@ const NewPaymentBox = (
                         >
                             No
                         </button>
-                    </div> */}
+                    </div>
                     <div className="agree-terms-and-conditions">
                         <input
                             className="agree-checkbox"
@@ -649,7 +648,7 @@ const NewPaymentBox = (
                     style={{marginBottom: "5vh"}}
                 >
                     {" "}
-                    * Accommodation is Compulsory for Everyone
+                    * Accommodation is Compulsory for Female
                 </p>
                 <div
                     className="agree-terms-and-conditions"
@@ -718,7 +717,7 @@ const NewPaymentBox = (
                 <>
                     <p className="MPayevent">
                         Accomodation is full now only get ticket for non accomodation
-                        (* Accommodation Compulsory for Everyone)
+                        (* Accommodation Compulsory for Female)
                     </p>
                     <div className="agree-terms-and-conditions">
                         <input
@@ -783,9 +782,9 @@ const NewPaymentBox = (
                 <>
                     <p className="MPayevent">
                         Are you going to take Accommodation in IITR?
-                        (* Accommodation Compulsory for Everyone)
+                        (* Accommodation Compulsory for Female)
                     </p>
-                    {/* <div
+                    <div
                         className="MyesNo"
                         style={{opacity: is_female ? "0.5" : "1"}}
                     >
@@ -811,7 +810,7 @@ const NewPaymentBox = (
                         >
                             No
                         </button>
-                    </div> */}
+                    </div>
                     <div className="agree-terms-and-conditions">
                         <input
                             className="agree-checkbox"
@@ -883,7 +882,7 @@ const NewPaymentBox = (
                     style={{marginBottom: "5vh"}}
                 >
                     {" "}
-                    * Accommodation is Compulsory for Everyone
+                    * Accommodation is Compulsory for Female
                 </p>
                 <div
                     className="agree-terms-and-conditions"
@@ -1074,7 +1073,7 @@ const NewPaymentBox = (
                                     {userDetails.payment ? (
                                         <PaymentSuccess/>
                                     ) : userDetails.gender == "Female" 
-                                    // && config.girls_payment_close
+                                    && config.girls_payment_close
                                      ? (
                                         <>
                                             <img className="PaymentClosedAll1" src={Closed} alt=""/>
@@ -1322,7 +1321,7 @@ const NewPaymentBox = (
                                 {genderr === "Male" && !config.all_acco_close ? (
                                     <div className="add-acco">
                                         <div style={{display:"flex",flexDirection:"column"}} className="does-he">
-                                            <h1 className="dacc">Accomodation is Compulsory for Everyone.</h1>
+                                            <h1 className="dacc">Accomodation is Compulsory for Female.</h1>
                                             <h1 className="dacc">Do you want to proceed?</h1>
                                         </div>
                                         <div className="fle-ro2">
@@ -1338,7 +1337,7 @@ const NewPaymentBox = (
                                             >
                                                 YES
                                             </button>
-                                            {/* <button
+                                            <button
                                                 onClick={() => {
                                                     // setSubmitid(false);
                                                     setAddpar(!addpar);
@@ -1351,7 +1350,7 @@ const NewPaymentBox = (
                                                 style={{fontSize: "16px", padding: "6px"}}
                                             >
                                                 NO
-                                            </button> */}
+                                            </button>
                                         </div>
                                     </div>
                                 ) : (
@@ -1472,6 +1471,7 @@ const NewPaymentBox = (
                             {userDetails.payment ? (
                                 <PaymentSuccess/>
                             ) : userDetails.gender == "Female" 
+                            && config.girls_payment_close
                              ? (
                                 <>
                                     <img className="PaymentClosedAll" src={Closed} alt=""/>
