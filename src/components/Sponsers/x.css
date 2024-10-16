@@ -1,0 +1,111 @@
+/* Importing the custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Almendra+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+.beverage {
+    font-family: 'Salsa', sans-serif;
+    font-size: 28px;
+    color: #97E9FF !important;
+    /* Stroke for Safari */
+    /* Stroke for other browsers */
+    text-shadow:
+        -1px -1px 0 #2D4D64,
+        1px -1px 0 #2D4D64,
+        -1px 1px 0 #2D4D64,
+        1px 1px 0 #2D4D64;
+    /* Text shadow as a fallback for stroke */
+    text-align: center;
+    margin: 30px 0 20px;
+}
+
+/* Styling for "OUR SPONSORS" title */
+.sponsors-grid-container h2 {
+    /* Stroke for Safari */
+    /* Stroke for other browsers */
+    text-shadow:
+        -1px -1px 0 #2D4D64,
+        1px -1px 0 #2D4D64,
+        -1px 1px 0 #2D4D64,
+        1px 1px 0 #2D4D64;
+    /* Text shadow as a fallback for stroke */
+    text-align: center;
+    margin: 30px 0 20px;
+
+    font-size: 48px;
+    font-family: 'Almendra Display', sans-serif;
+    background-clip: text;
+    /* Makes gradient visible */
+    color: #264149;
+    font-weight: bolder;
+    /* White stroke for Chrome, Safari */
+
+    text-stroke: 2px #FFFFFF;
+    /* White stroke fallback for other browsers */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* Styling for the subtitle (Title Sponsor) */
+.sponsors-grid-container h3 {
+    font-family: 'Salsa', sans-serif;
+    font-size: 28px;
+    color: #F4DB80;
+    /* Stroke for Safari */
+    /* Stroke for other browsers */
+    text-shadow:
+        -1px -1px 0 #2D4D64,
+        1px -1px 0 #2D4D64,
+        -1px 1px 0 #2D4D64,
+        1px 1px 0 #2D4D64;
+    /* Text shadow as a fallback for stroke */
+    text-align: center;
+    margin: 30px 0 20px;
+}
+
+/* Center container content */
+.sponsors-grid-container {
+    text-align: center;
+    padding: 40px;
+    background-color: transparent;
+}
+
+/* Styling for sponsor images */
+.sponsors-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* Individual sponsor item */
+.sponsor {
+    width: 120px;
+    height: 120px;
+    margin: 0 15px;
+    position: relative;
+}
+
+/* Sponsor images styling */
+.sponsor img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.sponsor img:hover {
+    transform: scale(1.1);
+}
+
+/* Vertical divider between sponsors */
+.vertical-divider {
+    width: 2px;
+    height: 100px;
+    background-color: #6099C1;
+    margin: 0 20px;
+}

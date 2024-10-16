@@ -1,0 +1,18 @@
+.parent-container {
+    background-image: url('../../../src/assets/sponserbg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Ensures it covers the entire view height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden; /* Prevents overflow */
+}
+
+.main-content {
+    z-index: 1; /* Ensures content is above the background */
+    /* Add the following properties to prevent overflow */
+    box-sizing: border-box; /* Include padding in height calculation */
+    max-width: 100%; /* Prevents main content from overflowing */
+}

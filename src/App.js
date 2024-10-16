@@ -24,10 +24,6 @@ import ResetPassword from "./components/Registration/ResetPass/ResetPass";
 import Home3d from "./components/3dhome/Home3d.js";
 import EventMainPage from "./components/EventsPage/EventMainPage";
 import NewEve from "./components/Profile/EventsPage/NewEventCard/NewEventcard.js";
-import WebPayment from "./components/Profile/PaymentBox/WebPayment.js";
-import Pdffile from "./components/PdfRenderer/PdfDownload.js"
-import Girlpayment from "./components/Profile/PaymentBox/Girlpayment.js";
-
 // import EventPayment from "./components/EventPayment/EventPayment";
 
 import React,{useEffect, useState} from "react";
@@ -50,7 +46,8 @@ import MUNMoreInfoPage1 from "./components/MUN/MoreInfo/Moreinfopage1/Moreinfopa
 import MUNMoreInfoPage2 from "./components/MUN/MoreInfo/Moreinfopage2/Moreinfopage2";
 import MUNMoreInfoPage3 from "./components/MUN/MoreInfo/Moreinfopage3/Moreinfopage3";
 import Pevents from "./components/Pevents/Pevents";
-import EventPayment from "./components/EventPayment/EventPayment";
+import ParentComponent from "./components/Sponsers/ParentComponent.js";
+
 // import VideoPlayer from "./components/Home/SECTION3/demo.js";
 
 function App(props) {
@@ -113,6 +110,7 @@ useEffect(() => {
       {/* <Route path="/demo" element={<VideoPlayer/>}/> */}
 
 
+        <Route path="/sponsers" element={<ParentComponent />} />
         <Route path="/" element={<Home/>}/>
 
       <Route path="/section2" element={<Section2 />} />
@@ -132,13 +130,11 @@ useEffect(() => {
           <Route path="/events/:id" element={<EventMainPage />} />
           {/* <Route exact={true} path="/eventpayment" element={<EventPayment />} /> */}
           <Route path="/pevents" element={<EventBox />} />
-          <Route path="/paynow" element={<Paymentbox />} />
-          <Route path="/payment" element={<NewPaymentbox/>} />
-          <Route path="/payment-gateway/nfubun8G38bdUAGGg38hdngJHD8huwhiffHebf8gbe8huf27bziojHU7h8" element={<WebPayment/>}/>
-          <Route path="girls_payment_gateway" element={<Girlpayment/>}/>
-          <Route path="/pdf" element={<Pdffile/>}/>
+          <Route path="/payment" element={<Paymentbox />} />
+          <Route path="/transaction_gateway" element={<NewPaymentbox/>} />
+          {/* <Route path="/newev" element={<Newevents/>}/> */}
 
-          {/* <Route path="/payment" element={<WebPayment/>} /> */}
+          <Route path="/payment_thsp" element={<NewPaymentbox/>} />
           <Route path="/card" element={<EventCard/>} />
           {/* <Route exact={true} path="/events" element={<EventsMain />} /> */}
           <Route path="/events" element={<NewEventpage/>}/>
@@ -148,7 +144,6 @@ useEffect(() => {
           <Route path="/neweventcard" element={<NewEve/>}/> 
           <Route path="/loader" element={<Newloader/>}/>
           <Route path= "/id_card" element={<Id_Card/>}/>
-          <Route exact={true} path="/eventpayment" element={<EventPayment />} />
           <Route
           
             path="/auth/reset-password/:email/:token"
