@@ -130,7 +130,7 @@ function Navbar({ color, disable, setregister, register, data, fontcolor, bright
             <a
               className="event-nav-right-compo hover-underline-animation"
               style={{ color: fontcolor }}
-              href="https://thomso.in/#/sponsers"
+              href="https://thomso.in/#/sponsors"
               target="_blank"
             >
               Our Sponsors
