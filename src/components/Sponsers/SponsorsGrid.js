@@ -1,9 +1,9 @@
 import React from 'react';
 import './SponsorsGrid.css';
 import sampleLogo from './images/sample.png'; // Use actual logos for each sponsor
-import visionias from './images/visionias.png'; // Use actual logos for each sponsor
-import sbi from './images/sbi.png'; // Use actual logos for each sponsor
-import powergrid from './images/powergrid.jpg'; // Use actual logos for each sponsor
+import visionias from './images/visionias.png'; 
+import sbi from './images/sbi.png'; 
+import powergrid from './images/powergrid.jpg'; 
 import adani from './images/adani.jpg';
 import gail from './images/gail.jpg';
 import rvnl from './images/rvnl.jpg';
@@ -63,6 +63,10 @@ const SponsorsGrid = () => {
                 <div className="vertical-divider"></div>
                 <div className="sponsor">
                     <img src={rollsking} alt="UniScholarz" />
+                </div>
+                <div className="vertical-divider"></div>
+                <div className="sponsor">
+                    <img src={adani} alt="UniScholarz" />
                 </div>
             </div>
         </div>
