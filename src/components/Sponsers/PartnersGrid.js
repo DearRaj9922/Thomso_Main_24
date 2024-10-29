@@ -1,9 +1,9 @@
 import React from 'react';
 import './PartnersGrid.css';
 import sampleLogo from './images/sample.png';
-import visionias from './images/visionias.png'; // Use actual logos for each sponsor
-import sbi from './images/sbi.png'; // Use actual logos for each sponsor
-import powergrid from './images/powergrid.jpg'; // Use actual logos for each sponsor
+import visionias from './images/visionias.png'; 
+import sbi from './images/sbi.png'; 
+import powergrid from './images/powergrid.jpg'; 
 import adani from './images/adani.jpg';
 import gail from './images/gail.jpg';
 import rvnl from './images/rvnl.jpg';
@@ -124,6 +124,7 @@ const PartnersGrid = () => {
 };
 
 export default PartnersGrid;
+
 
 
 // import React from 'react';
