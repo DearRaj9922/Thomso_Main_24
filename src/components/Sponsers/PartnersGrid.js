@@ -37,11 +37,26 @@ import dubeat from './images/dubeat.jpg';
 import eil from './images/eil.png';
 import pizlio from './images/pizlio.png';
 import secrettemptation from './images/secrettemptation.png';
-import shapoorji from './images/shapoorji.jpg';
 import remarkskill from './images/remarkskill.jpg';
-
-
-
+import shapoorji from './images/shapoorji.jpg';
+import abhibus from './images/abhibus.png';
+import tattoo from './images/tattoo.jpg';
+import uttar from './images/uttar.jpg';
+import deepam from './images/deepam.png';
+import dehradoongram from './images/dehradoongram.jpg';
+import denver from './images/denver.jpg';
+import dfc from './images/dfc.png';
+import febtech from './images/febtech.jpg';
+import fixderma from './images/fixderma.jpg';
+import genwear from './images/genwear.jpg';
+import hell from './images/hell.jpg';
+import sncf from './images/sncf.jpg';
+import saytrees from './images/saytrees.png';
+import world from './images/world.jpg';
+import mediax from './images/mediax.png';
+import meraki from './images/meraki.png';
+import nbt from './images/nbt.jpg';
+import unisol from './images/unisol.png';
 
 
 const PartnersGrid = () => {
@@ -74,8 +89,23 @@ const PartnersGrid = () => {
         { name: 'UniScholarz', logo: artisbaazi },
         { name: 'UniScholarz', logo: iitmemewala },
         { name: 'UniScholarz', logo: bjas },
-        { name: 'UniScholarz', logo: aleem },
-
+        { name: 'UniScholarz', logo: abhibus },
+        { name: 'UniScholarz', logo: tattoo },
+        { name: 'UniScholarz', logo: uttar },
+        { name: 'UniScholarz', logo: deepam },
+        { name: 'UniScholarz', logo: dehradoongram },
+        { name: 'UniScholarz', logo: denver },
+        { name: 'UniScholarz', logo: dfc },
+        { name: 'UniScholarz', logo: febtech },
+        { name: 'UniScholarz', logo: fixderma },
+        { name: 'UniScholarz', logo: genwear },
+        { name: 'UniScholarz', logo: hell },
+        { name: 'UniScholarz', logo: sncf },
+        { name: 'UniScholarz', logo: saytrees },
+        { name: 'UniScholarz', logo: world },
+        { name: 'UniScholarz', logo: mediax },
+        { name: 'UniScholarz', logo: meraki },
+        { name: 'UniScholarz', logo: nbt },       
     ];
 
     return (
@@ -94,9 +124,6 @@ const PartnersGrid = () => {
 };
 
 export default PartnersGrid;
-
-
-
 
 
 // import React from 'react';
