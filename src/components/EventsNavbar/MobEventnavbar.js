@@ -245,6 +245,16 @@ function MobEventnavbar({brightMob}) {
           >
             MUN
           </h1>
+
+          <h1
+            onClick={() => {
+              navigate("/sponsors");
+              window.location.reload(false);
+            }}
+          >
+            Our Sponsors
+          </h1>
+
           {/* {event &&
             events.map((el) => {
               const { par, child } = el;
