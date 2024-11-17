@@ -58,6 +58,7 @@ import meraki from './images/meraki.png';
 import nbt from './images/nbt.jpg';
 import unisol from './images/unisol.png';
 import pnb from './images/pnb.jpg';
+import escape from './images/escape.png';
 
 const PartnersGrid = () => {
     const partners = [
@@ -108,8 +109,9 @@ const PartnersGrid = () => {
         { name: 'UniScholarz', logo: nbt }, 
         { name: 'UniScholarz', logo: pnb },
         { name: 'UniScholarz', logo: unisol }
+        { name: 'UniScholarz', logo: escape }
 
-        
+                
 
     ];
 
