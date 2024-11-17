@@ -57,7 +57,7 @@ import mediax from './images/mediax.png';
 import meraki from './images/meraki.png';
 import nbt from './images/nbt.jpg';
 import unisol from './images/unisol.png';
-
+import pnb from './images/pnb.jpg';
 
 const PartnersGrid = () => {
     const partners = [
@@ -105,7 +105,12 @@ const PartnersGrid = () => {
         { name: 'UniScholarz', logo: world },
         { name: 'UniScholarz', logo: mediax },
         { name: 'UniScholarz', logo: meraki },
-        { name: 'UniScholarz', logo: nbt },       
+        { name: 'UniScholarz', logo: nbt }, 
+        { name: 'UniScholarz', logo: pnb },
+        { name: 'UniScholarz', logo: unisol }
+
+        
+
     ];
 
     return (
