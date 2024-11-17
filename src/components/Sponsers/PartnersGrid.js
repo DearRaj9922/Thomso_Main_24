@@ -110,10 +110,7 @@ const PartnersGrid = () => {
         { name: 'UniScholarz', logo: pnb },
         { name: 'UniScholarz', logo: unisol }
         { name: 'UniScholarz', logo: escape }
-
-                
-
-    ];
+];
 
     return (
         <div className="grid-container">
