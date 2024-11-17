@@ -108,7 +108,7 @@ const PartnersGrid = () => {
         { name: 'UniScholarz', logo: meraki },
         { name: 'UniScholarz', logo: nbt }, 
         { name: 'UniScholarz', logo: pnb },
-        { name: 'UniScholarz', logo: unisol }
+        { name: 'UniScholarz', logo: unisol },
         { name: 'UniScholarz', logo: escape }
 ];
 
