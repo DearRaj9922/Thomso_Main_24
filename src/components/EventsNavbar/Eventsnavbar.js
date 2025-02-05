@@ -97,14 +97,7 @@ function Navbar({ color, disable, setregister, register, data, fontcolor, bright
             onClick={handleLogoClick} // Handle logo click
           />
           <div className="event-nav-right">
-            <a
-              className="event-nav-right-compo hover-underline-animation"
-              style={{ color: fontcolor }}
-              href="https://eazeplace-data.s3.ap-south-1.amazonaws.com/public%2F1738735599114_Thomso'24%20Winners.pdf"
-              target="_blank"
-            >
-              Results
-            </a>
+          
             <a
               className="event-nav-right-compo hover-underline-animation"
               style={{ color: fontcolor }}
@@ -143,6 +136,17 @@ function Navbar({ color, disable, setregister, register, data, fontcolor, bright
             >
               Our Sponsors
             </a>
+<a
+  className="event-nav-right-compo hover-underline-animation"
+  style={{ color: fontcolor }}
+  href="https://drive.google.com/file/d/1fm_MWEivO-RIfX2DB6NJgylMwp7FZBk6/view?usp=sharing"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Winners
+</a>
+
+
             {userDetails && userDetails.payment ? (
               <a
                 className={localStorage.getItem("token") ? "event-nav-right-compo hover-underline-animation" : "none_display"}
