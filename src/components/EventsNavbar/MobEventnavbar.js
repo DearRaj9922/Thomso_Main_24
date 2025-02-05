@@ -94,6 +94,14 @@ function MobEventnavbar({brightMob}) {
           </h4>
           <h1
             onClick={() => {
+              window.location.href = "https://eazeplace-data.s3.ap-south-1.amazonaws.com/public%2F1738735599114_Thomso'24%20Winners.pdf"
+              window.location.reload(false);
+            }}
+          >
+            Results
+          </h1>
+          <h1
+            onClick={() => {
               navigate("/events");
               window.location.reload(false);
             }}

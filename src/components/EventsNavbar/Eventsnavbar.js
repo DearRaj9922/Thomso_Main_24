@@ -100,6 +100,14 @@ function Navbar({ color, disable, setregister, register, data, fontcolor, bright
             <a
               className="event-nav-right-compo hover-underline-animation"
               style={{ color: fontcolor }}
+              href="https://eazeplace-data.s3.ap-south-1.amazonaws.com/public%2F1738735599114_Thomso'24%20Winners.pdf"
+              target="_blank"
+            >
+              Results
+            </a>
+            <a
+              className="event-nav-right-compo hover-underline-animation"
+              style={{ color: fontcolor }}
               onClick={() => handleNavigate("/events")}
             >
               Events
