@@ -85,7 +85,7 @@ function MobEventnavbar({ brightMob }) {
           <a href="https://zonals.thomso.in/" target="_blank"><h5>Zonals</h5></a>
           
           {/* New Result Button */}
-          <a href="https://drive.google.com/file/d/1fm_MWEivO-RIfX2DB6NJgylMwp7FZBk6/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <a href="https://docs.google.com/spreadsheets/d/1r8RDGgRZPpt0S6utctx_7YWKzZ3HcHaU8BXae9OTSqM/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
             <h5>Result</h5>
           </a>
           
@@ -111,7 +111,7 @@ function MobEventnavbar({ brightMob }) {
           <a href="https://zonals.thomso.in/" target="_blank"><h5>Zonals</h5></a>
           
           {/* New Result Button */}
-          <a href="https://drive.google.com/file/d/1fm_MWEivO-RIfX2DB6NJgylMwp7FZBk6/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <a href="https://docs.google.com/spreadsheets/d/1r8RDGgRZPpt0S6utctx_7YWKzZ3HcHaU8BXae9OTSqM/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
             <h5>Result</h5>
           </a>
           
