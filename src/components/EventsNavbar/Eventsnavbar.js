@@ -139,7 +139,7 @@ function Navbar({ color, disable, setregister, register, data, fontcolor, bright
 <a
   className="event-nav-right-compo hover-underline-animation"
   style={{ color: fontcolor }}
-  href="https://drive.google.com/file/d/1fm_MWEivO-RIfX2DB6NJgylMwp7FZBk6/view?usp=sharing"
+  href="https://docs.google.com/spreadsheets/d/1r8RDGgRZPpt0S6utctx_7YWKzZ3HcHaU8BXae9OTSqM/edit?usp=sharing"
   target="_blank"
   rel="noopener noreferrer"
 >
