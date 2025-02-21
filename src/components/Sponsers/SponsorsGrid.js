@@ -24,7 +24,7 @@ import hero from './images/hero.png';
 const SponsorsGrid = () => {
     return (
         <div className="sponsors-grid-container">
-            <h2>OUR SPONSORS</h2>
+            <h1>OUR SPONSORS</h1>
 
             { <h3> IN ASSOCIATION WITH </h3> }
             <div className="sponsors-row">
