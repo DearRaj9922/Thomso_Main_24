@@ -20,6 +20,7 @@ import krafton from './images/krafton.png';
 import beardo from './images/beardo.png';
 import pnb from './images/pnb.jpg';
 import hero from './images/hero.png';
+import iitraa from './images/iitraa.jpg';
 
 const SponsorsGrid = () => {
     return (
@@ -33,12 +34,9 @@ const SponsorsGrid = () => {
                 </div>
                 <div className="vertical-divider"></div>
                 <div className="sponsor">
-                    <img src={sbi} alt="UniCreds" />
+                    <img src={iitraa} alt="UniCreds" />
                 </div>
-                <div className="vertical-divider"></div>
-                <div className="sponsor">
-                    <img src={powergrid} alt="UniScholarz" />
-                </div>
+                
             </div>
 
               { <h3> DRIVEN BY </h3> }
@@ -49,35 +47,8 @@ const SponsorsGrid = () => {
             </div>
 
              
-            {/* <h3>Title Sponsors</h3> */}
-            <div className="sponsors-row">
-                <div className="sponsor">
-                    <img src={gail} alt="UniAcco" />
-                </div>
-                <div className="vertical-divider"></div>
-                <div className="sponsor">
-                    <img src={rvnl} alt="UniCreds" />
-                </div>
-                <div className="vertical-divider"></div>
-                <div className="sponsor">
-                    <img src={bonkers} alt="UniScholarz" />
-                </div>
-            </div>
-
-            {/* <h3 className='beverage'>Beverage Partners</h3> */}
-            <div className="sponsors-row">
-                <div className="sponsor">
-                    <img src={nxtinfra} alt="UniAcco" />
-                </div>
-                <div className="vertical-divider"></div>
-                <div className="sponsor">
-                    <img src={rollsking} alt="UniScholarz" />
-                </div>
-                <div className="vertical-divider"></div>
-                <div className="sponsor">
-                    <img src={adani} alt="UniScholarz" />
-                </div>
-            </div>
+            
+            
         </div>
     );
 };
