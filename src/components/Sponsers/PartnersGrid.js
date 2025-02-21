@@ -62,7 +62,7 @@ import escape from './images/escape.png';
 
 const PartnersGrid = () => {
     const partners = [
-        { name: 'UniAcco', logo: qelica },
+        { name: 'UniAcco', type: 'Major', logo: qelica },
         { name: 'UniScholarz',logo: sanjeevani },
         { name: 'UniScholarz', logo: iocl },
         { name: 'UniAcco', logo: horiba },
