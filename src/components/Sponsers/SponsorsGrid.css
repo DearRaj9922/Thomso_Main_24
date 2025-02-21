@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Almendra+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
 
-.sponsors-grid-container h2 {
+.sponsors-grid-container h1 {
     font-size: 4rem; /* Base font size */
     font-family: 'Almendra Display', sans-serif;
     color: #264149;
