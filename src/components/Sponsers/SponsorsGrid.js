@@ -19,13 +19,14 @@ import thdc from './images/thdc.jpg';
 import krafton from './images/krafton.png';
 import beardo from './images/beardo.png';
 import pnb from './images/pnb.jpg';
+import hero from './images/hero.png';
 
 const SponsorsGrid = () => {
     return (
         <div className="sponsors-grid-container">
             <h2>OUR SPONSORS</h2>
 
-            {/* <h3>Title Sponsors</h3> */}
+            { <h3> IN ASSOCIATION WITH </h3> }
             <div className="sponsors-row">
                 <div className="sponsor">
                     <img src={visionias} alt="UniAcco" />
@@ -40,6 +41,14 @@ const SponsorsGrid = () => {
                 </div>
             </div>
 
+              { <h3> DRIVEN BY </h3> }
+            <div className="sponsors-row">
+                <div className="sponsor">
+                    <img src={hero} alt="UniAcco" />
+                </div>
+            </div>
+
+             
             {/* <h3>Title Sponsors</h3> */}
             <div className="sponsors-row">
                 <div className="sponsor">
