@@ -62,13 +62,13 @@ import escape from './images/escape.png';
 
 const PartnersGrid = () => {
     const partners = [
-        { name: 'UniAcco', type: 'Major', logo: qelica },
-        { name: 'UniScholarz',logo: sanjeevani },
-        { name: 'UniScholarz', logo: iocl },
-        { name: 'UniAcco', logo: horiba },
+        { name: 'UniAcco', type: 'Major Sponsor', logo: qelica },
+        { name: 'UniScholarz', type: 'Major Sponsor', logo: sanjeevani },
+        { name: 'UniScholarz', type: 'Banking Finance Partner', logo: iocl },
+        { name: 'UniAcco', type: 'Major Sponsor', logo: horiba },
         { name: 'UniScholarz', logo: canara },
-        { name: 'UniScholarz', logo: thdc },
-        { name: 'UniAcco', logo: krafton },
+        { name: 'UniScholarz', type: 'HYDRO ENERGY PARTNER', logo: thdc },
+        { name: 'UniAcco', type: 'GAMING PARTNER', logo: krafton },
         { name: 'UniScholarz', logo: beardo },
         { name: 'UniScholarz', logo: remarkskill },
         { name: 'UniScholarz', logo: shapoorji },
@@ -105,7 +105,7 @@ const PartnersGrid = () => {
         { name: 'UniScholarz', logo: saytrees },
         { name: 'UniScholarz', logo: world },
         { name: 'UniScholarz', logo: mediax },
-        { name: 'UniScholarz', logo: meraki },
+        { name: 'UniScholarz', type: 'BEAUTY PARTNER', logo: meraki },
         { name: 'UniScholarz', logo: nbt }, 
         { name: 'UniScholarz', logo: pnb },
         { name: 'UniScholarz', logo: unisol },
