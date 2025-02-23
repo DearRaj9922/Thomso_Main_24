@@ -62,6 +62,14 @@ import escape from './images/escape.png';
 const PartnersGrid = () => {
     const partners = [
         { name: 'UniAcco', type: 'Major Sponsor', logo: sbi },
+        { name: 'UniAcco', type: 'Major Sponsor', logo: powergrid },
+        { name: 'UniAcco', type: 'Major Sponsor', logo: adani },
+        { name: 'UniAcco', type: 'Major Sponsor', logo: gail },
+        { name: 'UniAcco', type: 'Major Sponsor', logo: rvnl },
+        { name: 'UniAcco', type: 'Major Sponsor', logo: bonkers },
+        { name: 'UniAcco', type: 'Major Sponsor', logo: nxtinfra },
+        { name: 'UniAcco', type: 'Major Sponsor', logo: rollsking },
+        { name: 'UniAcco', type: 'Major Sponsor', logo: aleem },
         { name: 'UniAcco', type: 'Major Sponsor', logo: qelica },
         { name: 'UniScholarz', type: 'Major Sponsor', logo: sanjeevani },
         { name: 'UniScholarz', type: 'Banking Finance Partner', logo: iocl },
