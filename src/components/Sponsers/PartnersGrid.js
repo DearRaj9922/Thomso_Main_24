@@ -61,14 +61,14 @@ import escape from './images/escape.png';
 
 const PartnersGrid = () => {
     const partners = [
-        { name: 'UniAcco', type: 'Major Sponsor', logo: sbi },
-        { name: 'UniAcco', type: 'Major Sponsor', logo: powergrid },
-        { name: 'UniAcco', type: 'Major Sponsor', logo: adani },
-        { name: 'UniAcco', type: 'Major Sponsor', logo: gail },
-        { name: 'UniAcco', type: 'Major Sponsor', logo: rvnl },
-        { name: 'UniAcco', type: 'Major Sponsor', logo: bonkers },
-        { name: 'UniAcco', type: 'Major Sponsor', logo: nxtinfra },
-        { name: 'UniAcco', type: 'Major Sponsor', logo: rollsking },
+        { name: 'UniAcco', type: 'MAJOR SPONSOR', logo: sbi },
+        { name: 'UniAcco', type: 'HYDRATION PARTNER', logo: powergrid },
+        { name: 'UniAcco', type: 'PARGENT PARTNER', logo: adani },
+        { name: 'UniAcco', type: 'SUPPLY CHAIN', logo: gail },
+        { name: 'UniAcco', type: 'BANKING PARTNER', logo: rvnl },
+        { name: 'UniAcco', type: 'SPONSOR', logo: bonkers },
+        { name: 'UniAcco', type: 'SPONSOR', logo: nxtinfra },
+        { name: 'UniAcco', type: 'FUELED BY', logo: rollsking },
         { name: 'UniAcco', type: 'Major Sponsor', logo: aleem },
         { name: 'UniAcco', type: 'Major Sponsor', logo: qelica },
         { name: 'UniScholarz', type: 'Major Sponsor', logo: sanjeevani },
@@ -115,7 +115,7 @@ const PartnersGrid = () => {
         { name: 'UniScholarz',  type: 'Major Sponsor', logo: mediax },
         { name: 'UniScholarz', type: 'BEAUTY PARTNER', logo: meraki },
         { name: 'UniScholarz',  type: 'Major Sponsor', logo: nbt }, 
-        { name: 'UniScholarz',  type: 'Major Sponsor', logo: pnb },
+        { name: 'UniScholarz',  type: 'RAILWAY CONSTRUCTION', logo: pnb },
         { name: 'UniScholarz', type: 'Major Sponsor',  logo: unisol },
         { name: 'UniScholarz',  type: 'Major Sponsor', logo: escape }
 ];
