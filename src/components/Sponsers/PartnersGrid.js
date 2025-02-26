@@ -77,7 +77,7 @@ const PartnersGrid = () => {
         { name: 'UniScholarz', type: 'Major Sponsor', logo: canara },
         { name: 'UniScholarz', type: 'HYDRO ENERGY PARTNER', logo: thdc },
         { name: 'UniAcco', type: 'GAMING PARTNER', logo: krafton },
-        { name: 'UniScholarz', type: 'Major Sponsor', logo: beardo },
+        { name: 'UniScholarz', type: 'GLOBAL EDUCATION', logo: beardo },
         { name: 'UniScholarz', type: 'Major Sponsor', logo: remarkskill },
         { name: 'UniScholarz', type: 'GOLD SPONSOR', logo: shapoorji },
         { name: 'UniScholarz', type: 'RAILWAY DEVELOPMENT',  logo: secrettemptation },
