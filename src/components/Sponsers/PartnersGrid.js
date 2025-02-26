@@ -103,7 +103,7 @@ const PartnersGrid = () => {
         { name: 'UniScholarz',  type: 'Major Sponsor', logo: uttar },
         { name: 'UniScholarz',  type: 'Major Sponsor', logo: deepam },
         { name: 'UniScholarz',  type: 'Major Sponsor', logo: dehradoongram },
-        { name: 'UniScholarz',  type: 'Major Sponsor', logo: denver },
+        { name: 'UniScholarz',  type: 'INSTANT MOMENT PARTNER', logo: denver },
         { name: 'UniScholarz',  type: 'Major Sponsor', logo: dfc },
         { name: 'UniScholarz',  type: 'Major Sponsor', logo: febtech },
         { name: 'UniScholarz',  type: 'GROOMING PARTNER', logo: fixderma },
