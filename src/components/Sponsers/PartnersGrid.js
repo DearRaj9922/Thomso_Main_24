@@ -61,6 +61,7 @@ import escape from './images/escape.png';
 import tata from './images/tata.jpg';
 import ongc from './images/ongc.jpeg';
 import rec from './images/rec.png';
+import narayan from './images/narayan.jpg';
 
 const PartnersGrid = () => {
     const partners = [
@@ -96,7 +97,7 @@ const PartnersGrid = () => {
         { name: 'UniScholarz', type: 'EYEWEAR PARTNER',  logo: optical },
         { name: 'UniScholarz',  type: 'SOCIAL INITIATIVE PARTNER', logo: sncf },
         { name: 'UniAcco', type: 'ORAL HYGIENE PARTNER', logo: sanjeevani },
-        
+         { name: 'UniAcco', type: 'SOCIAL INITIATIVE PARTNER', logo: narayan },
          { name: 'UniAcco', type: 'CARNIVAL PARTNER', logo: rollsking },
         { name: 'UniScholarz', type: 'PAEGENT PARTNER', logo: pizlio },
          { name: 'UniScholarz',  type: 'GIFTING & SKINCARE PARTNER', logo: fixderma },
