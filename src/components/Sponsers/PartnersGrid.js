@@ -61,27 +61,46 @@ import escape from './images/escape.png';
 
 const PartnersGrid = () => {
     const partners = [
-        { name: 'UniAcco', type: 'BANKING PARTNER', logo: sbi },
+        
         { name: 'UniAcco', type: 'PLATINUM SPONSOR', logo: powergrid },
-        { name: 'UniAcco', type: 'DIAMOND SPONSOR', logo: adani },
+      
         { name: 'UniAcco', type: 'DIAMOND SPONSOR', logo: gail },
-        { name: 'UniAcco', type: 'RAILWAY DEVELOPMENT PARTNER', logo: rvnl },
+        { name: 'UniAcco', type: 'DIAMOND SPONSOR', logo: adani },
         { name: 'UniAcco', type: 'MERCHANDISE PARTNER', logo: bonkers },
-        { name: 'UniAcco', type: 'SPONSOR', logo: nxtinfra },
-        { name: 'UniAcco', type: 'CARNIVAL PARTNER', logo: rollsking },
-        { name: 'UniAcco', type: 'Major Sponsor', logo: aleem },
-        { name: 'UniAcco', type: 'ORAL HYGIENE PARTNER', logo: sanjeevani },
-        { name: 'UniScholarz', type: 'GOLD SPONSOR', logo: iocl },
-        { name: 'UniAcco', type: 'GOLD SPONSOR', logo: horiba },
-        { name: 'UniScholarz', type: 'BANKING PARTNER', logo: canara },
+        { name: 'UniAcco', type: 'RAILWAY DEVELOPMENT PARTNER', logo: rvnl },
         { name: 'UniScholarz', type: 'HYDRO ENERGY PARTNER', logo: thdc },
+
+        { name: 'UniAcco', type: 'BANKING PARTNER', logo: sbi },
+        { name: 'UniScholarz', type: 'BANKING PARTNER', logo: canara },
+        { name: 'UniScholarz',  type: 'BANKING PARTNER', logo: pnb },
+        { name: 'UniScholarz',  type: 'WORKSHOP PARTNER', logo: world },
+        { name: 'UniScholarz', type: 'WORKSHOP PARTNER', logo: remarkskill },
+         { name: 'UniScholarz', type: 'GOLD SPONSOR', logo: iocl },
+         { name: 'UniAcco', type: 'GOLD SPONSOR', logo: horiba },
+        { name: 'UniScholarz', type: 'MAJOR SPONSOR', logo: shapoorji },
+          { name: 'UniScholarz', type: 'MAJOR SPONSOR',  logo: eil },
+        { name: 'UniScholarz',  type: 'MAJOR SPONSOR', logo: nbt }, 
+        { name: 'UniScholarz',  type: 'SOCIAL INITIATIVE PARTNER', logo: sncf },
+        { name: 'UniAcco', type: 'ORAL HYGIENE PARTNER', logo: sanjeevani },
+         { name: 'UniAcco', type: 'CARNIVAL PARTNER', logo: rollsking },
+        { name: 'UniScholarz', type: 'PAEGENT PARTNER', logo: pizlio },
+         { name: 'UniScholarz',  type: 'GIFTING & SKINCARE PARTNER', logo: fixderma },
+        
+        { name: 'UniAcco', type: 'SPONSOR', logo: nxtinfra },
+       
+        { name: 'UniAcco', type: 'Major Sponsor', logo: aleem },
+        
+       
+       
+        
+        
         { name: 'UniAcco', type: 'MOBILE GAMING TOURNAMENT PARTNER', logo: krafton },
         { name: 'UniScholarz', type: 'GROOMING PARTNER', logo: beardo },
-        { name: 'UniScholarz', type: 'WORKSHOP PARTNER', logo: remarkskill },
-        { name: 'UniScholarz', type: 'MAJOR SPONSOR', logo: shapoorji },
+        
+        
         { name: 'UniScholarz', type: 'FRAGNANCE PARTNER',  logo: secrettemptation },
-        { name: 'UniScholarz', type: 'PAEGENT PARTNER', logo: pizlio },
-        { name: 'UniScholarz', type: 'MAJOR SPONSOR',  logo: eil },
+        
+      
         { name: 'UniScholarz', type: 'Major Sponsor',  logo: dubeat },
         { name: 'UniScholarz', type: 'EYEWEAR PARTNER',  logo: optical },
         { name: 'UniScholarz', type: 'Major Sponsor',  logo: pahadi },
@@ -105,16 +124,16 @@ const PartnersGrid = () => {
         { name: 'UniScholarz',  type: 'PERFUME PARTNER', logo: denver },
         { name: 'UniScholarz',  type: 'FREIGHT PARTNER', logo: dfc },
         { name: 'UniScholarz',  type: 'Major Sponsor', logo: febtech },
-        { name: 'UniScholarz',  type: 'GIFTING & SKINCARE PARTNER', logo: fixderma },
+       
         { name: 'UniScholarz',  type: 'CAMPUS DIVA EVENT PARTNER', logo: genwear },
         { name: 'UniScholarz',  type: 'ENERGY DRINK PARTNER', logo: hell },
-        { name: 'UniScholarz',  type: 'SOCIAL INITIATIVE PARTNER', logo: sncf },
+        
         { name: 'UniScholarz',  type: 'Major Sponsor', logo: saytrees },
-        { name: 'UniScholarz',  type: 'WORKSHOP PARTNER', logo: world },
+      
         { name: 'UniScholarz',  type: 'Major Sponsor', logo: mediax },
         { name: 'UniScholarz', type: 'BEAUTY PARTNER', logo: meraki },
-        { name: 'UniScholarz',  type: 'MAJOR SPONSOR', logo: nbt }, 
-        { name: 'UniScholarz',  type: 'BANKING PARTNER', logo: pnb },
+        
+        
         { name: 'UniScholarz', type: 'MAJOR SPONSOR',  logo: unisol },
         { name: 'UniScholarz',  type: 'FANDOM PARTNER', logo: escape }
 ];
