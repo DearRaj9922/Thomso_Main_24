@@ -70,7 +70,7 @@ const PartnersGrid = () => {
         { name: 'UniAcco', type: 'SPONSOR', logo: nxtinfra },
         { name: 'UniAcco', type: 'CARNIVAL PARTNER', logo: rollsking },
         { name: 'UniAcco', type: 'Major Sponsor', logo: aleem },
-        { name: 'UniAcco', type: 'ORAL HYGIENE PARTNER': 'CHARITY PARTNER', logo: sanjeevani },
+        { name: 'UniAcco', type: 'ORAL HYGIENE PARTNER', logo: sanjeevani },
         { name: 'UniScholarz', type: 'GOLD SPONSOR', logo: iocl },
         { name: 'UniAcco', type: 'GOLD SPONSOR', logo: horiba },
         { name: 'UniScholarz', type: 'BANKING PARTNER', logo: canara },
