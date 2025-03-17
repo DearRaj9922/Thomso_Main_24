@@ -117,7 +117,7 @@ const PartnersGrid = () => {
 { name: 'UniScholarz',  type: 'CONTRIBUTION PARTNER', logo: munjal},
    { name: 'UniScholarz',  type: 'CONTRIBUTION PARTNER', logo: array },
         { name: 'UniAcco', type: 'MOBILE GAMING TOURNAMENT PARTNER', logo: krafton },   
-        { name: 'UniScholarz',  type: 'Major Sponsor', logo: bjas },
+        { name: 'UniScholarz',  type: 'MAJOR SPONSOR', logo: bjas },
         { name: 'UniAcco', type: 'Major Sponsor', logo: aleem },
               { name: 'UniScholarz',  type: 'MIRACLE MAKEUP PARTNER', logo: mila },
           { name: 'UniScholarz', type: 'COSCON EVENT PARTNER',  logo: posterwa },
