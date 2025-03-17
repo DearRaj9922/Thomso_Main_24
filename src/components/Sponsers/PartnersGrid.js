@@ -31,7 +31,7 @@ import munjal from './images/munjal.jpg';
 import epil from './images/epil.webp';
 import explorin from './images/explorin.jpg';
 import pahadi from './images/pahadi.jpeg';
-import optical from './images/optical.jpg';
+import optical from './images/opticalplanet.jpg';
 import dubeat from './images/dubeat.jpg';
 import eil from './images/eil.png';
 import pizlio from './images/pizlio.png';
