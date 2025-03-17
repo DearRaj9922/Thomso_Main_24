@@ -79,7 +79,9 @@ const PartnersGrid = () => {
          { name: 'UniAcco', type: 'GOLD SPONSOR', logo: horiba },
         { name: 'UniScholarz', type: 'MAJOR SPONSOR', logo: shapoorji },
           { name: 'UniScholarz', type: 'MAJOR SPONSOR',  logo: eil },
+        { name: 'UniScholarz',  type: 'MAJOR SPONSOR', logo: epil },
         { name: 'UniScholarz',  type: 'MAJOR SPONSOR', logo: nbt }, 
+        { name: 'UniScholarz', type: 'EYEWEAR PARTNER',  logo: optical },
         { name: 'UniScholarz',  type: 'SOCIAL INITIATIVE PARTNER', logo: sncf },
         { name: 'UniAcco', type: 'ORAL HYGIENE PARTNER', logo: sanjeevani },
          { name: 'UniAcco', type: 'CARNIVAL PARTNER', logo: rollsking },
@@ -102,10 +104,10 @@ const PartnersGrid = () => {
         
       
         { name: 'UniScholarz', type: 'Major Sponsor',  logo: dubeat },
-        { name: 'UniScholarz', type: 'EYEWEAR PARTNER',  logo: optical },
+        
         { name: 'UniScholarz', type: 'Major Sponsor',  logo: pahadi },
         { name: 'UniScholarz', type: 'Major Sponsor',  logo: explorin },
-        { name: 'UniScholarz',  type: 'MAJOR SPONSOR', logo: epil },
+        
         { name: 'UniScholarz',  type: 'CONTRIBUTION PARTNER', logo: munjal},
         { name: 'UniScholarz', type: 'MOMENTS PARTNER',  logo: instax },
         { name: 'UniScholarz',  type: 'CONTRIBUTION PARTNER', logo: array },
