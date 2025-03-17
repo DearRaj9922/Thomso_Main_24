@@ -58,6 +58,7 @@ import nbt from './images/nbt.jpg';
 import unisol from './images/unisol.png';
 import pnb from './images/pnb.jpg';
 import escape from './images/escape.png';
+import tata from './images/tata.jpg';
 
 const PartnersGrid = () => {
     const partners = [
@@ -78,6 +79,7 @@ const PartnersGrid = () => {
          { name: 'UniScholarz', type: 'GOLD SPONSOR', logo: iocl },
          { name: 'UniAcco', type: 'GOLD SPONSOR', logo: horiba },
         { name: 'UniScholarz', type: 'MAJOR SPONSOR', logo: shapoorji },
+        { name: 'UniAcco', type: 'MAJOR SPONSOR', logo: tata },
           { name: 'UniScholarz', type: 'MAJOR SPONSOR',  logo: eil },
         { name: 'UniScholarz',  type: 'MAJOR SPONSOR', logo: epil },
         { name: 'UniScholarz',  type: 'MAJOR SPONSOR', logo: nbt }, 
@@ -91,6 +93,8 @@ const PartnersGrid = () => {
         { name: 'UniAcco', type: 'SPONSOR', logo: nxtinfra },
        
         { name: 'UniAcco', type: 'Major Sponsor', logo: aleem },
+
+        
         
        
        
