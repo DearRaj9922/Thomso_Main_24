@@ -62,6 +62,19 @@ import tata from './images/tata.jpg';
 import ongc from './images/ongc.jpeg';
 import rec from './images/rec.png';
 import narayan from './images/narayan.jpg';
+import cubelelo from './images/cubelelo.webp';
+import narayan from './images/ambuja.webp';
+import narayan from './images/tanya.jpg';
+import narayan from './images/mila.webp';
+import narayan from './images/silent.png';
+import reyansh from './images/reyansh.png';
+import bailley from './images/bailley.jpg';
+import ircon from './images/ircon.png';
+import tsanta from './images/tsanta.webp';
+import ptcul from './images/ptcul.jpg';
+
+
+
 
 const PartnersGrid = () => {
     const partners = [
@@ -73,15 +86,21 @@ const PartnersGrid = () => {
         { name: 'UniScholarz',  type: 'TOURISM PARTNER', logo: uttar },
         
         { name: 'UniAcco', type: 'RAILWAY DEVELOPMENT PARTNER', logo: rvnl },
+        
+        { name: 'UniAcco', type: 'RAILWAY CONSTRUCTION PARTNER', logo: ircon },
 
           { name: 'UniAcco', type: 'ELECTRICITY PARTNER', logo: rec },
         
         { name: 'UniScholarz', type: 'HYDRO ENERGY PARTNER', logo: thdc },
 
+        
+        { name: 'UniAcco', type: 'CEMENT PARTNER', logo: ambuja },
+
         { name: 'UniAcco', type: 'BANKING PARTNER', logo: sbi },
         
         { name: 'UniScholarz', type: 'BANKING PARTNER', logo: canara },
         { name: 'UniScholarz',  type: 'BANKING PARTNER', logo: pnb },
+        { name: 'UniAcco', type: 'HYDRATION PARTNER', logo: bailley },
         { name: 'UniScholarz',  type: 'WORKSHOP PARTNER', logo: world },
         
         { name: 'UniScholarz', type: 'WORKSHOP PARTNER', logo: remarkskill },
@@ -115,7 +134,15 @@ const PartnersGrid = () => {
  { name: 'UniScholarz', type: 'SUPPLY CHAIN PARTNER',  logo: safexpress },
  { name: 'UniScholarz',  type: 'PERFUME PARTNER', logo: denver },
 { name: 'UniScholarz',  type: 'CONTRIBUTION PARTNER', logo: munjal},
+        { name: 'UniAcco', type: 'CONTRIBUTION PARTNER', logo: ptcul },
    { name: 'UniScholarz',  type: 'CONTRIBUTION PARTNER', logo: array },
+        { name: 'UniAcco', type: 'FOOTLOOSE EVENT PARTNER', logo: tanya },
+
+        { name: 'UniAcco', type: 'DA VINCI\'s GALA EVENT PARTNER', logo: reyansh },
+        { name: 'UniAcco', type: 'TOTE BAG ARTISTRY PARTNER', logo: tsanta },
+        { name: 'UniAcco', type: 'SILENT DJ PARTNER', logo: silent },
+        { name: 'UniAcco', type: 'EVENT PARTNER', logo: cubelelo },
+
         { name: 'UniAcco', type: 'MOBILE GAMING TOURNAMENT PARTNER', logo: krafton },   
         { name: 'UniScholarz',  type: 'ABHIVYAKTI EVENT PARTNER', logo: bjas },
         { name: 'UniAcco', type: 'Major Sponsor', logo: aleem },
