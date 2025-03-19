@@ -73,6 +73,7 @@ import tsanta from './images/tsanta.webp';
 import ptcul from './images/ptcul.jpg';
 import ninjadog from './images/ninjadog.webp';
 import trek from './images/trek.png';
+import socialtape from './images/socialtape.png';
 
 const PartnersGrid = () => {
     const partners = [
@@ -188,7 +189,8 @@ const PartnersGrid = () => {
     
         
         
-        { name: 'UniScholarz', type: 'MAJOR SPONSOR',  logo: unisol }
+        { name: 'UniScholarz', type: 'MAJOR SPONSOR',  logo: unisol },
+        { name: 'UniScholarz', type: 'EVENT PARTNER',  logo: socialtape }
        
 ];
 
