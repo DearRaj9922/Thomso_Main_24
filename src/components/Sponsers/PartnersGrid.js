@@ -71,9 +71,8 @@ import bailley from './images/bailley.jpg';
 import ircon from './images/ircon.png';
 import tsanta from './images/tsanta.webp';
 import ptcul from './images/ptcul.jpg';
-
-
-
+import ninjadog from './images/ninjadog.webp';
+import trek from './images/trek.png';
 
 const PartnersGrid = () => {
     const partners = [
@@ -114,13 +113,13 @@ const PartnersGrid = () => {
         
         { name: 'UniScholarz', type: 'EYEWEAR PARTNER',  logo: optical },
         { name: 'UniScholarz',  type: 'SOCIAL INITIATIVE PARTNER', logo: sncf },
-        { name: 'UniAcco', type: 'ORAL HYGIENE PARTNER', logo: sanjeevani },
+        { name: 'UniAcco', type: 'CHARITY PARTNER', logo: sanjeevani },
          { name: 'UniAcco', type: 'SOCIAL INITIATIVE PARTNER', logo: narayan },
          { name: 'UniAcco', type: 'CARNIVAL PARTNER', logo: rollsking },
         { name: 'UniScholarz', type: 'PAEGENT PARTNER', logo: pizlio },
          { name: 'UniScholarz',  type: 'GIFTING & SKINCARE PARTNER', logo: fixderma },
          { name: 'UniScholarz',  type: 'FANDOM PARTNER', logo: escape },
-        { name: 'UniScholarz',  type: 'FANDOM PARTNER', logo: qelica },
+        { name: 'UniScholarz',  type: 'ORAL HYGIENE PARTNER', logo: qelica },
           { name: 'UniScholarz', type: 'FRAGNANCE PARTNER',  logo: secrettemptation },
 
               { name: 'UniScholarz', type: 'GROOMING PARTNER', logo: beardo },
@@ -137,16 +136,18 @@ const PartnersGrid = () => {
    { name: 'UniScholarz',  type: 'CONTRIBUTION PARTNER', logo: array },
         { name: 'UniAcco', type: 'FOOTLOOSE EVENT PARTNER', logo: tanya },
 
-        { name: 'UniAcco', type: 'DA VINCI\'s GALA EVENT PARTNER', logo: reyansh },
+        { name: 'UniAcco', type: 'DA VINCI\'S GALA EVENT PARTNER', logo: reyansh },
         { name: 'UniAcco', type: 'TOTE BAG ARTISTRY PARTNER', logo: tsanta },
         { name: 'UniAcco', type: 'SILENT DJ PARTNER', logo: silent },
         { name: 'UniAcco', type: 'EVENT PARTNER', logo: cubelelo },
 
         { name: 'UniAcco', type: 'MOBILE GAMING TOURNAMENT PARTNER', logo: krafton },   
+         { name: 'UniAcco', type: 'GAMING CATEGORY PARTNER', logo: ninjadog }, 
         { name: 'UniScholarz',  type: 'ABHIVYAKTI EVENT PARTNER', logo: bjas },
         { name: 'UniAcco', type: 'Major Sponsor', logo: aleem },
               { name: 'UniScholarz',  type: 'MIRACLE MAKEUP PARTNER', logo: mila },
           { name: 'UniScholarz', type: 'COSCON EVENT PARTNER',  logo: posterwa },
+         { name: 'UniAcco', type: 'ADVENTURE CATEGORY PARTNER', logo: trek }, 
         { name: 'UniScholarz',  type: 'MARKETING AND FINANCE CATEGORY PARTNER', logo: fintree },
      
 
