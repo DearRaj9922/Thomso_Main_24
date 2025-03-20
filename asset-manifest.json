@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d80389e6.css",
-    "main.js": "/static/js/main.09c507f2.js",
+    "main.css": "/static/css/main.713efc16.css",
+    "main.js": "/static/js/main.7020bf9a.js",
     "static/js/511.6d025d35.chunk.js": "/static/js/511.6d025d35.chunk.js",
     "static/media/bgs4.svg": "/static/media/bgs4.a2186bd99a8e07adf56b.svg",
     "static/media/Events_bike Animation.gif": "/static/media/Events_bike Animation.b5a443126fe8b2f37f7a.gif",
@@ -13,6 +13,7 @@
     "static/media/sponserbg.png": "/static/media/sponserbg.38098698f5d235e62fca.png",
     "static/media/mobsection3.webp": "/static/media/mobsection3.425624467f6718e66cc7.webp",
     "static/media/gail.jpg": "/static/media/gail.5880a9d3a3eb7a6e7f49.jpg",
+    "static/media/background.png": "/static/media/background.584ad36d2658e7df84d4.png",
     "static/media/bg_peacock.webp": "/static/media/bg_peacock.0674008e952701811b90.webp",
     "static/media/bg5 (1).webp": "/static/media/bg5 (1).988ddce14d8852e5e8c3.webp",
     "static/media/nbt.jpg": "/static/media/nbt.bf7678193042620cfd23.jpg",
@@ -52,6 +53,8 @@
     "static/media/logowhite.svg": "/static/media/logowhite.afb693a59fe1303d6bbdafbb6f1e9e73.svg",
     "static/media/narayan.jpg": "/static/media/narayan.c0e1ddb645de91862dfa.jpg",
     "static/media/profilebackmob.webp": "/static/media/profilebackmob.136296c2f901b7ed36dd.webp",
+    "static/media/convener_bg.png": "/static/media/convener_bg.ac7c5876f6db57c12d2a.png",
+    "static/media/webimage.png": "/static/media/webimage.2e9ad31e6de24fddf23d.png",
     "static/media/sample.png": "/static/media/sample.7a144538cebfab871757.png",
     "static/media/iitmemewala.jpg": "/static/media/iitmemewala.56bbd70b0bd4fdbc480d.jpg",
     "static/media/rec.png": "/static/media/rec.f4737e7bc0cf3f409f37.png",
@@ -79,6 +82,7 @@
     "static/media/events.webp": "/static/media/events.fde5c037766b7fb02ec7.webp",
     "static/media/world.jpg": "/static/media/world.acabf1694c5b1fb70d6d.jpg",
     "static/media/sanjeevani.jpg": "/static/media/sanjeevani.bbb0821ab2cc41a3ebdc.jpg",
+    "static/media/member_bg.png": "/static/media/member_bg.9124d07107173d066505.png",
     "static/media/judge.svg": "/static/media/judge.56af8861a3ce53067c0c6bfc8aab12b5.svg",
     "static/media/totebag.jpeg": "/static/media/totebag.7e2bd018d42f6977067f.jpeg",
     "static/media/herotitle.webp": "/static/media/herotitle.a9781f25d756c5649498.webp",
@@ -159,12 +163,12 @@
     "static/media/TickCorrect.svg": "/static/media/TickCorrect.317b995981df69acdce1592e92ce5f74.svg",
     "static/media/profile.svg": "/static/media/profile.a0cd79691c7d2da42c0493e6ad98e630.svg",
     "static/media/diamond.svg": "/static/media/diamond.7e6e6a15583877c88e6a71723e75f3b6.svg",
-    "main.d80389e6.css.map": "/static/css/main.d80389e6.css.map",
-    "main.09c507f2.js.map": "/static/js/main.09c507f2.js.map",
+    "main.713efc16.css.map": "/static/css/main.713efc16.css.map",
+    "main.7020bf9a.js.map": "/static/js/main.7020bf9a.js.map",
     "511.6d025d35.chunk.js.map": "/static/js/511.6d025d35.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d80389e6.css",
-    "static/js/main.09c507f2.js"
+    "static/css/main.713efc16.css",
+    "static/js/main.7020bf9a.js"
   ]
 }
