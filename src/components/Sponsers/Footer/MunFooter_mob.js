@@ -15,12 +15,12 @@ const MunFooter_mob = () => {
             <p className="munfooterhead">Contact Us</p>
             <div className="munfootercontent">
                 <div className="mail">
-                    <p>aayush.thomso@gmail.com</p>
-                    <p>anunjay.thomso@gmail.com</p>
+                    <p>aayushi.thomso@gmail.com</p>
+                    <p>thomso@iitr.ac.in</p>
                 </div>
                  <div className="number">
-                    <p>9128004995 (Anunjay)</p>
-                    <p>9056667714 (Sehaj)</p>
+                    <p>9509618239 (Sneha)</p>
+                    <p>9667670298 (Jayant)</p>
                 </div>
             </div>
         </div>

@@ -78,12 +78,12 @@ const MunFooter = () => {
             <div className='munfooterPara2'>
               <div className='munfooterBoxBSub1'>
                 <div className='munfooterText2'>thomso@iitr.ac.in</div>
-                <div className='munfooterText2'>anunjay.thomso@gmail.com</div>
+                <div className='munfooterText2'>aayushi.thomso@gmail.com</div>
               </div>
 
               <div className='munfooterBoxBSub1'>
-                <div className='munfooterText2'>Anunjay - 9128004995</div>
-                <div className='munfooterText2'>Sehaj - 9056667714</div>
+                <div className='munfooterText2'>Jayant - 9667670298</div>
+                <div className='munfooterText2'>Sneha - 9509618239</div>
               </div>
             </div>
           </div>

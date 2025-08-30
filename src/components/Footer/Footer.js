@@ -82,12 +82,12 @@ const Footer = () => {
             <div className='footerPara2'>
               <div className='footerBoxBSub1'>
                 <div className='footerText2'>thomso@iitr.ac.in</div>
-                <div className='footerText2'>anunjay.thomso@gmail.com</div>
+                <div className='footerText2'>aayushi.thomso@gmail.com</div>
               </div>
 
               <div className='footerBoxBSub1'>
-                <div className='footerText2'>Anunjay - 9128004995</div>
-                <div className='footerText2'>Sehaj - 9056667714</div>
+                <div className='footerText2'>Jayant - 9667670298</div>
+                <div className='footerText2'>Sneha - 9509618239</div>
               </div>
             </div>
           </div>
